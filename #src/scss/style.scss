@@ -19,21 +19,38 @@
 
 // END ===== import =====
 
-// style
+// START ===== variables =====
+
+$BGCOLOR1: #F2F4F4;
+$BGCOLOR2: #F9F4EE;
+$ACCENTCOLOR: #F97517;
+$TEXTCOLOR1: #333;
+$TEXTCOLOR2: #4A4A4A;
+$GRAY: #B1B1B1;
+$GRADIENT: linear-gradient(90deg, rgba(255,169,107,1) 0%, rgba(238,122,40,1) 100%);
+
+// END ===== variables =====
 
 
-.container {
-    max-width: 1330px;
-    padding: 0 5px;
+// START ===== style =====
+.content{
     margin: 0 auto;
+    max-width: 1320px;
+    padding: 10px 0;
 }
+.header {
 
+}
 .header__top {
+    align-items: center;
     display: flex;
-    background: #fff;
-    padding: 30px 0;
+    background: #fff; 
 }
-
+.header__wrapper {
+    background-image: url(/img/header_BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .logo__item {
     width: 108px;
@@ -42,4 +59,55 @@
 
 .menu__body {
     display: flex;
+    padding: 7px 102px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $TEXTCOLOR2;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.menu__list + .menu__list{
+    margin-left: 32px;
+}
+
+.header__button-top{
+    color: $ACCENTCOLOR;
+    border: 2px solid $ACCENTCOLOR;
+    border-radius: 10px;
+    padding: 8px 24px;
+    background: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    margin-right: 24px;
+}
+.header__phone{
+    color: $TEXTCOLOR2;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: Montserrat;
+    margin-right: auto;
+}
+
+.header__wrapper{
+    padding-top: 150px;
+    padding-bottom: 140px;
+}
+
+.header__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 78px;
+    letter-spacing: 3.2px;
+    color: #F5F5F5;
+   
+}
+
+// END ===== style =====
