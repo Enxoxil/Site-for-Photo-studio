@@ -195,7 +195,7 @@ select {
 .content {
   margin: 0 auto;
   max-width: 1320px;
-  padding: 10px 0;
+  padding: 0 10px;
 }
 
 .header__top {
@@ -206,6 +206,7 @@ select {
   display: -ms-flexbox;
   display: flex;
   background: #fff;
+  padding: 24px 0;
 }
 
 .no-webp .header__wrapper {
@@ -286,28 +287,42 @@ select {
 }
 
 .header__content-title {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 120%;
   color: #f5f5f5;
   padding-bottom: 24px;
+  letter-spacing: 1px;
 }
 
 .header__text {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 126%;
+  line-height: 26px;
   color: #f5f5f5;
   padding-bottom: 32px;
-  max-width: 790px;
+  max-width: 800px;
+  letter-spacing: 0.25px;
 }
 
 .header__button {
   padding: 22px 27.5px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa96b), to(#ee7a28));
+  background: -o-linear-gradient(top, #ffa96b 0%, #ee7a28 100%);
+  background: linear-gradient(180deg, #ffa96b 0%, #ee7a28 100%);
+  color: #FFF;
+  border: none;
 }
 
 .webp .header__wrapper { background-image: url(/img/header_BG.webp); }
