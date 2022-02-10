@@ -192,12 +192,6 @@ select {
   font-style: normal;
 }
 
-.content {
-  margin: 0 auto;
-  max-width: 1320px;
-  padding: 0 10px;
-}
-
 .header__top {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -234,12 +228,17 @@ select {
   font-family: "Montserrat", sans-serif;
 }
 
-.menu__list + .menu__list {
-  margin-left: 32px;
+.menu__list {
+  cursor: pointer;
 }
 
-.menu__list:hover {
+.menu__list:hover,
+.menu__list:active {
   color: #f97517;
+}
+
+.menu__list + .menu__list {
+  margin-left: 32px;
 }
 
 .header__button-top {
@@ -254,6 +253,13 @@ select {
   letter-spacing: 1px;
   font-family: Montserrat;
   margin-right: 24px;
+  cursor: pointer;
+}
+
+.header__button-top:hover,
+.header__button-top:active {
+  color: #fff;
+  background: #f97517;
 }
 
 .header__phone {
@@ -268,7 +274,7 @@ select {
 
 .header__wrapper {
   padding-top: 150px;
-  padding-bottom: 140px;
+  padding-bottom: 135px;
 }
 
 .header__title {
@@ -323,6 +329,45 @@ select {
   background: linear-gradient(180deg, #ffa96b 0%, #ee7a28 100%);
   color: #FFF;
   border: none;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  padding: 10px 10px;
+}
+
+.popup__form-title {
+  color: #4a4a4a;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 10px;
 }
 
 .webp .header__wrapper { background-image: url(/img/header_BG.webp); }
