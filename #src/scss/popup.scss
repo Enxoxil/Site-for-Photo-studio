@@ -7,17 +7,22 @@
     background-color: rgb(0, 0, 0, 0.8);
     top: 0;
     left: 0;
-}
-.popup__body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+}
+.popup__body {
+    width: 1100px;
     padding: 10px 10px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
 }
 .popup__picture {
+    padding: 90px 25px 53px 34px;
 }
 .popup__form-wrapper {
+    padding: 60px 40px 60px 0;
 
 }
 .popup__form-title {
