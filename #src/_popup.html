@@ -1,5 +1,8 @@
 <div class="popup" id="popup">
+    <a href="#" class="popup__area"></a>
     <div class="popup__body">
+        
+        <a href="#" class="popup__close-btn"></a>
         <div class="popup__picture">
             <img src="/img/popup-img.png" alt="#" />
         </div>
@@ -12,7 +15,7 @@
                         <input 
                             type="text" 
                             class="input__place" 
-                            id="input__name" placeholder="Имя"
+                            id="input__name" placeholder="Введите ваше имя"
                         />
                     </div>
                     <div class="input__item">
@@ -20,7 +23,7 @@
                         <input
                             type="email"
                             class="input__place"
-                            id="input__email" placeholder="E-mail"
+                            id="input__email" placeholder="Введите ваш E-mail"
                         />
                     </div>
                     <div class="input__item">
@@ -28,14 +31,17 @@
                         <input 
                             type="tel" 
                             class="input__place" 
-                            id="input__phone" placeholder="Телефон"
+                            id="input__phone" placeholder="Введите ваше Телефон"
                         />
                     </div>
             </div>
-                
-
-                <input type="button" class="input__btn" value="Отправить" />
+                <input type="button" class="input__btn" value="Отправить" />                
             </form>
+            <p class="popup__text">
+                Нажимая кнопку «Отправить», вы даете согласие на обработку
+                персональных данных и соглашаетесь с 
+                <a href="#" class="popup__text-link">политикой конфиденциальности</a> 
+            </p>
         </div>
     </div>
 </div>
