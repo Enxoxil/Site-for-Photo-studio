@@ -8,11 +8,11 @@
     background: #fff;
     padding: 24px 0;
 }
-.header__wrapper {
-    background-image: url(/img/header_BG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+// .header__wrapper {
+//     background-image: url(/img/header_BG.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 
 .logo__item {
     width: 108px;
@@ -68,8 +68,17 @@
 }
 
 .header__wrapper {
-    padding-top: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.header__overlay{
+    background: rgba(0, 0, 0, 0.6);
     padding-bottom: 135px;
+}
+.header__wrapper-bg{
+    position: absolute;
+    width: 100%;
+    z-index: -100;
 }
 
 .header__title {
@@ -81,6 +90,7 @@
     letter-spacing: 2px;
     color: #f5f5f5;
     padding-bottom: 52px;
+    padding-top: 150px;
 
     span {
         letter-spacing: 5.2px;
@@ -112,6 +122,7 @@
 }
 
 .header__button{
+    display: block;
     padding: 22px 27.5px;
     font-family: Montserrat, sans-serif;
     font-style: normal;
@@ -125,6 +136,8 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    text-align: center;
+    max-width: 320px;
 }
 
 

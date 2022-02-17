@@ -203,14 +203,6 @@ select {
   padding: 24px 0;
 }
 
-.no-webp .header__wrapper {
-  background-image: url(/img/header_BG.png); }
-
-.header__wrapper {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .logo__item {
   width: 108px;
   height: 35px;
@@ -273,8 +265,19 @@ select {
 }
 
 .header__wrapper {
-  padding-top: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__overlay {
+  background: rgba(0, 0, 0, 0.6);
   padding-bottom: 135px;
+}
+
+.header__wrapper-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -100;
 }
 
 .header__title {
@@ -286,6 +289,7 @@ select {
   letter-spacing: 2px;
   color: #f5f5f5;
   padding-bottom: 52px;
+  padding-top: 150px;
 }
 
 .header__title span {
@@ -316,6 +320,7 @@ select {
 }
 
 .header__button {
+  display: block;
   padding: 22px 27.5px;
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -331,9 +336,12 @@ select {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  text-align: center;
+  max-width: 320px;
 }
 
 .popup {
+  z-index: 5;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -519,5 +527,3 @@ select {
   max-width: 1320px;
   padding: 0 10px;
 }
-
-.webp .header__wrapper { background-image: url(/img/header_BG.webp); }
