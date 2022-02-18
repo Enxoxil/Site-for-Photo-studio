@@ -7,12 +7,8 @@
     display: flex;
     background: #fff;
     padding: 24px 0;
+    word-break: keep-all;
 }
-// .header__wrapper {
-//     background-image: url(/img/header_BG.png);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
 
 .logo__item {
     width: 108px;
@@ -27,6 +23,7 @@
     line-height: 20px;
     color: $TEXTCOLOR2;
     font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
 }
 .menu__list{
     cursor: pointer;
@@ -51,6 +48,7 @@
     font-family: Montserrat;
     margin-right: 24px;
     cursor: pointer;
+    white-space: nowrap;
     &:hover, &:active{
         color: #fff;
         background: $ACCENTCOLOR;
@@ -65,6 +63,7 @@
     font-style: normal;
     font-family: Montserrat;
     margin-right: auto;
+    white-space: nowrap;
 }
 
 .header__wrapper {
@@ -72,13 +71,16 @@
     position: relative;
 }
 .header__overlay{
+    position: relative;
     background: rgba(0, 0, 0, 0.6);
     padding-bottom: 135px;
 }
 .header__wrapper-bg{
+    display: block;
     position: absolute;
     width: 100%;
     z-index: -100;
+    object-fit: cover;
 }
 
 .header__title {
@@ -91,7 +93,7 @@
     color: #f5f5f5;
     padding-bottom: 52px;
     padding-top: 150px;
-
+    white-space: nowrap;
     span {
         letter-spacing: 5.2px;
     }
