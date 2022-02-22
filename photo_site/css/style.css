@@ -184,6 +184,10 @@ select {
   vertical-align: middle;
 }
 
+img {
+  display: block;
+}
+
 @font-face {
   font-family: "spaceagecyrillic-regular";
   font-display: swap;
@@ -192,347 +196,111 @@ select {
   font-style: normal;
 }
 
-.header__top {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fff;
-  padding: 24px 0;
-  word-break: keep-all;
-}
-
-.logo__item {
-  width: 108px;
-  height: 35px;
-}
-
-.menu__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 7px 102px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #4a4a4a;
-  font-family: "Montserrat", sans-serif;
-  white-space: nowrap;
-}
-
-.menu__list {
-  cursor: pointer;
-}
-
-.menu__list:hover,
-.menu__list:active {
-  color: #f97517;
-}
-
-.menu__list + .menu__list {
-  margin-left: 32px;
-}
-
-.header__button-top {
-  color: #f97517;
-  border: 2px solid #f97517;
-  border-radius: 10px;
-  padding: 8px 24px;
-  background: #fff;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-family: Montserrat;
-  margin-right: 24px;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.header__button-top:hover,
-.header__button-top:active {
-  color: #fff;
-  background: #f97517;
-}
-
-.header__phone {
-  color: #4a4a4a;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
-  font-style: normal;
-  font-family: Montserrat;
-  margin-right: auto;
-  white-space: nowrap;
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header__wrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-.header__overlay {
-  position: relative;
-  background: rgba(0, 0, 0, 0.6);
-  padding-bottom: 135px;
-}
-
-.header__wrapper-bg {
-  display: block;
-  position: absolute;
-  width: 100%;
-  z-index: -100;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.header__title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 66px;
-  line-height: 78px;
-  letter-spacing: 2px;
-  color: #f5f5f5;
-  padding-bottom: 52px;
-  padding-top: 150px;
-  white-space: nowrap;
-}
-
-.header__title span {
-  letter-spacing: 5.2px;
-}
-
-.header__content-title {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 120%;
-  color: #f5f5f5;
-  padding-bottom: 24px;
-  letter-spacing: 1px;
-}
-
-.header__text {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  color: #f5f5f5;
-  padding-bottom: 32px;
-  max-width: 800px;
-  letter-spacing: 0.25px;
-}
-
-.header__button {
-  display: block;
-  padding: 22px 27.5px;
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 3px;
-  border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffa96b), to(#ee7a28));
-  background: -o-linear-gradient(top, #ffa96b 0%, #ee7a28 100%);
-  background: linear-gradient(180deg, #ffa96b 0%, #ee7a28 100%);
-  color: #FFF;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  max-width: 320px;
-}
-
-.popup {
-  z-index: 5;
   position: fixed;
-  height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
   left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5px 0;
+  min-height: 80px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 }
 
-.popup:target {
-  opacity: 1;
-  visibility: visible;
+.header__logo {
+  max-width: 108px;
 }
 
-.popup__body {
-  position: relative;
-  max-width: 1010px;
-  background: #fff;
-  border-radius: 15px;
+.header__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 71.935483871%;
+          flex: 0 0 71.935483871%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.popup__area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.popup__close-btn {
-  position: absolute;
-  max-width: 21px;
-  max-height: 21px;
-  background-color: #fff;
-  right: 0;
-  top: -30px;
-}
-
-.popup__close-btn::after,
-.popup__close-btn::before {
-  content: " ";
-  position: absolute;
-  width: 1px;
-  height: 29px;
-  background-color: #fff;
-  right: 11px;
-  top: -16px;
-  border: 1px solid #FFF;
-}
-
-.popup__close-btn::after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.popup__close-btn::before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.popup__picture {
-  padding: 90px 25px 53px 34px;
-}
-
-.popup__form-wrapper {
-  padding: 60px 40px 60px 0;
-}
-
-.popup__form-title {
-  color: #4a4a4a;
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 120%;
-}
-
-.popup__form {
+.header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 20px;
-  padding-top: 32px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
-.input__box {
-  padding-bottom: 16px;
+.menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 87.9059350504%;
+          flex: 0 1 87.9059350504%;
 }
 
-.input__item {
+.menu__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  padding-bottom: 16px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 100%;
 }
 
-.input__lable {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 12px;
-  color: #121621;
-  opacity: 0.4;
-  padding-bottom: 8px;
+.menu__item {
+  white-space: nowrap;
 }
 
-.input__place {
-  border: 1px solid #DDDEE4;
-  border-radius: 5px;
-  padding: 18px 124px 18px 16px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #B1B1B1;
-  opacity: 0.4;
+.actions-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28.064516129%;
+          flex: 0 0 28.064516129%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 5px;
 }
 
-.input__btn {
-  padding: 14px 144.5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffa96b), to(#ee7a28));
-  background: -o-linear-gradient(top, #ffa96b 0%, #ee7a28 100%);
-  background: linear-gradient(180deg, #ffa96b 0%, #ee7a28 100%);
-  border-radius: 10px;
-  border: none;
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #FFF;
-  cursor: pointer;
+.actions-header__btn {
+  white-space: nowrap;
 }
 
-.popup__text {
-  padding-top: 16px;
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: #585858;
-  max-width: 480px;
+.actions-header__num {
+  white-space: nowrap;
 }
 
-.popup__text .popup__text-link {
-  color: #333;
-  text-decoration: underline;
-}
-
-.content {
-  margin: 0 auto;
-  max-width: 1320px;
-  padding: 0 10px;
+.icon__menu {
+  display: none;
 }
