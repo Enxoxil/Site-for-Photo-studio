@@ -1,22 +1,23 @@
 // START ===== style =====
+@import "values";
+@import "mixins";
 
 .header {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-
+    
     &__wrapper {
         position: fixed;
         width: 100%;
         left: 0;
         top: 0;
         z-index: 50;
+        
     }
     &__container {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 0 20px;
+
     }
     &__body {
         display: flex;
@@ -55,8 +56,14 @@
     }
     &__item {
         white-space: nowrap;
+        
     }
     &__link {
+        color: $TEXT_COLOR2;
+        @include fonts(14, 20, 500, false, sans-serif);
+        &:active{
+            color: $ACCENT_COLOR;
+        }
     }
 }
 

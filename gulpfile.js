@@ -237,15 +237,7 @@ function fontsStyler() {
                     let fontname = items[i].split(".");
                     fontname = fontname[0];
                     if (c_fontname != fontname) {
-                        fs.appendFile(
-                            s_Fold + "/scss/fonts.scss",
-                            '@include font("' +
-                                fontname +
-                                '", "' +
-                                fontname +
-                                '", "400", "normal");\r\n',
-                            techFunc,
-                        );
+                        fs.appendFile(s_Fold + "/scss/fonts.scss", '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', techFunc);
                     }
                     c_fontname = fontname;
                 }
