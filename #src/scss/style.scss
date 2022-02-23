@@ -13,18 +13,35 @@
 // END ===== миксина для добавления шрифтов =====
 
 // START ===== import =====
-
 @import "reset";
 @import "fonts";
-@import "variables";
 @import "header";
-// @import "popup";
+
 
 // END ===== import =====
 
+// style
 
+body {
+    font-size: 36px;
+    display: flex;
+}
 
-// START ===== style =====
+h1 {
+    font-size: 14px;
+}
 
+span {
+    font-size: 20px;
+    @media (max-width: 767px) {
+        font-size: 15px;
+    }
+}
 
-// END ===== style =====
+div {
+    font-size: 30px;
+    background: url("../img/image.png");
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+}

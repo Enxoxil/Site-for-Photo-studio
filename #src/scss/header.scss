@@ -65,7 +65,7 @@
 
 .actions-header {
     display: flex;
-    flex: 0 0 348/1240*100%;
+    flex: 0 0 calc(348 / 1240) * 100%;
     justify-content: space-evenly;
     padding: 0 5px;
     &__btn{
