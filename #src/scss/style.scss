@@ -16,32 +16,10 @@
 @import "reset";
 @import "fonts";
 @import "header";
+@import "values";
 
 
 // END ===== import =====
 
 // style
 
-body {
-    font-size: 36px;
-    display: flex;
-}
-
-h1 {
-    font-size: 14px;
-}
-
-span {
-    font-size: 20px;
-    @media (max-width: 767px) {
-        font-size: 15px;
-    }
-}
-
-div {
-    font-size: 30px;
-    background: url("../img/image.png");
-    @media (max-width: 767px) {
-        font-size: 20px;
-    }
-}
