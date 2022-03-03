@@ -1,5 +1,4 @@
 
-
 // START ===== import =====
 @import "reset";
 @import "fonts";
@@ -17,6 +16,13 @@
     max-width: 1270px;
     margin: 0 auto;
     padding: 0 15px;
+    @media (max-width: 1023px){
+        max-width: 864px;
+    }
+}
+
+body._lock{
+    overflow: hidden;
 }
 
 

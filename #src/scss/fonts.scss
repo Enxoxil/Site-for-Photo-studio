@@ -1,4 +1,12 @@
+
+// START ===== import =====
+
 @import "mixins";
+
+// END ===== import =====
+
+// START ===== fonts =====
+
 @include font("IBMPlexSans-Regular", "IBMPlexSans-Regular", "400", "normal");
 @include font("Montserrat-Bold", "Montserrat-Bold", "700", "normal");
 @include font("Montserrat-Medium", "Montserrat-Medium", "500", "normal");
@@ -12,3 +20,6 @@
 @include font("Raleway-Regular", "Raleway-Regular", "400", "normal");
 @include font("Roboto-Regular", "Roboto-Regular", "400", "normal");
 @include font("Roboto-Medium", "Roboto-Medium", "500", "normal");
+
+
+// END ===== fonts =====

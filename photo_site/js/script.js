@@ -20,9 +20,21 @@ function testWebP(callback) {
     });
 
 // END ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== ; // нет ошибки
+// START ===== Menu burger ===== 
 
-// START ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== 
+const menuBurgerIcon = document.querySelector('.action-header__icon-menu');
+if (menuBurgerIcon) {
+    const menuBurgerBody = document.querySelector('.menu__body');
+    menuBurgerIcon.onclick = () => {
+        menuBurgerIcon.classList.toggle('_active');
+        menuBurgerBody.classList.toggle('_active');
+        document.body.classList.toggle('_lock');
+    }
+}
+
+// END ===== Menu burger =====;
+// START =====  ===== 
 
 
 
-// END ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== 
+// END =====  ===== 
