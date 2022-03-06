@@ -1,0 +1,39 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+.main-screen{
+    margin-top: 80px;
+
+    &__inner{
+
+    }
+    &__container{
+
+    }
+    &__wrapper{
+
+    }
+
+
+
+}
+
+
+.main-content {
+    &__title{
+
+    }
+    &__sub-title{
+
+    }
+    &__text{
+
+    }
+    &__button{
+
+    }
+}

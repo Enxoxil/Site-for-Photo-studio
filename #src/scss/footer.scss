@@ -8,58 +8,79 @@
 
 .footer {
     background-color: $BG_COLOR1;
-      
-    &__wrapper{
+
+    &__wrapper {
         padding-top: 60px;
         padding-bottom: 60px;
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        
+
     }
     &__main {
         position: relative;
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #B1B1B1;
+        border-bottom: 1px solid #b1b1b1;
         padding-bottom: 32px;
+
+        @media (min-width: 1023px) {
+            align-items: flex-end;
+        }
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
     }
     &__logo {
         display: flex;
-        flex: 0 1 171px;
         align-items: center;
+        @media (max-width:767px){
+            padding-bottom: 20px;
+        }
+        @media (min-width: 1023px){
+            padding-right: 10px;
+        }
     }
-    &__logo > picture{
-        width: 100%;
-    }
-    &__logo-img{
-        width: 100%;
+    &__logo-img {
+        height: 55px;
+        width: 171px;
     }
     &__menu {
         display: flex;
-        justify-content: space-between;
-        flex: 0 1 882px;
         align-items: center;
-        flex-wrap: wrap;
-        padding-left: 10px;
+        justify-content: center;
+        @media (min-width: 767px) {
+            flex: 0 1 512px;
+        }
+        @media (min-width: 1023px) {
+            flex: 0 1 882px;
+        }
     }
 }
 
-.footer-menu{
-
+.footer-menu {
 
     &__body {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-
+        flex-wrap: wrap;
+        flex: 0 1 100%;
+        height: 100%;
     }
     &__item {
-       
+        display: flex;
+        justify-content: center;
+        
+        @media (min-width: 767px) and (max-width: 1023px) {
+            flex: 0 0 33.333%;
+        }
+        @media (max-width: 767px) {
+            flex: 0 0 50%;
+            padding-top: 32px;
+        }
     }
     &__link {
         @include fonts(16, 26, 700, $TEXT_COLOR2, Montserrat);
-        &:active{
+        &:active {
             color: $ACCENT_COLOR;
         }
     }
@@ -67,31 +88,41 @@
 .sub {
     padding-top: 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 436px;
-    margin: 0 auto;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 0 1 190px;
+        @media (min-width: 767px){
+            flex: 0 1 436px
+        }
+    }
     &__text {
-        @include fonts(16, 28, 500, $TEXT_COLOR1, Montserrat);
+        @media (max-width: 767px){
+            flex-basis: 100%;
+            @include fonts(14, 28, 500, $TEXT_COLOR1, Montserrat);
+            padding-bottom: 16px;
+        }
+        display: block;
+        @include fonts(16, 26, 500, $TEXT_COLOR1, Montserrat);
         padding: 0 5px;
     }
-    &__inst {
-    }
-    &__facebook {
-    }
-    &__twitter {
-    }
-    &__telegramm {
-    }
+
 }
 ._sub-icon {
     font-size: 32px;
-    color: #B1B1B1;
-    padding: 0 5px;
+    color: #b1b1b1;
     &:active {
         color: $ACCENT_COLOR;
     }
+    @media (max-width: 767px){
+        flex-basis: 25%;
+    }
 }
-
 
 // END ===== style =====
