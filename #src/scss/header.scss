@@ -13,19 +13,26 @@
     top: 0;
     left: 0;
 
+
     &__wrapper {
         position: fixed;
         width: 100%;
         left: 0;
         top: 0;
         z-index: 50;
+        background-color: #fff;
+    }
+    &__container{
+        z-index: 50;
     }
     &__body {
+        z-index: 50;
         display: flex;
         align-items: center;
         padding: 5px 0;
         min-height: 80px;
         justify-content: space-between;
+        
         @media (max-width: 767px) {
             min-height: 36px;
             padding: 8px 0;
@@ -69,7 +76,7 @@
             display: flex;
             justify-content: flex-end;
             overflow: auto;
-            transition: left .3s ease 0s;
+            transition: left 0.3s ease 0s;
         }
     }
     &__body._active {
@@ -97,15 +104,15 @@
     }
     &__link {
         color: $TEXT_COLOR2;
-        @include fonts(14, 20, 500, false, Montserrat-Medium);
+        @include fonts(14, 20, 500, false, Montserrat);
         &:active {
             color: $ACCENT_COLOR;
         }
         @media (max-width: 1023px) {
-            @include fonts(12, 20, 500, false, Montserrat-Medium);
+            @include fonts(12, 20, 500, false, Montserrat);
         }
         @media (max-width: 767px) {
-            @include fonts(14, 20, 500, false, Montserrat-Medium);
+            @include fonts(14, 20, 500, false, Montserrat);
             color: #fff;
         }
         @media (max-width: 767px) {
@@ -120,7 +127,7 @@
     flex: 0 1 215px;
     @media (min-width: 1023px) {
         flex: 0 1 348px;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-wrap: nowrap;
     }
     @media (min-width: 767px) {
@@ -133,11 +140,13 @@
         display: none;
         @media (min-width: 767px) {
             display: block;
+            order: 2;
+            flex: 0 1 162px;
+        }
+        @media (min-width: 1023px) {
+            order: 0;
+
             flex: 0 1 196px;
-            @media (max-width: 1023px) {
-                order: 2;
-                flex: 0 1 162px;
-            }
         }
     }
     &__btn {
@@ -150,7 +159,7 @@
             border: 2px solid $ACCENT_COLOR;
             background: inherit;
             letter-spacing: 0.8px;
-            @include fonts(12, 15, 500, $ACCENT_COLOR, Montserrat-Medium);
+            @include fonts(12, 15, 500, $ACCENT_COLOR, Montserrat);
 
             @media (any-hover: hover) {
                 &:hover {
@@ -160,13 +169,13 @@
             }
 
             &:active {
-                @include fonts(10, 12, 500, #fff, Montserrat-Medium);
+                @include fonts(10, 12, 500, #fff, Montserrat);
                 background: $ACCENT_COLOR;
                 margin-left: 11.5px;
             }
         }
         @media (max-width: 1023px) {
-            @include fonts(11, 13, 500, $ACCENT_COLOR, Montserrat-Medium);
+            @include fonts(11, 13, 500, $ACCENT_COLOR, Montserrat);
             padding: 8px 12.5px;
             margin-top: 6px;
             &:active {
@@ -178,7 +187,7 @@
 
     &__num {
         white-space: nowrap;
-        @include fonts(14, 20, 600, $TEXT_COLOR2, Montserrat-SemiBold);
+        @include fonts(14, 20, 600, $TEXT_COLOR2, Montserrat);
     }
 }
 .action-header__phone {
@@ -226,15 +235,15 @@
     }
 }
 
-.action-header__icon-menu._active::before{
-    top:50%;
+.action-header__icon-menu._active::before {
+    top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
 }
-.action-header__icon-menu._active::after{
-    bottom:50%;
+.action-header__icon-menu._active::after {
+    bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
 }
-.action-header__icon-menu._active > span{
+.action-header__icon-menu._active > span {
     transform: scale(0);
 }
 // END ===== style =====

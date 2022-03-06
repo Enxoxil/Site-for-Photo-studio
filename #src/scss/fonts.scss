@@ -1,25 +1,14 @@
-
-// START ===== import =====
-
-@import "mixins";
-
-// END ===== import =====
-
-// START ===== fonts =====
-
-@include font("IBMPlexSans-Regular", "IBMPlexSans-Regular", "400", "normal");
-@include font("Montserrat-Bold", "Montserrat-Bold", "700", "normal");
-@include font("Montserrat-Medium", "Montserrat-Medium", "500", "normal");
-@include font("Montserrat-SemiBold", "Montserrat-SemiBold", "600", "normal");
-@include font("OpenSans-Bold", "OpenSans-Bold", "700", "normal");
-@include font("OpenSans-Regular", "OpenSans-Regular", "400", "normal");
-@include font("PTSerif-Bold", "PTSerif-Bold", "700", "normal");
-@include font("PTSerif-Regular", "PTSerif-Regular", "400", "normal");
-@include font("Raleway-Bold", "Raleway-Bold", "700", "normal");
-@include font("Roboto-Bold", "Roboto-Bold", "700", "normal");
-@include font("Raleway-Regular", "Raleway-Regular", "400", "normal");
-@include font("Roboto-Regular", "Roboto-Regular", "400", "normal");
-@include font("Roboto-Medium", "Roboto-Medium", "500", "normal");
-
-
-// END ===== fonts =====
+@include font("IBMPlexSans", "IBMPlexSans-Regular", "400", "normal");
+@include font("icons", "icons", "400", "normal");
+@include font("Montserrat", "Montserrat-Medium", "500", "normal");
+@include font("Montserrat", "Montserrat-Bold", "700", "normal");
+@include font("Montserrat", "Montserrat-SemiBold", "600", "normal");
+@include font("OpenSans", "OpenSans-Bold", "700", "normal");
+@include font("OpenSans", "OpenSans-Regular", "400", "normal");
+@include font("PTSerif", "PTSerif-Bold", "700", "normal");
+@include font("PTSerif", "PTSerif-Regular", "400", "normal");
+@include font("Raleway", "Raleway-Bold", "700", "normal");
+@include font("Roboto", "Roboto-Bold", "700", "normal");
+@include font("Raleway", "Raleway-Regular", "400", "normal");
+@include font("Roboto", "Roboto-Medium", "500", "normal");
+@include font("Roboto", "Roboto-Regular", "400", "normal");

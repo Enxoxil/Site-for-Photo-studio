@@ -1,0 +1,97 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.footer {
+    background-color: $BG_COLOR1;
+      
+    &__wrapper{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__main {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #B1B1B1;
+        padding-bottom: 32px;
+    }
+    &__logo {
+        display: flex;
+        flex: 0 1 171px;
+        align-items: center;
+    }
+    &__logo > picture{
+        width: 100%;
+    }
+    &__logo-img{
+        width: 100%;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 882px;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+}
+
+.footer-menu{
+
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    &__item {
+       
+    }
+    &__link {
+        @include fonts(16, 26, 700, $TEXT_COLOR2, Montserrat);
+        &:active{
+            color: $ACCENT_COLOR;
+        }
+    }
+}
+.sub {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 436px;
+    margin: 0 auto;
+    &__text {
+        @include fonts(16, 28, 500, $TEXT_COLOR1, Montserrat);
+        padding: 0 5px;
+    }
+    &__inst {
+    }
+    &__facebook {
+    }
+    &__twitter {
+    }
+    &__telegramm {
+    }
+}
+._sub-icon {
+    font-size: 32px;
+    color: #B1B1B1;
+    padding: 0 5px;
+    &:active {
+        color: $ACCENT_COLOR;
+    }
+}
+
+
+// END ===== style =====
