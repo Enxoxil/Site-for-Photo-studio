@@ -1,0 +1,134 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.ourWorks {
+    &__container {
+    }
+    &__title {
+        text-align: center;
+        @media (min-width: 1023px) {
+            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+            padding-top: 120px;
+            padding-bottom: 118px;
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    &__body {
+        display: flex;
+        position: relative;
+        align-items: center;
+        
+        &-item {
+            visibility: hidden;
+            opacity: 0;
+            display: none;
+            transition: all 0.3s ease none;
+            & > picture {
+            }
+            @media (min-width: 1023px) {
+            }
+        }
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.active-slide {
+    width: 33.333%;
+    height: 114%;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(114%);
+    z-index: 10;
+}
+.active-slide-before {
+    width: 33.333%;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.active-slide-after {
+    width: 33.333%;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.slider__arrows {
+    position: absolute;
+    top: 34%;
+    left: 21.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+    &-left,
+    &-right {
+        z-index: 11;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        background-color: #fff;
+        height: 73px;
+        width: 73px;
+        border-radius: 50%;
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            height: 7%;
+            width: 50%;
+            background-color: $ACCENT_COLOR;
+            border-radius: 20%;
+        }
+        &:hover::after,
+        &:hover::before {
+            background-color: #fff;
+        }
+        &:after {
+            transform: rotate(-45deg);
+            top: 30%;
+        }
+        &:before {
+            transform: rotate(45deg);
+            bottom: 30%;
+        }
+        &:hover {
+            background-color: $ACCENT_COLOR;
+        }
+    }
+    &-right {
+        transform: rotate(180deg);
+    }
+}
+
+.slider__dots {
+    padding-top: 77px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    &-item {
+        height: 6px;
+        width: 6px;
+        background-color: $GRAY_COLOR;
+        border-radius: 50%;
+        margin: 0 7px;
+    }
+    
+}
+.active-dots {
+    background: $ACCENT_COLOR;
+    transform: scale(234%);
+}
+
+// END ===== style =====

@@ -219,7 +219,8 @@
 }
 
 .menu__body._active {
-  left: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu__item {
@@ -717,6 +718,168 @@ select {
           transform: scale(0.87);
 }
 
+.ourWorks__title {
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__body-item {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.3s ease none;
+  -o-transition: all 0.3s ease none;
+  transition: all 0.3s ease none;
+}
+
+.slider__body-img {
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+  width: 33.333%;
+  height: 114%;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(114%);
+      -ms-transform: scale(114%);
+          transform: scale(114%);
+  z-index: 10;
+}
+
+.active-slide-before {
+  width: 33.333%;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.active-slide-after {
+  width: 33.333%;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.slider__arrows {
+  position: absolute;
+  top: 34%;
+  left: 21.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 57%;
+}
+
+.slider__arrows-left,
+.slider__arrows-right {
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  height: 73px;
+  width: 73px;
+  border-radius: 50%;
+}
+
+.slider__arrows-left:after,
+.slider__arrows-left:before,
+.slider__arrows-right:after,
+.slider__arrows-right:before {
+  content: "";
+  position: absolute;
+  height: 7%;
+  width: 50%;
+  background-color: #E97522;
+  border-radius: 20%;
+}
+
+.slider__arrows-left:hover::after,
+.slider__arrows-left:hover::before,
+.slider__arrows-right:hover::after,
+.slider__arrows-right:hover::before {
+  background-color: #fff;
+}
+
+.slider__arrows-left:after,
+.slider__arrows-right:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 30%;
+}
+
+.slider__arrows-left:before,
+.slider__arrows-right:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 30%;
+}
+
+.slider__arrows-left:hover,
+.slider__arrows-right:hover {
+  background-color: #E97522;
+}
+
+.slider__arrows-right {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slider__dots {
+  padding-top: 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+}
+
+.slider__dots-item {
+  height: 6px;
+  width: 6px;
+  background-color: #B1B1B1;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.active-dots {
+  background: #E97522;
+  -webkit-transform: scale(234%);
+      -ms-transform: scale(234%);
+          transform: scale(234%);
+}
+
 ._container {
   max-width: 1270px;
   margin: 0 auto;
@@ -962,6 +1125,16 @@ body._lock {
   .main-content__text > br {
     display: none;
   }
+
+  .ourWorks__title {
+    font-size: 36px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 43px;
+    font-family: Montserrat;
+    padding-top: 120px;
+    padding-bottom: 118px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1011,8 +1184,10 @@ body._lock {
     width: 100%;
     height: 100%;
     overflow: auto;
-    top: 36px;
-    left: -100%;
+    top: 40px;
+    opacity: 0;
+    left: 0;
+    visibility: hidden;
     -webkit-transition: top 0.3s ease 0s;
     -o-transition: top 0.3s ease 0s;
     transition: top 0.3s ease 0s;
@@ -1024,9 +1199,9 @@ body._lock {
         -ms-flex-pack: end;
             justify-content: flex-end;
     overflow: auto;
-    -webkit-transition: left 0.3s ease 0s;
-    -o-transition: left 0.3s ease 0s;
-    transition: left 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
 
   .menu__list {
