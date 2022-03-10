@@ -7,7 +7,16 @@
 // START ===== style =====
 
 .ourWorks {
+    display: none;
+    // ===== DISPLAY NONE ======
+    @media (min-width: 1023px){
+        display: block;
+    }
+
+    // ===== DISPLAY NONE ======
     &__container {
+        max-width: 1440px;
+        margin: 0 auto;
     }
     &__title {
         text-align: center;
@@ -25,7 +34,7 @@
         display: flex;
         position: relative;
         align-items: center;
-        
+
         &-item {
             visibility: hidden;
             opacity: 0;
@@ -35,34 +44,34 @@
             }
             @media (min-width: 1023px) {
             }
+
+            &:nth-of-type(1) {
+                width: 33.333%;
+                display: block;
+                visibility: visible;
+                opacity: 1;
+            }
+            &:nth-of-type(2) {
+                width: 33.333%;
+                height: 114%;
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(114%);
+                z-index: 10;
+            }
+            &:nth-of-type(3) {
+                width: 33.333%;
+                display: block;
+                visibility: visible;
+                opacity: 1;
+            }
         }
         &-img {
             width: 100%;
             height: 100%;
         }
     }
-}
-
-.active-slide {
-    width: 33.333%;
-    height: 114%;
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    transform: scale(114%);
-    z-index: 10;
-}
-.active-slide-before {
-    width: 33.333%;
-    display: block;
-    visibility: visible;
-    opacity: 1;
-}
-.active-slide-after {
-    width: 33.333%;
-    display: block;
-    visibility: visible;
-    opacity: 1;
 }
 .slider__arrows {
     position: absolute;
@@ -124,7 +133,6 @@
         border-radius: 50%;
         margin: 0 7px;
     }
-    
 }
 .active-dots {
     background: $ACCENT_COLOR;

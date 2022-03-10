@@ -1,36 +1,35 @@
-// START ===== Slider ===== 
+// START ===== Slider =====
 
+const nextBtn = document.querySelector(".slider__arrows-right");
+const prevBtn = document.querySelector(".slider__arrows-left");
+const sliderBody = document.querySelector(".slider__body");
+const sliderPaginationItems = document.querySelectorAll(".slider__dots-item");
+sliderPagination();
 
-const slides = document.querySelectorAll('.slider__body-item');
-const buttonPrev = document.querySelector('.slider__arrows-left');
-const buttonNext = document.querySelector('.slider__arrows-right');
-let currentSlide = 0;
+function prevSlidePush() {
+    const lastSlide = document.querySelector(".slider__body-item:last-child");
+    const firstSlide = document.querySelector(".slider__body-item:first-child");
+    sliderBody.insertBefore(lastSlide, firstSlide);
+    sliderPagination();
+}
+function nextSlidePush() {
+    const firstSlide = document.querySelector(".slider__body-item:first-child");
+    sliderBody.append(firstSlide);
+    sliderPagination();
+}
 
-function prevSlide(steping = 1) {
+prevBtn.addEventListener("click", prevSlidePush);
+nextBtn.addEventListener("click", nextSlidePush);
 
-    for (let i = 0; i <= slides.length - 1; i++){
-        slides[i].classList.remove('active-slide', 'active-slide-before', 'active-slide-after');
+function sliderPagination() {
+    let child = sliderBody.children[0].getAttribute("id");
+    for (let i = 0; i < sliderPaginationItems.length; i++) {
+        sliderPaginationItems[i].classList.remove("active-dots");
+        if (i == (child - 1)) {
+            sliderPaginationItems[i].classList.add("active-dots");
+        }
     }
-    
+    console.log(child)
 }
-
-function nextSlide(steping = 1) {
-
-}
-
-
-
-
-
-
-
-buttonPrev.onclick = () => {
-    prevSlide(steping)
-}
-
-buttonNext.onclick = () => {
-    nextSlide(steping)
-}
-
 
 // END ===== Slider =====
