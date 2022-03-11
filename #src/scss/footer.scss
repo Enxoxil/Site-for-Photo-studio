@@ -33,6 +33,7 @@
     &__logo {
         display: flex;
         align-items: center;
+        cursor: pointer;
         @media (max-width:767px){
             padding-bottom: 20px;
         }
@@ -82,6 +83,9 @@
         @include fonts(16, 26, 700, $TEXT_COLOR2, Montserrat);
         &:active {
             color: $ACCENT_COLOR;
+        }
+        &:hover, &:focus {
+            color: $TEXT_COLOR1;
         }
     }
 }

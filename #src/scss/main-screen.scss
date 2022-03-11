@@ -120,11 +120,12 @@
             @include fonts(16, 20, 600, #fff, Montserrat);
             padding: 22px 27.5px;
         }
-        &:hover, &:active{
+        &:hover, &:focus{
             background: $GRADIENT_HOVER;
         }
         &:active{
             transform: scale(0.87);
+            background: $GRADIENT_HOVER;
         }
     }
 }

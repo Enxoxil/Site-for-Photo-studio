@@ -40,6 +40,7 @@
             opacity: 0;
             display: none;
             transition: all 0.3s ease none;
+            cursor: pointer;
             & > picture {
             }
             @media (min-width: 1023px) {
@@ -80,8 +81,10 @@
     display: flex;
     justify-content: space-between;
     width: 57%;
+    border: none;
     &-left,
     &-right {
+        border: none;
         z-index: 11;
         display: flex;
         align-items: center;
@@ -91,6 +94,7 @@
         height: 73px;
         width: 73px;
         border-radius: 50%;
+        cursor: pointer;
         &:after,
         &:before {
             content: "";
@@ -100,8 +104,8 @@
             background-color: $ACCENT_COLOR;
             border-radius: 20%;
         }
-        &:hover::after,
-        &:hover::before {
+        &:active::after,
+        &:active::before {
             background-color: #fff;
         }
         &:after {
@@ -112,7 +116,10 @@
             transform: rotate(45deg);
             bottom: 30%;
         }
-        &:hover {
+        &:hover, &:focus {
+            background-color: $BG_COLOR1;
+        }
+        &:active{
             background-color: $ACCENT_COLOR;
         }
     }

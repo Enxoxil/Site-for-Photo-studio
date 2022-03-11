@@ -39,6 +39,7 @@
     }
     &__logo {
         max-width: 108px;
+        cursor: pointer;
         @media (max-width: 1023px) {
             max-width: 113px;
         }
@@ -110,6 +111,10 @@
         &:active {
             color: $ACCENT_COLOR;
         }
+        &:hover,
+        &:focus {
+            color: $TEXT_COLOR1;
+        }
         @media (max-width: 1023px) {
             @include fonts(12, 20, 500, false, Montserrat);
         }
@@ -163,11 +168,9 @@
             letter-spacing: 0.8px;
             @include fonts(12, 15, 500, $ACCENT_COLOR, Montserrat);
 
-            @media (any-hover: hover) {
-                &:hover {
-                    background: $ACCENT_COLOR;
-                    color: #fff;
-                }
+            &:hover, &:focus {
+                background: $ACCENT_COLOR;
+                color: #fff;
             }
 
             &:active {
