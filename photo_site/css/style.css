@@ -942,6 +942,28 @@ select {
           transform: scale(230%);
 }
 
+.ourLocation__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.ourLocation__title {
+  text-align: center;
+}
+
+.slider-ourLocation__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 ._container {
   max-width: 1270px;
   margin: 0 auto;
@@ -1126,6 +1148,15 @@ body._lock {
     height: 64px;
     width: 64px;
   }
+
+  .ourLocation__title {
+    padding-top: 80px;
+    font-size: 30px;
+    color: #333333;
+    font-weight: 700;
+    line-height: 36px;
+    font-family: Montserrat;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -1223,14 +1254,24 @@ body._lock {
     padding-top: 118px;
   }
 
-  .slider__arrows {
-    top: 49%;
-  }
-
   .slider__arrows-left,
   .slider__arrows-right {
     height: 73px;
     width: 73px;
+  }
+
+  .ourLocation__title {
+    padding-top: 60px;
+    font-size: 36px;
+    color: #333333;
+    font-weight: 700;
+    line-height: 43px;
+    font-family: Montserrat;
+  }
+
+  .slider-ourLocation__wrapper {
+    padding-top: 72px;
+    padding-bottom: 57px;
   }
 }
 

@@ -7,11 +7,6 @@
 // START ===== style =====
 
 .ourWorks {
-    // ===== DISPLAY NONE ======
-    @media (min-width: 1023px) {
-    }
-
-    // ===== DISPLAY NONE ======
     &__container {
         max-width: 1440px;
         margin: 0 auto;
@@ -22,15 +17,12 @@
         @media (min-width: 1023px) {
             @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
             padding-top: 120px;
-            // padding-bottom: 118px;
         }
         @media (min-width: 767px) {
             @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
             padding-top: 100px;
-            // padding-bottom: 107px;
         }
         padding-top: 60px;
-        // padding-bottom: 56px;
         @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
     }
 }
@@ -66,7 +58,6 @@
                 display: block;
                 visibility: visible;
                 opacity: 1;
-                // transform: translate(-60%) scaleY(161%) scaleX(166%);
             }
             &:nth-of-type(2) {
                 min-width: 207px;
@@ -81,7 +72,6 @@
                 display: block;
                 visibility: visible;
                 opacity: 1;
-                // transform: translate(60%) scaleY(161%) scaleX(166%);
             }
         }
         &-img {
@@ -98,23 +88,11 @@
     left: 0;
     width: 100%;
     border: none;
-
-    @media (min-width: 1023px) {
-        // width: 57%;
-        top: 49%;
-        // left: 21.5%;
-    }
     @media (min-width: 767px) {
-        // width: 63%;
         top: 49%;
-        // left: 18.5%;
     }
-
-    &-left{
+    &-left {
         margin-right: 210px;
-    }
-    &-right{
-        
     }
     &-left,
     &-right {
@@ -175,7 +153,6 @@
 }
 
 .slider__dots {
-    // padding-top: 77px;
     display: flex;
     justify-content: center;
     padding-bottom: 60px;

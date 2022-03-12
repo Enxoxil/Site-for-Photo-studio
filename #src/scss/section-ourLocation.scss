@@ -1,0 +1,58 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.ourLocation {
+    &__container {
+        margin: 0 auto;
+        max-width: 1440px;
+        overflow: hidden;
+    }
+    &__title {
+        text-align: center;
+
+        @media (min-width: 767px){
+            padding-top: 80px;
+            @include fonts(30, 36, 700, $TEXT_COLOR1, Montserrat);
+
+        }
+        @media (min-width: 1023px){
+            padding-top: 60px;
+            @include fonts(36, 43, 700, $TEXT_COLOR1, Montserrat);
+        }
+    }
+
+}
+
+.slider-ourLocation {
+    &__wrapper {
+        @media(min-width: 1023px){
+            padding-top: 72px;
+            padding-bottom: 57px;
+        }
+    }
+    &__arrows {
+    }
+    &__arrows-left {
+    }
+    &__arrows-right {
+    }
+    &__body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__body-item {
+    }
+    &__body-img {
+    }
+
+
+
+}
+
+// END ===== style =====
