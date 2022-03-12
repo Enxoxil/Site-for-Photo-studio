@@ -84,6 +84,7 @@
     &__body._active {
         opacity: 1;
         visibility: visible;
+        z-index: 8;
     }
     &__list {
         @media (min-width: 767px) {
@@ -100,6 +101,7 @@
         white-space: nowrap;
         margin: 0 3px;
         padding: 5px 0px;
+        z-index: 10;
         @media (max-width: 767px) {
             display: flex;
             margin: 0;

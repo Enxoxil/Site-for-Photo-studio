@@ -4,6 +4,12 @@ const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
 const menuItems = document.querySelectorAll(".menu__item");
 const menuBody = document.querySelector(".menu__body");
 
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menuBody.classList.contains("_active")) {
+        showMenuBurger();
+    }
+});
+
 for (item of menuItems) {
     item.addEventListener("touchstart", () => {
         if (menuBody.classList.contains("_active")) {
@@ -12,9 +18,17 @@ for (item of menuItems) {
     });
 }
 
-if (menuBurgerIcon) {
-    menuBurgerIcon.addEventListener("touchstart", showMenuBurger);
-}
+menuBody.addEventListener("touchstart", () => {
+    if (menuBody.classList.contains("_active")) {
+        showMenuBurger();
+    }
+});
+
+menuBurgerIcon.addEventListener("touchstart", () => {
+    if (menuBurgerIcon) {
+        showMenuBurger();
+    }
+});
 
 function showMenuBurger() {
     menuBurgerIcon.classList.toggle("_active");
