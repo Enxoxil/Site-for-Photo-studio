@@ -68,6 +68,7 @@ function showMenuBurger() {
  
  Класс _left-arrow вешаем на левую стрелку 
  Класс _right-arrow вешаем на правую стрелку
+
  
  */
 
