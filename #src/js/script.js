@@ -1,6 +1,6 @@
 @@include('webpCheck.js'); // нет ошибки
 @@include('burger.js');
-@@include('slider-ourWorks.js');
+@@include('slider-logical.js');
 // START =====  ===== 
 
 

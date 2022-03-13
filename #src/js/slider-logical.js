@@ -1,66 +1,4 @@
 
-// START ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== 
-
-function testWebP(callback) {
-
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-        callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    
-    testWebP(function (support) {
-    
-        if (support == true) {
-            document.querySelector('body').classList.add('webp');
-        }else{
-            document.querySelector('body').classList.add('no-webp');
-    }
-    });
-
-// END ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== ; // нет ошибки
-// START ===== Menu burger =====
-const menuBurgerBody = document.querySelector(".menu__body");
-const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
-const menuItems = document.querySelectorAll(".menu__item");
-const menuBody = document.querySelector(".menu__body");
-
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && menuBody.classList.contains("_active")) {
-        showMenuBurger();
-    }
-});
-
-for (item of menuItems) {
-    item.addEventListener("touchstart", () => {
-        if (menuBody.classList.contains("_active")) {
-            showMenuBurger();
-        }
-    });
-}
-
-menuBody.addEventListener("touchstart", () => {
-    if (menuBody.classList.contains("_active")) {
-        showMenuBurger();
-    }
-});
-
-menuBurgerIcon.addEventListener("touchstart", () => {
-    if (menuBurgerIcon) {
-        showMenuBurger();
-    }
-});
-
-function showMenuBurger() {
-    menuBurgerIcon.classList.toggle("_active");
-    menuBurgerBody.classList.toggle("_active");
-    document.body.classList.toggle("_lock");
-}
-
-// END ===== Menu burger =====
-;
-
 /*
  Класс _wrapper вешаем на контейнер в котором лежат 2 наследника.
  1 - тело слайдера в котором лежат слайды.
@@ -170,9 +108,3 @@ function createPagination(numOfChild, classNameChild, typeOfChild) {
 
 
 // END ===== Slider =====
-;
-// START =====  ===== 
-
-
-
-// END =====  ===== 
