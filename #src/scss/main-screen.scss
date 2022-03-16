@@ -109,7 +109,7 @@
         border-radius: 10px;
         border: none;
         text-align: center;
-
+        transition: all .3s ease;
         @include fonts(12, 17, 600, #fff, Montserrat);
         @media (min-width: 370px) {
             @include fonts(14, 17, 600, #fff, Montserrat);

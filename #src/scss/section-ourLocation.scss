@@ -63,6 +63,7 @@
         }
         &-left,
         &-right {
+            transition: all .3s ease;
             position: relative;
             height: 36px;
             width: 36px;

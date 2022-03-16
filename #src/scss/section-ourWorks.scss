@@ -97,6 +97,7 @@
     }
     &-left,
     &-right {
+        transition: all .3s ease;
         position: relative;
         height: 36px;
         width: 36px;
@@ -157,12 +158,14 @@
     justify-content: center;
     padding-top: 77px;
     padding-bottom: 63px;
+    
     &-item {
         height: 6px;
         width: 6px;
         background-color: $GRAY_COLOR;
         border-radius: 50%;
         margin: 0 7px;
+        transition: transform .3s ease;
     }
 }
 .active-dots {

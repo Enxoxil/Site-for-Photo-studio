@@ -85,6 +85,7 @@
         opacity: 1;
         visibility: visible;
         z-index: 8;
+        transition: all .3s ease;
     }
     &__list {
         @media (min-width: 767px) {
@@ -108,6 +109,7 @@
         }
     }
     &__link {
+        transition: all .3s ease;
         color: $TEXT_COLOR2;
         @include fonts(14, 20, 500, false, Montserrat);
         &:active {
@@ -148,20 +150,19 @@
     &__btn-container {
         display: none;
         @media (min-width: 767px) {
-            display: block;
+            display: flex;
+            justify-content: flex-end;
             order: 2;
             flex: 0 1 162px;
         }
         @media (min-width: 1023px) {
             order: 0;
-
             flex: 0 1 196px;
         }
     }
     &__btn {
-        display: none;
+        transition: all .3s ease;
         @media (min-width: 767px) {
-            display: block;
             white-space: nowrap;
             padding: 8px 23px;
             border-radius: 10px;
@@ -178,7 +179,7 @@
             &:active {
                 @include fonts(10, 12, 500, #fff, Montserrat);
                 background: $ACCENT_COLOR;
-                margin-left: 11.5px;
+                transform: scale(0.87);
             }
         }
         @media (max-width: 1023px) {
@@ -194,7 +195,11 @@
 
     &__num {
         white-space: nowrap;
+        
         @include fonts(14, 20, 600, $TEXT_COLOR2, Montserrat);
+        @media (min-width: 1023px){
+          padding: 8px 0px;  
+        }
     }
 }
 .action-header__phone {
@@ -207,6 +212,7 @@
 
 .action-header__icon-menu {
     display: none;
+    transition: all .3s ease;
     @media (max-width: 767px) {
         position: relative;
         display: block;
