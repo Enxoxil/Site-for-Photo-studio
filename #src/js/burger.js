@@ -2,24 +2,24 @@
 const menuBurgerBody = document.querySelector(".menu__body");
 const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
 const menuItems = document.querySelectorAll(".menu__item");
-const menuBody = document.querySelector(".menu__body");
+
 
 document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && menuBody.classList.contains("_active")) {
+    if (e.key === "Escape" && menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
 });
 
 for (item of menuItems) {
     item.addEventListener("touchstart", () => {
-        if (menuBody.classList.contains("_active")) {
+        if (menuBurgerBody.classList.contains("_active")) {
             showMenuBurger();
         }
     });
 }
 
-menuBody.addEventListener("touchstart", () => {
-    if (menuBody.classList.contains("_active")) {
+menuBurgerBody.addEventListener("touchstart", () => {
+    if (menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
 });

@@ -24,24 +24,24 @@ function testWebP(callback) {
 const menuBurgerBody = document.querySelector(".menu__body");
 const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
 const menuItems = document.querySelectorAll(".menu__item");
-const menuBody = document.querySelector(".menu__body");
+
 
 document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && menuBody.classList.contains("_active")) {
+    if (e.key === "Escape" && menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
 });
 
 for (item of menuItems) {
     item.addEventListener("touchstart", () => {
-        if (menuBody.classList.contains("_active")) {
+        if (menuBurgerBody.classList.contains("_active")) {
             showMenuBurger();
         }
     });
 }
 
-menuBody.addEventListener("touchstart", () => {
-    if (menuBody.classList.contains("_active")) {
+menuBurgerBody.addEventListener("touchstart", () => {
+    if (menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
 });
@@ -60,11 +60,11 @@ function showMenuBurger() {
 
 // END ===== Menu burger =====
 ;
-
 /*
- Класс _wrapper вешаем на контейнер в котором лежат 2 наследника.
+ Класс _wrapper вешаем на контейнер в котором лежат 3 наследника.
  1 - тело слайдера в котором лежат слайды.
- 2 - тело стрелок в котором лежат стрелки 
+ 2 - тело стрелок в котором лежат стрелки.
+ 3 - тело пагинации.
  
  Класс _left-arrow вешаем на левую стрелку 
  Класс _right-arrow вешаем на правую стрелку
@@ -74,101 +74,80 @@ function showMenuBurger() {
 
 // START ===== Slider =====
 
-
 // START ===== values =====
-const sliderBody = document.querySelector(".slider__body");
-let sliderPaginationItems = 0;
-const sliderDotsBody = document.querySelector(".slider__dots");
 
-const prevArrows = document.querySelectorAll("._left-arrow");
-const nextArrows = document.querySelectorAll("._right-arrow");
+
 // END ===== values =====
 
-
-
 // START ===== load default =====
-createPagination(sliderBody.children.length, "slider__dots-item", "div");
 
-for (let i = 0; i < prevArrows.length; i++) {
-    prevArrows[i].onclick = thisFuncLeft;
-}
-for (let i = 0; i < nextArrows.length; i++) {
-    nextArrows[i].onclick = thisFuncRight;
-}
+initSliderPaginations();
+handlerPushSlide();
+
 // END ===== load default =====
-
-
 
 // START ===== function =====
 
-function thisFuncLeft() {
-    let arrowArray = this.closest("._wrapper").children;
-    let lastSlide = "";
-    let firstSlide = "";
-    let bodySlide = "";
-    for (let i = 0; i < arrowArray.length; i++) {
-        if (arrowArray[i].nodeName == "UL") {
-            bodySlide = document.querySelector(
-                `.${arrowArray[i].classList.value}`,
-            );
-            firstSlide = document.querySelector(
-                `.${arrowArray[i].firstElementChild.classList.value}:first-child`,
-            );
-            lastSlide = document.querySelector(
-                `.${arrowArray[i].firstElementChild.classList.value}:last-child`,
-            );
-        }
+function handlerPushSlide() {
+    const prevSlideButtons = document.querySelectorAll("._left-arrow");
+    const nextSlideButtons = document.querySelectorAll("._right-arrow");
+    for (let i = 0; i < prevSlideButtons.length; i++) {
+        prevSlideButtons[i].onclick = prevSlidePush;
     }
-    prevSlidePush(lastSlide, firstSlide, bodySlide);
-}
-function thisFuncRight() {
-    let arrowArray = this.closest("._wrapper").children;
-    let firstSlide = "";
-    let bodySlide = "";
-    for (let i = 0; i < arrowArray.length; i++) {
-        if (arrowArray[i].nodeName == "UL") {
-            bodySlide = document.querySelector(
-                `.${arrowArray[i].classList.value}`,
-            );
-            firstSlide = document.querySelector(
-                `.${arrowArray[i].firstElementChild.classList.value}:first-child`,
-            );
-        }
+    for (let i = 0; i < nextSlideButtons.length; i++) {
+        nextSlideButtons[i].onclick = nextSlidePush;
     }
-    nextSlidePush(firstSlide, bodySlide);
 }
 
-function prevSlidePush(last, first, body) {
-    body.insertBefore(last, first);
-    sliderPagination();
+function prevSlidePush() {
+    let bodySlider = this.closest("._wrapper").querySelector("ul");
+    let lastSlide = bodySlider.lastElementChild;
+    let firstSlide = bodySlider.firstElementChild;
+    bodySlider.insertBefore(lastSlide, firstSlide);
+    changeSliderPaginationActiveDot(this.closest("._wrapper").classList[0]);
+}
+function nextSlidePush() {
+    let bodySlider = this.closest("._wrapper").querySelector("ul");
+    let firstSlide = bodySlider.firstElementChild;
+    bodySlider.append(firstSlide);
+    changeSliderPaginationActiveDot(this.closest("._wrapper").classList[0]);
 }
 
-function nextSlidePush(first, body) {
-    body.append(first);
-    sliderPagination();
-}
-
-function sliderPagination() {
-    let child = sliderBody.children[0].getAttribute("name");
+function changeSliderPaginationActiveDot(classNameSliderWrapper) {
+    let numberOfSlideNameAttribute = document
+        .querySelector(`.${classNameSliderWrapper}__body-item`)
+        .getAttribute("name");
+    let sliderPaginationItems = document.querySelectorAll(
+        `.${classNameSliderWrapper}__dots-item`,
+    );
     for (let i = 0; i < sliderPaginationItems.length; i++) {
         sliderPaginationItems[i].classList.remove("active-dots");
-        if (i == child - 1) {
+        if (i == numberOfSlideNameAttribute - 1) {
             sliderPaginationItems[i].classList.add("active-dots");
         }
     }
 }
 
-function createPagination(numOfChild, classNameChild, typeOfChild) {
-    for (let i = 1; i <= numOfChild; i++) {
-        let sliderDot = document.createElement(typeOfChild);
-        sliderDot.classList.add(classNameChild);
-        sliderDotsBody.appendChild(sliderDot);
+function initSliderPaginations() {
+    const amountBodyPaginations = document.getElementsByName("_pagination");
+    for (let i = 0; i < amountBodyPaginations.length; i++) {
+        let amountPaginationDots = amountBodyPaginations[i]
+            .closest("._wrapper")
+            .querySelector("ul").children.length;
+        for (let j = 1; j <= amountPaginationDots; j++) {
+            const paginationItem = document.createElement("div");
+            paginationItem.classList.add(
+                `${amountBodyPaginations[i].classList.value}-item`,
+            );
+            amountBodyPaginations[i].appendChild(paginationItem);
+        }
+        changeSliderPaginationActiveDot(
+            `${amountBodyPaginations[i].closest("._wrapper").classList[0]}`,
+        );
     }
-    sliderPaginationItems = document.querySelectorAll(".slider__dots-item");
-    sliderPagination();
 }
-// END ===== function =====
 
+// END ===== function =====
 
 // END ===== Slider =====
 ;

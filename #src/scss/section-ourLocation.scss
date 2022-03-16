@@ -28,7 +28,7 @@
 }
 
 .slider-ourLocation {
-    &__wrapper {
+    &, .__wrapper {
         max-width: 350px;
         position: relative;
         overflow: hidden;

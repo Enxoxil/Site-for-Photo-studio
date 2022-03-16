@@ -773,10 +773,10 @@ select {
   position: relative;
 }
 
-.slider__wrapper {
+.slider,
+.slider .__wrapper {
   position: relative;
   padding-top: 56px;
-  padding-bottom: 77px;
   overflow: hidden;
 }
 
@@ -840,7 +840,7 @@ select {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  top: 40%;
+  top: 37%;
   left: 0;
   width: 100%;
   border: none;
@@ -933,6 +933,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 77px;
   padding-bottom: 63px;
 }
 
@@ -967,7 +968,8 @@ select {
   font-family: Montserrat;
 }
 
-.slider-ourLocation__wrapper {
+.slider-ourLocation,
+.slider-ourLocation .__wrapper {
   max-width: 350px;
   position: relative;
   overflow: hidden;
@@ -1267,12 +1269,13 @@ body._lock {
     padding-top: 100px;
   }
 
-  .slider__wrapper {
+  .slider,
+  .slider .__wrapper {
     padding-top: 107px;
   }
 
   .slider__arrows {
-    top: 49%;
+    top: 45%;
   }
 
   .slider__arrows-left,
@@ -1290,7 +1293,8 @@ body._lock {
     font-family: Montserrat;
   }
 
-  .slider-ourLocation__wrapper {
+  .slider-ourLocation,
+  .slider-ourLocation .__wrapper {
     padding-top: 74px;
     padding-bottom: 30px;
     max-width: 100%;
@@ -1418,7 +1422,8 @@ body._lock {
     padding-top: 120px;
   }
 
-  .slider__wrapper {
+  .slider,
+  .slider .__wrapper {
     padding-top: 118px;
   }
 
@@ -1437,7 +1442,8 @@ body._lock {
     font-family: Montserrat;
   }
 
-  .slider-ourLocation__wrapper {
+  .slider-ourLocation,
+  .slider-ourLocation .__wrapper {
     padding-top: 70px;
     padding-bottom: 57px;
     max-width: 1325px;
