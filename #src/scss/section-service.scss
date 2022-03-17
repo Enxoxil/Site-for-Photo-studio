@@ -1,0 +1,27 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+
+.service {
+    &__container {
+    }
+    &__title {
+    }
+    &__content-box {
+        display: grid;
+        grid-template: repeat(3, 335px) / repeat(3, 392px);
+        grid-gap: 33px 33px;
+    }
+    &__content-item {
+    }
+}
+._container {
+
+}
+
+// END ===== style =====

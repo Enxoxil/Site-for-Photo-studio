@@ -11,6 +11,23 @@
         margin: 0 auto;
         max-width: 1440px;
         overflow: hidden;
+        background-image: url(/img/ourLocationBackgroundMobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% 85%;
+        background-position: 1% -49%;
+        padding-bottom: 62px;
+        @media (min-width: 767px) {
+            background-image: url(/img/ourLocationBackground.png);
+            background-size: 136% 86%;
+            background-position: 52% 10%;
+            padding-bottom: 80px;
+        }
+        @media (min-width: 1023px) {
+            background-image: url(/img/ourLocationBackground.png);
+            background-size: 100% 83%;
+            background-position: 0 27%;
+            padding-bottom: 80px;
+        }
     }
     &__title {
         text-align: center;
@@ -28,42 +45,44 @@
 }
 
 .slider-ourLocation {
-    &, .__wrapper {
-        max-width: 350px;
+    &,
+    .__wrapper {
+        max-width: 490px;
         position: relative;
         overflow: hidden;
         margin: 0 auto;
+        padding: 0 15px;
         padding-top: 31px;
         padding-bottom: 32px;
-        padding: 0 15px;
+
         @media (min-width: 767px) {
             padding-top: 74px;
             padding-bottom: 30px;
             max-width: 100%;
         }
         @media (min-width: 1023px) {
-            padding-top: 70px;
+            padding-top: 80px;
             padding-bottom: 57px;
             max-width: 1325px;
         }
     }
     &__arrows {
         position: absolute;
-        top: 43%;
+        top: 45%;
         left: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
-        @media (min-width: 767px){
+        @media (min-width: 767px) {
             top: 46%;
         }
-        @media(min-width: 1023px){
+        @media (min-width: 1023px) {
             top: 43%;
         }
         &-left,
         &-right {
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             position: relative;
             height: 36px;
             width: 36px;
@@ -130,10 +149,11 @@
         }
     }
     &__body-item {
+        position: relative;
         display: none;
         &:nth-of-type(1) {
             display: block;
-            flex: 0 1 300px;
+            flex: 0 1 100%;
         }
         @media (min-width: 767px) {
             &:nth-of-type(1),
@@ -146,9 +166,57 @@
                 margin: 0 15px;
             }
         }
+        &:hover .slider-ourLocation__body-name{
+            visibility: visible;
+            opacity: 1;
+            
+        }
+    }
+    &__body-name {
+        display: none;
+        @media (min-width: 1023px) {
+            display: block;
+            position: absolute;
+            left: 32px;
+            bottom: 16px;
+            @include fonts(18, 22, 700, #fff, Montserrat);
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
     }
     &__body-img {
         width: 100%;
+    }
+}
+.ourLocation__btn-container {
+    text-align: center;
+    .ourLocation__btn {
+        text-transform: uppercase;
+        padding: 19.5px 57.5px;
+        letter-spacing: 3px;
+        background: $GRADIENT;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        transition: all 0.3s ease;
+        @include fonts(14, 17, 600, #fff, Montserrat);
+        @media (min-width: 370px) {
+            @include fonts(14, 17, 600, #fff, Montserrat);
+            letter-spacing: 3px;
+        }
+        @media (min-width: 767px) {
+            @include fonts(16, 20, 600, #fff, Montserrat);
+            padding: 14px 54px;
+        }
+        &:hover,
+        &:focus {
+            background: $GRADIENT_HOVER;
+        }
+        &:active {
+            transform: scale(0.87);
+            background: $GRADIENT_HOVER;
+        }
     }
 }
 

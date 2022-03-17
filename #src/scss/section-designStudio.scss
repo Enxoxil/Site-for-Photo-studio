@@ -1,0 +1,66 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+
+.designStudio {
+    position: relative;
+    &__container {
+        max-width: 1460px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        @media(min-width: 767px){
+            padding-bottom: 100px;
+        }
+        @media(min-width: 1023px){
+            padding-bottom: 120px;
+        }
+        
+    }
+    &__title {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 40px;
+        @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+        @media (min-width: 767px) {
+            padding-bottom: 80px;
+            padding-top: 40px;
+            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+        }
+        @media (min-width: 1023px) {
+            padding-top: 60px;
+            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+        }
+    }
+    &__content {
+        position: relative;
+        height: 100vw;
+        @media(min-width: 767px){
+            height: 674px;
+        }
+        &-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        &-btn {
+            display: none;
+        }
+
+    }
+    
+
+
+
+}
+
+
+// END ===== style =====

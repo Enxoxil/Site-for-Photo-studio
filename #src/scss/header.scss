@@ -73,19 +73,19 @@
             opacity: 0;
             left: 0;
             visibility: hidden;
-            transition: top 0.3s ease 0s;
+            transition: all 0.6s ease 0s;
             background-color: rgb(15, 15, 15, 0.7);
             display: flex;
             justify-content: flex-end;
             overflow: auto;
-            transition: all 0.3s ease 0s;
+            
         }
     }
     &__body._active {
         opacity: 1;
         visibility: visible;
         z-index: 8;
-        transition: all .3s ease;
+        transition: all .6s ease;
     }
     &__list {
         @media (min-width: 767px) {
@@ -156,6 +156,7 @@
             flex: 0 1 162px;
         }
         @media (min-width: 1023px) {
+            justify-content: center;
             order: 0;
             flex: 0 1 196px;
         }
