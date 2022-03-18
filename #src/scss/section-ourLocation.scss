@@ -9,7 +9,7 @@
 .ourLocation {
     &__container {
         margin: 0 auto;
-        max-width: 1440px;
+        max-width: 1460px;
         overflow: hidden;
         background-image: url(/img/ourLocationBackgroundMobile.png);
         background-repeat: no-repeat;
@@ -193,7 +193,7 @@
     text-align: center;
     .ourLocation__btn {
         text-transform: uppercase;
-        padding: 19.5px 57.5px;
+        padding: 19.5px 42.5px;
         letter-spacing: 3px;
         background: $GRADIENT;
         border-radius: 10px;
@@ -201,9 +201,11 @@
         text-align: center;
         transition: all 0.3s ease;
         @include fonts(14, 17, 600, #fff, Montserrat);
+        letter-spacing: 2.5px;
+
         @media (min-width: 370px) {
-            @include fonts(14, 17, 600, #fff, Montserrat);
             letter-spacing: 3px;
+            padding: 19.5px 57.5px;
         }
         @media (min-width: 767px) {
             @include fonts(16, 20, 600, #fff, Montserrat);

@@ -6,22 +6,97 @@
 
 // START ===== style =====
 
-
 .service {
-    &__container {
+    &__wrapper {
+        padding-bottom: 60px;
     }
     &__title {
+        text-align: center;
+        @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
+        padding-bottom: 40px;
+        @media (min-width: 767px) {
+            padding-bottom: 80px;
+            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+        }
+        @media (min-width: 1023px) {
+            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+        }
     }
     &__content-box {
         display: grid;
-        grid-template: repeat(3, 335px) / repeat(3, 392px);
-        grid-gap: 33px 33px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 17px;
+        grid-auto-flow: row dense;
+        @media (max-width: 766px) {
+            & > picture {
+                &:nth-of-type(2) {
+                    order: 1;
+                }
+                &:nth-of-type(2) {
+                    grid-row: span 2;
+                    order: 2;
+                }
+                &:nth-of-type(3) {
+                    order: 7;
+                }
+                &:nth-of-type(4) {
+                    order: 3;
+                }
+                &:nth-of-type(5) {
+                    grid-row: span 2;
+                    order: 8;
+                }
+                &:nth-of-type(6) {
+                    order: 4;
+                    grid-row: span 2;
+                }
+                &:nth-of-type(7) {
+                    order: 5;
+                }
+                &:nth-of-type(8) {
+                    order: 11;
+                    grid-column: span 1;
+                }
+                &:nth-of-type(9) {
+                    order: 9;
+                }
+                &:nth-of-type(10) {
+                    order: 6;
+                }
+                &:nth-of-type(11) {
+                    order: 10;
+                }
+            }
+        }
+        @media (min-width: 767px) {
+            grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+            grid-gap: 23px;
+            & > picture {
+                &:nth-of-type(2) {
+                    grid-row: span 2;
+                }
+                &:nth-of-type(5) {
+                    grid-row: span 2;
+                }
+                &:nth-of-type(6) {
+                    grid-row: span 2;
+                }
+                &:nth-of-type(8) {
+                    grid-column: span 2;
+                }
+            }
+        }
+        @media (min-width: 1023px) {
+            grid-gap: 33px;
+        }
     }
+
     &__content-item {
+        width: 100%;
+        height: 100%;
     }
 }
 ._container {
-
 }
 
 // END ===== style =====
