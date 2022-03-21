@@ -1,0 +1,71 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.textBlock {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+    background: $BG_COLOR1;
+    height: 32%;
+    overflow: hidden;
+    &__container {
+    }
+    &__title {
+        text-align: center;
+        @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
+        padding-bottom: 32px;
+        @media (min-width: 767px) {
+            padding-bottom: 80px;
+            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+        }
+        @media (min-width: 1023px) {
+            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+            padding-bottom: 32px;
+        }
+    }
+    &__content {
+        display: -webkit-box;
+        -webkit-line-clamp: 25;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 22%;
+        transition: height 1.3s;
+        @include fonts(14, 20, 500, $TEXT_COLOR1, Montserrat);
+        text-align: center;
+        margin-bottom: 16px;
+        @media (min-width: 1023px) {
+            -webkit-line-clamp: 11; // количество строк
+            @include fonts(16, 26, 500, $TEXT_COLOR1, Montserrat);
+        }
+        @media (min-width: 767px) {
+            text-align: left;
+            -webkit-line-clamp: 12; // количество строк
+            @include fonts(16, 24, 500, $TEXT_COLOR1, Montserrat);
+        }
+        
+
+    }
+    &__button-container {display: flex;
+        justify-content: center;
+        @media(min-width: 767px){
+            justify-content: flex-end;
+        }
+    }
+    &__button {
+    }
+}
+._fullText {
+    -webkit-line-clamp: 120;
+    @media(min-width: 767px){
+        -webkit-line-clamp: 120; 
+    }
+    @media(min-width: 1023px){
+        -webkit-line-clamp: 120; 
+        height: 100%;
+    }
+}

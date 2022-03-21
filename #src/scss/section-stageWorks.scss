@@ -11,7 +11,14 @@
         max-width: 1460px;
         padding-left: 10px;
         padding-right: 10px;
+        padding-bottom: 70px;
         margin: 0 auto;
+        @media (min-width: 767px) {
+            padding-bottom: 125px;
+        }
+        @media (min-width: 1023px) {
+            padding-bottom: 150px;
+        }
     }
     &__title {
         text-align: center;
@@ -38,19 +45,21 @@
         }
     }
     &__body {
+        background-image: url(/img/stageWorksBackgroundMobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% 93%;
+        background-position: 0% 0%;
         @media (min-width: 1023px) {
-            background-image: url(/img/stageWorksBaclground.png);
+            background-image: url(/img/stageWorksBackground.png);
             background-repeat: no-repeat;
-            background-size: 87% 78%;
-            background-position: 88% 43%;
-            z-index: -1;
+            background-size: 74% 70%;
+            background-position: 64% 23%;
         }
         @media (min-width: 767px) {
-            background-image: url(/img/stageWorksBaclgroundTablet.png);
+            background-image: url(/img/stageWorksBackgroundTablet.png);
             background-repeat: no-repeat;
-            background-size: 105% 85%;
-            background-position: -9rem 45%;
-            z-index: -1;
+            background-size: 108% 85%;
+            background-position: -8rem 45%;
         }
     }
 }
@@ -59,7 +68,9 @@
     display: flex;
     justify-content: center;
     &__wrapper {
-        box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
+        box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14),
+            0px 9px 46px rgba(216, 216, 216, 0.12),
+            0px 11px 15px rgba(221, 221, 221, 0.2);
         flex: 0 0 320px;
         background-color: #fff;
         position: relative;
@@ -67,7 +78,6 @@
         border-radius: 12px;
         padding: 26px 36px 56px;
         max-height: 174px;
-        
     }
 
     &__title {
@@ -114,7 +124,7 @@
             flex: 0 1 50%;
             height: 335px;
             // padding-left: 100px;
-            padding-right: 5.2%;
+            padding-right: 6.4%;
             justify-content: flex-end;
         }
         &:nth-of-type(2) {
@@ -122,12 +132,13 @@
             height: 335px;
             padding-top: 57px;
             padding-left: 6.4%;
+            justify-content: start;
         }
         &:nth-of-type(3) {
             flex: 0 0 100%;
             height: 262px;
             // padding-left: 410px;
-            padding-right: 25%;
+            padding-right: 28%;
             justify-content: flex-end;
         }
         &:nth-of-type(4) {
@@ -147,38 +158,47 @@
 
     @media (min-width: 1023px) {
         &__wrapper {
-
             flex: 0 0 348px;
         }
         &:nth-of-type(1) {
             flex: 0 1 50%;
             height: 355px;
+            padding-right: 0;
             padding-left: 112px;
-            // padding-bottom: 13.5%;
+            justify-content: start;
+            order: 1;
         }
         &:nth-of-type(2) {
             flex: 0 1 50%;
             height: 355px;
             padding-top: 57px;
             padding-left: 12px;
+            justify-content: start;
+            order: 2;
         }
         &:nth-of-type(3) {
+            flex: 0 1 50%;
+            height: 282px;
+            justify-content: flex-end;
+            padding-top: 5px;
+            padding-right: 108px;
+            order: 4;
+        }
+        &:nth-of-type(4) {
             flex: 0 0 50%;
             height: 282px;
             padding-left: 0;
             padding-right: 100px;
             justify-content: flex-end;
-        }
-        &:nth-of-type(4) {
-            flex: 0 1 50%;
-            height: 282px;
-            justify-content: flex-end;
-            padding-top: 5px;
+
+            order: 3;
         }
         &:nth-of-type(5) {
             flex: 0 1 100%;
             justify-content: center;
             padding-left: 170px;
+            padding-top: 0;
+            order: 5;
         }
     }
 }
