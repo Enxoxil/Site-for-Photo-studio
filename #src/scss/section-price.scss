@@ -7,7 +7,7 @@
 // START ===== style =====
 
 .price {
-    @media (min-width: 1224px) {
+    @media (min-width: 1214px) {
         &__container {
             background-image: url(/img/priceBackground.png);
             background-repeat: no-repeat;
@@ -60,17 +60,29 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-
+    @media (min-width: 1214px) {
+        &__container {
+            &:not(:last-child) {
+                padding-bottom: 0;
+            }
+            &:not(:last-child) {
+            }
+        }
+    }
     @media (min-width: 1023px) {
         &__container {
-            flex: 0 0 398px;
+            flex-basis: 398px;
+        }
+        &__wrapper {
             padding: 48px 14px 42px;
         }
     }
     @media (min-width: 767px) {
         &__container {
+            flex: 0 1 420px;
+        }
+        &__wrapper {
             padding: 47px 22px;
-            flex-basis: 420px;
         }
         &__header {
             padding-left: 30px;
@@ -96,17 +108,28 @@
             letter-spacing: 3px;
             padding: 19.5px 57.5px;
         }
+        &__container{
+            padding: 0px 5px;
+        }
+        &__wrapper {
+            padding: 45px 12px;
+        }
     }
     &__container {
+        display: flex;
+        flex: 0 1 420px;
+
         &:not(:last-child) {
-            margin-bottom: 34px;
+            padding-bottom: 34px;
         }
-        border-radius: 16px;
-        flex: 0 1 343px;
-        padding: 45px 12px;
         &:last-child .box-footer__box {
             justify-content: center;
         }
+    }
+    &__wrapper {
+        border-radius: 16px;
+        flex: 0 1 100%;
+        padding: 45px 1.5vw;
     }
     &__header {
         padding-left: 23px;
@@ -200,19 +223,22 @@
     }
     &__box {
         display: flex;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 32px;
     }
     &__item {
         &:nth-of-type(1) {
-            flex: 0 1 min(45%, 150px);
+            flex: 1 1 min(45%, 150px);
+            padding-right: 2px;
         }
         &:nth-of-type(2) {
-            flex: 0 1 min(45%, 150px);
+            flex: 1 1 min(45%, 150px);
+            padding-left: 2px;
         }
         &:last-child {
-            flex: 0 1 min(93%, 305px);
+            flex: 1 1 min(93%, 305px);
             margin-top: 5px;
         }
     }
