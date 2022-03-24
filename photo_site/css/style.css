@@ -1374,7 +1374,6 @@ select {
   -webkit-line-clamp: 25;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 22%;
   -webkit-transition: all 1.3s ease 0s;
   -o-transition: all 1.3s ease 0s;
   transition: all 1.3s ease 0s;
@@ -2162,6 +2161,10 @@ body._lock {
     font-family: Montserrat;
   }
 
+  ._fullText {
+    -webkit-line-clamp: 120;
+  }
+
   .no-webp .price__container {
     background-image: url(/img/priceBackgroundTablet.png); }
 
@@ -2546,6 +2549,10 @@ body._lock {
     font-weight: 500;
     line-height: 26px;
     font-family: Montserrat;
+  }
+
+  ._fullText {
+    -webkit-line-clamp: 120;
   }
 
   .price__title {

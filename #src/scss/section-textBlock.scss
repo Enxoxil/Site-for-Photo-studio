@@ -14,7 +14,7 @@
             padding-bottom: 80px;
         }
         &__content {
-            text-align: left;
+            text-align:left;
             -webkit-line-clamp: 12; // количество строк
             @include fonts(16, 24, 500, $TEXT_COLOR1, Montserrat);
         }
@@ -50,7 +50,6 @@
         -webkit-line-clamp: 25;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        height: 22%;
         transition: all 1.3s ease 0s;
         @include fonts(14, 20, 500, $TEXT_COLOR1, Montserrat);
         text-align: center;
@@ -96,6 +95,12 @@
 }
 ._fullText {
     -webkit-line-clamp: 120;
+    @media(min-width: 767px){
+        -webkit-line-clamp: 120;
+    }
+    @media(min-width: 1023px){
+        -webkit-line-clamp: 120;
+    }
 }
 
 .textBlock__wrapper_background-blue {
