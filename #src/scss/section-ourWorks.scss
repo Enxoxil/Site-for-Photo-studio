@@ -13,17 +13,13 @@
         overflow: hidden;
     }
     &__title {
-        text-align: center;
         @media (min-width: 1023px) {
-            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
             padding-top: 120px;
         }
         @media (min-width: 767px) {
-            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
             padding-top: 100px;
         }
         padding-top: 60px;
-        @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
     }
 }
 

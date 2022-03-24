@@ -15,7 +15,7 @@
 @import "section-service";
 @import "section-stageWorks";
 @import "section-textBlock";
-
+@import "section-price.scss";
 
 // END ===== import =====
 
@@ -33,6 +33,17 @@
 
 body._lock{
     overflow: hidden;
+}
+
+._h2-title{
+    text-align: center;
+    @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
+        @media (min-width: 767px) {
+            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+        }
+        @media (min-width: 1023px) {
+            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+        }
 }
 
 

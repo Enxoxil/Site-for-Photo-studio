@@ -21,15 +21,12 @@
         }
     }
     &__title {
-        text-align: center;
-        @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
+
         padding-bottom: 40px;
         @media (min-width: 767px) {
             padding-bottom: 80px;
-            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
         }
         @media (min-width: 1023px) {
-            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
             padding-bottom: 95px;
         }
     }

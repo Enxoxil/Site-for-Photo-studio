@@ -7,24 +7,26 @@
 // START ===== style =====
 
 .textBlock {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    margin-bottom: 100px;
-    background: $BG_COLOR1;
     height: 32%;
     overflow: hidden;
-    &__container {
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        
+        margin: 0 auto;
+        max-width: 1460px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &_background-blue {
+            background: $BG_COLOR1;
+        }
     }
     &__title {
-        text-align: center;
-        @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
         padding-bottom: 32px;
         @media (min-width: 767px) {
             padding-bottom: 80px;
-            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
         }
         @media (min-width: 1023px) {
-            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
             padding-bottom: 32px;
         }
     }
@@ -34,12 +36,12 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         height: 22%;
-        transition: height 1.3s;
+        transition: all 1.3s ease 0s;
         @include fonts(14, 20, 500, $TEXT_COLOR1, Montserrat);
         text-align: center;
         margin-bottom: 16px;
         @media (min-width: 1023px) {
-            -webkit-line-clamp: 11; // количество строк
+            -webkit-line-clamp: 10; // количество строк
             @include fonts(16, 26, 500, $TEXT_COLOR1, Montserrat);
         }
         @media (min-width: 767px) {
@@ -47,25 +49,61 @@
             -webkit-line-clamp: 12; // количество строк
             @include fonts(16, 24, 500, $TEXT_COLOR1, Montserrat);
         }
-        
-
     }
-    &__button-container {display: flex;
+    &__button-container {
+        display: flex;
         justify-content: center;
-        @media(min-width: 767px){
+        @media (min-width: 767px) {
             justify-content: flex-end;
         }
     }
     &__button {
+        position: relative;
+        transition: all .3s ease 0;
+        @include fonts(16, 24, 500, $TEXT_COLOR1, Montserrat);
+        @media(min-width: 767px){
+
+        }
+        @media(min-width: 1023px){
+            @include fonts(16, 24, 600, $ACCENT_COLOR, Montserrat);
+            background: transparent;
+            border: none;
+            padding-right: 40px;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 50%;
+                background: $ACCENT_COLOR;
+                width: 10%;
+                height: 10%;
+                transform: rotate(-45deg);
+                border-radius: 5px;
+                transition: all .3s ease 0s;
+            }
+            &:before{
+                transform: rotate(45deg);
+                right: 6%;
+            }
+        }
     }
+}
+.textBlock__button._activeButtonSpoiler{
+    &::after{
+        transform: rotate(45deg);
+    }
+    &:before{
+        transform: rotate(-45deg);
+    }
+
 }
 ._fullText {
     -webkit-line-clamp: 120;
-    @media(min-width: 767px){
-        -webkit-line-clamp: 120; 
+    @media (min-width: 767px) {
+        -webkit-line-clamp: 120;
     }
-    @media(min-width: 1023px){
-        -webkit-line-clamp: 120; 
+    @media (min-width: 1023px) {
+        -webkit-line-clamp: 120;
         height: 100%;
     }
 }

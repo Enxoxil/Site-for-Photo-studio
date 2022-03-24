@@ -22,18 +22,15 @@
         
     }
     &__title {
-        text-align: center;
         padding-top: 0;
         padding-bottom: 40px;
-        @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
         @media (min-width: 767px) {
             padding-bottom: 80px;
             padding-top: 40px;
-            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
         }
         @media (min-width: 1023px) {
             padding-top: 60px;
-            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+
         }
     }
     &__content {
