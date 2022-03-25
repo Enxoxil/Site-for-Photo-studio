@@ -1351,12 +1351,12 @@ select {
   bottom: -10%;
 }
 
-.textBlock {
+.article {
   height: 32%;
   overflow: hidden;
 }
 
-.textBlock__wrapper {
+.article__wrapper {
   padding-top: 60px;
   padding-bottom: 50px;
   margin: 0 auto;
@@ -1365,11 +1365,11 @@ select {
   padding-right: 10px;
 }
 
-.textBlock__title {
+.article__title {
   padding-bottom: 32px;
 }
 
-.textBlock__content {
+.article__content {
   display: -webkit-box;
   -webkit-line-clamp: 25;
   -webkit-box-orient: vertical;
@@ -1386,7 +1386,7 @@ select {
   margin-bottom: 16px;
 }
 
-.textBlock__button-container {
+.article__button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1395,7 +1395,7 @@ select {
           justify-content: center;
 }
 
-.textBlock__button {
+.article__button {
   position: relative;
   -webkit-transition: all 0.3s ease 0;
   -o-transition: all 0.3s ease 0;
@@ -1410,8 +1410,8 @@ select {
   padding-right: 37px;
 }
 
-.textBlock__button::before,
-.textBlock__button::after {
+.article__button::before,
+.article__button::after {
   content: "";
   position: absolute;
   right: 0;
@@ -1428,20 +1428,20 @@ select {
   transition: all 0.3s ease 0s;
 }
 
-.textBlock__button:before {
+.article__button:before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   right: 6%;
 }
 
-.textBlock__button._activeButtonSpoiler::after {
+.article__button._activeButtonSpoiler::after {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.textBlock__button._activeButtonSpoiler:before {
+.article__button._activeButtonSpoiler:before {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1451,7 +1451,7 @@ select {
   -webkit-line-clamp: 120;
 }
 
-.textBlock__wrapper_background-blue {
+.article__wrapper_background-blue {
   background: #F2F4F4;
 }
 
@@ -2152,11 +2152,11 @@ body._lock {
             justify-content: start;
   }
 
-  .textBlock__title {
+  .article__title {
     padding-bottom: 80px;
   }
 
-  .textBlock__content {
+  .article__content {
     text-align: left;
     -webkit-line-clamp: 12;
     font-size: 16px;
@@ -2166,13 +2166,13 @@ body._lock {
     font-family: Montserrat;
   }
 
-  .textBlock__button-container {
+  .article__button-container {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
 
-  .textBlock__button {
+  .article__button {
     font-size: 16px;
     color: #E97522;
     font-weight: 600;
@@ -2561,11 +2561,11 @@ body._lock {
             order: 5;
   }
 
-  .textBlock__title {
+  .article__title {
     padding-bottom: 32px;
   }
 
-  .textBlock__content {
+  .article__content {
     -webkit-line-clamp: 10;
     font-size: 16px;
     color: #333333;
