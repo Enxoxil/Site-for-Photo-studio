@@ -1357,8 +1357,8 @@ select {
 }
 
 .article__wrapper {
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 36px;
   margin: 0 auto;
   max-width: 1460px;
   padding-left: 10px;
@@ -1366,11 +1366,15 @@ select {
 }
 
 .article__title {
-  padding-bottom: 32px;
+  padding-bottom: 24px;
+}
+
+.article__title > br {
+  display: block;
 }
 
 .article__content {
-  display: -webkit-box;
+  display: -webkit-inline-box;
   -webkit-line-clamp: 25;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -1383,7 +1387,10 @@ select {
   line-height: 20px;
   font-family: Montserrat;
   text-align: center;
-  margin-bottom: 16px;
+}
+
+.article__content_line-clamp {
+  -webkit-line-clamp: 23;
 }
 
 .article__button-container {
@@ -1393,13 +1400,14 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 16px;
 }
 
 .article__button {
   position: relative;
-  -webkit-transition: all 0.3s ease 0;
-  -o-transition: all 0.3s ease 0;
-  transition: all 0.3s ease 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   font-size: 14px;
   color: #E97522;
   font-weight: 600;
@@ -1453,6 +1461,14 @@ select {
 
 .article__wrapper_background-blue {
   background: #F2F4F4;
+}
+
+.article__wrapper_background-light-pink {
+  background: #F9F4EE;
+}
+
+._br {
+  display: none;
 }
 
 .price__container {
@@ -2152,8 +2168,13 @@ body._lock {
             justify-content: start;
   }
 
+  .article__wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
   .article__title {
-    padding-bottom: 80px;
+    padding-bottom: 32px;
   }
 
   .article__content {
@@ -2164,6 +2185,10 @@ body._lock {
     font-weight: 500;
     line-height: 24px;
     font-family: Montserrat;
+  }
+
+  .article__content_line-clamp {
+    -webkit-line-clamp: 10;
   }
 
   .article__button-container {
@@ -2565,6 +2590,10 @@ body._lock {
     padding-bottom: 32px;
   }
 
+  .article__title > br {
+    display: none;
+  }
+
   .article__content {
     -webkit-line-clamp: 10;
     font-size: 16px;
@@ -2574,8 +2603,20 @@ body._lock {
     font-family: Montserrat;
   }
 
+  .article__content_line-clamp {
+    -webkit-line-clamp: 11;
+  }
+
+  .article__button-container {
+    padding-top: 0;
+  }
+
   ._fullText {
     -webkit-line-clamp: 120;
+  }
+
+  ._br {
+    display: block;
   }
 
   .price__title {
