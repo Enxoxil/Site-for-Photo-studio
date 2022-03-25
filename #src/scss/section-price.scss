@@ -7,7 +7,7 @@
 // START ===== style =====
 
 .price {
-    @media (min-width: 1214px) {
+    @media (min-width: 1232px) {
         &__container {
             background-image: url(/img/priceBackground.png);
             background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    @media (min-width: 1214px) {
+    @media (min-width: 1232px) {
         &__container {
             &:not(:last-child) {
                 padding-bottom: 0;
@@ -223,7 +223,6 @@
     }
     &__box {
         display: flex;
-        // justify-content: space-evenly;
         justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 32px;

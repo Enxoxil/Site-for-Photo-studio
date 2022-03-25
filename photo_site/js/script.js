@@ -37,6 +37,7 @@ for (item of menuItems) {
         if (menuBurgerBody.classList.contains("_active")) {
             showMenuBurger();
         }
+        return false;
     });
 }
 
@@ -44,12 +45,14 @@ menuBurgerBody.addEventListener("touchstart", () => {
     if (menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
+    return false;
 });
 
 menuBurgerIcon.addEventListener("touchstart", () => {
     if (menuBurgerIcon) {
         showMenuBurger();
     }
+    return false;
 });
 
 function showMenuBurger() {
