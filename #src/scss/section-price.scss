@@ -65,8 +65,6 @@
             &:not(:last-child) {
                 padding-bottom: 0;
             }
-            &:not(:last-child) {
-            }
         }
     }
     @media (min-width: 1023px) {
@@ -109,7 +107,7 @@
             padding: 19.5px 57.5px;
         }
         &__container{
-            padding: 0px 5px;
+            // padding: 0px 5px;
         }
         &__wrapper {
             padding: 45px 12px;
@@ -118,7 +116,7 @@
     &__container {
         display: flex;
         flex: 0 1 420px;
-
+        padding: 0;
         &:not(:last-child) {
             padding-bottom: 34px;
         }
@@ -177,7 +175,6 @@
         transition: all 0.3s ease;
         width: 100%;
         @include fonts(14, 17, 600, #fff, Montserrat);
-        letter-spacing: 2.5px;
 
         &:hover,
         &:focus {
@@ -226,6 +223,8 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
     &__item {
         &:nth-of-type(1) {
@@ -263,29 +262,32 @@
     }
 }
 
-.theme-background-color-blue {
-    background: $BG_COLOR1;
-    background-image: url(/img/cardsBackgroundCircle.png);
-    background-repeat: no-repeat;
-    background-size: 43% 27%;
-    background-position: right top;
-}
-.theme-background-color-light-pink {
-    background: $BG_COLOR2;
-    background-image: url(/img/cardsBackgroundCircle.png);
-    background-repeat: no-repeat;
-    background-size: 43% 27%;
-    background-position: right top;
-}
-.theme-background-color-pink {
-    background: rgba(245, 217, 198, 1);
-    background-image: url(/img/cardsBackgroundCircleBiggest.png);
-    background-repeat: no-repeat;
-    background-size: 47% 29%;
-    background-position: right top;
+
+.item-box__container{
+    .theme-background-color-blue {
+        background: $BG_COLOR1;
+        background-image: url(/img/cardsBackgroundCircle.png);
+        background-repeat: no-repeat;
+        background-size: 43% 27%;
+        background-position: right top;
+    }
+    .theme-background-color-light-pink {
+        background: $BG_COLOR2;
+        background-image: url(/img/cardsBackgroundCircle.png);
+        background-repeat: no-repeat;
+        background-size: 43% 27%;
+        background-position: right top;
+    }
+    .theme-background-color-pink {
+        background: rgba(245, 217, 198, 1);
+        background-image: url(/img/cardsBackgroundCircleBiggest.png);
+        background-repeat: no-repeat;
+        background-size: 47% 29%;
+        background-position: right top;
+    }
 }
 
-._icon-list-stile-image:before {
+._icon-list-style-image:before {
     display: inline-block;
     color: $TEXT_COLOR2;
     padding-right: 9px;

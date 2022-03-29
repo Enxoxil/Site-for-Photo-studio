@@ -18,14 +18,14 @@
         width: 100%;
         left: 0;
         top: 0;
-        z-index: 50;
+        z-index: 500;
         background-color: #fff;
     }
     &__container {
-        z-index: 50;
+        z-index: 500;
     }
     &__body {
-        z-index: 50;
+        z-index: 500;
         display: flex;
         align-items: center;
         padding: 5px 0;
@@ -50,8 +50,9 @@
     &__main {
         @media (min-width: 767px) {
             display: flex;
-            flex: 0 1 581px;
+            flex: 0 1 591px;
             align-items: center;
+            padding: 0 5px;
         }
     }
     &__menu {
@@ -90,7 +91,7 @@
     &__list {
         @media (min-width: 767px) {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             max-width: 100%;
         }
         @media (max-width: 767px) {
@@ -109,7 +110,7 @@
         }
     }
     &__link {
-        transition: all .3s ease;
+        transition: all .3s ease 0s;
         color: $TEXT_COLOR2;
         @include fonts(14, 20, 500, false, Montserrat);
         &:active {

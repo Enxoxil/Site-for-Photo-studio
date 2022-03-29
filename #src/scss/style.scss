@@ -16,6 +16,7 @@
 @import "section-stageWorks";
 @import "section-article";
 @import "section-price.scss";
+@import "section-gifts.scss";
 
 // END ===== import =====
 
@@ -46,5 +47,40 @@ body._lock{
         }
 }
 
+._button {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background: $GRADIENT;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    transition: all .3s ease;
+    @include fonts(12, 17, 600, #fff, Montserrat);
 
+    @media (min-width: 370px) {
+        @include fonts(14, 17, 600, #fff, Montserrat);
+        letter-spacing: 3px;
+    }
+
+    @media (min-width: 767px) {
+        @include fonts(16, 20, 600, #fff, Montserrat);
+    }
+    &:hover, &:focus{
+        background: $GRADIENT_HOVER;
+    }
+    &:active{
+        transform: scale(0.87);
+        background: $GRADIENT_HOVER;
+    }
+
+}
+.theme-background-color-blue {
+    background: $BG_COLOR1;
+}
+.theme-background-color-light-pink {
+    background: $BG_COLOR2;
+}
+.theme-background-color-pink {
+    background: rgba(245, 217, 198, 1);
+}
 // END ===== STYLE =====

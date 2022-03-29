@@ -22,12 +22,15 @@
 [class*=" _icon-"] {
     &:before {
         @extend %ic;
-        display: block;
+        display: inline-block;
     }
 }
 
 
-._icon-list-stile-image:before {
+._icon-list-style-image-check:before {
+    content: "\e904";
+  }
+._icon-list-style-image:before {
     content: "\e905";
 }
 ._icon-facebook:before {
