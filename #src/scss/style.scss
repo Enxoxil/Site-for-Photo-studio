@@ -1,4 +1,3 @@
-
 // START ===== import =====
 
 @import "values";
@@ -15,36 +14,37 @@
 @import "section-service";
 @import "section-stageWorks";
 @import "section-article";
-@import "section-price.scss";
-@import "section-gifts.scss";
+@import "section-price";
+@import "section-gifts";
+@import "section-review";
 
 // END ===== import =====
 
 // START ===== STYLE =====
 
-
-._container{
+._container {
     max-width: 1270px;
     margin: 0 auto;
-    padding: 0 15px;
-    @media (max-width: 1023px){
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 1023px) {
         max-width: 894px;
     }
 }
 
-body._lock{
+body._lock {
     overflow: hidden;
 }
 
-._h2-title{
+._h2-title {
     text-align: center;
     @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
-        @media (min-width: 767px) {
-            @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
-        }
-        @media (min-width: 1023px) {
-            @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
-        }
+    @media (min-width: 767px) {
+        @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+    }
+    @media (min-width: 1023px) {
+        @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+    }
 }
 
 ._button {
@@ -54,7 +54,7 @@ body._lock{
     border-radius: 10px;
     border: none;
     text-align: center;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     @include fonts(12, 17, 600, #fff, Montserrat);
 
     @media (min-width: 370px) {
@@ -65,14 +65,14 @@ body._lock{
     @media (min-width: 767px) {
         @include fonts(16, 20, 600, #fff, Montserrat);
     }
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
         background: $GRADIENT_HOVER;
     }
-    &:active{
+    &:active {
         transform: scale(0.87);
         background: $GRADIENT_HOVER;
     }
-
 }
 .theme-background-color-blue {
     background: $BG_COLOR1;
@@ -83,4 +83,60 @@ body._lock{
 .theme-background-color-pink {
     background: rgba(245, 217, 198, 1);
 }
+
+._right-arrow {
+    transform: rotate(180deg);
+}
+._left-arrow, ._right-arrow {
+    transition: all 0.3s ease;
+    position: relative;
+    height: 36px;
+    width: 36px;
+    border: none;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+    @media (min-width: 1023px) {
+        height: 73px;
+        width: 73px;
+    }
+    @media (min-width: 767px) {
+        height: 64px;
+        width: 64px;
+    }
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        height: 7%;
+        width: 40%;
+        background-color: $ACCENT_COLOR;
+        border-radius: 5px;
+    }
+    &:active::after,
+    &:active::before {
+        background-color: #fff;
+    }
+    &:after {
+        transform: rotate(-45deg);
+        top: 34%;
+    }
+    &:before {
+        transform: rotate(45deg);
+        bottom: 34%;
+    }
+    &:hover,
+    &:focus {
+        background-color: $BG_COLOR1;
+    }
+    &:active {
+        background-color: $ACCENT_COLOR;
+    }
+}
+
 // END ===== STYLE =====

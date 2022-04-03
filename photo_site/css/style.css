@@ -1834,7 +1834,6 @@ select {
 
 .gifts__item:before {
   position: absolute;
-  z-index: 90;
 }
 
 .gifts__item-img-container {
@@ -1879,10 +1878,74 @@ select {
   color: #E97522;
 }
 
+.review__btn-container {
+  text-align: center;
+}
+
+.review__slider-wrapper {
+  position: relative;
+}
+
+.review__slider-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+.review__slider-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.review__slider-item {
+  display: none;
+  padding-right: 3px;
+  padding-left: 3px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 420px;
+          flex: 0 1 420px;
+}
+
+.review__slider-item:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review__slider-item-name {
+  text-align: center;
+}
+
+.review__slider-item-text {
+  text-align: center;
+}
+
+.review__slider-item-btn {
+  background: transparent;
+  border: none;
+}
+
 ._container {
   max-width: 1270px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 body._lock {
@@ -1943,6 +2006,85 @@ body._lock {
 
 .theme-background-color-pink {
   background: #f5d9c6;
+}
+
+._right-arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+._left-arrow,
+._right-arrow {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 36px;
+  width: 36px;
+  border: none;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+}
+
+._left-arrow:after,
+._left-arrow:before,
+._right-arrow:after,
+._right-arrow:before {
+  content: "";
+  position: absolute;
+  height: 7%;
+  width: 40%;
+  background-color: #E97522;
+  border-radius: 5px;
+}
+
+._left-arrow:active::after,
+._left-arrow:active::before,
+._right-arrow:active::after,
+._right-arrow:active::before {
+  background-color: #fff;
+}
+
+._left-arrow:after,
+._right-arrow:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 34%;
+}
+
+._left-arrow:before,
+._right-arrow:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 34%;
+}
+
+._left-arrow:hover,
+._left-arrow:focus,
+._right-arrow:hover,
+._right-arrow:focus {
+  background-color: #F2F4F4;
+}
+
+._left-arrow:active,
+._right-arrow:active {
+  background-color: #E97522;
 }
 
 @media (min-width: 370px) {
@@ -2526,7 +2668,6 @@ body._lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 70px;
     background-color: #F2F4F4;
   }
 
@@ -2571,17 +2712,18 @@ body._lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 438px;
             flex: 0 1 438px;
+    padding-bottom: 70px;
   }
 
   .gifts__item:before {
     right: 4rem;
-    bottom: -28rem;
+    bottom: -21rem;
     width: 100%;
-    content: url("../img/section-giftBackgroundTablet.png");
+    content: url(../img/section-giftBackgroundTablet.png);
   }
 
   .gifts__item-img-container {
-    height: 438px;
+    height: 445px;
     padding-top: 50px;
     padding-bottom: 0;
   }
@@ -2610,6 +2752,99 @@ body._lock {
 
   .gifts__item-button {
     padding: 14px 97.5px;
+    max-width: 345px;
+  }
+
+  .review__container {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .review__btn-container {
+    padding-top: 30px;
+  }
+
+  .review__btn {
+    padding: 14px 70px;
+  }
+
+  .review__slider {
+    padding-top: 92px;
+  }
+
+  .review__slider-arrows {
+    top: 48%;
+  }
+
+  .review__slider-body {
+    padding-left: 8%;
+    padding-right: 8%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .review__slider-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 340px;
+            flex: 0 1 340px;
+  }
+
+  .review__slider-item:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .review__slider-item:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .review__slider-item > picture {
+    padding-bottom: 30px;
+  }
+
+  .review__slider-item-img {
+    width: 225px;
+    height: 245px;
+  }
+
+  .review__slider-item-name {
+    font-size: 24px;
+    color: #4A4A4A;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Montserrat;
+    padding-bottom: 14px;
+  }
+
+  .review__slider-item-text {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Montserrat;
+    padding-bottom: 8px;
+  }
+
+  .review__slider-item-btn {
+    font-size: 16px;
+    color: #E97522;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Montserrat;
   }
 
   ._h2-title {
@@ -2626,6 +2861,12 @@ body._lock {
     font-weight: 600;
     line-height: 20px;
     font-family: Montserrat;
+  }
+
+  ._left-arrow,
+  ._right-arrow {
+    height: 64px;
+    width: 64px;
   }
 }
 
@@ -3021,12 +3262,81 @@ body._lock {
     margin-left: -6rem;
   }
 
+  .review__container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .review__btn-container {
+    margin-top: -25px;
+    padding-top: 0px;
+  }
+
+  .review__slider {
+    padding-top: 80px;
+  }
+
+  .review__slider-arrows {
+    top: 53%;
+  }
+
+  .review__slider-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 330px;
+            flex: 0 1 330px;
+  }
+
+  .review__slider-item:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 100px;
+  }
+
+  .review__slider-item:nth-of-type(2) {
+    -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+            transform: translateY(-100px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .review__slider-item:nth-of-type(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 100px;
+  }
+
+  .review__slider-item-name {
+    font-size: 24px;
+    color: #4A4A4A;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Montserrat;
+  }
+
+  .review__slider-item-text {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: 500;
+    line-height: 26px;
+    font-family: Montserrat;
+  }
+
   ._h2-title {
     font-size: 36px;
     color: #333333;
     font-weight: 600;
     line-height: 43px;
     font-family: Montserrat;
+  }
+
+  ._left-arrow,
+  ._right-arrow {
+    height: 73px;
+    width: 73px;
   }
 }
 
@@ -3294,6 +3604,23 @@ body._lock {
     padding-bottom: 8px;
   }
 
+  .no-webp .gifts__item:before {
+    background-image: url(../img/section-giftBackgroundMobile.png); }
+
+  .gifts__item:before {
+    background-repeat: no-repeat;
+    background-position: 6rem 1rem;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 2rem;
+    left: 50%;
+    z-index: 100;
+    width: 49rem;
+    height: 38rem;
+    content: "";
+  }
+
   .gifts__item-img {
     width: 64%;
   }
@@ -3345,4 +3672,9 @@ body._lock {
 @media (min-width: 1232px) {
 
   .webp .price__container { background-image: url(/img/priceBackground.webp); }
+}
+
+@media (max-width: 767px) {
+
+  .webp .gifts__item:before { background-image: url(../img/section-giftBackgroundMobile.webp); }
 }
