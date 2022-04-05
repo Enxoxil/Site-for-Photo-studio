@@ -55,6 +55,7 @@ body._lock {
     border: none;
     text-align: center;
     transition: all 0.3s ease;
+    min-width: 305px;
     @include fonts(12, 17, 600, #fff, Montserrat);
 
     @media (min-width: 370px) {
