@@ -3263,6 +3263,7 @@ body._lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 95px;
   }
 
   .form__body {
@@ -3846,15 +3847,12 @@ body._lock {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-top: 50px;
   }
 
   .form__box {
     padding-left: 29.5px;
     padding-right: 29.5px;
-  }
-
-  .item {
-    padding-bottom: 15px;
   }
 
   ._h2-title {
