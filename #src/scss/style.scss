@@ -78,12 +78,19 @@ body._lock {
 }
 .theme-background-color-blue {
     background: $BG_COLOR1;
+    background-repeat: no-repeat;
 }
 .theme-background-color-light-pink {
     background: $BG_COLOR2;
+    background-repeat: no-repeat;
 }
 .theme-background-color-pink {
     background: rgba(245, 217, 198, 1);
+    background-repeat: no-repeat;
+}
+.theme-background-color-black {
+    background: $TEXT_COLOR2;
+    background-repeat: no-repeat;
 }
 
 ._right-arrow {
