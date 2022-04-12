@@ -2290,6 +2290,15 @@ body._lock {
   overflow: hidden;
 }
 
+body {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+._scrollTo {
+  scroll-margin-top: 38.4px;
+}
+
 ._h2-title {
   text-align: center;
   font-size: 24px;
@@ -3321,6 +3330,10 @@ body._lock {
     font-weight: 500;
     line-height: 24px;
     font-family: Montserrat;
+  }
+
+  ._scrollTo {
+    scroll-margin-top: 80px;
   }
 
   ._h2-title {

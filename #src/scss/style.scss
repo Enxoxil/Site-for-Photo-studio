@@ -37,6 +37,16 @@ body._lock {
     overflow: hidden;
 }
 
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+._scrollTo {
+    scroll-margin-top: 38.4px;
+    @media (min-width: 767px) {
+        scroll-margin-top: 80px;
+    }
+}
 ._h2-title {
     text-align: center;
     @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
@@ -96,7 +106,8 @@ body._lock {
 ._right-arrow {
     transform: rotate(180deg);
 }
-._left-arrow, ._right-arrow {
+._left-arrow,
+._right-arrow {
     transition: all 0.3s ease;
     position: relative;
     height: 36px;
