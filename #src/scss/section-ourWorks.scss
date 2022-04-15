@@ -11,8 +11,6 @@
         max-width: 1460px;
         margin: 0 auto;
         overflow: hidden;
-    }
-    &__title {
         @media (min-width: 1023px) {
             padding-top: 120px;
         }
@@ -21,6 +19,7 @@
         }
         padding-top: 60px;
     }
+
 }
 
 .slider {

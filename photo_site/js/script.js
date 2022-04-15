@@ -1,30 +1,28 @@
-
-// START ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== 
+// START ===== функция проверяет может ли браузер отображать webp формат изображений =====
 
 function testWebP(callback) {
-
-    var webP = new Image();
+    const webP = new Image();
     webP.onload = webP.onerror = function () {
         callback(webP.height == 2);
     };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    
-    testWebP(function (support) {
-    
-        if (support == true) {
-            document.querySelector('body').classList.add('webp');
-        }else{
-            document.querySelector('body').classList.add('no-webp');
-    }
-    });
+    webP.src =
+        "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+}
 
-// END ===== функция проверяет может ли браузер отображатьь webp формат изображений ===== ; // нет ошибки
+testWebP(function (support) {
+    if (support == true) {
+        document.querySelector("body").classList.add("webp");
+    } else {
+        document.querySelector("body").classList.add("no-webp");
+    }
+});
+
+// END ===== функция проверяет может ли браузер отображать webp формат изображений =====
+; // нет ошибки
 // START ===== Menu burger =====
 const menuBurgerBody = document.querySelector(".menu__body");
 const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
 const menuItems = document.querySelectorAll(".menu__item");
-
 
 document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && menuBurgerBody.classList.contains("_active")) {
@@ -78,7 +76,6 @@ function showMenuBurger() {
 // START ===== Slider =====
 
 // START ===== values =====
-
 
 // END ===== values =====
 
@@ -154,26 +151,42 @@ function initSliderPaginations() {
 
 // END ===== Slider =====
 ;
-// _fullText
-// textBlock__button
+// START ===== ToggleSpoiler =====
 
-let btn = document.querySelector('.article__button').onclick = () => {
-    document.querySelector('.article__content').classList.toggle('_fullText');
-    document.querySelector('.article__button').classList.toggle('_activeButtonSpoiler');
-};
-// START =====  ===== 
+const toggleSpoilerButtons = document.querySelectorAll(".article__button");
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', function (e) {
+for (let toggleSpoilerButton of toggleSpoilerButtons) {
+    toggleSpoilerButton.addEventListener("click", function () {
+        this.parentElement.parentElement
+            .querySelector(".article__content")
+            .classList.toggle("_fullText");
+        this.parentElement.parentElement
+            .querySelector(".article__button")
+            .classList.toggle("_activeButtonSpoiler");
+    });
+}
+
+// END ===== ToggleSpoiler =====
+;
+// START ===== SmoothScroll =====
+
+const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothScrollLink of smoothScrollLinks) {
+    smoothScrollLink.addEventListener("click", function (e) {
         e.preventDefault();
-        const id = smoothLink.getAttribute('href');
+        const id = smoothScrollLink.getAttribute("href");
 
         document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            behavior: "smooth",
+            block: "start",
         });
     });
-};
+}
+
+// END ===== SmoothScroll =====
+;
+// START =====  ===== 
+
+
 
 // END =====  ===== 

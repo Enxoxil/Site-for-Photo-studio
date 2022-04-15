@@ -3,7 +3,6 @@ const menuBurgerBody = document.querySelector(".menu__body");
 const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
 const menuItems = document.querySelectorAll(".menu__item");
 
-
 document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();

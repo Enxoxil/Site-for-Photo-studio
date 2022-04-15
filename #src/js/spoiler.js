@@ -1,7 +1,16 @@
-// _fullText
-// textBlock__button
+// START ===== ToggleSpoiler =====
 
-let btn = document.querySelector('.article__button').onclick = () => {
-    document.querySelector('.article__content').classList.toggle('_fullText');
-    document.querySelector('.article__button').classList.toggle('_activeButtonSpoiler');
+const toggleSpoilerButtons = document.querySelectorAll(".article__button");
+
+for (let toggleSpoilerButton of toggleSpoilerButtons) {
+    toggleSpoilerButton.addEventListener("click", function () {
+        this.parentElement.parentElement
+            .querySelector(".article__content")
+            .classList.toggle("_fullText");
+        this.parentElement.parentElement
+            .querySelector(".article__button")
+            .classList.toggle("_activeButtonSpoiler");
+    });
 }
+
+// END ===== ToggleSpoiler =====
