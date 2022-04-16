@@ -1,3 +1,5 @@
+// START ===== INCLUDES ===== 
+
 // START ===== функция проверяет может ли браузер отображать webp формат изображений =====
 
 function testWebP(callback) {
@@ -185,6 +187,9 @@ for (let smoothScrollLink of smoothScrollLinks) {
 
 // END ===== SmoothScroll =====
 ;
+
+// END ===== INCLUDES ===== 
+
 // START =====  ===== 
 
 
