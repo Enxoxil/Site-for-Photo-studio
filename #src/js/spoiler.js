@@ -1,6 +1,12 @@
 // START ===== ToggleSpoiler =====
 
+// START ===== variables =====
+
 const toggleSpoilerButtons = document.querySelectorAll(".article__button");
+
+// END ===== variables =====
+
+// START ===== loops =====
 
 for (let toggleSpoilerButton of toggleSpoilerButtons) {
     toggleSpoilerButton.addEventListener("click", function () {
@@ -12,5 +18,7 @@ for (let toggleSpoilerButton of toggleSpoilerButtons) {
             .classList.toggle("_activeButtonSpoiler");
     });
 }
+
+// END ===== loops =====
 
 // END ===== ToggleSpoiler =====

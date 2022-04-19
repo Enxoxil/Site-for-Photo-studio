@@ -311,6 +311,8 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background: transparent;
+  border: none;
 }
 
 .action-header__icon-menu span,
@@ -2293,6 +2295,7 @@ select {
 }
 
 .feedback {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2314,7 +2317,47 @@ select {
           align-items: center;
 }
 
+.feedback__btn {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.feedback__btn span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 33px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 5px;
+}
+
+.feedback__btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 33px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 5px;
+}
+
 .feedback__body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2323,6 +2366,7 @@ select {
           justify-content: space-evenly;
   background-color: #fff;
   border-radius: 15px;
+  z-index: 1100;
 }
 
 .feedback__img-container {
@@ -2414,6 +2458,7 @@ select {
   margin-top: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 16px;
 }
 
 .feedback__form__item > input::-webkit-input-placeholder, .feedback .form__item > input::-webkit-input-placeholder {
@@ -2422,7 +2467,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .feedback__form__item > input::-moz-placeholder, .feedback .form__item > input::-moz-placeholder {
@@ -2431,7 +2475,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .feedback__form__item > input:-ms-input-placeholder, .feedback .form__item > input:-ms-input-placeholder {
@@ -2440,7 +2483,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .feedback__form__item > input::-ms-input-placeholder, .feedback .form__item > input::-ms-input-placeholder {
@@ -2449,7 +2491,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .feedback__form__item > input::placeholder,
@@ -2459,7 +2500,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .feedback__form__button-container,
@@ -2497,6 +2537,10 @@ select {
   text-decoration: underline;
   color: #585858;
   font-family: Montserrat;
+}
+
+.feedback._modalActive {
+  display: block;
 }
 
 ._container {
@@ -3556,7 +3600,7 @@ body {
     font-family: Montserrat;
   }
 
-  .feedback__body {
+  .feedback__wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 840px;
             flex: 0 1 840px;
@@ -4134,7 +4178,7 @@ body {
     padding-top: 50px;
   }
 
-  .feedback__body {
+  .feedback__wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 1035px;
             flex: 0 1 1035px;

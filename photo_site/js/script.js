@@ -22,15 +22,15 @@ testWebP(function (support) {
 // END ===== функция проверяет может ли браузер отображать webp формат изображений =====
 ; // нет ошибки
 // START ===== Menu burger =====
+
+// START ===== variables =====
 const menuBurgerBody = document.querySelector(".menu__body");
 const menuBurgerIcon = document.querySelector(".action-header__icon-menu");
 const menuItems = document.querySelectorAll(".menu__item");
 
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && menuBurgerBody.classList.contains("_active")) {
-        showMenuBurger();
-    }
-});
+// END ===== variables =====
+
+// START ===== loops =====
 
 for (item of menuItems) {
     item.addEventListener("touchstart", () => {
@@ -40,6 +40,10 @@ for (item of menuItems) {
         return false;
     });
 }
+
+// END ===== loops =====
+
+// START ===== handlers =====
 
 menuBurgerBody.addEventListener("touchstart", () => {
     if (menuBurgerBody.classList.contains("_active")) {
@@ -55,11 +59,22 @@ menuBurgerIcon.addEventListener("touchstart", () => {
     return false;
 });
 
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menuBurgerBody.classList.contains("_active")) {
+        showMenuBurger();
+    }
+});
+
+// END ===== handlers =====
+
+// START ===== functions =====
+
 function showMenuBurger() {
     menuBurgerIcon.classList.toggle("_active");
     menuBurgerBody.classList.toggle("_active");
     document.body.classList.toggle("_lock");
 }
+// END ===== functions =====
 
 // END ===== Menu burger =====
 ;
@@ -155,7 +170,13 @@ function initSliderPaginations() {
 ;
 // START ===== ToggleSpoiler =====
 
+// START ===== variables =====
+
 const toggleSpoilerButtons = document.querySelectorAll(".article__button");
+
+// END ===== variables =====
+
+// START ===== loops =====
 
 for (let toggleSpoilerButton of toggleSpoilerButtons) {
     toggleSpoilerButton.addEventListener("click", function () {
@@ -167,6 +188,8 @@ for (let toggleSpoilerButton of toggleSpoilerButtons) {
             .classList.toggle("_activeButtonSpoiler");
     });
 }
+
+// END ===== loops =====
 
 // END ===== ToggleSpoiler =====
 ;
@@ -187,11 +210,93 @@ for (let smoothScrollLink of smoothScrollLinks) {
 
 // END ===== SmoothScroll =====
 ;
+// START ===== Menu burger =====
 
+// START ===== variables =====
+
+const feedbackModal = document.querySelector(".feedback");
+const feedbackCloseButton = document.querySelector(".feedback__btn");
+const mainScreenBtn = document.querySelector(".main-content__button");
+
+// END ===== variables =====
+
+// START ===== handlers =====
+
+// START ===== for mobile =====
+mainScreenBtn.addEventListener("touchstart", showFeedbackModal);
+feedbackCloseButton.addEventListener("touchstart", function (e) {
+    if (feedbackModal.classList.contains("_modalActive")) {
+        closeModal(e);
+    }
+});
+
+feedbackModal.addEventListener("touchstart", function (e) {
+    if (
+        !e.target.closest(".feedback__wrapper") &&
+        feedbackModal.classList.contains("_modalActive")
+    ) {
+        showFeedbackModal();
+    }
+    return false;
+});
+
+document.addEventListener("keydown", function (e) {
+    let isModalActive = document.querySelector("._modalActive");
+    if (e.key === "Escape" && isModalActive) {
+        isModalActive.classList.toggle("_modalActive");
+        document.body.classList.toggle("_lock");
+    }
+    return false;
+});
+// END ===== for mobile =====
+
+// START ===== for pc =====
+
+mainScreenBtn.addEventListener("click", showFeedbackModal);
+feedbackCloseButton.addEventListener("click", function (e) {
+    if (feedbackModal.classList.contains("_modalActive")) {
+        closeModal(e);
+    }
+});
+
+feedbackModal.addEventListener("click", function (e) {
+    if (
+        !e.target.closest(".feedback__wrapper") &&
+        feedbackModal.classList.contains("_modalActive")
+    ) {
+        showFeedbackModal();
+    }
+    return false;
+});
+
+// END ===== for pc =====
+// END ===== handlers =====
+
+// START ===== functions =====
+
+function showFeedbackModal() {
+    feedbackModal.classList.toggle("_modalActive");
+    document.body.classList.toggle("_lock");
+}
+function closeModal(event) {
+    let modalSection = event.target.closest("._modal");
+    modalSection.classList.toggle("_modalActive");
+    document.body.classList.toggle("_lock");
+}
+
+// END ===== functions =====
+
+// END ===== Menu burger =====
+;
 // END ===== INCLUDES ===== 
 
 // START =====  ===== 
 
+const formFeedback = document.querySelector('._formFeedback');
+formFeedback.onsubmit = (e) => {
+    e.preventDafault;
+    console.log('true');
 
+}
 
 // END =====  ===== 
