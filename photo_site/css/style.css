@@ -2370,9 +2370,6 @@ select {
 }
 
 .feedback__img-container {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 455px;
-          flex: 0 0 455px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3600,28 +3597,39 @@ body {
     font-family: Montserrat;
   }
 
+  .feedback__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .feedback__wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 840px;
             flex: 0 1 840px;
   }
 
+  .feedback__img-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 362px;
+            flex: 0 1 362px;
+  }
+
   .feedback__form,
   .feedback .form {
     margin-top: 0;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 482px;
-            flex: 0 0 482px;
+        -ms-flex: 0 1 404px;
+            flex: 0 1 404px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
   .feedback__form__title,
   .feedback .form__title {
-    font-size: 36px;
+    font-size: 30px;
     color: #4A4A4A;
     font-weight: 600;
-    line-height: 43px;
+    line-height: 36px;
     font-family: Montserrat;
     padding-bottom: 32px;
   }
@@ -4182,6 +4190,12 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 1035px;
             flex: 0 1 1035px;
+  }
+
+  .feedback__img-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 455px;
+            flex: 0 0 455px;
   }
 
   .feedback__form,
