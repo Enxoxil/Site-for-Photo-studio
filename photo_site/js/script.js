@@ -1,4 +1,4 @@
-// START ===== INCLUDES ===== 
+// START ===== INCLUDES =====
 
 // START ===== функция проверяет может ли браузер отображать webp формат изображений =====
 
@@ -214,26 +214,52 @@ for (let smoothScrollLink of smoothScrollLinks) {
 
 // START ===== variables =====
 
-const feedbackModal = document.querySelector(".feedback");
-const feedbackCloseButton = document.querySelector(".feedback__btn");
-const mainScreenBtn = document.querySelector(".main-content__button");
+const sectionFormFeedback = document.querySelector(".feedback");
+const closeFormFeedbackButton = document.querySelector(".feedback__btn");
+const openFormFeedbackButton = document.querySelector(".main-content__button");
+const bodyFormFeedback = document.querySelector("._formFeedback");
 
 // END ===== variables =====
 
 // START ===== handlers =====
 
 // START ===== for mobile =====
-mainScreenBtn.addEventListener("touchstart", showFeedbackModal);
-feedbackCloseButton.addEventListener("touchstart", function (e) {
-    if (feedbackModal.classList.contains("_modalActive")) {
+// bodyFormFeedback.addEventListener('submit', showFeedbackMessage(e));
+
+openFormFeedbackButton.addEventListener("touchstart", showFeedbackModal);
+
+closeFormFeedbackButton.addEventListener("touchstart", function (e) {
+    if (sectionFormFeedback.classList.contains("_modalActive")) {
         closeModal(e);
     }
 });
 
-feedbackModal.addEventListener("touchstart", function (e) {
+sectionFormFeedback.addEventListener("touchstart", function (e) {
     if (
         !e.target.closest(".feedback__wrapper") &&
-        feedbackModal.classList.contains("_modalActive")
+        sectionFormFeedback.classList.contains("_modalActive")
+    ) {
+        showFeedbackModal();
+    }
+    return false;
+});
+
+// END ===== for mobile =====
+
+// START ===== for pc =====
+
+openFormFeedbackButton.addEventListener("click", showFeedbackModal);
+
+closeFormFeedbackButton.addEventListener("click", function (event) {
+    if (sectionFormFeedback.classList.contains("_modalActive")) {
+        closeModal(event);
+    }
+});
+
+sectionFormFeedback.addEventListener("click", function (e) {
+    if (
+        !e.target.closest(".feedback__wrapper") &&
+        sectionFormFeedback.classList.contains("_modalActive")
     ) {
         showFeedbackModal();
     }
@@ -248,55 +274,96 @@ document.addEventListener("keydown", function (e) {
     }
     return false;
 });
-// END ===== for mobile =====
-
-// START ===== for pc =====
-
-mainScreenBtn.addEventListener("click", showFeedbackModal);
-feedbackCloseButton.addEventListener("click", function (e) {
-    if (feedbackModal.classList.contains("_modalActive")) {
-        closeModal(e);
-    }
-});
-
-feedbackModal.addEventListener("click", function (e) {
-    if (
-        !e.target.closest(".feedback__wrapper") &&
-        feedbackModal.classList.contains("_modalActive")
-    ) {
-        showFeedbackModal();
-    }
-    return false;
-});
 
 // END ===== for pc =====
 // END ===== handlers =====
 
 // START ===== functions =====
 
-function showFeedbackModal() {
-    feedbackModal.classList.toggle("_modalActive");
-    document.body.classList.toggle("_lock");
+function showFeedbackMessage(event) {
+    closeModal(event);
+    console.log(event);
 }
-function closeModal(event) {
-    let modalSection = event.target.closest("._modal");
-    modalSection.classList.toggle("_modalActive");
+
+function showFeedbackModal() {
+    sectionFormFeedback.classList.toggle("_modalActive");
     document.body.classList.toggle("_lock");
 }
 
+function closeModal(event) {
+    let modalSection = event.target.closest("._modal");
+    if (modalSection) {
+        modalSection.classList.remove("_modalActive");
+        document.body.classList.remove("_lock");
+    }
+}
+
+function resetForm(event){
+    event.target.reset();
+}
 // END ===== functions =====
 
 // END ===== Menu burger =====
 ;
-// END ===== INCLUDES ===== 
+// START ===== form handler =====
 
-// START =====  ===== 
+// START ===== variables =====
 
-const formFeedback = document.querySelector('._formFeedback');
-formFeedback.onsubmit = (e) => {
-    e.preventDafault;
-    console.log('true');
+const url = "https://jsonplaceholder.typicode.com/todos";
 
+// END ===== variables =====
+
+async function sendForm(valuesForm) {
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            body: valuesForm,
+        });
+        const result = await response.json();
+    } catch (error) {
+        console.log("Error: ", error);
+    } finally {
+        console.log("Finally");
+    }
 }
 
-// END =====  ===== 
+function collectionData(currentForm) {
+    const formData = new FormData(currentForm);
+    const formValues = Object.fromEntries(formData.entries());
+    return formValues;
+}
+
+function onSubmit(currentTarget, e) {
+    sendForm(collectionData(currentTarget));
+    closeModal(e);
+    resetForm(e);
+}
+
+function subscribeSubmitForms(forms) {
+    console.log(forms);
+    for (currentForm of forms) {
+        if (currentForm.classList.contains("_form")) {
+            currentForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const { currentTarget } = e;
+                onSubmit(currentTarget, e);
+            });
+        }
+    }
+}
+
+function getAllForms() {
+    const forms = document.forms;
+    subscribeSubmitForms(forms);
+}
+
+// END ===== form handler =====
+;
+
+// END ===== INCLUDES =====
+
+// START ===== init =====
+
+getAllForms();
+
+// END =====  =====

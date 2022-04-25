@@ -1,4 +1,4 @@
-// START ===== INCLUDES ===== 
+// START ===== INCLUDES =====
 
 @@include('webpCheck.js'); // нет ошибки
 @@include('burger.js');
@@ -6,15 +6,12 @@
 @@include('spoiler.js');
 @@include('smoothScroll.js');
 @@include('showFeedbackModal.js');
-// END ===== INCLUDES ===== 
+@@include('formHandler.js');
 
-// START =====  ===== 
+// END ===== INCLUDES =====
 
-const formFeedback = document.querySelector('._formFeedback');
-formFeedback.onsubmit = (e) => {
-    e.preventDafault;
-    console.log('true');
+// START ===== init =====
 
-}
+getAllForms();
 
-// END =====  ===== 
+// END =====  =====
