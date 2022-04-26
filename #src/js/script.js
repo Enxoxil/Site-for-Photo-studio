@@ -5,8 +5,10 @@
 @@include('sliderLogic.js');
 @@include('spoiler.js');
 @@include('smoothScroll.js');
-@@include('showFeedbackModal.js');
 @@include('formHandler.js');
+@@include('showFeedbackModal.js');
+@@include('closeModalFieldHandler.js');
+@@include('closeModalEscHandler.js')
 
 // END ===== INCLUDES =====
 
