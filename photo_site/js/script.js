@@ -1,4 +1,10 @@
 // START ===== INCLUDES =====
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+    navigator.userAgent
+)
+
+
+
 
 // START ===== функция проверяет может ли браузер отображать webp формат изображений =====
 
@@ -284,29 +290,25 @@ bodyFormFeedback.addEventListener("submit", showFeedbackMessage);
 
 
 // START ===== for mobile =====
-if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
-        navigator.userAgent
-    )
-) {
+if (isMobile) {
     openFormFeedbackButton.addEventListener("touchstart", showFeedbackModal);
 
-    closeFormFeedbackButton.addEventListener("touchstart", function (e) {
-        if (sectionFormFeedback.classList.contains("_modalActive")) {
-            closeModal(e);
-        }
-    });
+    // closeFormFeedbackButton.addEventListener("touchstart", function (e) {
+    //     if (sectionFormFeedback.classList.contains("_modalActive")) {
+    //         closeModal(e);
+    //     }
+    // });
     // END ===== for mobile =====
 } else {
     // START ===== for pc =====
 
     openFormFeedbackButton.addEventListener("click", showFeedbackModal);
 
-    closeFormFeedbackButton.addEventListener("click", function (event) {
-        if (sectionFormFeedback.classList.contains("_modalActive")) {
-            closeModal(event);
-        }
-    });
+    // closeFormFeedbackButton.addEventListener("click", function (event) {
+    //     if (sectionFormFeedback.classList.contains("_modalActive")) {
+    //         closeModal(event);
+    //     }
+    // });
     // END ===== for pc =====
 }
 
@@ -360,11 +362,7 @@ function subscribeCloseModalFieldPC() {
 }
 
 function subscribeCloseModalField() {
-    if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
-            navigator.userAgent
-        )
-    ) {
+    if (isMobile) {
         subscribeCloseModalFieldMobile();
     } else {
         subscribeCloseModalFieldPC();
@@ -389,10 +387,44 @@ function escCloseModalHandler() {
 escCloseModalHandler();
 // END ===== functions =====
 
+
+function getCloseModalButtons() {
+    const closeModalButtons = document.querySelectorAll("._closeModalBtn");
+    return closeModalButtons;
+}
+
+function subscribeCloseModalButtonMobile(button) {
+    button.addEventListener("touchstart", function (event) {
+        if (sectionFormFeedback.classList.contains("_modalActive")) {
+            closeModal(event);
+        }
+    });
+}
+function subscribeCloseModalButtonPC(button) {
+    button.addEventListener("click", function (event) {
+        if (sectionFormFeedback.classList.contains("_modalActive")) {
+            closeModal(event);
+        }
+    });
+}
+
+function subscribeCloseModalButton() {
+    for (button of getCloseModalButtons()) {
+        if (isMobile) {
+            subscribeCloseModalButtonMobile(button);
+        } else {
+            subscribeCloseModalButtonPC(button);
+        }
+    }
+}
+subscribeCloseModalButton();
+
+
 // END ===== INCLUDES =====
 
 // START ===== init =====
 
 getAllForms();
+
 
 // END =====  =====
