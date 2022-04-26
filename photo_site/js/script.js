@@ -210,101 +210,6 @@ for (let smoothScrollLink of smoothScrollLinks) {
 
 // END ===== SmoothScroll =====
 ;
-// START ===== Menu burger =====
-
-// START ===== variables =====
-
-const sectionFormFeedback = document.querySelector(".feedback");
-const closeFormFeedbackButton = document.querySelector(".feedback__btn");
-const openFormFeedbackButton = document.querySelector(".main-content__button");
-const bodyFormFeedback = document.querySelector("._formFeedback");
-
-// END ===== variables =====
-
-// START ===== handlers =====
-
-// START ===== for mobile =====
-// bodyFormFeedback.addEventListener('submit', showFeedbackMessage(e));
-
-openFormFeedbackButton.addEventListener("touchstart", showFeedbackModal);
-
-closeFormFeedbackButton.addEventListener("touchstart", function (e) {
-    if (sectionFormFeedback.classList.contains("_modalActive")) {
-        closeModal(e);
-    }
-});
-
-sectionFormFeedback.addEventListener("touchstart", function (e) {
-    if (
-        !e.target.closest(".feedback__wrapper") &&
-        sectionFormFeedback.classList.contains("_modalActive")
-    ) {
-        showFeedbackModal();
-    }
-    return false;
-});
-
-// END ===== for mobile =====
-
-// START ===== for pc =====
-
-openFormFeedbackButton.addEventListener("click", showFeedbackModal);
-
-closeFormFeedbackButton.addEventListener("click", function (event) {
-    if (sectionFormFeedback.classList.contains("_modalActive")) {
-        closeModal(event);
-    }
-});
-
-sectionFormFeedback.addEventListener("click", function (e) {
-    if (
-        !e.target.closest(".feedback__wrapper") &&
-        sectionFormFeedback.classList.contains("_modalActive")
-    ) {
-        showFeedbackModal();
-    }
-    return false;
-});
-
-document.addEventListener("keydown", function (e) {
-    let isModalActive = document.querySelector("._modalActive");
-    if (e.key === "Escape" && isModalActive) {
-        isModalActive.classList.toggle("_modalActive");
-        document.body.classList.toggle("_lock");
-    }
-    return false;
-});
-
-// END ===== for pc =====
-// END ===== handlers =====
-
-// START ===== functions =====
-
-function showFeedbackMessage(event) {
-    closeModal(event);
-    console.log(event);
-}
-
-function showFeedbackModal() {
-    sectionFormFeedback.classList.toggle("_modalActive");
-    document.body.classList.toggle("_lock");
-}
-
-function closeModal(event) {
-    let modalSection = event.target.closest("._modal");
-    if (modalSection) {
-        modalSection.classList.remove("_modalActive");
-        document.body.classList.remove("_lock");
-    }
-}
-
-function resetForm(event){
-    event.target.reset();
-}
-// END ===== functions =====
-
-// END ===== Menu burger =====
-;
 // START ===== form handler =====
 
 // START ===== variables =====
@@ -327,6 +232,10 @@ async function sendForm(valuesForm) {
     }
 }
 
+function resetForm(event) {
+    event.target.reset();
+}
+
 function collectionData(currentForm) {
     const formData = new FormData(currentForm);
     const formValues = Object.fromEntries(formData.entries());
@@ -340,7 +249,6 @@ function onSubmit(currentTarget, e) {
 }
 
 function subscribeSubmitForms(forms) {
-    console.log(forms);
     for (currentForm of forms) {
         if (currentForm.classList.contains("_form")) {
             currentForm.addEventListener("submit", (e) => {
@@ -358,7 +266,128 @@ function getAllForms() {
 }
 
 // END ===== form handler =====
+
 ;
+// START ===== Show feedback modal =====
+
+// START ===== variables =====
+
+const sectionFormFeedback = document.querySelector(".feedback");
+const closeFormFeedbackButton = document.querySelector(".feedback__btn");
+const openFormFeedbackButton = document.querySelector(".main-content__button");
+const bodyFormFeedback = document.querySelector("._formFeedback");
+
+// END ===== variables =====
+
+// START ===== handlers =====
+bodyFormFeedback.addEventListener("submit", showFeedbackMessage);
+
+
+// START ===== for mobile =====
+if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+        navigator.userAgent
+    )
+) {
+    openFormFeedbackButton.addEventListener("touchstart", showFeedbackModal);
+
+    closeFormFeedbackButton.addEventListener("touchstart", function (e) {
+        if (sectionFormFeedback.classList.contains("_modalActive")) {
+            closeModal(e);
+        }
+    });
+    // END ===== for mobile =====
+} else {
+    // START ===== for pc =====
+
+    openFormFeedbackButton.addEventListener("click", showFeedbackModal);
+
+    closeFormFeedbackButton.addEventListener("click", function (event) {
+        if (sectionFormFeedback.classList.contains("_modalActive")) {
+            closeModal(event);
+        }
+    });
+    // END ===== for pc =====
+}
+
+// END ===== handlers =====
+
+// START ===== functions =====
+
+function showFeedbackMessage(event) {
+    closeModal(event);
+}
+
+function showFeedbackModal() {
+    sectionFormFeedback.classList.add("_modalActive");
+    document.body.classList.add("_lock");
+}
+
+function closeModal(event) {
+    let modalSection = event.target.closest("._modal");
+    if (modalSection) {
+        modalSection.classList.remove("_modalActive");
+        document.body.classList.remove("_lock");
+    }
+}
+
+// END ===== functions =====
+
+// END ===== Show feedback modal =====
+;
+
+// START ===== functions =====
+
+function subscribeCloseModalFieldMobile() {
+    document.addEventListener("touchstart", function (e) {
+        if (
+            !e.target.closest("._modalNoCloseField") &&
+            e.target.closest("._modalActive")
+        ) {
+            closeModal(e);
+        }
+    });
+}
+function subscribeCloseModalFieldPC() {
+    document.addEventListener("click", function (e) {
+        if (
+            !e.target.closest("._modalNoCloseField") &&
+            e.target.closest("._modalActive")
+        ) {
+            closeModal(e);
+        }
+    });
+}
+
+function subscribeCloseModalField() {
+    if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+            navigator.userAgent
+        )
+    ) {
+        subscribeCloseModalFieldMobile();
+    } else {
+        subscribeCloseModalFieldPC();
+    }
+}
+
+subscribeCloseModalField();
+
+// END ===== functions =====;
+
+// START ===== functions =====
+function escCloseModalHandler() {
+    document.addEventListener("keydown", function (e) {
+        let isModalActive = document.querySelector("._modalActive");
+        if (e.key === "Escape" && isModalActive) {
+            isModalActive.classList.remove("_modalActive");
+            document.body.classList.remove("_lock");
+        }
+        return false;
+    });
+}
+escCloseModalHandler();
+// END ===== functions =====
 
 // END ===== INCLUDES =====
 
