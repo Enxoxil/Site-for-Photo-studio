@@ -1,10 +1,12 @@
-// START ===== INCLUDES =====
+// START ===== init =====
+
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
     navigator.userAgent
 )
 
+getAllForms();
 
-
+// END ===== init =====
 
 // START ===== функция проверяет может ли браузер отображать webp формат изображений =====
 
@@ -26,7 +28,7 @@ testWebP(function (support) {
 });
 
 // END ===== функция проверяет может ли браузер отображать webp формат изображений =====
-; // нет ошибки
+
 // START ===== Menu burger =====
 
 // START ===== variables =====
@@ -83,7 +85,7 @@ function showMenuBurger() {
 // END ===== functions =====
 
 // END ===== Menu burger =====
-;
+
 /*
  Класс _wrapper вешаем на контейнер в котором лежат 3 наследника.
  1 - тело слайдера в котором лежат слайды.
@@ -173,49 +175,77 @@ function initSliderPaginations() {
 // END ===== function =====
 
 // END ===== Slider =====
-;
+
 // START ===== ToggleSpoiler =====
 
-// START ===== variables =====
-
-const toggleSpoilerButtons = document.querySelectorAll(".article__button");
-
-// END ===== variables =====
-
-// START ===== loops =====
-
-for (let toggleSpoilerButton of toggleSpoilerButtons) {
-    toggleSpoilerButton.addEventListener("click", function () {
-        this.parentElement.parentElement
-            .querySelector(".article__content")
-            .classList.toggle("_fullText");
-        this.parentElement.parentElement
-            .querySelector(".article__button")
-            .classList.toggle("_activeButtonSpoiler");
-    });
+function getSubscribeToggleSpoilerButtons() {
+    return document.querySelectorAll(".article__button");
 }
 
-// END ===== loops =====
+function toggleSpoilerButtonHandler() {
+    this.parentElement.parentElement
+        .querySelector(".article__content")
+        .classList.toggle("_fullText");
+    this.parentElement.parentElement
+        .querySelector(".article__button")
+        .classList.toggle("_activeButtonSpoiler");
+}
+
+function subscribeToggleSpoiler() {
+    for (let toggleSpoilerButton of getSubscribeToggleSpoilerButtons()) {
+        toggleSpoilerButton.addEventListener(
+            "click",
+            toggleSpoilerButtonHandler
+        );
+    }
+}
+
+function initSubscribeToggleSpoiler() {
+    subscribeToggleSpoiler();
+}
+
+initSubscribeToggleSpoiler();
 
 // END ===== ToggleSpoiler =====
-;
+
 // START ===== SmoothScroll =====
 
-const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothScrollLink of smoothScrollLinks) {
-    smoothScrollLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        const id = smoothScrollLink.getAttribute("href");
+function getSmoothScrollLinks() {
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    return smoothScrollLinks;
+}
 
-        document.querySelector(id).scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-        });
+function onClickScrollLinkHandler(link) {
+    document.querySelector(link.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
     });
 }
 
+function subscribeScrollLink() {
+    for (let smoothScrollLink of getSmoothScrollLinks()) {
+        if (isMobile) {
+            smoothScrollLink.addEventListener("touchend", function (e){
+                e.preventDefault();
+                onClickScrollLinkHandler(smoothScrollLink);
+            });
+        } else {
+            smoothScrollLink.addEventListener("click", function (e){
+                e.preventDefault();
+                onClickScrollLinkHandler(smoothScrollLink);
+            });
+        }
+    }
+}
+
+function initSmoothScroll() {
+    subscribeScrollLink();
+}
+
+initSmoothScroll();
+
 // END ===== SmoothScroll =====
-;
+
 // START ===== form handler =====
 
 // START ===== variables =====
@@ -273,52 +303,31 @@ function getAllForms() {
 
 // END ===== form handler =====
 
-;
-// START ===== Show feedback modal =====
+
+// START ===== Show modal =====
 
 // START ===== variables =====
 
 const sectionFormFeedback = document.querySelector(".feedback");
-const closeFormFeedbackButton = document.querySelector(".feedback__btn");
+
 const openFormFeedbackButton = document.querySelector(".main-content__button");
-const bodyFormFeedback = document.querySelector("._formFeedback");
+
 
 // END ===== variables =====
 
 // START ===== handlers =====
-bodyFormFeedback.addEventListener("submit", showFeedbackMessage);
 
 
-// START ===== for mobile =====
 if (isMobile) {
-    openFormFeedbackButton.addEventListener("touchstart", showFeedbackModal);
+    openFormFeedbackButton.addEventListener("touchend", showFeedbackModal);
 
-    // closeFormFeedbackButton.addEventListener("touchstart", function (e) {
-    //     if (sectionFormFeedback.classList.contains("_modalActive")) {
-    //         closeModal(e);
-    //     }
-    // });
-    // END ===== for mobile =====
 } else {
-    // START ===== for pc =====
-
     openFormFeedbackButton.addEventListener("click", showFeedbackModal);
-
-    // closeFormFeedbackButton.addEventListener("click", function (event) {
-    //     if (sectionFormFeedback.classList.contains("_modalActive")) {
-    //         closeModal(event);
-    //     }
-    // });
-    // END ===== for pc =====
 }
 
 // END ===== handlers =====
 
 // START ===== functions =====
-
-function showFeedbackMessage(event) {
-    closeModal(event);
-}
 
 function showFeedbackModal() {
     sectionFormFeedback.classList.add("_modalActive");
@@ -335,13 +344,12 @@ function closeModal(event) {
 
 // END ===== functions =====
 
-// END ===== Show feedback modal =====
-;
+// END ===== Show modal =====
 
-// START ===== functions =====
+// START ===== Close modal field hundler =====
 
 function subscribeCloseModalFieldMobile() {
-    document.addEventListener("touchstart", function (e) {
+    document.addEventListener("touchend", function (e) {
         if (
             !e.target.closest("._modalNoCloseField") &&
             e.target.closest("._modalActive")
@@ -350,6 +358,7 @@ function subscribeCloseModalFieldMobile() {
         }
     });
 }
+
 function subscribeCloseModalFieldPC() {
     document.addEventListener("click", function (e) {
         if (
@@ -369,11 +378,16 @@ function subscribeCloseModalField() {
     }
 }
 
-subscribeCloseModalField();
+function initSubscribeCloseModalField() {
+    subscribeCloseModalField();
+}
 
-// END ===== functions =====;
+initSubscribeCloseModalField();
 
-// START ===== functions =====
+// START ===== Close modal field hundler =====
+
+// START ===== Close modal ESC hundler =====
+
 function escCloseModalHandler() {
     document.addEventListener("keydown", function (e) {
         let isModalActive = document.querySelector("._modalActive");
@@ -384,11 +398,18 @@ function escCloseModalHandler() {
         return false;
     });
 }
-escCloseModalHandler();
-// END ===== functions =====
 
+function initEscCloseModalHandler() {
+    escCloseModalHandler();
+}
 
-function getCloseModalButtons() {
+initEscCloseModalHandler();
+
+// END ===== Close modal ESC hundler =====
+
+// START ===== Close modal BTN hundler =====
+
+function getArrayCloseModalButtons() {
     const closeModalButtons = document.querySelectorAll("._closeModalBtn");
     return closeModalButtons;
 }
@@ -400,6 +421,7 @@ function subscribeCloseModalButtonMobile(button) {
         }
     });
 }
+
 function subscribeCloseModalButtonPC(button) {
     button.addEventListener("click", function (event) {
         if (sectionFormFeedback.classList.contains("_modalActive")) {
@@ -409,7 +431,7 @@ function subscribeCloseModalButtonPC(button) {
 }
 
 function subscribeCloseModalButton() {
-    for (button of getCloseModalButtons()) {
+    for (button of getArrayCloseModalButtons()) {
         if (isMobile) {
             subscribeCloseModalButtonMobile(button);
         } else {
@@ -417,14 +439,18 @@ function subscribeCloseModalButton() {
         }
     }
 }
-subscribeCloseModalButton();
+
+function initSubscribeCloseModalButton() {
+    subscribeCloseModalButton();
+}
+
+initSubscribeCloseModalButton();
+
+// END ===== Close modal BTN hundler =====
 
 
-// END ===== INCLUDES =====
-
-// START ===== init =====
-
-getAllForms();
 
 
-// END =====  =====
+
+
+
