@@ -6,6 +6,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile
 
 getAllForms();
 
+
 // END ===== init =====
 
 // START ===== функция проверяет может ли браузер отображать webp формат изображений =====
@@ -261,6 +262,7 @@ async function sendForm(valuesForm) {
             body: valuesForm,
         });
         const result = await response.json();
+        console.log(result);
     } catch (error) {
         console.log("Error: ", error);
     } finally {
@@ -303,48 +305,6 @@ function getAllForms() {
 
 // END ===== form handler =====
 
-
-// START ===== Show modal =====
-
-// START ===== variables =====
-
-const sectionFormFeedback = document.querySelector(".feedback");
-
-const openFormFeedbackButton = document.querySelector(".main-content__button");
-
-
-// END ===== variables =====
-
-// START ===== handlers =====
-
-
-if (isMobile) {
-    openFormFeedbackButton.addEventListener("touchend", showFeedbackModal);
-
-} else {
-    openFormFeedbackButton.addEventListener("click", showFeedbackModal);
-}
-
-// END ===== handlers =====
-
-// START ===== functions =====
-
-function showFeedbackModal() {
-    sectionFormFeedback.classList.add("_modalActive");
-    document.body.classList.add("_lock");
-}
-
-function closeModal(event) {
-    let modalSection = event.target.closest("._modal");
-    if (modalSection) {
-        modalSection.classList.remove("_modalActive");
-        document.body.classList.remove("_lock");
-    }
-}
-
-// END ===== functions =====
-
-// END ===== Show modal =====
 
 // START ===== Close modal field hundler =====
 
@@ -393,7 +353,7 @@ function escCloseModalHandler() {
         let isModalActive = document.querySelector("._modalActive");
         if (e.key === "Escape" && isModalActive) {
             isModalActive.classList.remove("_modalActive");
-            document.body.classList.remove("_lock");
+            document.body.classList.remove("_lock");       
         }
         return false;
     });
@@ -447,6 +407,48 @@ function initSubscribeCloseModalButton() {
 initSubscribeCloseModalButton();
 
 // END ===== Close modal BTN hundler =====
+
+// START ===== Show modal =====
+
+// START ===== variables =====
+
+const sectionFormFeedback = document.querySelector(".feedback");
+
+const openFormFeedbackButton = document.querySelector(".main-content__button");
+
+
+// END ===== variables =====
+
+// START ===== handlers =====
+
+
+if (isMobile) {
+    openFormFeedbackButton.addEventListener("touchend", showFeedbackModal);
+
+} else {
+    openFormFeedbackButton.addEventListener("click", showFeedbackModal);
+}
+
+// END ===== handlers =====
+
+// START ===== functions =====
+
+function showFeedbackModal() {
+    sectionFormFeedback.classList.add("_modalActive");
+    document.body.classList.add("_lock");
+}
+
+function closeModal(event) {
+    let modalSection = event.target.closest("._modal");
+    if (modalSection) {
+        modalSection.classList.remove("_modalActive");
+        document.body.classList.remove("_lock");
+    }
+}
+
+// END ===== functions =====
+
+// END ===== Show modal =====
 
 
 
