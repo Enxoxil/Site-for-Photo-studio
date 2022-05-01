@@ -7,6 +7,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile
 getAllForms();
 
 
+
 // END ===== init =====
 
 // START ===== функция проверяет может ли браузер отображать webp формат изображений =====
@@ -353,7 +354,11 @@ function escCloseModalHandler() {
         let isModalActive = document.querySelector("._modalActive");
         if (e.key === "Escape" && isModalActive) {
             isModalActive.classList.remove("_modalActive");
-            document.body.classList.remove("_lock");       
+            document.body.classList.remove("_lock");
+            if(!isMobile){
+                document.body.style.marginRight = '';
+                document.querySelector('.header__container').style.marginRight = '';
+            }       
         }
         return false;
     });
@@ -413,18 +418,14 @@ initSubscribeCloseModalButton();
 // START ===== variables =====
 
 const sectionFormFeedback = document.querySelector(".feedback");
-
 const openFormFeedbackButton = document.querySelector(".main-content__button");
-
 
 // END ===== variables =====
 
 // START ===== handlers =====
 
-
 if (isMobile) {
     openFormFeedbackButton.addEventListener("touchend", showFeedbackModal);
-
 } else {
     openFormFeedbackButton.addEventListener("click", showFeedbackModal);
 }
@@ -433,9 +434,22 @@ if (isMobile) {
 
 // START ===== functions =====
 
+
+function getScrollbarWidth() {
+    const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+    return scrollbarWidth;
+}
 function showFeedbackModal() {
-    sectionFormFeedback.classList.add("_modalActive");
+    let currentScrollbarWidth = `${getScrollbarWidth()}px`;
     document.body.classList.add("_lock");
+    if (isMobile) {
+        sectionFormFeedback.classList.add("_modalActive");
+    } else {
+        sectionFormFeedback.classList.add("_modalActive");
+        document.body.style.marginRight = currentScrollbarWidth;
+        document.querySelector('.header__container').style.marginRight = currentScrollbarWidth;
+    }
 }
 
 function closeModal(event) {
@@ -443,6 +457,10 @@ function closeModal(event) {
     if (modalSection) {
         modalSection.classList.remove("_modalActive");
         document.body.classList.remove("_lock");
+        if(!isMobile){
+            document.body.style.marginRight = '';
+            document.querySelector('.header__container').style.marginRight = '';
+        }
     }
 }
 
