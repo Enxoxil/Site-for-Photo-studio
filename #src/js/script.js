@@ -6,6 +6,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile
 
 getAllForms();
 
+
 // END ===== init =====
 
 @@include('webpCheck.js')
@@ -14,10 +15,10 @@ getAllForms();
 @@include('spoiler.js')
 @@include('smoothScroll.js')
 @@include('formHandler.js')
-@@include('showModalHandlers.js')
 @@include('closeModalFieldHandler.js')
 @@include('closeModalEscHandler.js')
 @@include('closeModalBtnHandler.js')
+@@include('showModalHandlers.js')
 
 
 
