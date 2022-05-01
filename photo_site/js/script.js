@@ -355,10 +355,11 @@ function escCloseModalHandler() {
         if (e.key === "Escape" && isModalActive) {
             isModalActive.classList.remove("_modalActive");
             document.body.classList.remove("_lock");
-            if(!isMobile){
-                document.body.style.marginRight = '';
-                document.querySelector('.header__container').style.marginRight = '';
-            }       
+            if (!isMobile) {
+                document.documentElement.style.marginRight = "";
+                document.querySelector(".header__wrapper").style.paddingRight =
+                    "";
+            }
         }
         return false;
     });
@@ -447,8 +448,8 @@ function showFeedbackModal() {
         sectionFormFeedback.classList.add("_modalActive");
     } else {
         sectionFormFeedback.classList.add("_modalActive");
-        document.body.style.marginRight = currentScrollbarWidth;
-        document.querySelector('.header__container').style.marginRight = currentScrollbarWidth;
+        document.documentElement.style.marginRight = currentScrollbarWidth;
+        document.querySelector('.header__wrapper').style.paddingRight = currentScrollbarWidth;
     }
 }
 
@@ -458,8 +459,8 @@ function closeModal(event) {
         modalSection.classList.remove("_modalActive");
         document.body.classList.remove("_lock");
         if(!isMobile){
-            document.body.style.marginRight = '';
-            document.querySelector('.header__container').style.marginRight = '';
+            document.documentElement.style.marginRight = '';
+            document.querySelector('.header__wrapper').style.paddingRight = '';
         }
     }
 }
