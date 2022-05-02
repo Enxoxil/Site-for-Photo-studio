@@ -12,7 +12,7 @@ getAllForms();
 
 @@include('webpCheck.js')
 @@include('burger.js')
-@@include('sliderLogic.js')
+@@include('sliderLogic2.js')
 @@include('spoiler.js')
 @@include('smoothScroll.js')
 @@include('formHandler.js')

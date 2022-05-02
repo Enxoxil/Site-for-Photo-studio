@@ -43,7 +43,7 @@ const menuItems = document.querySelectorAll(".menu__item");
 // START ===== loops =====
 
 for (item of menuItems) {
-    item.addEventListener("touchstart", () => {
+    item.addEventListener("touchend", () => {
         if (menuBurgerBody.classList.contains("_active")) {
             showMenuBurger();
         }
@@ -55,14 +55,14 @@ for (item of menuItems) {
 
 // START ===== handlers =====
 
-menuBurgerBody.addEventListener("touchstart", () => {
+menuBurgerBody.addEventListener("touchend", () => {
     if (menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
     return false;
 });
 
-menuBurgerIcon.addEventListener("touchstart", () => {
+menuBurgerIcon.addEventListener("touchend", () => {
     if (menuBurgerIcon) {
         showMenuBurger();
     }
@@ -108,75 +108,59 @@ function showMenuBurger() {
 
 // START ===== load default =====
 
-initSliderPaginations();
-handlerPushSlide();
+initSlider();
 
 // END ===== load default =====
 
 // START ===== function =====
 
-function handlerPushSlide() {
-    const prevSlideButtons = document.querySelectorAll("._left-arrow");
-    const nextSlideButtons = document.querySelectorAll("._right-arrow");
-    for (let i = 0; i < prevSlideButtons.length; i++) {
-        prevSlideButtons[i].onclick = prevSlidePush;
-    }
-    for (let i = 0; i < nextSlideButtons.length; i++) {
-        nextSlideButtons[i].onclick = nextSlidePush;
-    }
+function searchBodySlider() {
+    return this.closest("._wrapper").querySelector("ul");
+}
+
+function searchNextSliderButtons() {
+    return document.querySelectorAll("._right-arrow");
+}
+
+function searchPrevSliderButtons() {
+    return document.querySelectorAll("._left-arrow");
 }
 
 function prevSlidePush() {
-    let bodySlider = this.closest("._wrapper").querySelector("ul");
-    let lastSlide = bodySlider.lastElementChild;
-    let firstSlide = bodySlider.firstElementChild;
-    bodySlider.insertBefore(lastSlide, firstSlide);
-    changeSliderPaginationActiveDot(this.closest("._wrapper").classList[0]);
-}
-function nextSlidePush() {
-    let bodySlider = this.closest("._wrapper").querySelector("ul");
-    let firstSlide = bodySlider.firstElementChild;
-    bodySlider.append(firstSlide);
-    changeSliderPaginationActiveDot(this.closest("._wrapper").classList[0]);
-}
-
-function changeSliderPaginationActiveDot(classNameSliderWrapper) {
-    let numberOfSlideNameAttribute = document
-        .querySelector(`.${classNameSliderWrapper}__body-item`)
-        .getAttribute("name");
-    let sliderPaginationItems = document.querySelectorAll(
-        `.${classNameSliderWrapper}__dots-item`,
+    searchBodySlider.call(this).insertBefore(
+        searchBodySlider.call(this).lastElementChild,
+        searchBodySlider.call(this).firstElementChild
     );
-    for (let i = 0; i < sliderPaginationItems.length; i++) {
-        sliderPaginationItems[i].classList.remove("active-dots");
-        if (i == numberOfSlideNameAttribute - 1) {
-            sliderPaginationItems[i].classList.add("active-dots");
+}
+
+function nextSlidePush() {
+    searchBodySlider.call(this).append(searchBodySlider.call(this).firstElementChild);
+}
+
+function subscribeNextClickEvent() {
+    for (let event of searchNextSliderButtons()) {
+        if (isMobile) {
+            event.addEventListener("touchend", nextSlidePush);
+        } else {
+            event.addEventListener("click", nextSlidePush);
         }
     }
 }
 
-function initSliderPaginations() {
-    const amountBodyPaginations = document.getElementsByName("_pagination");
-    for (let i = 0; i < amountBodyPaginations.length; i++) {
-        let amountPaginationDots = amountBodyPaginations[i]
-            .closest("._wrapper")
-            .querySelector("ul").children.length;
-        for (let j = 1; j <= amountPaginationDots; j++) {
-            const paginationItem = document.createElement("div");
-            paginationItem.classList.add(
-                `${amountBodyPaginations[i].classList.value}-item`,
-            );
-            amountBodyPaginations[i].appendChild(paginationItem);
+function subscribePrevClickEvent() {
+    for (let event of searchPrevSliderButtons()) {
+        if (isMobile) {
+            event.addEventListener("touchend", prevSlidePush);
+        } else {
+            event.addEventListener("click", prevSlidePush);
         }
-        changeSliderPaginationActiveDot(
-            `${amountBodyPaginations[i].closest("._wrapper").classList[0]}`,
-        );
     }
 }
 
-// END ===== function =====
-
-// END ===== Slider =====
+function initSlider() {
+    subscribeNextClickEvent();
+    subscribePrevClickEvent();
+}
 
 // START ===== ToggleSpoiler =====
 

@@ -10,7 +10,7 @@ const menuItems = document.querySelectorAll(".menu__item");
 // START ===== loops =====
 
 for (item of menuItems) {
-    item.addEventListener("touchstart", () => {
+    item.addEventListener("touchend", () => {
         if (menuBurgerBody.classList.contains("_active")) {
             showMenuBurger();
         }
@@ -22,14 +22,14 @@ for (item of menuItems) {
 
 // START ===== handlers =====
 
-menuBurgerBody.addEventListener("touchstart", () => {
+menuBurgerBody.addEventListener("touchend", () => {
     if (menuBurgerBody.classList.contains("_active")) {
         showMenuBurger();
     }
     return false;
 });
 
-menuBurgerIcon.addEventListener("touchstart", () => {
+menuBurgerIcon.addEventListener("touchend", () => {
     if (menuBurgerIcon) {
         showMenuBurger();
     }
