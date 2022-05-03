@@ -127,14 +127,29 @@ function searchPrevSliderButtons() {
 }
 
 function prevSlidePush() {
-    searchBodySlider.call(this).insertBefore(
-        searchBodySlider.call(this).lastElementChild,
-        searchBodySlider.call(this).firstElementChild
-    );
+    searchBodySlider
+        .call(this)
+        .insertBefore(
+            searchBodySlider.call(this).lastElementChild,
+            searchBodySlider.call(this).firstElementChild
+        );
+    changePaginationItemActive.call(this);
+}
+
+function changePaginationItemActive() {
+    console.log();
+    this.parentElement.parentElement
+        .querySelector("[data-pagination]")
+        .children[
+            searchBodySlider.call(this).children[1].dataset.slideNumber
+        ].classList.add("active-dots");
 }
 
 function nextSlidePush() {
-    searchBodySlider.call(this).append(searchBodySlider.call(this).firstElementChild);
+    searchBodySlider
+        .call(this)
+        .append(searchBodySlider.call(this).firstElementChild);
+    changePaginationItemActive.call(this);
 }
 
 function subscribeNextClickEvent() {
@@ -161,6 +176,41 @@ function initSlider() {
     subscribeNextClickEvent();
     subscribePrevClickEvent();
 }
+
+function createPaginationItem(parent) {
+    const paginationItem = document.createElement("div");
+    paginationItem.classList.add(`${parent.className}-item`);
+    return paginationItem;
+}
+
+function appendPaginationItems(parent) {
+    for (let i = 0; i < parent.previousElementSibling.children.length; i++) {
+        parent.appendChild(createPaginationItem(parent));
+    }
+}
+
+function getPaginationsArray() {
+    return document.querySelectorAll("[data-pagination]");
+}
+
+function createPagination() {
+    for (let paginationElement of getPaginationsArray()) {
+        appendPaginationItems(paginationElement);
+    }
+}
+
+function initPagination() {
+    createPagination();
+}
+
+initPagination();
+//active-dots
+//document.querySelector('[data-pagination]').previousElementSibling.children.length;
+//searchBodySlider.call(this).children[1].dataset.slideNumber;
+
+// END ===== function =====
+
+// END ===== Slider =====
 
 // START ===== ToggleSpoiler =====
 
