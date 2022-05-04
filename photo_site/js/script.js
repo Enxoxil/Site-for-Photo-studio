@@ -88,130 +88,6 @@ function showMenuBurger() {
 
 // END ===== Menu burger =====
 
-/*
- Класс _wrapper вешаем на контейнер в котором лежат 3 наследника.
- 1 - тело слайдера в котором лежат слайды.
- 2 - тело стрелок в котором лежат стрелки.
- 3 - тело пагинации.
- 
- Класс _left-arrow вешаем на левую стрелку 
- Класс _right-arrow вешаем на правую стрелку
-
- 
- */
-
-// START ===== Slider =====
-
-// START ===== values =====
-
-// END ===== values =====
-
-// START ===== load default =====
-
-initSlider();
-
-// END ===== load default =====
-
-// START ===== function =====
-
-function searchBodySlider() {
-    return this.closest("._wrapper").querySelector("ul");
-}
-
-function searchNextSliderButtons() {
-    return document.querySelectorAll("._right-arrow");
-}
-
-function searchPrevSliderButtons() {
-    return document.querySelectorAll("._left-arrow");
-}
-
-function prevSlidePush() {
-    searchBodySlider
-        .call(this)
-        .insertBefore(
-            searchBodySlider.call(this).lastElementChild,
-            searchBodySlider.call(this).firstElementChild
-        );
-    changePaginationItemActive.call(this);
-}
-
-function changePaginationItemActive() {
-    console.log();
-    this.parentElement.parentElement
-        .querySelector("[data-pagination]")
-        .children[
-            searchBodySlider.call(this).children[1].dataset.slideNumber
-        ].classList.add("active-dots");
-}
-
-function nextSlidePush() {
-    searchBodySlider
-        .call(this)
-        .append(searchBodySlider.call(this).firstElementChild);
-    changePaginationItemActive.call(this);
-}
-
-function subscribeNextClickEvent() {
-    for (let event of searchNextSliderButtons()) {
-        if (isMobile) {
-            event.addEventListener("touchend", nextSlidePush);
-        } else {
-            event.addEventListener("click", nextSlidePush);
-        }
-    }
-}
-
-function subscribePrevClickEvent() {
-    for (let event of searchPrevSliderButtons()) {
-        if (isMobile) {
-            event.addEventListener("touchend", prevSlidePush);
-        } else {
-            event.addEventListener("click", prevSlidePush);
-        }
-    }
-}
-
-function initSlider() {
-    subscribeNextClickEvent();
-    subscribePrevClickEvent();
-}
-
-function createPaginationItem(parent) {
-    const paginationItem = document.createElement("div");
-    paginationItem.classList.add(`${parent.className}-item`);
-    return paginationItem;
-}
-
-function appendPaginationItems(parent) {
-    for (let i = 0; i < parent.previousElementSibling.children.length; i++) {
-        parent.appendChild(createPaginationItem(parent));
-    }
-}
-
-function getPaginationsArray() {
-    return document.querySelectorAll("[data-pagination]");
-}
-
-function createPagination() {
-    for (let paginationElement of getPaginationsArray()) {
-        appendPaginationItems(paginationElement);
-    }
-}
-
-function initPagination() {
-    createPagination();
-}
-
-initPagination();
-//active-dots
-//document.querySelector('[data-pagination]').previousElementSibling.children.length;
-//searchBodySlider.call(this).children[1].dataset.slideNumber;
-
-// END ===== function =====
-
-// END ===== Slider =====
-
 // START ===== ToggleSpoiler =====
 
 function getSubscribeToggleSpoilerButtons() {
@@ -503,6 +379,176 @@ function closeModal(event) {
 
 // END ===== Show modal =====
 
+/*
+ Класс _wrapper вешаем на контейнер в котором лежат 3 наследника.
+ 1 - тело слайдера в котором лежат слайды.
+ 2 - тело стрелок в котором лежат стрелки
+ 3 - тело пагинации c дата аттрибутом data-pagination
+ 
+ Класс _left-arrow вешаем на левую стрелку 
+ Класс _right-arrow вешаем на правую стрелку
+
+ 
+ */
+
+// START ===== Slider =====
+
+// START ===== values =====
+
+// END ===== values =====
+
+// START ===== load default =====
+
+initSlider();
+
+// END ===== load default =====
+
+// START ===== function =====
+
+function searchBodySlider() {
+    return this.closest("._wrapper").querySelector("ul");
+}
+
+function searchNextSliderButtons() {
+    return document.querySelectorAll("._right-arrow");
+}
+
+function searchPrevSliderButtons() {
+    return document.querySelectorAll("._left-arrow");
+}
+
+function prevSlidePush() {
+    searchBodySlider
+        .call(this)
+        .insertBefore(
+            searchBodySlider.call(this).lastElementChild,
+            searchBodySlider.call(this).firstElementChild
+        );
+    if (isPaginationFromThisSlider.call(this)) {
+        changePaginationItemActive.call(this);
+    }
+}
+
+function nextSlidePush() {
+    searchBodySlider
+        .call(this)
+        .append(searchBodySlider.call(this).firstElementChild);
+    if (isPaginationFromThisSlider.call(this)) {
+        changePaginationItemActive.call(this);
+    }
+}
+
+function subscribeNextClickEvent() {
+    for (let event of searchNextSliderButtons()) {
+        if (isMobile) {
+            event.addEventListener("touchend", nextSlidePush);
+        } else {
+            event.addEventListener("click", nextSlidePush);
+        }
+    }
+}
+
+function subscribePrevClickEvent() {
+    for (let event of searchPrevSliderButtons()) {
+        if (isMobile) {
+            event.addEventListener("touchend", prevSlidePush);
+        } else {
+            event.addEventListener("click", prevSlidePush);
+        }
+    }
+}
+
+function initSlider() {
+    subscribeNextClickEvent();
+    subscribePrevClickEvent();
+}
+
+// END ===== function =====
+
+// END ===== Slider =====
+
+// START ===== Pagination  =====
+
+// START ===== values =====
+
+// END ===== values =====
+
+// START ===== load default =====
+
+initPagination();
+
+// END ===== load default =====
+
+// START ===== function =====
+
+function isPaginationFromThisSlider(){
+    return this.closest("._wrapper").querySelector("[data-pagination]");
+}
+
+function clearChildrenClassList(childrens) {
+    for (let child of childrens) {
+        child.classList.remove("active-dots");
+    }
+}
+
+function searchAllPaginationItems() {
+    return this.parentElement.parentElement.querySelector("[data-pagination]")
+        .children;
+}
+
+function isActiveSlide() {
+    return searchBodySlider.call(this).children[0].dataset.slideNumber ;
+}
+
+function changePaginationItemActive() {
+    clearChildrenClassList(searchAllPaginationItems.call(this));
+    
+    searchAllPaginationItems
+        .call(this)
+        [isActiveSlide.call(this) - 1].classList.add("active-dots");
+        console.log(isActiveSlide.call(this));
+}
+
+function createPaginationItem(parent) {
+    const paginationItem = document.createElement("div");
+    paginationItem.classList.add(`${parent.className}-item`);
+    return paginationItem;
+}
+
+function createPaginationItemActiveDefault(parent) {
+    const activeDefaultPaginationItem = createPaginationItem(parent);
+    activeDefaultPaginationItem.classList.add("active-dots");
+    return activeDefaultPaginationItem;
+}
+
+function appendPaginationItems(parent) {
+    for (let i = 0; i < parent.previousElementSibling.children.length-1; i++) {
+        if (i == 0) {
+            parent.appendChild(createPaginationItemActiveDefault(parent));
+        }
+        parent.appendChild(createPaginationItem(parent));
+    }
+}
+
+function getPaginationsArray() {
+    return document.querySelectorAll("[data-pagination]");
+}
+
+function createPagination() {
+    for (let paginationElement of getPaginationsArray()) {
+        appendPaginationItems(paginationElement);
+    }
+}
+
+function initPagination() {
+    createPagination();
+}
+
+
+
+// END ===== function =====
+
+// END ===== Pagination =====
 
 
 
