@@ -12,7 +12,6 @@ getAllForms();
 
 @@include('webpCheck.js')
 @@include('burger.js')
-@@include('sliderLogic2.js')
 @@include('spoiler.js')
 @@include('smoothScroll.js')
 @@include('formHandler.js')
@@ -20,6 +19,8 @@ getAllForms();
 @@include('closeModalEscHandler.js')
 @@include('closeModalBtnHandler.js')
 @@include('showModalHandlers.js')
+@@include('sliderLogic2.js')
+@@include('pagination.js')
 
 
 
