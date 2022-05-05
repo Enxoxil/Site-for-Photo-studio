@@ -1139,11 +1139,31 @@ select {
 
 .slider-ourLocation__body-item {
   position: relative;
-  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(20%);
+      -ms-transform: translate(20%);
+          transform: translate(20%);
 }
 
 .slider-ourLocation__body-item:nth-of-type(1) {
-  display: block;
+  -webkit-transform: translate(-20%);
+      -ms-transform: translate(-20%);
+          transform: translate(-20%);
+}
+
+.slider-ourLocation__body-item:nth-of-type(2) {
+  opacity: 1;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
@@ -1934,6 +1954,7 @@ select {
 
 .review__slider {
   padding-top: 40px;
+  overflow: hidden;
 }
 
 .review__slider-wrapper {
@@ -1965,8 +1986,13 @@ select {
 
 .review__slider-item {
   z-index: 1;
-  min-width: 320px;
   display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s, -webkit-transform 0.4s;
+  transition: opacity 0.7s, -webkit-transform 0.4s;
+  -o-transition: transform 0.4s, opacity 0.7s;
+  transition: transform 0.4s, opacity 0.7s;
+  transition: transform 0.4s, opacity 0.7s, -webkit-transform 0.4s;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   -webkit-box-flex: 0;
@@ -1974,7 +2000,7 @@ select {
           flex: 0 1 420px;
 }
 
-.review__slider-item:nth-of-type(1) {
+.review__slider-item:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1985,6 +2011,12 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
+  min-width: 320px;
+}
+
+.review__slider-item > picture {
+  height: 270px;
 }
 
 .review__slider-item > picture {
@@ -3002,17 +3034,52 @@ body {
             justify-content: space-between;
   }
 
-  .slider-ourLocation__body-item:nth-of-type(1),
-  .slider-ourLocation__body-item:nth-of-type(2),
-  .slider-ourLocation__body-item:nth-of-type(3) {
-    display: block;
+  .slider-ourLocation__body-item:nth-of-type(2) {
+    opacity: 1;
+    height: auto;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 278px;
             flex: 1 1 278px;
+    -webkit-transform: translate(-15px);
+        -ms-transform: translate(-15px);
+            transform: translate(-15px);
   }
 
-  .slider-ourLocation__body-item:nth-of-type(2) {
-    margin: 0 15px;
+  .slider-ourLocation__body-item:nth-of-type(4) {
+    opacity: 1;
+    height: auto;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 278px;
+            flex: 1 1 278px;
+    -webkit-transform: translate(15px);
+        -ms-transform: translate(15px);
+            transform: translate(15px);
+  }
+
+  .slider-ourLocation__body-item:nth-of-type(3) {
+    opacity: 1;
+    height: auto;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 278px;
+            flex: 1 1 278px;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
   }
 
   .ourLocation__btn-container .ourLocation__btn {
@@ -3471,16 +3538,20 @@ body {
             flex: 0 1 340px;
   }
 
-  .review__slider-item:nth-of-type(1) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   .review__slider-item:nth-of-type(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    opacity: 1;
+    min-width: 320px;
+  }
+
+  .review__slider-item:nth-of-type(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    min-width: 320px;
   }
 
   .review__slider-item > picture {
@@ -4182,26 +4253,52 @@ body {
   }
 
   .review__slider-item:nth-of-type(1) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 100px;
+    display: block;
+    -webkit-transform: translate(-10%);
+        -ms-transform: translate(-10%);
+            transform: translate(-10%);
+    width: 0;
+    min-width: 0;
+    height: 0;
   }
 
-  .review__slider-item:nth-of-type(2) {
-    -webkit-transform: translateY(-100px);
-        -ms-transform: translateY(-100px);
-            transform: translateY(-100px);
+  .review__slider-item:nth-of-type(5) {
+    display: block;
+    -webkit-transform: translate(10%);
+        -ms-transform: translate(10%);
+            transform: translate(10%);
+    width: 0;
+    min-width: 0;
+    height: 0;
+  }
+
+  .review__slider-item:nth-of-type(2),
+  .review__slider-item:nth-of-type(3),
+  .review__slider-item:nth-of-type(4) {
+    min-width: 320px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    opacity: 1;
+  }
+
+  .review__slider-item:nth-of-type(2),
+  .review__slider-item:nth-of-type(4) {
+    padding-top: 100px;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
   }
 
   .review__slider-item:nth-of-type(3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 100px;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translate(0, -100px);
+        -ms-transform: translate(0, -100px);
+            transform: translate(0, -100px);
   }
 
   .review__slider-item-name {
