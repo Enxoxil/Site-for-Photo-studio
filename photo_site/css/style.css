@@ -2012,7 +2012,7 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 1;
-  min-width: 320px;
+  min-width: 310px;
 }
 
 .review__slider-item:nth-of-type(1) {
@@ -2205,6 +2205,7 @@ select {
   background: #fff;
   border: 1px solid #dddee4;
   margin-top: 8px;
+  padding-left: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -2215,7 +2216,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .map__form__item > input::-moz-placeholder, .map .form__item > input::-moz-placeholder {
@@ -2224,7 +2224,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .map__form__item > input:-ms-input-placeholder, .map .form__item > input:-ms-input-placeholder {
@@ -2233,7 +2232,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .map__form__item > input::-ms-input-placeholder, .map .form__item > input::-ms-input-placeholder {
@@ -2242,7 +2240,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .map__form__item > input::placeholder,
@@ -2252,7 +2249,6 @@ select {
   font-weight: 600;
   line-height: 12px;
   font-family: Montserrat;
-  padding-left: 16px;
 }
 
 .map__form__button-container,
