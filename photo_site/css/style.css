@@ -2014,7 +2014,7 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 1;
-  min-width: 310px;
+  min-width: 300px;
 }
 
 .review__slider-item:nth-of-type(1) {
@@ -2632,6 +2632,315 @@ select {
 }
 
 .feedback._modalActive {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.ourLocationModal {
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  opacity: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+.ourLocationModal__container {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourLocationModal__btn {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  right: 12px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.ourLocationModal__btn span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 33px;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 5px;
+  background: #d8d8d8;
+}
+
+.ourLocationModal__btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 33px;
+  height: 2px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 5px;
+  background: #d8d8d8;
+}
+
+.ourLocationModal__btn:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ourLocationModal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1100;
+}
+
+.ourLocationModal__img-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+}
+
+.ourLocationModal__img {
+  width: 100%;
+}
+
+.ourLocationModal__form,
+.ourLocationModal .form {
+  border-radius: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 93%;
+          flex: 0 1 93%;
+  min-width: 320px;
+  margin-top: -45px;
+  padding-top: 52px;
+  padding-bottom: 32px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.ourLocationModal__form__wrapper,
+.ourLocationModal .form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.ourLocationModal__form__title,
+.ourLocationModal .form__title {
+  text-align: center;
+  font-size: 22px;
+  color: #4A4A4A;
+  font-weight: 600;
+  line-height: 26px;
+  font-family: Montserrat;
+  padding-bottom: 16px;
+}
+
+.ourLocationModal__form__box,
+.ourLocationModal .form__box {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.ourLocationModal__form__item,
+.ourLocationModal .form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.ourLocationModal__form__item > label,
+.ourLocationModal .form__item > label {
+  font-size: 14px;
+  color: #121621;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+  opacity: 0.4;
+}
+
+.ourLocationModal__form__item > input,
+.ourLocationModal .form__item > input {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #dddee4;
+  margin-top: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+
+.ourLocationModal__form__item > input::-webkit-input-placeholder, .ourLocationModal .form__item > input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > input::-moz-placeholder, .ourLocationModal .form__item > input::-moz-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > input:-ms-input-placeholder, .ourLocationModal .form__item > input:-ms-input-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > input::-ms-input-placeholder, .ourLocationModal .form__item > input::-ms-input-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > input::placeholder,
+.ourLocationModal .form__item > input::placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > select,
+.ourLocationModal .form__item > select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #dddee4;
+  margin-top: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 12px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > select:invalid:not(:focus),
+.ourLocationModal .form__item > select:invalid:not(:focus) {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > select:checked,
+.ourLocationModal .form__item > select:checked {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__item > select > option,
+.ourLocationModal .form__item > select > option {
+  margin: 20px;
+  font-size: 12px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.ourLocationModal__form__button-container,
+.ourLocationModal .form__button-container {
+  text-align: center;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourLocationModal__form__button,
+.ourLocationModal .form__button {
+  width: 100%;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+}
+
+.ourLocationModal__form__text,
+.ourLocationModal .form__text {
+  font-size: 12px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 16px;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.ourLocationModal__form__text-polici,
+.ourLocationModal .form__text-polici {
+  text-decoration: underline;
+  color: #585858;
+  font-family: Montserrat;
+}
+
+.ourLocationModal._modalActive {
   opacity: 1;
   z-index: 1000;
 }
@@ -3852,6 +4161,114 @@ body {
     padding-bottom: 14px;
   }
 
+  .ourLocationModal__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .ourLocationModal__btn {
+    right: 0;
+    top: -40px;
+  }
+
+  .ourLocationModal__btn span {
+    background: #fff;
+  }
+
+  .ourLocationModal__btn span::after {
+    background: #fff;
+  }
+
+  .ourLocationModal__wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 840px;
+            flex: 0 1 840px;
+  }
+
+  .ourLocationModal__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .ourLocationModal__img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 362px;
+            flex: 0 1 362px;
+  }
+
+  .ourLocationModal__form,
+  .ourLocationModal .form {
+    margin-top: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 404px;
+            flex: 0 1 404px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .ourLocationModal__form__title,
+  .ourLocationModal .form__title {
+    font-size: 30px;
+    color: #4A4A4A;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: Montserrat;
+    padding-bottom: 32px;
+  }
+
+  .ourLocationModal__form__box,
+  .ourLocationModal .form__box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .ourLocationModal__form__item > label,
+  .ourLocationModal .form__item > label {
+    font-size: 16px;
+    color: #121621;
+    font-weight: 500;
+    line-height: 12px;
+    font-family: Montserrat;
+  }
+
+  .ourLocationModal__form__item > input,
+  .ourLocationModal .form__item > input {
+    margin-top: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .ourLocationModal__form__item > select,
+  .ourLocationModal .form__item > select {
+    margin-top: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .ourLocationModal__form__button-container,
+  .ourLocationModal .form__button-container {
+    padding-top: 16px;
+  }
+
+  .ourLocationModal__form__button,
+  .ourLocationModal .form__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
   ._scrollTo {
     scroll-margin-top: 80px;
   }
@@ -3904,7 +4321,7 @@ body {
   }
 
   .actions-header__num {
-    padding: 8px 0px;
+    padding: 8px 0 8px 5px;
   }
 
   .footer__main {
@@ -4430,6 +4847,31 @@ body {
     padding-right: 29.5px;
   }
 
+  .ourLocationModal__wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 1035px;
+            flex: 0 1 1035px;
+  }
+
+  .ourLocationModal__img-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 455px;
+            flex: 0 0 455px;
+  }
+
+  .ourLocationModal__form,
+  .ourLocationModal .form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 480px;
+            flex: 0 0 480px;
+  }
+
+  .ourLocationModal__form__box,
+  .ourLocationModal .form__box {
+    padding-left: 29.5px;
+    padding-right: 29.5px;
+  }
+
   ._h2-title {
     font-size: 36px;
     color: #333333;
@@ -4498,6 +4940,12 @@ body {
 
   .feedback__form__text,
   .feedback .form__text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .ourLocationModal__form__text,
+  .ourLocationModal .form__text {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -4761,6 +5209,16 @@ body {
 
   .feedback__form__text,
   .feedback .form__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ourLocationModal__body {
+    padding-top: 18px;
+  }
+
+  .ourLocationModal__form__text,
+  .ourLocationModal .form__text {
     padding-left: 0;
     padding-right: 0;
   }

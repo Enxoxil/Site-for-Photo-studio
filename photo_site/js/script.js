@@ -4,7 +4,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile
     navigator.userAgent
 )
 
-getAllForms();
+
 
 
 
@@ -214,6 +214,7 @@ function getAllForms() {
     subscribeSubmitForms(forms);
 }
 
+getAllForms();
 // END ===== form handler =====
 
 
@@ -286,13 +287,12 @@ initEscCloseModalHandler();
 // START ===== Close modal BTN hundler =====
 
 function getArrayCloseModalButtons() {
-    const closeModalButtons = document.querySelectorAll("._closeModalBtn");
-    return closeModalButtons;
+    return document.querySelectorAll("._closeModalBtn");
 }
 
 function subscribeCloseModalButtonMobile(button) {
     button.addEventListener("touchstart", function (event) {
-        if (sectionFormFeedback.classList.contains("_modalActive")) {
+        if(this.closest("._modalActive")){
             closeModal(event);
         }
     });
@@ -300,20 +300,20 @@ function subscribeCloseModalButtonMobile(button) {
 
 function subscribeCloseModalButtonPC(button) {
     button.addEventListener("click", function (event) {
-        if (sectionFormFeedback.classList.contains("_modalActive")) {
+        if(this.closest("._modalActive")){
             closeModal(event);
         }
     });
 }
 
 function subscribeCloseModalButton() {
-    for (button of getArrayCloseModalButtons()) {
+    getArrayCloseModalButtons().forEach((button) => {
         if (isMobile) {
             subscribeCloseModalButtonMobile(button);
         } else {
             subscribeCloseModalButtonPC(button);
         }
-    }
+    });
 }
 
 function initSubscribeCloseModalButton() {
@@ -328,39 +328,54 @@ initSubscribeCloseModalButton();
 
 // START ===== variables =====
 
-const sectionFormFeedback = document.querySelector(".feedback");
-const openFormFeedbackButton = document.querySelector(".main-content__button");
 
 // END ===== variables =====
 
-// START ===== handlers =====
-
-if (isMobile) {
-    openFormFeedbackButton.addEventListener("touchend", showFeedbackModal);
-} else {
-    openFormFeedbackButton.addEventListener("click", showFeedbackModal);
+function getCollectionOpenModalButtons() {
+    const collectionOpenModalButtons =
+        document.querySelectorAll("._openModalButton");
+    return collectionOpenModalButtons;
 }
+
+function openModalHundler() {
+    getCollectionOpenModalButtons().forEach((button) => {
+        if (isMobile) {
+            button.addEventListener("touchend", showCurrentModal);
+        } else {
+            button.addEventListener("click", showCurrentModal);
+        }
+    });
+}
+openModalHundler();
+
+// START ===== handlers =====
 
 // END ===== handlers =====
 
 // START ===== functions =====
 
-
 function getScrollbarWidth() {
-    const scrollbarWidth =
-        window.innerWidth - document.documentElement.clientWidth;
-    return scrollbarWidth;
+    return window.innerWidth - document.documentElement.clientWidth;
+
 }
-function showFeedbackModal() {
-    let currentScrollbarWidth = `${getScrollbarWidth()}px`;
-    document.body.classList.add("_lock");
-    if (isMobile) {
-        sectionFormFeedback.classList.add("_modalActive");
-    } else {
-        sectionFormFeedback.classList.add("_modalActive");
-        document.documentElement.style.marginRight = currentScrollbarWidth;
-        document.querySelector('.header__wrapper').style.paddingRight = currentScrollbarWidth;
+
+function showCurrentModal() {
+    getClassNameCurrentModal.call(this).classList.add("_modalActive");
+    if (!isMobile) {
+        fixScrollbarWidth();
     }
+    document.body.classList.add("_lock");
+}
+
+function fixScrollbarWidth() {
+    let currentScrollbarWidth = `${getScrollbarWidth()}px`;
+    document.documentElement.style.marginRight = currentScrollbarWidth;
+    document.querySelector(".header__wrapper").style.paddingRight =
+        currentScrollbarWidth;
+}
+
+function getClassNameCurrentModal() {
+    return document.querySelector(`.${this.dataset.modalClassName}`);
 }
 
 function closeModal(event) {
@@ -368,9 +383,9 @@ function closeModal(event) {
     if (modalSection) {
         modalSection.classList.remove("_modalActive");
         document.body.classList.remove("_lock");
-        if(!isMobile){
-            document.documentElement.style.marginRight = '';
-            document.querySelector('.header__wrapper').style.paddingRight = '';
+        if (!isMobile) {
+            document.documentElement.style.marginRight = "";
+            document.querySelector(".header__wrapper").style.paddingRight = "";
         }
     }
 }

@@ -4,7 +4,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile
     navigator.userAgent
 )
 
-getAllForms();
+
 
 
 

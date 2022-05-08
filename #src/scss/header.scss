@@ -203,7 +203,7 @@
 
         @include fonts(14, 20, 600, $TEXT_COLOR2, Montserrat);
         @media (min-width: 1023px) {
-            padding: 8px 0px;
+            padding: 8px 0 8px 5px;
         }
     }
 }
