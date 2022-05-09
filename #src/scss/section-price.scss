@@ -193,6 +193,7 @@
 
 .box-footer {
     @media (min-width: 1023px) {
+        
     }
     @media (min-width: 767px) {
         &__title {
@@ -209,6 +210,8 @@
             }
             &:nth-of-type(2) {
                 flex: 0 0 82px;
+                padding-left: 0;
+                padding-right: 2px;
             }
             &:last-child {
                 flex: 0 0 170px;
