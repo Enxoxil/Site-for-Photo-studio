@@ -2945,6 +2945,277 @@ select {
   z-index: 1000;
 }
 
+.reviewModal {
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  opacity: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+.reviewModal__container {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviewModal__btn {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  right: 12px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.reviewModal__btn span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 33px;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 5px;
+  background: #d8d8d8;
+}
+
+.reviewModal__btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 33px;
+  height: 2px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 5px;
+  background: #d8d8d8;
+}
+
+.reviewModal__btn:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.reviewModal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1100;
+}
+
+.reviewModal__img-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+}
+
+.reviewModal__img {
+  width: 100%;
+}
+
+.reviewModal__form,
+.reviewModal .form {
+  border-radius: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 93%;
+          flex: 0 1 93%;
+  min-width: 320px;
+  margin-top: -45px;
+  padding-top: 52px;
+  padding-bottom: 32px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.reviewModal__form__wrapper,
+.reviewModal .form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.reviewModal__form__title,
+.reviewModal .form__title {
+  text-align: center;
+  font-size: 22px;
+  color: #4A4A4A;
+  font-weight: 600;
+  line-height: 26px;
+  font-family: Montserrat;
+  padding-bottom: 16px;
+}
+
+.reviewModal__form__title > br,
+.reviewModal .form__title > br {
+  display: none;
+}
+
+.reviewModal__form__box,
+.reviewModal .form__box {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.reviewModal__form__item,
+.reviewModal .form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.reviewModal__form__item > label,
+.reviewModal .form__item > label {
+  font-size: 14px;
+  color: #121621;
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+  opacity: 0.4;
+}
+
+.reviewModal__form__item > ._textarea,
+.reviewModal .form__item > ._textarea {
+  resize: none;
+}
+
+.reviewModal__form__item > input,
+.reviewModal .form__item > input {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #dddee4;
+  margin-top: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+
+.reviewModal__form__item > input::-webkit-input-placeholder, .reviewModal .form__item > input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.reviewModal__form__item > input::-moz-placeholder, .reviewModal .form__item > input::-moz-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.reviewModal__form__item > input:-ms-input-placeholder, .reviewModal .form__item > input:-ms-input-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.reviewModal__form__item > input::-ms-input-placeholder, .reviewModal .form__item > input::-ms-input-placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.reviewModal__form__item > input::placeholder,
+.reviewModal .form__item > input::placeholder {
+  font-size: 12px;
+  color: rgba(177, 177, 177, 0.4);
+  font-weight: 600;
+  line-height: 12px;
+  font-family: Montserrat;
+}
+
+.reviewModal__form__button-container,
+.reviewModal .form__button-container {
+  text-align: center;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviewModal__form__button,
+.reviewModal .form__button {
+  width: 100%;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+}
+
+.reviewModal__form__text,
+.reviewModal .form__text {
+  font-size: 12px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 16px;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.reviewModal__form__text-polici,
+.reviewModal .form__text-polici {
+  text-decoration: underline;
+  color: #585858;
+  font-family: Montserrat;
+}
+
+.reviewModal._modalActive {
+  opacity: 1;
+  z-index: 1000;
+}
+
 ._container {
   max-width: 1270px;
   margin: 0 auto;
@@ -3703,6 +3974,8 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 82px;
             flex: 0 0 82px;
+    padding-left: 0;
+    padding-right: 2px;
   }
 
   .box-footer__item:last-child {
@@ -4265,6 +4538,111 @@ body {
 
   .ourLocationModal__form__button,
   .ourLocationModal .form__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .reviewModal__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .reviewModal__btn {
+    right: 0;
+    top: -40px;
+  }
+
+  .reviewModal__btn span {
+    background: #fff;
+  }
+
+  .reviewModal__btn span::after {
+    background: #fff;
+  }
+
+  .reviewModal__wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 840px;
+            flex: 0 1 840px;
+  }
+
+  .reviewModal__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .reviewModal__img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 362px;
+            flex: 0 1 362px;
+  }
+
+  .reviewModal__form,
+  .reviewModal .form {
+    margin-top: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 404px;
+            flex: 0 1 404px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .reviewModal__form__title,
+  .reviewModal .form__title {
+    font-size: 30px;
+    color: #4A4A4A;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: Montserrat;
+    padding-bottom: 32px;
+  }
+
+  .reviewModal__form__title > br,
+  .reviewModal .form__title > br {
+    display: block;
+  }
+
+  .reviewModal__form__box,
+  .reviewModal .form__box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reviewModal__form__item > label,
+  .reviewModal .form__item > label {
+    font-size: 16px;
+    color: #121621;
+    font-weight: 500;
+    line-height: 12px;
+    font-family: Montserrat;
+  }
+
+  .reviewModal__form__item > input,
+  .reviewModal .form__item > input {
+    margin-top: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .reviewModal__form__button-container,
+  .reviewModal .form__button-container {
+    padding-top: 16px;
+  }
+
+  .reviewModal__form__button,
+  .reviewModal .form__button {
     padding-top: 14px;
     padding-bottom: 14px;
   }
@@ -4872,6 +5250,31 @@ body {
     padding-right: 29.5px;
   }
 
+  .reviewModal__wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 1035px;
+            flex: 0 1 1035px;
+  }
+
+  .reviewModal__img-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 455px;
+            flex: 0 0 455px;
+  }
+
+  .reviewModal__form,
+  .reviewModal .form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 480px;
+            flex: 0 0 480px;
+  }
+
+  .reviewModal__form__box,
+  .reviewModal .form__box {
+    padding-left: 29.5px;
+    padding-right: 29.5px;
+  }
+
   ._h2-title {
     font-size: 36px;
     color: #333333;
@@ -4946,6 +5349,12 @@ body {
 
   .ourLocationModal__form__text,
   .ourLocationModal .form__text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reviewModal__form__text,
+  .reviewModal .form__text {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -5219,6 +5628,16 @@ body {
 
   .ourLocationModal__form__text,
   .ourLocationModal .form__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .reviewModal__body {
+    padding-top: 18px;
+  }
+
+  .reviewModal__form__text,
+  .reviewModal .form__text {
     padding-left: 0;
     padding-right: 0;
   }
