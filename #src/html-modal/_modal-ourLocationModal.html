@@ -1,0 +1,85 @@
+<section class="ourLocationModal _modal">
+    <div class="ourLocationModal__container">
+        <div class="ourLocationModal__wrapper _modalNoCloseField">
+            <div class="ourLocationModal__body">
+            <div class="ourLocationModal__img-container">
+                <img src="/img/modal-ourLocationModal.png" alt="background modal ourLocationModal" class="ourLocationModal__img">
+            </div>
+            <div class="ourLocationModal__form form">
+                <form action="#" class="form__body _form _ourLocationModal">
+                    <div class="form__wrapper">
+                        <h3 class="form__title">Форма обратной связи</h3>
+                        <ul class="form__box">
+                            <li class="form__item">
+                                <label for="name">
+                                    Имя
+                                </label>
+                                <input
+                                        id="name"
+                                        type="text"
+                                        placeholder="Введите ваше имя"
+                                        name="name"
+                                        required
+                                        autofocus
+                                    />
+                            </li>
+                            <li class="form__item">
+                                <label for="email">
+                                    E-mail
+                                </label>
+                                <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="Введите ваш E-mail"
+                                        name="email"
+                                        required
+                                    />
+                            </li>
+                            <li class="form__item">
+                                <label for="phone">
+                                    Телефон
+                                </label>
+                                <input
+                                        id="phone"
+                                        type="tel"
+                                        placeholder="Введите ваше Телефон"
+                                        minlength="10"
+                                        maxlength="10"
+                                        name="phone"
+                                        required
+                                    />
+                            </li>
+                            <li class="form__item">
+                                <label for="phone">
+                                    Локация
+                                </label>
+                                <select name="location" id="" required="required" >
+                                    <option value="" hidden disabled="disabled" selected="selected">Выберите локацию</option>
+                                    <option value="location_1">Локация 1</option>
+                                    <option value="location_2">Локация 2</option>
+                                    <option value="location_3">Локация 3</option>
+                                    <option value="location_4">Локация 4</option>
+                                </select>
+                            </li>
+                            <li class="form__button-container">
+                                <button class="form__button _button" type="submit">
+                                    Отправить
+                                </button>
+                            </li>
+                        </ul>
+                        <p class="form__text">
+                            Нажимая кнопку «Отправить», вы даете согласие на
+                            обработку персональных данных и соглашаетесь с
+                            <a href="##" class="form__text-polici">политикой конфиденциальности</a>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+            <button class="ourLocationModal__btn _closeModalBtn" role="button" type="button" tabindex="0">
+                <span></span>
+            </button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,143 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.article {
+    height: 32%;
+    overflow: hidden;
+    @media (min-width: 1023px) {
+        &__title {
+            padding-bottom: 32px;
+            & > br {
+                display: none;
+            }
+        }
+        &__content {
+            -webkit-line-clamp: 10; // количество строк
+            @include fonts(16, 26, 500, $TEXT_COLOR1, Montserrat);
+            &_line-clamp {
+                -webkit-line-clamp: 11;
+            }
+        }
+        &__button-container {
+            padding-top: 0;
+        }
+    }
+    @media (min-width: 767px) {
+        &__wrapper {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        &__title {
+            padding-bottom: 32px;
+        }
+        &__content {
+            text-align: left;
+            -webkit-line-clamp: 12; // количество строк
+            @include fonts(16, 24, 500, $TEXT_COLOR1, Montserrat);
+            &_line-clamp {
+                -webkit-line-clamp: 10;
+            }
+        }
+        &__button-container {
+            justify-content: flex-end;
+        }
+        &__button {
+            @include fonts(16, 24, 600, $ACCENT_COLOR, Montserrat);
+        }
+    }
+
+    &__wrapper {
+        padding-top: 50px;
+        padding-bottom: 36px;
+        margin: 0 auto;
+        max-width: 1460px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &__title {
+        padding-bottom: 24px;
+        & > br {
+                display: block;
+        }
+    }
+    &__content {
+        display: -webkit-inline-box;
+        -webkit-line-clamp: 25;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 1.3s ease 0s;
+        @include fonts(14, 20, 500, $TEXT_COLOR1, Montserrat);
+        text-align: center;
+        &_line-clamp {
+            -webkit-line-clamp: 23;
+        }
+    }
+    &__button-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 16px;
+    }
+    &__button {
+        position: relative;
+        transition: all 0.3s ease 0s;
+        @include fonts(14, 24, 600, $ACCENT_COLOR, Montserrat);
+        background: transparent;
+        border: none;
+        padding-right: 37px;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            background: $ACCENT_COLOR;
+            width: 10%;
+            height: 10%;
+            transform: rotate(-45deg);
+            border-radius: 5px;
+            transition: all 0.3s ease 0s;
+        }
+        &:before {
+            transform: rotate(45deg);
+            right: 6%;
+        }
+    }
+}
+.article__button._activeButtonSpoiler {
+    &::after {
+        transform: rotate(45deg);
+    }
+    &:before {
+        transform: rotate(-45deg);
+    }
+}
+._fullText {
+    -webkit-line-clamp: 120;
+    @media (min-width: 767px) {
+        -webkit-line-clamp: 120;
+    }
+    @media (min-width: 1023px) {
+        -webkit-line-clamp: 120;
+    }
+}
+
+.article__wrapper_background-blue {
+    background: $BG_COLOR1;
+}
+
+.article__wrapper_background-light-pink {
+    background: $BG_COLOR2;
+}
+._br {
+    display: none;
+    @media (min-width: 1023px) {
+        display: block;
+    }
+}
+// END ===== style =====

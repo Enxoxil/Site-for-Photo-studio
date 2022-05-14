@@ -1,0 +1,73 @@
+<section class="feedback _modal">
+    <div class="feedback__container">
+        <div class="feedback__wrapper _modalNoCloseField">
+            <div class="feedback__body">
+            <div class="feedback__img-container">
+                <img src="/img/modal-feedback.png" alt="background modal feedback" class="feedback__img">
+            </div>
+            <div class="feedback__form form">
+                <form action="#" class="form__body _form _formFeedback">
+                    <div class="form__wrapper">
+                        <h3 class="form__title">Форма обратной связи</h3>
+                        <ul class="form__box">
+                            <li class="form__item">
+                                <label for="name">
+                                    Имя
+                                </label>
+                                <input
+                                        id="name"
+                                        type="text"
+                                        placeholder="Введите ваше имя"
+                                        name="name"
+                                        required
+                                        autofocus
+                                    />
+                            </li>
+                            <li class="form__item">
+                                <label for="email">
+                                    E-mail
+                                </label>
+                                <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="Введите ваш E-mail"
+                                        name="email"
+                                        required
+                                    />
+                            </li>
+                            <li class="form__item">
+                                <label for="phone">
+                                    Телефон
+                                </label>
+                                <input
+                                        id="phone"
+                                        type="tel"
+                                        placeholder="Введите ваше Телефон"
+                                        minlength="10"
+                                        maxlength="10"
+                                        name="phone"
+                                        required
+                                    />
+                            </li>
+                            <li class="form__button-container">
+                                <button class="form__button _button" type="submit">
+                                    Отправить
+                                </button>
+                            </li>
+                        </ul>
+                        <p class="form__text">
+                            Нажимая кнопку «Отправить», вы даете согласие на
+                            обработку персональных данных и соглашаетесь с
+                            <a href="##" class="form__text-polici">политикой конфиденциальности</a>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+            <button class="feedback__btn _closeModalBtn" role="button" type="button" tabindex="0">
+                <span></span>
+            </button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,309 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+
+// END ===== import =====
+
+// START ===== style =====
+
+.map {
+    &__container {
+        padding-bottom: 120px;
+        padding-top: 40px;
+        @media (min-width: 767px) {
+            padding-top: 60px;
+            padding-bottom: 130px;
+        }
+        @media (min-width: 1023px) {
+            padding-bottom: 150px;
+            padding-top: 100px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        @media (min-width: 767px) {
+            justify-content: space-evenly;
+        }
+        @media (min-width: 1023px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    &__body {
+        border-radius: 25px;
+        flex: 0 1 420px;
+        min-width: 320px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        @media (min-width: 767px) {
+            flex-wrap: nowrap;
+            background-image: url(/img/mapSectionBackground.png);
+            background-repeat: no-repeat;
+            flex-basis: 100%;
+            background-position: 0% 50%;
+        }
+        @media (min-width: 1023px) {
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+        }
+    }
+
+    &__form,
+    .form {
+        border-radius: 25px;
+        flex: 0 1 93%;
+        min-width: 320px;
+        margin-top: -45px;
+        padding-top: 52px;
+        padding-bottom: 52px;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        &:after {
+            position: absolute;
+            content: url(/img/circleTablet.png);
+            right: -21rem;
+            top: -10rem;
+            transform: translate(-50%);
+        }
+        &:before {
+            position: absolute;
+            content: url(/img/circle.png);
+            left: -2rem;
+            bottom: -20rem;
+            transform: translate(-50%);
+        }
+        @media (min-width: 767px) {
+            margin-top: 0;
+            flex: 0 0 482px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            &:after {
+                position: absolute;
+                content: url(/img/circleTablet.png);
+                right: -18rem;
+                top: -6rem;
+                transform: translate(-50%);
+            }
+            &:before {
+                position: absolute;
+                content: url(/img/circle.png);
+                left: 1rem;
+                bottom: -19.5rem;
+                transform: translate(-50%);
+            }
+        }
+        @media (min-width: 1023px) {
+            flex: 0 0 550px;
+            &:after {
+                position: absolute;
+                content: url(/img/circle.png);
+                right: -21rem;
+                top: -10rem;
+                transform: translate(-50%);
+            }
+            &:before {
+                position: absolute;
+                content: url(/img/circleBefore.png);
+                left: 4rem;
+                bottom: -22.5rem;
+                transform: translate(-50%);
+            }
+        }
+        &__body {
+            padding-left: 20.5px;
+            padding-right: 20.5px;
+            @media (min-width: 767px) {
+                padding-left: 36px;
+                padding-right: 36px;
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &__title {
+            text-align: center;
+            @include fonts(22, 26, 600, $TEXT_COLOR2, Montserrat);
+            padding-bottom: 24px;
+            @media (min-width: 767px) {
+                @include fonts(30, 36, 600, $TEXT_COLOR2, Montserrat);
+                padding-bottom: 32px;
+            }
+        }
+
+        &__box {
+            @media (min-width: 767px) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            @media (min-width: 1023px) {
+                padding-left: 29.5px;
+                padding-right: 29.5px;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 16px;
+            & > label {
+                @include fonts(14, 12, 600, #121621, Montserrat);
+                @media (min-width: 767px) {
+                    @include fonts(16, 12, 500, #121621, Montserrat);
+                }
+                opacity: 0.4;
+            }
+            & > input {
+                border-radius: 5px;
+                background: #fff;
+                border: 1px solid #dddee4;
+                margin-top: 8px;
+                padding-left: 16px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                &::placeholder {
+                    @include fonts(
+                        12,
+                        12,
+                        600,
+                        rgba(177, 177, 177, 0.4),
+                        Montserrat
+                    );
+                }
+            }
+        }
+
+        &__button-container {
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__button {
+            width: 100%;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        &__text {
+            @include fonts(12, 16, 500, $TEXT_COLOR1, Montserrat);
+            text-align: center;
+            @media (max-width: 1023px) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        &__text-polici {
+            text-decoration: underline;
+            @include fonts(false, false, false, #585858, Montserrat);
+        }
+    }
+
+    &__item {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-top: 145px;
+        padding-bottom: 145px;
+        @media (max-width: 767px) {
+            background-image: url(/img/mapSectionBackground.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: drop-shadow(0px 2.69px 6.65px rgba(121, 121, 121, 0.2));
+            position: relative;
+            z-index: 1;
+            border-radius: 25px;
+        }
+        @media (min-width: 767px) {
+            justify-content: center;
+            padding-bottom: 95px;
+        }
+        @media (min-width: 1023px) {
+            padding-right: 74px;
+            justify-content: flex-end;
+            padding-top: 50px;
+        }
+    }
+}
+
+.item {
+    &__box {
+        position: relative;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding-bottom: 30px;
+        padding-top: 34px;
+        padding-left: 30px;
+        &:after {
+            top: 99%;
+            left: 43%;
+            content: "";
+            position: absolute;
+            pointer-events: none;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 14px 17.5px 0 17.5px;
+            border-color: #4a4a4a transparent transparent transparent;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        flex: 0 1 238px;
+        @media (min-width: 767px) {
+            flex: 0 1 256px;
+        }
+        @media (min-width: 1023px) {
+        }
+    }
+
+    &__box-logo {
+        padding-bottom: 30px;
+    }
+
+    &__box-num {
+        display: inline-block;
+        padding-bottom: 10px;
+        @include fonts(14, 20, 600, #ffffff, Montserrat);
+        @media (min-width: 767px) {
+            @include fonts(16, 20, 600, #ffffff, Montserrat);
+        }
+    }
+
+    &__box-link {
+        display: inline-block;
+        padding-bottom: 10px;
+        @include fonts(14, 20, 600, #ffffff, Montserrat);
+        @media (min-width: 767px) {
+            @include fonts(16, 20, 600, #ffffff, Montserrat);
+        }
+    }
+
+    &__box-text {
+        display: inline-block;
+        @include fonts(14, 24, 500, #ffffff, Montserrat);
+        @media (min-width: 767px) {
+            @include fonts(16, 24, 500, #ffffff, Montserrat);
+        }
+        & > span {
+            font-weight: 600;
+        }
+    }
+}
+
+// END ===== style ====='
