@@ -1,0 +1,165 @@
+// START ===== import =====
+
+@import "values";
+@import "mixins";
+@import "icons";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "reset";
+@import "main-screen";
+@import "section-ourWorks";
+@import "section-ourLocation";
+@import "section-designStudio";
+@import "section-service";
+@import "section-stageWorks";
+@import "section-article";
+@import "section-price";
+@import "section-gifts";
+@import "section-review";
+@import "section-map";
+@import "modal-feedback";
+@import "modal-ourLocationModal";
+@import "modal-review";
+
+// END ===== import =====
+
+// START ===== STYLE =====
+
+._container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 1023px) {
+        max-width: 894px;
+    }
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+._scrollTo {
+    scroll-margin-top: 38.4px;
+    @media (min-width: 767px) {
+        scroll-margin-top: 80px;
+    }
+}
+._h2-title {
+    text-align: center;
+    @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
+    @media (min-width: 767px) {
+        @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+    }
+    @media (min-width: 1023px) {
+        @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+    }
+}
+
+._button {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background: $GRADIENT;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 305px;
+    @include fonts(12, 17, 600, #fff, Montserrat);
+
+    @media (min-width: 370px) {
+        @include fonts(14, 17, 600, #fff, Montserrat);
+        letter-spacing: 3px;
+    }
+
+    @media (min-width: 767px) {
+        @include fonts(16, 20, 600, #fff, Montserrat);
+    }
+    &:hover,
+    &:focus {
+        background: $GRADIENT_HOVER;
+    }
+    &:active {
+        transform: scale(0.87);
+        background: $GRADIENT_HOVER;
+    }
+}
+.theme-background-color-blue {
+    background: $BG_COLOR1;
+    background-repeat: no-repeat;
+}
+.theme-background-color-light-pink {
+    background: $BG_COLOR2;
+    background-repeat: no-repeat;
+}
+.theme-background-color-pink {
+    background: rgba(245, 217, 198, 1);
+    background-repeat: no-repeat;
+}
+.theme-background-color-black {
+    background: $TEXT_COLOR2;
+    background-repeat: no-repeat;
+}
+
+._right-arrow {
+    transform: rotate(180deg);
+}
+._left-arrow,
+._right-arrow {
+    transition: all 0.3s ease;
+    position: relative;
+    height: 36px;
+    width: 36px;
+    border: none;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+    @media (min-width: 1023px) {
+        height: 73px;
+        width: 73px;
+    }
+    @media (min-width: 767px) {
+        height: 64px;
+        width: 64px;
+    }
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        height: 7%;
+        width: 40%;
+        background-color: $ACCENT_COLOR;
+        border-radius: 5px;
+    }
+    &:active::after,
+    &:active::before {
+        background-color: #fff;
+    }
+    &:after {
+        transform: rotate(-45deg);
+        top: 34%;
+    }
+    &:before {
+        transform: rotate(45deg);
+        bottom: 34%;
+    }
+    &:hover,
+    &:focus {
+        background-color: $BG_COLOR1;
+    }
+    &:active {
+        background-color: $ACCENT_COLOR;
+    }
+}
+
+// END ===== STYLE =====
