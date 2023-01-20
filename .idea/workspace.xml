@@ -13,7 +13,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +45,7 @@
       <workItem from="1674250790653" duration="453000" />
       <workItem from="1674251254452" duration="970000" />
       <workItem from="1674252245077" duration="286000" />
-      <workItem from="1674252546578" duration="1052000" />
+      <workItem from="1674252546578" duration="1233000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -62,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674253187704</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Delete .idea directory">
+      <created>1674253748866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674253748866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
