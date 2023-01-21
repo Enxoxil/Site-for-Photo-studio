@@ -5,293 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: return project">
-      <change afterPath="$PROJECT_DIR$/Photo studio/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/IBMPlexSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/IBMPlexSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Montserrat-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/OpenSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/OpenSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/OpenSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/OpenSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/PTSerif-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/PTSerif-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/PTSerif-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/PTSerif-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Raleway-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Raleway-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Raleway-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Raleway-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/futuralt_bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/futuralt_bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/fonts/icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/arrow-slider-negative.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/arrow-slider-negative.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/arrow-slider-negative.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/arrow-slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/arrow-slider.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/cardsBackgroundCircle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/cardsBackgroundCircle.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/cardsBackgroundCircleBiggest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/cardsBackgroundCircleBiggest.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/circle.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/circleBefore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/circleBefore.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/circleTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/circleTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/footer-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/footer-logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/giftbg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/insta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/list-stile-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/list-stile-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/list-stile-image.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/list-style-image-check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/logo-white.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/mapSectionBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/mapSectionBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/modal-feedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/modal-feedback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/modal-feedback.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/modal-ourLocationModal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/modal-ourLocationModal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocation-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocation-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocation-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocation-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocation-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocation-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocationBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocationBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocationBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourLocationBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourWorks-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourWorks-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourWorks-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourWorks-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourWorks-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/ourWorks-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/phone.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/priceBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/priceBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/priceBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/priceBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-gift.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-gift.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-giftBacground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-giftBacground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-giftBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-giftBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-giftBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-giftBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-review1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-review1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-review2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-review2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-review3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/section-review3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img10.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img11.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img6.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img7.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img8.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/service-img9.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/stageWorksBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/stageWorksBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/stageWorksBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/stageWorksBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/stageWorksBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/stageWorksBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/telegramm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/макетюpng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/img/макетюpng.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/js/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo studio/video/bg_video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-modal/_modal-feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-modal/_modal-feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-modal/_modal-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-modal/_modal-review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/IBMPlexSans-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/IBMPlexSans-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Montserrat-SemiBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/OpenSans-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/OpenSans-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/OpenSans-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/OpenSans-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/PTSerif-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/PTSerif-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/PTSerif-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/PTSerif-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Raleway-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Raleway-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Raleway-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Raleway-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Roboto-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Roboto-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Roboto-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Roboto-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Roboto-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/Roboto-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/futuralt_bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/futuralt_bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/fonts/icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/arrow-slider-negative.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/arrow-slider-negative.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/arrow-slider-negative.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/arrow-slider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/arrow-slider.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/cardsBackgroundCircle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/cardsBackgroundCircle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/cardsBackgroundCircleBiggest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/cardsBackgroundCircleBiggest.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/circle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/circleBefore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/circleBefore.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/circleTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/circleTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/footer-logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/giftbg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/insta.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/list-stile-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/list-stile-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/list-stile-image.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/list-style-image-check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/logo-white.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/mapSectionBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/mapSectionBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/modal-feedback.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/modal-feedback.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/modal-feedback.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/modal-ourLocationModal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/modal-ourLocationModal.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocation-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocation-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocation-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocation-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocation-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocation-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocationBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocationBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocationBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourLocationBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourWorks-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourWorks-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourWorks-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourWorks-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourWorks-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/ourWorks-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/phone.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/priceBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/priceBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/priceBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/priceBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-gift.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-gift.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-giftBacground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-giftBacground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-giftBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-giftBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-giftBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-giftBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-review1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-review1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-review2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-review2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-review3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/section-review3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img10.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img11.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img7.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img8.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/service-img9.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/stageWorksBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/stageWorksBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/stageWorksBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/stageWorksBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/stageWorksBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/stageWorksBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/telegramm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/макетюpng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/img/макетюpng.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/js/script.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo_site/video/bg_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +94,7 @@
       <workItem from="1674252546578" duration="1233000" />
       <workItem from="1674253856957" duration="503000" />
       <workItem from="1674297528730" duration="599000" />
-      <workItem from="1674298146331" duration="2577000" />
+      <workItem from="1674298146331" duration="2880000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -417,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674254120911</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: return project">
+      <created>1674303236715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674303236715</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +201,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="tech" />
     <MESSAGE value="Delete .idea directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete .idea directory" />
+    <MESSAGE value="refactor: return project" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: return project" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
