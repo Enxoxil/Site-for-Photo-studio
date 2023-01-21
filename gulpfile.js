@@ -34,9 +34,9 @@ let path = {
         html: p_Fold + "/",
         css: p_Fold + "/css/",
         js: p_Fold + "/js/",
-        img: p_Fold + "/img/",
+        img: p_Fold + "img/",
         fonts: p_Fold + "/fonts/",
-        video: p_Fold + "/video",
+        video: p_Fold + "video",
     },
     src: {
         //Пути к папкам с исходниками
