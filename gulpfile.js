@@ -21,7 +21,8 @@
 */
 
 // START ===== variable =====
-let p_Fold = require("path").basename(__dirname); // путь к продакшн папке
+// let p_Fold = require("path").basename(__dirname); // путь к продакшн папке
+let p_Fold = "docs"; // путь к продакшн папке
 // имя папки будет взято то в которой лежат исходники
 let s_Fold = "#src"; // путь к исходникам
 let fs = require("fs"); // вспомогательная переменная для автодобавления шрифтов в scss
@@ -34,9 +35,9 @@ let path = {
         html: p_Fold + "/",
         css: p_Fold + "/css/",
         js: p_Fold + "/js/",
-        img: p_Fold + "img/",
+        img: p_Fold + "/img/",
         fonts: p_Fold + "/fonts/",
-        video: p_Fold + "video",
+        video: p_Fold + "/video",
     },
     src: {
         //Пути к папкам с исходниками
