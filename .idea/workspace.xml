@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: return project">
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: refactor syntax error">
       <change beforePath="$PROJECT_DIR$/#src/html-section/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photo studio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Photo studio/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,7 @@
       <workItem from="1674252546578" duration="1233000" />
       <workItem from="1674253856957" duration="503000" />
       <workItem from="1674297528730" duration="599000" />
-      <workItem from="1674298146331" duration="2880000" />
+      <workItem from="1674298146331" duration="4813000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -138,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674303236715</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor: refactor syntax error">
+      <created>1674303601411</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674303601411</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +212,8 @@
     <MESSAGE value="tech" />
     <MESSAGE value="Delete .idea directory" />
     <MESSAGE value="refactor: return project" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: return project" />
+    <MESSAGE value="refactor: refactor syntax error" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: refactor syntax error" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
