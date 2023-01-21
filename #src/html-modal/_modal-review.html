@@ -9,11 +9,11 @@
                                 как прошла ваша фотосессия</h3>
                             <ul class="form__box">
                                 <li class="form__item">
-                                    <label for="name">
+                                    <label for="reviewModal-name">
                                         Имя
                                     </label>
                                     <input
-                                            id="name"
+                                            id="reviewModal-name"
                                             type="text"
                                             placeholder="Введите ваше имя"
                                             name="name"
@@ -22,25 +22,24 @@
                                         />
                                 </li>
                                 <li class="form__item">
-                                    <label for="email">
+                                    <label for="reviewModal-email">
                                         E-mail
                                     </label>
                                     <input
-                                            id="email"
+                                            id="reviewModal-email"
                                             type="email"
                                             placeholder="Введите ваш E-mail"
                                             name="email"
                                             required
                                         />
                                 </li>
-                                <ul>
                                     <li class="form__item">
-                                        <label for="textarea">
+                                        <label for="reviewModal-textarea">
                                             Отзыв
                                         </label>
                                         <input  class="_textarea"
-                                            id="textarea"
-                                            type="textarea"
+                                            id="reviewModal-textarea"
+                                            type="text"
                                             placeholder="Введите ваш отзыв"
                                             name="textarea"
                                             required
@@ -48,14 +47,13 @@
                                         />
                                     </li>
                                     <li class="form__item">
-                                        <label for="textarea">
+                                        <label for="reviewModal-file">
                                             
                                         </label>
                                         <input type="file"
-                                            id="review" name="review"
+                                            id="reviewModal-file" name="review"
                                             accept="image/png, image/jpeg">
                                     </li>
-                                </ul>
 
                                 <li class="form__button-container">
                                     <button class="form__button _button" type="submit">
@@ -66,13 +64,13 @@
                             <p class="form__text">
                                 Нажимая кнопку «Отправить», вы даете согласие на
                                 обработку персональных данных и соглашаетесь с
-                                <a href="##" class="form__text-polici">политикой конфиденциальности</a>
+                                <a href="#" class="form__text-polici">политикой конфиденциальности</a>
                             </p>
                         </div>
                     </form>
                 </div>
                 <div class="reviewModal__img-container">
-                    <img src="/img/modal-reviewModal.png" alt="background modal reviewModal" class="reviewModal__img">
+                    <img src="/img/modal-feedback.png" alt="background modal reviewModal" class="reviewModal__img">
                 </div>
                 <button class="reviewModal__btn _closeModalBtn" role="button" type="button" tabindex="0">
                     <span></span>

@@ -521,7 +521,6 @@ function changePaginationItemActive() {
     searchAllPaginationItems
         .call(this)
         [isActiveSlide.call(this) - 1].classList.add("active-dots");
-        console.log(isActiveSlide.call(this));
 }
 
 function createPaginationItem(parent) {
