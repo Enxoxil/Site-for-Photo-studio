@@ -42,18 +42,18 @@
         }
     }
     &__body {
-        background-image: url(/img/stageWorksBackgroundMobile.png);
+        background-image: url(../img/stageWorksBackgroundMobile.png);
         background-repeat: no-repeat;
         background-size: 100% 93%;
         background-position: 0% 0%;
         @media (min-width: 1023px) {
-            background-image: url(/img/stageWorksBackground.png);
+            background-image: url(../img/stageWorksBackground.png);
             background-repeat: no-repeat;
             background-size: 74% 70%;
             background-position: 64% 23%;
         }
         @media (min-width: 767px) {
-            background-image: url(/img/stageWorksBackgroundTablet.png);
+            background-image: url(../img/stageWorksBackgroundTablet.png);
             background-repeat: no-repeat;
             background-size: 108% 85%;
             background-position: -8rem 45%;

@@ -43,7 +43,7 @@
         align-items: center;
         @media (min-width: 767px) {
             flex-wrap: nowrap;
-            background-image: url(/img/mapSectionBackground.png);
+            background-image: url(../img/mapSectionBackground.png);
             background-repeat: no-repeat;
             flex-basis: 100%;
             background-position: 0% 50%;
@@ -67,14 +67,14 @@
         overflow: hidden;
         &:after {
             position: absolute;
-            content: url(/img/circleTablet.png);
+            content: url(../img/circleTablet.png);
             right: -21rem;
             top: -10rem;
             transform: translate(-50%);
         }
         &:before {
             position: absolute;
-            content: url(/img/circle.png);
+            content: url(../img/circle.png);
             left: -2rem;
             bottom: -20rem;
             transform: translate(-50%);
@@ -86,14 +86,14 @@
             padding-bottom: 80px;
             &:after {
                 position: absolute;
-                content: url(/img/circleTablet.png);
+                content: url(../img/circleTablet.png);
                 right: -18rem;
                 top: -6rem;
                 transform: translate(-50%);
             }
             &:before {
                 position: absolute;
-                content: url(/img/circle.png);
+                content: url(../img/circle.png);
                 left: 1rem;
                 bottom: -19.5rem;
                 transform: translate(-50%);
@@ -103,14 +103,14 @@
             flex: 0 0 550px;
             &:after {
                 position: absolute;
-                content: url(/img/circle.png);
+                content: url(../img/circle.png);
                 right: -21rem;
                 top: -10rem;
                 transform: translate(-50%);
             }
             &:before {
                 position: absolute;
-                content: url(/img/circleBefore.png);
+                content: url(../img/circleBefore.png);
                 left: 4rem;
                 bottom: -22.5rem;
                 transform: translate(-50%);
@@ -222,7 +222,7 @@
         padding-top: 145px;
         padding-bottom: 145px;
         @media (max-width: 767px) {
-            background-image: url(/img/mapSectionBackground.png);
+            background-image: url(../img/mapSectionBackground.png);
             background-repeat: no-repeat;
             background-position: center;
             filter: drop-shadow(0px 2.69px 6.65px rgba(121, 121, 121, 0.2));

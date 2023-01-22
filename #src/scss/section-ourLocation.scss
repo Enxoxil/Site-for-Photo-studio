@@ -11,20 +11,20 @@
         margin: 0 auto;
         max-width: 1460px;
         overflow: hidden;
-        background-image: url(/img/ourLocationBackgroundMobile.png);
+        background-image: url(../img/ourLocationBackgroundMobile.png);
         background-repeat: no-repeat;
         background-size: 100% 85%;
         background-position: 1% -49%;
         padding-bottom: 62px;
         @media (min-width: 767px) {
-            background-image: url(/img/ourLocationBackground.png);
+            background-image: url(../img/ourLocationBackground.png);
             background-size: 136% 86%;
             background-position: 52% 10%;
             padding-bottom: 80px;
             padding-top: 40px;
         }
         @media (min-width: 1023px) {
-            background-image: url(/img/ourLocationBackground.png);
+            background-image: url(../img/ourLocationBackground.png);
             background-size: 100% 83%;
             background-position: 0 27%;
             padding-bottom: 80px;

@@ -9,7 +9,7 @@
 .price {
     @media (min-width: 1232px) {
         &__container {
-            background-image: url(/img/priceBackground.png);
+            background-image: url(../img/priceBackground.png);
             background-repeat: no-repeat;
             background-size: 103% 99%;
             background-position: -4rem 9rem;
@@ -28,7 +28,7 @@
     }
     @media (min-width: 767px) {
         &__container {
-            background-image: url(/img/priceBackgroundTablet.png);
+            background-image: url(../img/priceBackgroundTablet.png);
             background-repeat: no-repeat;
             background-size: 159% 93%;
             background-position: -47rem 13rem;
@@ -273,21 +273,21 @@
 .item-box__container{
     .theme-background-color-blue {
         background: $BG_COLOR1;
-        background-image: url(/img/cardsBackgroundCircle.png);
+        background-image: url(../img/cardsBackgroundCircle.png);
         background-repeat: no-repeat;
         background-size: 43% 27%;
         background-position: right top;
     }
     .theme-background-color-light-pink {
         background: $BG_COLOR2;
-        background-image: url(/img/cardsBackgroundCircle.png);
+        background-image: url(../img/cardsBackgroundCircle.png);
         background-repeat: no-repeat;
         background-size: 43% 27%;
         background-position: right top;
     }
     .theme-background-color-pink {
         background: rgba(245, 217, 198, 1);
-        background-image: url(/img/cardsBackgroundCircleBiggest.png);
+        background-image: url(../img/cardsBackgroundCircleBiggest.png);
         background-repeat: no-repeat;
         background-size: 47% 29%;
         background-position: right top;

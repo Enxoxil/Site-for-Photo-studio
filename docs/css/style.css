@@ -1003,7 +1003,7 @@ select {
 }
 
 .no-webp .ourLocation__container {
-  background-image: url(/img/ourLocationBackgroundMobile.png); }
+  background-image: url(../img/ourLocationBackgroundMobile.png); }
 
 .ourLocation__container {
   margin: 0 auto;
@@ -1331,7 +1331,7 @@ select {
 }
 
 .no-webp .stageWorks__body {
-  background-image: url(/img/stageWorksBackgroundMobile.png); }
+  background-image: url(../img/stageWorksBackgroundMobile.png); }
 
 .stageWorks__body {
   background-repeat: no-repeat;
@@ -1748,7 +1748,7 @@ select {
 }
 
 .no-webp .item-box__container .theme-background-color-blue {
-  background-image: url(/img/cardsBackgroundCircle.png); }
+  background-image: url(../img/cardsBackgroundCircle.png); }
 
 .item-box__container .theme-background-color-blue {
   background: #F2F4F4;
@@ -1758,7 +1758,7 @@ select {
 }
 
 .no-webp .item-box__container .theme-background-color-light-pink {
-  background-image: url(/img/cardsBackgroundCircle.png); }
+  background-image: url(../img/cardsBackgroundCircle.png); }
 
 .item-box__container .theme-background-color-light-pink {
   background: #F9F4EE;
@@ -1768,7 +1768,7 @@ select {
 }
 
 .no-webp .item-box__container .theme-background-color-pink {
-  background-image: url(/img/cardsBackgroundCircleBiggest.png); }
+  background-image: url(../img/cardsBackgroundCircleBiggest.png); }
 
 .item-box__container .theme-background-color-pink {
   background: #f5d9c6;
@@ -2129,7 +2129,7 @@ select {
 .map__form:after,
 .map .form:after {
   position: absolute;
-  content: url(/img/circleTablet.png);
+  content: url(../img/circleTablet.png);
   right: -21rem;
   top: -10rem;
   -webkit-transform: translate(-50%);
@@ -2140,7 +2140,7 @@ select {
 .map__form:before,
 .map .form:before {
   position: absolute;
-  content: url(/img/circle.png);
+  content: url(../img/circle.png);
   left: -2rem;
   bottom: -20rem;
   -webkit-transform: translate(-50%);
@@ -3603,7 +3603,7 @@ body {
   }
 
   .no-webp .ourLocation__container {
-    background-image: url(/img/ourLocationBackground.png); }
+    background-image: url(../img/ourLocationBackground.png); }
 
   .ourLocation__container {
     background-size: 136% 86%;
@@ -3761,7 +3761,7 @@ body {
   }
 
   .no-webp .stageWorks__body {
-    background-image: url(/img/stageWorksBackgroundTablet.png); }
+    background-image: url(../img/stageWorksBackgroundTablet.png); }
 
   .stageWorks__body {
     background-repeat: no-repeat;
@@ -3885,7 +3885,7 @@ body {
   }
 
   .no-webp .price__container {
-    background-image: url(/img/priceBackgroundTablet.png); }
+    background-image: url(../img/priceBackgroundTablet.png); }
 
   .price__container {
     background-repeat: no-repeat;
@@ -4223,7 +4223,7 @@ body {
   }
 
   .no-webp .map__body {
-    background-image: url(/img/mapSectionBackground.png); }
+    background-image: url(../img/mapSectionBackground.png); }
 
   .map__body {
     -ms-flex-wrap: nowrap;
@@ -4247,7 +4247,7 @@ body {
   .map__form:after,
   .map .form:after {
     position: absolute;
-    content: url(/img/circleTablet.png);
+    content: url(../img/circleTablet.png);
     right: -18rem;
     top: -6rem;
     -webkit-transform: translate(-50%);
@@ -4258,7 +4258,7 @@ body {
   .map__form:before,
   .map .form:before {
     position: absolute;
-    content: url(/img/circle.png);
+    content: url(../img/circle.png);
     left: 1rem;
     bottom: -19.5rem;
     -webkit-transform: translate(-50%);
@@ -4779,7 +4779,7 @@ body {
   }
 
   .no-webp .ourLocation__container {
-    background-image: url(/img/ourLocationBackground.png); }
+    background-image: url(../img/ourLocationBackground.png); }
 
   .ourLocation__container {
     background-size: 100% 83%;
@@ -4845,7 +4845,7 @@ body {
   }
 
   .no-webp .stageWorks__body {
-    background-image: url(/img/stageWorksBackground.png); }
+    background-image: url(../img/stageWorksBackground.png); }
 
   .stageWorks__body {
     background-repeat: no-repeat;
@@ -5167,7 +5167,7 @@ body {
   .map__form:after,
   .map .form:after {
     position: absolute;
-    content: url(/img/circle.png);
+    content: url(../img/circle.png);
     right: -21rem;
     top: -10rem;
     -webkit-transform: translate(-50%);
@@ -5178,7 +5178,7 @@ body {
   .map__form:before,
   .map .form:before {
     position: absolute;
-    content: url(/img/circleBefore.png);
+    content: url(../img/circleBefore.png);
     left: 4rem;
     bottom: -22.5rem;
     -webkit-transform: translate(-50%);
@@ -5292,7 +5292,7 @@ body {
 
 @media (min-width: 1232px) {
   .no-webp .price__container {
-    background-image: url(/img/priceBackground.png); }
+    background-image: url(../img/priceBackground.png); }
   .price__container {
     background-repeat: no-repeat;
     background-size: 103% 99%;
@@ -5600,7 +5600,7 @@ body {
   }
 
   .no-webp .map__item {
-    background-image: url(/img/mapSectionBackground.png); }
+    background-image: url(../img/mapSectionBackground.png); }
 
   .map__item {
     background-repeat: no-repeat;
@@ -5659,49 +5659,49 @@ body {
   }
 }
 
-.webp .ourLocation__container { background-image: url(/img/ourLocationBackgroundMobile.webp); }
+.webp .ourLocation__container { background-image: url(../img/ourLocationBackgroundMobile.webp); }
 
-.webp .stageWorks__body { background-image: url(/img/stageWorksBackgroundMobile.webp); }
+.webp .stageWorks__body { background-image: url(../img/stageWorksBackgroundMobile.webp); }
 
-.webp .item-box__container .theme-background-color-blue { background-image: url(/img/cardsBackgroundCircle.webp); }
+.webp .item-box__container .theme-background-color-blue { background-image: url(../img/cardsBackgroundCircle.webp); }
 
-.webp .item-box__container .theme-background-color-light-pink { background-image: url(/img/cardsBackgroundCircle.webp); }
+.webp .item-box__container .theme-background-color-light-pink { background-image: url(../img/cardsBackgroundCircle.webp); }
 
-.webp .item-box__container .theme-background-color-pink { background-image: url(/img/cardsBackgroundCircleBiggest.webp); }
+.webp .item-box__container .theme-background-color-pink { background-image: url(../img/cardsBackgroundCircleBiggest.webp); }
 
 @media (min-width: 767px) {
 
-  .webp .ourLocation__container { background-image: url(/img/ourLocationBackground.webp); }
+  .webp .ourLocation__container { background-image: url(../img/ourLocationBackground.webp); }
 }
 
 @media (min-width: 767px) {
 
-  .webp .stageWorks__body { background-image: url(/img/stageWorksBackgroundTablet.webp); }
+  .webp .stageWorks__body { background-image: url(../img/stageWorksBackgroundTablet.webp); }
 }
 
 @media (min-width: 767px) {
 
-  .webp .price__container { background-image: url(/img/priceBackgroundTablet.webp); }
+  .webp .price__container { background-image: url(../img/priceBackgroundTablet.webp); }
 }
 
 @media (min-width: 767px) {
 
-  .webp .map__body { background-image: url(/img/mapSectionBackground.webp); }
+  .webp .map__body { background-image: url(../img/mapSectionBackground.webp); }
 }
 
 @media (min-width: 1023px) {
 
-  .webp .ourLocation__container { background-image: url(/img/ourLocationBackground.webp); }
+  .webp .ourLocation__container { background-image: url(../img/ourLocationBackground.webp); }
 }
 
 @media (min-width: 1023px) {
 
-  .webp .stageWorks__body { background-image: url(/img/stageWorksBackground.webp); }
+  .webp .stageWorks__body { background-image: url(../img/stageWorksBackground.webp); }
 }
 
 @media (min-width: 1232px) {
 
-  .webp .price__container { background-image: url(/img/priceBackground.webp); }
+  .webp .price__container { background-image: url(../img/priceBackground.webp); }
 }
 
 @media (max-width: 767px) {
@@ -5711,5 +5711,5 @@ body {
 
 @media (max-width: 767px) {
 
-  .webp .map__item { background-image: url(/img/mapSectionBackground.webp); }
+  .webp .map__item { background-image: url(../img/mapSectionBackground.webp); }
 }
