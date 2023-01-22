@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: refactor syntax error">
-      <change beforePath="$PROJECT_DIR$/#src/html-modal/_modal-feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-modal/_modal-feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-modal/_modal-ourLocationModal.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-modal/_modal-ourLocationModal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-modal/_modal-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-modal/_modal-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/html-section/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/макетюpng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_main-screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_main-screen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-article1.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-article1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-article2.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-article2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-gifts.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-gifts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-price.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-price.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-service.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +106,7 @@
       <workItem from="1674253856957" duration="503000" />
       <workItem from="1674297528730" duration="599000" />
       <workItem from="1674298146331" duration="8093000" />
-      <workItem from="1674406494929" duration="2602000" />
+      <workItem from="1674406494929" duration="3248000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -208,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674408106830</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor: refactor syntax error">
+      <created>1674424948264</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674424948264</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
