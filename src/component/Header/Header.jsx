@@ -3,7 +3,8 @@ import classes from './Header.module.scss';
 
 class Header extends Component {
     render() {
-        return (<header className={classes.header}>
+        return (
+            <header className={classes.header}>
                 <div className={classes.header__wrapper}>
                     <div className={`${classes.header__container} _container`}>
                         <div className={classes.header__body}>
@@ -11,7 +12,6 @@ class Header extends Component {
                                 <picture>
                                     <source srcSet="/img/logo.webp" type="image/webp"/>
                                     <img src="/img/logo.png" alt="logo" className={classes.header__logo}/>
-
                                 </picture>
                             </a>
                             <div className={classes.header__main}>
@@ -80,7 +80,6 @@ class Header extends Component {
                                             <img src="/img/phone.png" alt="Phone"/>
                                         </picture>
                                     </a>
-
                                 </div>
                                 <button className={classes.action_header__icon_menu} type="button">
                                     <span></span>

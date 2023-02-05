@@ -4,263 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: add react branch">
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/arrow-slider-negative.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/arrow-slider-negative.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/arrow-slider-negative.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/arrow-slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/arrow-slider.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cardsBackgroundCircle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cardsBackgroundCircle.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cardsBackgroundCircleBiggest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/cardsBackgroundCircleBiggest.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/circle.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/circleBefore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/circleBefore.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/circleTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/circleTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/footer-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/footer-logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/giftbg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/insta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/list-stile-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/list-stile-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/list-stile-image.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/list-style-image-check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo-white.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/mapSectionBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/mapSectionBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modal-feedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modal-feedback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modal-feedback.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modal-ourLocationModal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/modal-ourLocationModal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocation-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocation-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocation-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocation-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocation-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocation-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocationBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocationBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocationBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourLocationBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourWorks-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourWorks-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourWorks-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourWorks-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourWorks-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ourWorks-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/phone.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/priceBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/priceBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/priceBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/priceBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-gift.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-gift.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-giftBacground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-giftBacground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-giftBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-giftBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-giftBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-giftBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-review1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-review1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-review2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-review2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-review3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/section-review3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img10.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img11.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img6.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img7.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img8.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/service-img9.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stageWorksBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stageWorksBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stageWorksBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stageWorksBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stageWorksBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stageWorksBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/telegramm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/IBMPlexSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/IBMPlexSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/OpenSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/OpenSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/OpenSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/OpenSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/PTSerif-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/PTSerif-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/PTSerif-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/PTSerif-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Raleway-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Raleway-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Raleway-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Raleway-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/futuralt_bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/futuralt_bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-slider-negative.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-slider-negative.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-slider-negative.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-slider.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cardsBackgroundCircle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cardsBackgroundCircle.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cardsBackgroundCircleBiggest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cardsBackgroundCircleBiggest.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circle.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circleBefore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circleBefore.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circleTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circleTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/footer-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/footer-logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/giftbg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/insta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/list-stile-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/list-stile-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/list-stile-image.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/list-style-image-check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo-white.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/mapSectionBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/mapSectionBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/modal-feedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/modal-feedback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/modal-feedback.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/modal-ourLocationModal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/modal-ourLocationModal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocation-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocation-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocation-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocation-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocation-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocation-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocationBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocationBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocationBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourLocationBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourWorks-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourWorks-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourWorks-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourWorks-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourWorks-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ourWorks-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/phone.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/priceBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/priceBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/priceBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/priceBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-gift.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-gift.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-giftBacground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-giftBacground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-giftBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-giftBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-giftBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-giftBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-review1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-review1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-review2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-review2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-review3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/section-review3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img10.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img11.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img6.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img7.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img8.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/service-img9.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/stageWorksBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/stageWorksBackground.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/stageWorksBackgroundMobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/stageWorksBackgroundMobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/stageWorksBackgroundTablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/stageWorksBackgroundTablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/telegramm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/style/fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/style/icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/style/mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/style/values.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Header component and folder structure for React project and adapted mixins">
+      <change afterPath="$PROJECT_DIR$/src/component/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Footer/Footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +119,7 @@
       <workItem from="1674298146331" duration="8093000" />
       <workItem from="1674406494929" duration="3939000" />
       <workItem from="1675548194101" duration="5396000" />
-      <workItem from="1675632093758" duration="3087000" />
+      <workItem from="1675632093758" duration="6659000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -482,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675548448849</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: create Header component and folder structure for React project and adapted mixins">
+      <created>1675635275947</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675635275947</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +306,8 @@
     <MESSAGE value="refactor: return project" />
     <MESSAGE value="refactor: refactor syntax error" />
     <MESSAGE value="refactor: add react branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: add react branch" />
+    <MESSAGE value="feat: create Header component and folder structure for React project and adapted mixins" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Header component and folder structure for React project and adapted mixins" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

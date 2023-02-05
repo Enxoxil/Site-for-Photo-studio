@@ -6,44 +6,44 @@
   font-display: block;
 }
 
-[class^=_icon-]:before,
-[class*=" _icon-"]:before {
+[class^=_icon_]:before,
+[class*=" _icon_"]:before {
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  //-webkit-font-smoothing: antialiased;
+  //-moz-osx-font-smoothing: grayscale;
 }
 
-[class^=_icon-]:before,
-[class*=" _icon-"]:before {
+[class^=_icon_]:before,
+[class*=" _icon_"]:before {
   display: inline-block;
 }
 
-._icon-list-style-image-check:before {
+._icon_list_style_image_check:before {
   content: "\e904";
 }
 
-._icon-list-style-image:before {
+._icon_list_style_image:before {
   content: "\e905";
 }
 
-._icon-facebook:before {
+._icon_facebook:before {
   content: "\e900";
 }
 
-._icon-insta:before {
+._icon_insta:before {
   content: "\e901";
 }
 
-._icon-telegram:before {
+._icon_telegram:before {
   content: "\e902";
 }
 
-._icon-twitter:before {
+._icon_twitter:before {
   content: "\e903";
 }
 
