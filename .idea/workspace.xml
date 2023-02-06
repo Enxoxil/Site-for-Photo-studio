@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create DesignStudio feature">
-      <change afterPath="$PROJECT_DIR$/src/features/Service/Service.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Service/Service.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Service feature">
+      <change afterPath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +116,7 @@
       <workItem from="1674406494929" duration="3939000" />
       <workItem from="1675548194101" duration="5396000" />
       <workItem from="1675632093758" duration="8940000" />
-      <workItem from="1675718089029" duration="6626000" />
+      <workItem from="1675718089029" duration="7481000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675725086926</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: create Service feature">
+      <created>1675726322216</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1675726322216</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +351,8 @@
     <MESSAGE value="refactor: fix scss bugs and create OurWorks features" />
     <MESSAGE value="feat: create OurLocation feature" />
     <MESSAGE value="feat: create DesignStudio feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create DesignStudio feature" />
+    <MESSAGE value="feat: create Service feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Service feature" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
