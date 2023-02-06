@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Header component and folder structure for React project and adapted mixins">
-      <change afterPath="$PROJECT_DIR$/src/component/Footer/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Footer/Footer.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Footer component and scss">
+      <change afterPath="$PROJECT_DIR$/public/video/bg_video.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/video/bg_video.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/MainScreen/MainScreen.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/MainScreen/MainScreen.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,29 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.buildTools.gulp.gulp_package_dir": "D:/GIThub/Photo studio/node_modules/gulp",
-    "last_opened_file_path": "C:/Users/user/WebstormProjects/Site-for-Photo-studio/src/assets/fonts",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;D:/GIThub/Photo studio/node_modules/gulp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/WebstormProjects/Site-for-Photo-studio/public&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets\fonts" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\fonts" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public\img" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\img" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\style" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
@@ -119,7 +119,8 @@
       <workItem from="1674298146331" duration="8093000" />
       <workItem from="1674406494929" duration="3939000" />
       <workItem from="1675548194101" duration="5396000" />
-      <workItem from="1675632093758" duration="6659000" />
+      <workItem from="1675632093758" duration="8940000" />
+      <workItem from="1675718089029" duration="1130000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -240,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675635275947</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: create Footer component and scss">
+      <created>1675638889317</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675638889317</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +315,8 @@
     <MESSAGE value="refactor: refactor syntax error" />
     <MESSAGE value="refactor: add react branch" />
     <MESSAGE value="feat: create Header component and folder structure for React project and adapted mixins" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create Header component and folder structure for React project and adapted mixins" />
+    <MESSAGE value="feat: create Footer component and scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Footer component and scss" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
