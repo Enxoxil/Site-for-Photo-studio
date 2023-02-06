@@ -10,17 +10,17 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile
 
 // END ===== init =====
 
-@@include('webpCheck.js')
-@@include('burger.js')
-@@include('spoiler.js')
-@@include('smoothScroll.js')
-@@include('formHandler.js')
-@@include('closeModalFieldHandler.js')
-@@include('closeModalEscHandler.js')
-@@include('closeModalBtnHandler.js')
-@@include('showModalHandlers.js')
-@@include('sliderLogic2.js')
-@@include('pagination.js')
+// @@include('webpCheck.js')
+// @@include('burger.js')
+// @@include('spoiler.js')
+// @@include('smoothScroll.js')
+// @@include('formHandler.js')
+// @@include('closeModalFieldHandler.js')
+// @@include('closeModalEscHandler.js')
+// @@include('closeModalBtnHandler.js')
+// @@include('showModalHandlers.js')
+// @@include('sliderLogic2.js')
+// @@include('pagination.js')
 
 
 
