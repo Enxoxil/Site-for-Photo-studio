@@ -1,9 +1,10 @@
 
 import './App.css';
 import {Component} from "react";
-import Header from "./component/Header/Header";
-import Footer from "./component/Footer/Footer";
-import MainScreen from "./component/MainScreen/MainScreen";
+import Header from "./features/Header/Header";
+import Footer from "./features/Footer/Footer";
+import MainScreen from "./features/MainScreen/MainScreen";
+import OurWorks from "./features/OurWorks/OurWorks";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <>
             <Header/>
             <MainScreen/>
+            <OurWorks/>
             <Footer/>
         </>
     );

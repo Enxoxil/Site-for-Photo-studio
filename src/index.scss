@@ -144,7 +144,7 @@ body {
   }
 }
 
-._h2-title {
+._h2_title {
   text-align: center;
   @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
   @media (min-width: 767px) {
@@ -186,31 +186,31 @@ body {
   }
 }
 
-.theme-background-color-blue {
+.theme_background_color_blue {
   background: $BG_COLOR1;
   background-repeat: no-repeat;
 }
 
-.theme-background-color-light-pink {
+.theme_background_color_light_pink {
   background: $BG_COLOR2;
   background-repeat: no-repeat;
 }
 
-.theme-background-color-pink {
+.theme_background_color_pink {
   background: rgba(245, 217, 198, 1) no-repeat;
 }
 
-.theme-background-color-black {
+.theme_background_color_black {
   background: $TEXT_COLOR2;
   background-repeat: no-repeat;
 }
 
-._right-arrow {
+._right_arrow {
   transform: rotate(180deg);
 }
 
-._left-arrow,
-._right-arrow {
+._left_arrow,
+._right_arrow {
   transition: all 0.3s ease;
   position: relative;
   height: 36px;
