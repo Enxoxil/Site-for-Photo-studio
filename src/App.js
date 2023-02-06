@@ -7,6 +7,7 @@ import MainScreen from "./features/MainScreen/MainScreen";
 import OurWorks from "./features/OurWorks/OurWorks";
 import OurLocation from "./features/OurLocation/OurLocation";
 import DesignStudio from "./features/DesignStudio/DesignStudio";
+import Service from "./features/Service/Service";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <OurWorks/>
             <OurLocation/>
             <DesignStudio/>
+            <Service/>
             <Footer/>
         </>
     );
