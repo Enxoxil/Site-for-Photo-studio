@@ -5,6 +5,7 @@ import Header from "./features/Header/Header";
 import Footer from "./features/Footer/Footer";
 import MainScreen from "./features/MainScreen/MainScreen";
 import OurWorks from "./features/OurWorks/OurWorks";
+import OurLocation from "./features/OurLocation/OurLocation";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
             <Header/>
             <MainScreen/>
             <OurWorks/>
+            <OurLocation/>
             <Footer/>
         </>
     );
