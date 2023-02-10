@@ -20,51 +20,51 @@ class OurWorks extends Component {
                                 </button>
                             </div>
                             <ul className={classes.slider__body}>
-                                <li className={classes.slider__body_item} data-slide-number="11">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-2.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="12">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-3.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="1">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-1.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="2">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-2.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="3">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-3.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="4">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-1.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="5">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-2.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="6">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-3.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="7">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-1.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="8">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-2.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="9">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-3.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>
-                                <li className={classes.slider__body_item} data-slide-number="10">
+                                <li className={classes.slider__body_item} >
                                     <img src="img/ourWorks-1.jpg" className={classes.slider__body_img} alt="ourWorks"
                                          tabIndex="0" role="link"/>
                                 </li>

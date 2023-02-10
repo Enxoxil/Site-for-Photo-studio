@@ -10,7 +10,7 @@ class DesignStudio extends Component {
                         фотостудии</h2>
                     <div className={classes.designStudio__content}>
                         <video autoPlay muted loop className={classes.designStudio__content_video} id="designStudio__video">
-                            <source src="video/bg_video.mp4" type="video/mp4"/>
+                            <source src="/video/bg_video.mp4" type="video/mp4"/>
                         </video>
                         <button className={classes.designStudio__content_btn}></button>
                     </div>

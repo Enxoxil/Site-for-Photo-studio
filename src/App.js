@@ -9,6 +9,7 @@ import OurLocation from "./features/OurLocation/OurLocation";
 import DesignStudio from "./features/DesignStudio/DesignStudio";
 import Service from "./features/Service/Service";
 import StageWorks from "./features/StageWorks/StageWorks";
+import Price from "./features/Price/Price";
 
 class App extends Component {
   render() {
@@ -21,6 +22,9 @@ class App extends Component {
             <DesignStudio/>
             <Service/>
             <StageWorks/>
+
+            <Price/>
+
             <Footer/>
         </>
     );

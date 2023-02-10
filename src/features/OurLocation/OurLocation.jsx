@@ -20,65 +20,65 @@ class OurLocation extends Component {
                                 </button>
                             </div>
                             <ul className={classes.slider_ourLocation__body}>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="1">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-1.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="2">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-2.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="3">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-3.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
 
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="1">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-1.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="2">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-2.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="3">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-3.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
 
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="1">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-1.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="2">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-2.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="3">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-3.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
 
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="1">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-1.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="2">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-2.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
                                 </li>
-                                <li className={classes.slider_ourLocation__body_item} data-slideNumber="3">
+                                <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-3.jpg" className={classes.slider_ourLocation__body_img}
                                          alt="ourWorks" tabIndex="0"/>
                                     <p className={classes.slider_ourLocation__body_name}>Название слайда</p>
