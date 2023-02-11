@@ -10,6 +10,7 @@ import DesignStudio from "./features/DesignStudio/DesignStudio";
 import Service from "./features/Service/Service";
 import StageWorks from "./features/StageWorks/StageWorks";
 import Price from "./features/Price/Price";
+import Gifts from "./features/Gifts/Gifts";
 
 class App extends Component {
   render() {
@@ -22,9 +23,10 @@ class App extends Component {
             <DesignStudio/>
             <Service/>
             <StageWorks/>
-
+            {/*article*/}
             <Price/>
-
+            {/*article*/}
+            <Gifts/>
             <Footer/>
         </>
     );

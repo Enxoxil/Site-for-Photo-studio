@@ -9,7 +9,7 @@ class Price extends Component {
                     <h2 className={`${classes.price__title} _h2_title _scrollTo`} id="price__title">Стоимость
                         фотосессии</h2>
                     <div className={classes.price__box}>
-                        <div className={`${classes.price__items} item_box`}>
+                        <div className={`${classes.price__items} ${classes.item_box}`}>
                             <div className={classes.item_box__container}>
                                 <div className={`${classes.item_box__wrapper} ${classes.theme_background_color_blue}`}>
                                     <div className={classes.item_box__header}>
@@ -47,7 +47,7 @@ class Price extends Component {
                                             Любой образ
                                         </li>
                                     </ul>
-                                    <div className={`${classes.item_box__footer} box_footer`}>
+                                    <div className={`${classes.item_box__footer} ${classes.box_footer}`}>
                                         <h5 className={classes.box_footer__title}>
                                             Дополнительные услуги
                                         </h5>
@@ -110,7 +110,7 @@ class Price extends Component {
                                             Любой образ
                                         </li>
                                     </ul>
-                                    <div className={`${classes.item_box__footer} box_footer`}>
+                                    <div className={`${classes.item_box__footer} ${classes.box_footer}`}>
                                         <h5 className={classes.box_footer__title}>Дополнительные услуги</h5>
                                         <div className={classes.box_footer__box}>
                                             <div className={classes.box_footer__item}>
@@ -177,7 +177,7 @@ class Price extends Component {
                                             образов — До 8 образов
                                         </li>
                                     </ul>
-                                    <div className={`${classes.item_box__footer} box_footer`}>
+                                    <div className={`${classes.item_box__footer} ${classes.box_footer}`}>
                                         <h5 className={classes.box_footer__title}>Дополнительные услуги</h5>
                                         <div className={classes.box_footer__box}>
                                             <div className={classes.box_footer__item}>

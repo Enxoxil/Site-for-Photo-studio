@@ -1,5 +1,4 @@
 // START ===== import =====
-
 @import "../../ui/style/values";
 @import "../../ui/style/mixins";
 // END ===== import =====
@@ -67,6 +66,21 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+
+  &__container {
+    display: flex;
+    flex: 0 1 420px;
+    padding: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 34px;
+    }
+
+    &:last-child .box_footer__box {
+      justify-content: center;
+    }
+  }
+
   @media (min-width: 1232px) {
     &__container {
       &:not(:last-child) {
@@ -74,17 +88,11 @@
       }
     }
   }
-  @media (min-width: 1023px) {
+
+
+  @media (min-width: 767px){
     &__container {
-      flex-basis: 398px;
-    }
-    &__wrapper {
-      padding: 48px 14px 42px;
-    }
-  }
-  @media (min-width: 767px) {
-    &__container {
-      flex: 0 1 420px;
+      //flex: 0 1 420px;
     }
     &__wrapper {
       padding: 47px 22px;
@@ -107,6 +115,15 @@
       @include fonts(16, 20, 600, #fff, Montserrat);
       padding: 14px 87px;
     }
+
+  }
+  @media (min-width: 1023px) {
+    &__container  {
+      flex: 0 1 398px;
+    }
+    &__wrapper {
+      padding: 48px 14px 42px;
+    }
   }
   @media (min-width: 370px) {
     &__button {
@@ -121,19 +138,7 @@
     }
   }
 
-  &__container {
-    display: flex;
-    flex: 0 1 420px;
-    padding: 0;
 
-    &:not(:last-child) {
-      padding-bottom: 34px;
-    }
-
-    &:last-child .box-footer__box {
-      justify-content: center;
-    }
-  }
 
   &__wrapper {
     border-radius: 16px;
@@ -280,7 +285,7 @@
     border-radius: 5px;
     width: 100%;
 
-    & > ._cost-value {
+    & > ._cost_value {
       font-size: 9px;
       line-height: 11px;
     }
