@@ -163,6 +163,7 @@
       padding-bottom: 70px;
     }
     &:before {
+      z-index: -1;
       @media (min-width: 1023px) {
         bottom: -30rem;
         right: 7rem;
@@ -181,7 +182,7 @@
         transform: translate(-50%);
         bottom: 2rem;
         left: 50%;
-        z-index: 100;
+        //z-index: 100;
         width: 49rem;
         height: 38rem;
         content: "";
