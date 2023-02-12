@@ -1,0 +1,21 @@
+// START ===== import =====
+
+@import "../../../../ui/style/values";
+@import "../../../../ui/style/mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+
+._sub_icon {
+  font-size: 32px;
+  color: #b1b1b1;
+  &:active {
+    color: $ACCENT_COLOR;
+  }
+  @media (max-width: 767px){
+    flex-basis: 25%;
+  }
+}
+
+// END ===== style =====

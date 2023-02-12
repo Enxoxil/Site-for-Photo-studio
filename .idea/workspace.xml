@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix CSS bug for button of Burger Menu">
-      <change afterPath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: separation into components (LOGO)">
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Nav/Nav.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Nav/Nav.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Sub/Sub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Sub/Sub.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Logo/FooterLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Logo/FooterLogo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +136,8 @@
       <workItem from="1676064504608" duration="5888000" />
       <workItem from="1676070459221" duration="1774000" />
       <workItem from="1676105554819" duration="5209000" />
-      <workItem from="1676217655734" duration="9400000" />
+      <workItem from="1676217655734" duration="11955000" />
+      <workItem from="1676235651905" duration="3963000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -340,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676225498886</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="refactor: separation into components (LOGO)">
+      <created>1676232955280</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676232955280</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +435,8 @@
     <MESSAGE value="feat: create Review feature" />
     <MESSAGE value="feat: create Map feature" />
     <MESSAGE value="refactor: fix CSS bug for button of Burger Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix CSS bug for button of Burger Menu" />
+    <MESSAGE value="refactor: separation into components (LOGO)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: separation into components (LOGO)" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

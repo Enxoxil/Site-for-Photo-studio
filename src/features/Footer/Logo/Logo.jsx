@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import classes from "../Footer.module.scss";
 
-class FooterLogo extends Component {
+class Logo extends Component {
     render() {
         return (
             <a href="#mainScreen" className={classes.footer__logo} tabIndex="0">
@@ -14,4 +14,4 @@ class FooterLogo extends Component {
     }
 }
 
-export default FooterLogo;
+export default Logo;

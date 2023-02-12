@@ -1,0 +1,39 @@
+// START ===== import =====
+
+@import "../../../ui/style/values";
+@import "../../../ui/style/mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.sub {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 0 1 190px;
+    @media (min-width: 767px){
+      flex: 0 1 436px
+    }
+  }
+  &__text {
+    @media (max-width: 767px){
+      flex-basis: 100%;
+      @include fonts(14, 28, 500, $TEXT_COLOR1, Montserrat);
+      padding-bottom: 16px;
+    }
+    display: block;
+    @include fonts(16, 26, 500, $TEXT_COLOR1, Montserrat);
+    padding: 0 5px;
+  }
+}
+
+
+// END ===== style =====
