@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Gifts feature and refactor Price.scss feat">
-      <change afterPath="$PROJECT_DIR$/src/features/Review/Review.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Review/Review.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Review feature">
+      <change afterPath="$PROJECT_DIR$/src/features/Map/Map.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Map/Map.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -127,7 +127,7 @@
       <workItem from="1676064504608" duration="5888000" />
       <workItem from="1676070459221" duration="1774000" />
       <workItem from="1676105554819" duration="5209000" />
-      <workItem from="1676217655734" duration="3214000" />
+      <workItem from="1676217655734" duration="5208000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -318,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676113424395</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: create Review feature">
+      <created>1676223017745</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676223017745</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +401,8 @@
     <MESSAGE value="feat: create StageWorks feature" />
     <MESSAGE value="feat: create Price feature and refactor Article feat, refactor OurLocation and OurWorks sliders" />
     <MESSAGE value="feat: create Gifts feature and refactor Price.scss feat" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create Gifts feature and refactor Price.scss feat" />
+    <MESSAGE value="feat: create Review feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Review feature" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

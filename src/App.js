@@ -12,6 +12,7 @@ import StageWorks from "./features/StageWorks/StageWorks";
 import Price from "./features/Price/Price";
 import Gifts from "./features/Gifts/Gifts";
 import Review from "./features/Review/Review";
+import Map from "./features/Map/Map";
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
             {/*article*/}
             <Gifts/>
             <Review/>
+            <Map/>
             <Footer/>
         </>
     );
