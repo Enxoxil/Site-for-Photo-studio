@@ -11,6 +11,7 @@ import Service from "./features/Service/Service";
 import StageWorks from "./features/StageWorks/StageWorks";
 import Price from "./features/Price/Price";
 import Gifts from "./features/Gifts/Gifts";
+import Review from "./features/Review/Review";
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
             <Price/>
             {/*article*/}
             <Gifts/>
+            <Review/>
             <Footer/>
         </>
     );

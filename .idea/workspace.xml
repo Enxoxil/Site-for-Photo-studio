@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create StageWorks feature">
-      <change afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Price/Price.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Price/Price.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Gifts feature and refactor Price.scss feat">
+      <change afterPath="$PROJECT_DIR$/src/features/Review/Review.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Review/Review.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/DesignStudio/DesignStudio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DesignStudio/DesignStudio.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,10 @@
       <workItem from="1675981611637" duration="337000" />
       <workItem from="1675982054279" duration="1055000" />
       <workItem from="1676024940009" duration="2451000" />
-      <workItem from="1676064504608" duration="2728000" />
+      <workItem from="1676064504608" duration="5888000" />
+      <workItem from="1676070459221" duration="1774000" />
+      <workItem from="1676105554819" duration="5209000" />
+      <workItem from="1676217655734" duration="3214000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -296,7 +297,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675727202338</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: create Price feature and refactor Article feat, refactor OurLocation and OurWorks sliders">
+      <created>1676067939326</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676067939326</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: create Gifts feature and refactor Price.scss feat">
+      <created>1676112178770</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676112178770</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: create Gifts feature and refactor Price.scss feat">
+      <created>1676113424395</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676113424395</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +392,9 @@
     <MESSAGE value="feat: create DesignStudio feature" />
     <MESSAGE value="feat: create Service feature" />
     <MESSAGE value="feat: create StageWorks feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create StageWorks feature" />
+    <MESSAGE value="feat: create Price feature and refactor Article feat, refactor OurLocation and OurWorks sliders" />
+    <MESSAGE value="feat: create Gifts feature and refactor Price.scss feat" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Gifts feature and refactor Price.scss feat" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
