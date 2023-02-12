@@ -21,7 +21,7 @@ class Review extends Component {
                                         </button>
                                     </div>
                                     <ul className={classes.review__slider_body}>
-                                        <li className={classes.review__slider_item} data-slideNumber="1">
+                                        <li className={classes.review__slider_item} >
                                             <img src="img/section-review1.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -37,7 +37,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} data-slideNumber="2">
+                                        <li className={classes.review__slider_item} >
                                             <img src="img/section-review2.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -53,7 +53,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} data-slideNumber="3">
+                                        <li className={classes.review__slider_item} >
                                             <img src="img/section-review3.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -69,7 +69,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} data-slideNumber="4">
+                                        <li className={classes.review__slider_item} >
                                             <img src="img/section-review1.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -85,7 +85,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} data-slideNumber="5">
+                                        <li className={classes.review__slider_item} >
                                             <img src="img/section-review2.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -101,7 +101,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} data-slideNumber="6">
+                                        <li className={classes.review__slider_item} >
                                             <img src="img/section-review3.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
