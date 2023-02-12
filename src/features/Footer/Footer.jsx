@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from "./Footer.module.scss";
+import FooterLogo from "./Logo/FooterLogo";
 
 class Footer extends Component {
     render() {
@@ -8,12 +9,7 @@ class Footer extends Component {
                 <div className={`${classes.footer__container} _container`}>
                     <div className={classes.footer__wrapper}>
                         <div className={classes.footer__main}>
-                            <a href="#mainScreen" className={classes.footer__logo} tabIndex="0">
-                                <picture>
-                                    <source srcSet="img/footer-logo.webp" type="image/webp"/>
-                                    <img src="img/footer-logo.png" alt="logo" className={classes.footer__logo_img}/>
-                                </picture>
-                            </a>
+                            <FooterLogo/>
                             <nav className={`${classes.footer__menu} ${classes.footer_menu}`}>
                                 <ul className={classes.footer_menu__body}>
                                     <li className={classes.footer_menu__item}>

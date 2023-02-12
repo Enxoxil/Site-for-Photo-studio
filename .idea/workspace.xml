@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Review feature">
-      <change afterPath="$PROJECT_DIR$/src/features/Map/Map.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Map/Map.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-map.html" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix CSS bug for button of Burger Menu">
+      <change afterPath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -73,10 +73,11 @@
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\features\Header" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\style" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\component\Header" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,7 +128,7 @@
       <workItem from="1676064504608" duration="5888000" />
       <workItem from="1676070459221" duration="1774000" />
       <workItem from="1676105554819" duration="5209000" />
-      <workItem from="1676217655734" duration="5208000" />
+      <workItem from="1676217655734" duration="9400000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -325,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676223017745</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat: create Map feature">
+      <created>1676225270273</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676225270273</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refactor: fix CSS bug for button of Burger Menu">
+      <created>1676225498886</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676225498886</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +417,9 @@
     <MESSAGE value="feat: create Price feature and refactor Article feat, refactor OurLocation and OurWorks sliders" />
     <MESSAGE value="feat: create Gifts feature and refactor Price.scss feat" />
     <MESSAGE value="feat: create Review feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create Review feature" />
+    <MESSAGE value="feat: create Map feature" />
+    <MESSAGE value="refactor: fix CSS bug for button of Burger Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix CSS bug for button of Burger Menu" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

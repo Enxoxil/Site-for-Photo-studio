@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Header.module.scss';
+import Logo from "./Logo/HeaderLogo";
 
 class Header extends Component {
     render() {
@@ -8,12 +9,7 @@ class Header extends Component {
                 <div className={classes.header__wrapper}>
                     <div className={`${classes.header__container} _container`}>
                         <div className={classes.header__body}>
-                            <a href="#mainScreen" tabIndex="0">
-                                <picture>
-                                    <source srcSet="/img/logo.webp" type="image/webp"/>
-                                    <img src="/img/logo.png" alt="logo" className={classes.header__logo}/>
-                                </picture>
-                            </a>
+                            <Logo/>
                             <div className={classes.header__main}>
                                 <div className={`${classes.header__menu} menu`}>
                                     <nav className={classes.menu__body}>

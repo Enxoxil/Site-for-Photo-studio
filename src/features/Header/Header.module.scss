@@ -37,16 +37,6 @@
       padding: 8px 0;
     }
   }
-  &__logo {
-    max-width: 108px;
-    cursor: pointer;
-    @media (max-width: 1023px) {
-      max-width: 113px;
-    }
-    @media (max-width: 767px) {
-      max-width: 63px;
-    }
-  }
   &__main {
     @media (min-width: 767px) {
       display: flex;
@@ -220,12 +210,16 @@
   transition: all 0.3s ease;
   background: transparent;
   border: none;
+
   @media (max-width: 767px) {
     position: relative;
     display: block;
     width: 27px;
     height: 20px;
     cursor: pointer;
+  }
+  &:focus {
+    border: none;
   }
   & span,
   &::before,
