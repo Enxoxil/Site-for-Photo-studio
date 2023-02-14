@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from "./Nav.module.scss";
-import NavLink from "./NavLink/NavLink";
+import NavLink from "./NavLink/Navlink";
 
 const initial_value = {
     nav: [
@@ -21,14 +21,9 @@ const initial_value = {
             name: 'Услуги и цены'
         },
         {
-            link: '#review__title',
-            name: 'Отзывы'
-        },
-        {
             link: '#map__wrapper',
             name: 'Контакты'
         },
-
     ]
 }
 
@@ -41,11 +36,13 @@ class Nav extends Component {
 
     render() {
         return (
-            <nav className={classes.footer_nav}>
-                <ul className={classes.footer_nav__body}>
-                    {this.state.nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
-                </ul>
-            </nav>
+            <div className={`${classes.menu} header__menu`}>
+                <nav className={classes.menu__body}>
+                    <ul className={classes.menu__list}>
+                        {this.state.nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
+                    </ul>
+                </nav>
+            </div>
         );
     }
 }

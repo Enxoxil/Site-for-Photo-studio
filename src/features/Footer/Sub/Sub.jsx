@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import classes from './Sub.module.scss'
 import SubItem from "./SubItem/SubItem";
-class Sub extends Component {
 
-    subEntities = [
+const initial_value = {sub: [
         {
             link: 'https://www.instagram.com',
             icon: '_icon_insta',
@@ -26,6 +25,14 @@ class Sub extends Component {
         },
 
     ]
+}
+
+class Sub extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = initial_value;
+    }
 
     render() {
         return (
@@ -34,7 +41,7 @@ class Sub extends Component {
                     <div className={classes.sub__text}>
                         <p className={classes.sub__text_content}>Наши социальные сети:</p>
                     </div>
-                    {this.subEntities.map(item => <SubItem name={item.name} link={item.link} icon={item.icon}/>)}
+                    {this.state.sub.map(item => <SubItem key={item.link} name={item.name} link={item.link} icon={item.icon}/>)}
                 </div>
             </div>
         );
