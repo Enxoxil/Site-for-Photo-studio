@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import classes from './Header.module.scss';
 import Logo from "./Logo/HeaderLogo";
 import Nav from "./Nav/Nav";
+import Button from "../../ui/components/Button/Button";
+import Tel from "../../ui/components/Tel/Tel";
 
 class Header extends Component {
     render() {
@@ -15,15 +17,12 @@ class Header extends Component {
                                 <Nav/>
                             </div>
                             <div className={`${classes.actions_header}`}>
-                                <div className={classes.actions_header__btn_container}>
-                                    <button className={classes.actions_header__btn}>
-                                        ОБРАТНЫЙ ЗВОНОК
-                                    </button>
-                                </div>
 
-                                <a href="tel:+380930930939" className={classes.actions_header__num} id="header__num">
-                                    +38 (093) 0930939
-                                </a>
+                                <div className={classes.actions_header__btn_container}>
+                                    <Button classNames={classes.actions_header__btn} name='ОБРАТНЫЙ ЗВОНОК'/>
+                                </div>
+                                <Tel id='header__num' tel='+38 (093) 0930939' classNames={classes.actions_header__num} />
+
                                 <div className={classes.action_header__phone}>
                                     <a href="tel:+380930930939" id="header__num-img">
                                         <picture>

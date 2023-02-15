@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: use State with initial value">
-      <change afterPath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Header/Nav/Nav.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Header/Nav/NavLink/NavLink.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Header/Nav/NavLink/Navlink.jsx" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix some bugs">
+      <change afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +130,7 @@
       <workItem from="1676217655734" duration="11955000" />
       <workItem from="1676235651905" duration="4690000" />
       <workItem from="1676409876156" duration="4769000" />
-      <workItem from="1676418032105" duration="657000" />
+      <workItem from="1676418032105" duration="2271000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -367,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676415110496</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="refactor: fix some bugs">
+      <created>1676418882828</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1676418882828</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +452,8 @@
     <MESSAGE value="refactor: separation into components (LOGO)" />
     <MESSAGE value="refactor: Footer.jsx separation into components" />
     <MESSAGE value="refactor: use State with initial value" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: use State with initial value" />
+    <MESSAGE value="refactor: fix some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some bugs" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
