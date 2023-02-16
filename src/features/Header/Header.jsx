@@ -9,7 +9,6 @@ import Nav from "./Nav/Nav";
 import PhonePng from '../../assets/img/phone.png';
 import PhoneWebP from '../../assets/img/phone.webp';
 
-
 class Header extends Component {
     render() {
         return (<header className={classes.header}>
@@ -21,14 +20,12 @@ class Header extends Component {
                                 <Nav/>
                             </div>
                             <div className={`${classes.actions_header}`}>
-
                                 <div className={classes.actions_header__btn_container}>
                                     <Button className={classes.actions_header__btn}>
                                         ОБРАТНЫЙ ЗВОНОК
                                     </Button>
                                 </div>
                                 <Tel id='header__num' tel='+380930930939' className={classes.actions_header__num}/>
-
                                 <div className={classes.action_header__phone}>
                                     <Tel tel="tel:+380930930939" id="header__num-img">
                                         <picture>
