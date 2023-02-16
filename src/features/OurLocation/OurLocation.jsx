@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import classes from './OurLocation.module.scss'
+import Button from "../../ui/components/Button/Button";
+
+//TODO не забути підключити лібу для слайдеру
 
 class OurLocation extends Component {
     render() {
@@ -12,13 +15,15 @@ class OurLocation extends Component {
                     <div className={`${classes.ourLocation__content} _slider`}>
                         <div className={`${classes.slider_ourLocation} ${classes.__wrapper}`}>
                             <div className={classes.slider_ourLocation__arrows}>
-                                <button className={`${classes.slider_ourLocation__arrows_left}  _left_arrow`}>
+                                <Button className={`${classes.slider_ourLocation__arrows_left}  _left_arrow`}>
                                     <span></span>
-                                </button>
-                                <button className={`${classes.slider_ourLocation__arrows_right} _right_arrow`}>
+                                </Button>
+                                <Button className={`${classes.slider_ourLocation__arrows_right} _right_arrow`}>
                                     <span></span>
-                                </button>
+                                </Button>
                             </div>
+
+                            {/*TODO Слайдер зробити лібою*/}
                             <ul className={classes.slider_ourLocation__body}>
                                 <li className={classes.slider_ourLocation__body_item} >
                                     <img src="img/ourLocation-1.jpg" className={classes.slider_ourLocation__body_img}
@@ -88,10 +93,10 @@ class OurLocation extends Component {
                         </div>
                     </div>
                     <div className={classes.ourLocation__btn_container}>
-                        <button className={`${classes.ourLocation__btn} _openModalButton`} type="button"
+                        <Button className={`${classes.ourLocation__btn} _openModalButton`} type="button"
                                 data-modal-class-name="ourLocationModal">
                             выбрать локацию
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </section>
