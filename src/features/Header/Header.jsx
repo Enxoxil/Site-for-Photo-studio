@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import classes from './Header.module.scss';
-import Logo from "./Logo/HeaderLogo";
-import Nav from "./Nav/Nav";
 import Button from "../../ui/components/Button/Button";
 import Tel from "../../ui/components/Tel/Tel";
+import Logo from "./Logo/HeaderLogo";
+import Nav from "./Nav/Nav";
+
+// import img
+import PhonePng from '../../assets/img/phone.png';
+import PhoneWebP from '../../assets/img/phone.webp';
+
 
 class Header extends Component {
     render() {
-        return (
-            <header className={classes.header}>
+        return (<header className={classes.header}>
                 <div className={classes.header__wrapper}>
                     <div className={`${classes.header__container} _container`}>
                         <div className={classes.header__body}>
@@ -19,27 +23,28 @@ class Header extends Component {
                             <div className={`${classes.actions_header}`}>
 
                                 <div className={classes.actions_header__btn_container}>
-                                    <Button classNames={classes.actions_header__btn} name='ОБРАТНЫЙ ЗВОНОК'/>
+                                    <Button className={classes.actions_header__btn}>
+                                        ОБРАТНЫЙ ЗВОНОК
+                                    </Button>
                                 </div>
-                                <Tel id='header__num' tel='+38 (093) 0930939' classNames={classes.actions_header__num} />
+                                <Tel id='header__num' tel='+38 (093) 0930939' className={classes.actions_header__num}/>
 
                                 <div className={classes.action_header__phone}>
                                     <a href="tel:+380930930939" id="header__num-img">
                                         <picture>
-                                            <source srcSet="/img/phone.webp" type="image/webp"/>
-                                            <img src="/img/phone.png" alt="Phone"/>
+                                            <source srcSet={PhoneWebP} type="image/webp"/>
+                                            <img src={PhonePng} alt="Phone"/>
                                         </picture>
                                     </a>
                                 </div>
-                                <button className={classes.action_header__icon_menu} type="button">
+                                <Button className={classes.action_header__icon_menu}>
                                     <span></span>
-                                </button>
+                                </Button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-        );
+            </header>);
     }
 }
 

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix some bugs">
-      <change afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Button and Tel components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -72,11 +72,11 @@
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\components" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\features\Header" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\style" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\component\Header" />
     </key>
   </component>
   <component name="RunManager">
@@ -130,7 +130,10 @@
       <workItem from="1676217655734" duration="11955000" />
       <workItem from="1676235651905" duration="4690000" />
       <workItem from="1676409876156" duration="4769000" />
-      <workItem from="1676418032105" duration="2271000" />
+      <workItem from="1676418032105" duration="2574000" />
+      <workItem from="1676531780144" duration="1452000" />
+      <workItem from="1676557605878" duration="502000" />
+      <workItem from="1676581481364" duration="2204000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -370,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676418882828</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat: create Button and Tel components">
+      <created>1676420624545</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1676420624545</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +463,8 @@
     <MESSAGE value="refactor: Footer.jsx separation into components" />
     <MESSAGE value="refactor: use State with initial value" />
     <MESSAGE value="refactor: fix some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some bugs" />
+    <MESSAGE value="feat: create Button and Tel components" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Button and Tel components" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

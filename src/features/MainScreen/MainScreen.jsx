@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './MainScreen.module.scss';
+import Button from "../../ui/components/Button/Button";
 
 class MainScreen extends Component {
     render() {
@@ -27,10 +28,9 @@ class MainScreen extends Component {
                                 мы с точностью заявляем, что нашей фотостудией вы останетесь
                                 довольны и еще не раз захотите возвращаться к нам.
                             </p>
-                            <button type="button" className={`${classes.main_content__button} _openModalButton`}
-                                    data-modal-class-name="feedback">
+                            <Button className={`${classes.main_content__button}`}>
                                 Получить консультацию
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
