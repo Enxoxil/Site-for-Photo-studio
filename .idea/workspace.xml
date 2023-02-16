@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create Button and Tel components">
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix some bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
       <workItem from="1676418032105" duration="2574000" />
       <workItem from="1676531780144" duration="1452000" />
       <workItem from="1676557605878" duration="502000" />
-      <workItem from="1676581481364" duration="2204000" />
+      <workItem from="1676581481364" duration="2901000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -380,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676420624545</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="refactor: fix some bugs">
+      <created>1676584715836</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1676584715836</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,9 +468,9 @@
     <MESSAGE value="refactor: separation into components (LOGO)" />
     <MESSAGE value="refactor: Footer.jsx separation into components" />
     <MESSAGE value="refactor: use State with initial value" />
-    <MESSAGE value="refactor: fix some bugs" />
     <MESSAGE value="feat: create Button and Tel components" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create Button and Tel components" />
+    <MESSAGE value="refactor: fix some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some bugs" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

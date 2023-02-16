@@ -4,8 +4,8 @@ class Tel extends Component {
     render() {
         return (
             <>
-                <a href="tel:+380930930939" className={this.props.className} id={this.props.id}>
-                    {this.props.tel}
+                <a href={`tel:${this.props.tel}`} className={this.props.className} id={this.props.id}>
+                    {(this.props.children) ? (<>{this.props.children}</>) : (this.props.tel)}
                 </a>
             </>
         );
