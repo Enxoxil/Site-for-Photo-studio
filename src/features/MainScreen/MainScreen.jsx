@@ -2,14 +2,18 @@ import React, {Component} from 'react';
 import classes from './MainScreen.module.scss';
 import Button from "../../ui/components/Button/Button";
 
+// import video
+import videoBackground from '../../assets/video/bg_video.mp4'
+import Video from "../../ui/components/Video/Video";
+
 class MainScreen extends Component {
     render() {
         return (
             <section className={`${classes.main_screen} _scrollTo`} id="mainScreen">
                 <div className={classes.main_screen__inner}>
-                    <video autoPlay muted loop className={classes.main_screen__video} id="main-screen__video">
-                        <source src="/video/bg_video.mp4" type="video/mp4"/>
-                    </video>
+                    <Video autoPlay muted loop className={classes.main_screen__video} id="main-screen__video">
+                        <source src={videoBackground} type="video/mp4"/>
+                    </Video>
                     <div className={`${classes.main_screen__container} _container`}>
                         <div className={`${classes.main_screen__wrapper} ${classes.main_content}`}>
                             <h2 className={classes.main_content__title}>
