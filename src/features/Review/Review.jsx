@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import classes from './Review.module.scss'
+import Button from "../../ui/components/Button/Button";
 
+
+//TODO Add slider lib
 class Review extends Component {
 
     render() {
@@ -13,15 +16,16 @@ class Review extends Component {
                             <div className={`${classes.review__slider} _slider`}>
                                 <div className={`${classes.review__slider_wrapper} _wrapper`}>
                                     <div className={classes.review__slider_arrows}>
-                                        <button className={`${classes.review__slider_arrow_left} _left_arrow`}>
+                                        <Button className={`${classes.review__slider_arrow_left} _left_arrow`}>
                                             <span></span>
-                                        </button>
-                                        <button className={`${classes.review__slider_arrow_right} _right_arrow`}>
+                                        </Button>
+                                        <Button className={`${classes.review__slider_arrow_right} _right_arrow`}>
                                             <span></span>
-                                        </button>
+                                        </Button>
                                     </div>
+                                    {/*TODO Add slider lib*/}
                                     <ul className={classes.review__slider_body}>
-                                        <li className={classes.review__slider_item} >
+                                        <li className={classes.review__slider_item}>
                                             <img src="img/section-review1.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -37,7 +41,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} >
+                                        <li className={classes.review__slider_item}>
                                             <img src="img/section-review2.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -53,7 +57,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} >
+                                        <li className={classes.review__slider_item}>
                                             <img src="img/section-review3.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -69,7 +73,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} >
+                                        <li className={classes.review__slider_item}>
                                             <img src="img/section-review1.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -85,7 +89,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} >
+                                        <li className={classes.review__slider_item}>
                                             <img src="img/section-review2.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -101,7 +105,7 @@ class Review extends Component {
                                                 </button>
                                             </div>
                                         </li>
-                                        <li className={classes.review__slider_item} >
+                                        <li className={classes.review__slider_item}>
                                             <img src="img/section-review3.png"
                                                  className={classes.review__slider_item_img}
                                                  alt="Maria" tabIndex="0"/>
@@ -113,17 +117,17 @@ class Review extends Component {
                                                 да выпей чаю.
                                             </p>
                                             <div className={classes.review__slider_item_btn_container}>
-                                                <button className={classes.review__slider_item_btn}>Показать ещё
-                                                </button>
+                                                <Button className={classes.review__slider_item_btn}>Показать ещё
+                                                </Button>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className={classes.review__btn_container}>
-                                <button className={`${classes.review__btn} _button _openModalButton`} type="button"
-                                        data-modal-class-name="reviewModal">Добавить отзыв
-                                </button>
+                                <Button className={`${classes.review__btn} _button _openModalButton`} >
+                                    Добавить отзыв
+                                </Button>
                             </div>
                         </div>
                     </div>
