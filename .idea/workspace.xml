@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: Price.jsx">
-      <change beforePath="$PROJECT_DIR$/src/features/Price/Price.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/Price.jsx" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: Review.jsx">
+      <change afterPath="$PROJECT_DIR$/src/features/Map/Form/Form.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/Map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Map.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <workItem from="1676531780144" duration="1452000" />
       <workItem from="1676557605878" duration="502000" />
       <workItem from="1676581481364" duration="9000000" />
-      <workItem from="1676665061351" duration="3926000" />
+      <workItem from="1676665061351" duration="4700000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -427,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676671299237</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="refactor: Price.jsx">
+      <created>1676671467950</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1676671467950</updated>
+    </task>
+    <task id="LOCAL-00044" summary="refactor: Review.jsx">
+      <created>1676671576326</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1676671576326</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor: refactor syntax error" />
     <MESSAGE value="refactor: add react branch" />
     <MESSAGE value="feat: create Header component and folder structure for React project and adapted mixins" />
     <MESSAGE value="feat: create Footer component and scss" />
@@ -513,7 +528,8 @@
     <MESSAGE value="feat: Create Image.jsx and Card.jsx and refactor" />
     <MESSAGE value="refactor: StageWorks.jsx" />
     <MESSAGE value="refactor: Price.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Price.jsx" />
+    <MESSAGE value="refactor: Review.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Review.jsx" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
