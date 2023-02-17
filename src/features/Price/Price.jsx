@@ -1,17 +1,20 @@
 import React, {Component} from 'react';
 import classes from './Price.module.scss'
+import Card from "../../ui/components/Card/Card";
+
+
+
 
 class Price extends Component {
     render() {
-        return (
-            <section className={classes.price}>
+        return (<section className={classes.price}>
                 <div className={classes.price__container}>
                     <h2 className={`${classes.price__title} _h2_title _scrollTo`} id="price__title">Стоимость
                         фотосессии</h2>
                     <div className={classes.price__box}>
-                        <div className={`${classes.price__items} ${classes.item_box}`}>
+                        <ul className={`${classes.price__items} ${classes.item_box}`}>
                             <div className={classes.item_box__container}>
-                                <div className={`${classes.item_box__wrapper} ${classes.theme_background_color_blue}`}>
+                                <Card className={`${classes.item_box__wrapper} ${classes.theme_background_color_blue}`}>
                                     <div className={classes.item_box__header}>
                                         <p className={classes.item_box__name}>MINI</p>
                                         <p className={classes.item_box__cost}>
@@ -80,11 +83,10 @@ class Price extends Component {
                                     <div className={classes.item_box__button_container}>
                                         <button className={`${classes.item_box__button} _button`}>Забронировать</button>
                                     </div>
-                                </div>
+                                </Card>
                             </div>
                             <div className={classes.item_box__container}>
-                                <div
-                                    className={`${classes.item_box__wrapper} ${classes.theme_background_color_light_pink}`}>
+                                <Card className={`${classes.item_box__wrapper} ${classes.theme_background_color_light_pink}`}>
                                     <div className={classes.item_box__header}>
                                         <p className={classes.item_box__name}>STANDART</p>
                                         <p className={classes.item_box__cost}>
@@ -141,10 +143,10 @@ class Price extends Component {
                                     <div className={classes.item_box__button_container}>
                                         <button className={`${classes.item_box__button} _button`}>Забронировать</button>
                                     </div>
-                                </div>
+                                </Card>
                             </div>
                             <div className={classes.item_box__container}>
-                                <div className={`${classes.item_box__wrapper} ${classes.theme_background_color_pink}`}>
+                                <Card className={`${classes.item_box__wrapper} ${classes.theme_background_color_pink}`}>
                                     <div className={classes.item_box__header}>
                                         <p className={classes.item_box__name}>MAXI</p>
                                         <p className={classes.item_box__cost}>
@@ -193,9 +195,9 @@ class Price extends Component {
                                     <div className={classes.item_box__button_container}>
                                         <button className={`${classes.item_box__button} _button`}>Забронировать</button>
                                     </div>
-                                </div>
+                                </Card>
                             </div>
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </section>
