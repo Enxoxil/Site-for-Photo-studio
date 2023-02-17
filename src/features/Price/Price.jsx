@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import classes from './Price.module.scss'
 import Card from "../../ui/components/Card/Card";
+import Button from "../../ui/components/Button/Button";
 
 
 
@@ -56,32 +57,32 @@ class Price extends Component {
                                         </h5>
                                         <div className={classes.box_footer__box}>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Помощь
                                                     <br/>
                                                     в позировании
-                                                </button>
+                                                </Button>
                                             </div>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Визажист
                                                     <br/>
                                                     + 2000
                                                     <span className={classes._cost_value}>₴</span>
-                                                </button>
+                                                </Button>
                                             </div>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Дополнительная ретушь
                                                     <br/>
                                                     фото — 1 шт. / 250
                                                     <span className={classes._cost_value}>₴</span>
-                                                </button>
+                                                </Button>
                                             </div>
                                         </div>
                                     </div>
                                     <div className={classes.item_box__button_container}>
-                                        <button className={`${classes.item_box__button} _button`}>Забронировать</button>
+                                        <Button className={`${classes.item_box__button} _button`}>Забронировать</Button>
                                     </div>
                                 </Card>
                             </div>
@@ -116,32 +117,32 @@ class Price extends Component {
                                         <h5 className={classes.box_footer__title}>Дополнительные услуги</h5>
                                         <div className={classes.box_footer__box}>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Помощь
                                                     <br/>
                                                     в позировании
-                                                </button>
+                                                </Button>
                                             </div>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Визажист
                                                     <br/>
                                                     + 2000
                                                     <span className={classes._cost_value}>₴</span>
-                                                </button>
+                                                </Button>
                                             </div>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Дополнительная ретушь
                                                     <br/>
                                                     фото — 1 шт. / 250
                                                     <span className={classes._cost_value}>₴</span>
-                                                </button>
+                                                </Button>
                                             </div>
                                         </div>
                                     </div>
                                     <div className={classes.item_box__button_container}>
-                                        <button className={`${classes.item_box__button} _button`}>Забронировать</button>
+                                        <Button className={`${classes.item_box__button} _button`}>Забронировать</Button>
                                     </div>
                                 </Card>
                             </div>
@@ -183,17 +184,17 @@ class Price extends Component {
                                         <h5 className={classes.box_footer__title}>Дополнительные услуги</h5>
                                         <div className={classes.box_footer__box}>
                                             <div className={classes.box_footer__item}>
-                                                <button className={classes.box_footer__button}>
+                                                <Button className={classes.box_footer__button}>
                                                     Дополнительная ретушь
                                                     <br/>
                                                     фото — 1 шт. / 250
                                                     <span className={classes._cost_value}>₴</span>
-                                                </button>
+                                                </Button>
                                             </div>
                                         </div>
                                     </div>
                                     <div className={classes.item_box__button_container}>
-                                        <button className={`${classes.item_box__button} _button`}>Забронировать</button>
+                                        <Button className={`${classes.item_box__button} _button`}>Забронировать</Button>
                                     </div>
                                 </Card>
                             </div>
