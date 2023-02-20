@@ -1,4 +1,3 @@
-
 import './App.css';
 import {Component} from "react";
 import Header from "./features/Header/Header";
@@ -13,6 +12,8 @@ import Price from "./features/Price/Price";
 import Gifts from "./features/Gifts/Gifts";
 import Review from "./features/Review/Review";
 import Map from "./features/Map/Map";
+
+    
 
 class App extends Component {
   render() {

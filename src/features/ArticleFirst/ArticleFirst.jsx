@@ -1,24 +1,16 @@
 import React, {Component} from 'react';
 import classes from './ArticleFirst.module.scss';
+import Button from "../../ui/components/Button/Button";
 
-class ArticleFirst extends Component {
-
-    render() {
-        return (
-            <article className="article">
-                <div className="article__wrapper article__wrapper_background_blue">
-                    <div className="article__container _container">
-                        <h2 className="article__title _h2_title">
-                            Фотостудия для любых идейных фотоссесий
-                        </h2>
-                        <p className="article__content">
-                            Воплотите мечту с нашей фотостудией и приобретите красивые,
+const initialState = {
+    articleName: 'Фотостудия для любых идейных фотосессий',
+    articleContent: `Воплотите мечту с нашей фотостудией и приобретите красивые,
                             уникальные, качественные фотографии, выбрав один из наших залов.
                             <br/>
                             А их, -на секундочку, -аж семь штук.
                             <br/>
                             Каждый наш зал оборудован интерьером и профессиональным
-                            оборудованием, и подойдет для любой фотоссесии, а мы хотим
+                            оборудованием, и подойдет для любой фотосессии, а мы хотим
                             рассказать вам о все подробнее.
                             <br/>
                             <br/>
@@ -100,10 +92,27 @@ class ArticleFirst extends Component {
                             продавцов, которые уже не один год предлагают свои товары на
                             мировом рынке. Вы найдете все что нужно и необходимо для работы
                             фотографов, для создания образов и света. Ведь именно от
-                            оборудования часто зависит качество получающихся фотоснимков.
+                            оборудования часто зависит качество получающихся фотоснимков.`
+}
+
+class ArticleFirst extends Component {
+    constructor(props) {
+        super(props);
+        this.state = initialState;
+    }
+    render() {
+        return (
+            <article className="article">
+                <div className="article__wrapper article__wrapper_background_blue">
+                    <div className="article__container _container">
+                        <h2 className="article__title _h2_title">
+                            {initialState.articleName}
+                        </h2>
+                        <p className="article__content">
+                            {initialState.articleContent}
                         </p>
                         <div className="article__button_container">
-                            <button className="article__button">Подробнее</button>
+                            <Button className="article__button">Подробнее</Button>
                         </div>
                     </div>
                 </div>

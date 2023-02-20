@@ -4,6 +4,7 @@
 @import "../../ui/style/mixins";
 // END ===== import =====
 
+
 // START ===== style =====
 
 .article {
@@ -23,7 +24,7 @@
         -webkit-line-clamp: 11;
       }
     }
-    &__button_container {
+    &__button-container {
       padding-top: 0;
     }
   }
@@ -39,11 +40,11 @@
       text-align: left;
       -webkit-line-clamp: 12; // количество строк
       @include fonts(16, 24, 500, $TEXT_COLOR1, Montserrat);
-      &_line_clamp {
+      &_line-clamp {
         -webkit-line-clamp: 10;
       }
     }
-    &__button_container {
+    &__button-container {
       justify-content: flex-end;
     }
     &__button {
@@ -74,11 +75,11 @@
     transition: all 1.3s ease 0s;
     @include fonts(14, 20, 500, $TEXT_COLOR1, Montserrat);
     text-align: center;
-    &_line_clamp {
+    &_line-clamp {
       -webkit-line-clamp: 23;
     }
   }
-  &__button_container {
+  &__button-container {
     display: flex;
     justify-content: center;
     padding-top: 16px;
@@ -127,11 +128,11 @@
   }
 }
 
-.article__wrapper_background_blue {
+.article__wrapper_background-blue {
   background: $BG_COLOR1;
 }
 
-.article__wrapper_background_light_pink {
+.article__wrapper_background-light-pink {
   background: $BG_COLOR2;
 }
 ._br {
@@ -141,3 +142,4 @@
   }
 }
 // END ===== style =====
+
