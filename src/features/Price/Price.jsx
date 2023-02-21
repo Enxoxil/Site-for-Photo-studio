@@ -56,22 +56,26 @@ class Price extends Component {
         super(props);
         this.state = initialState;
     }
+
     render() {
+        const {priceItems} = this.state;
         return (<section className={classes.price}>
                 <div className={classes.price__container}>
                     <h2 className={`${classes.price__title} _h2_title _scrollTo`} id="price__title">Стоимость
                         фотосессии</h2>
                     <div className={classes.price__box}>
                         <ul className={`${classes.price__items} ${classes.item_box}`}>
-                            {this.state.priceItems.map(item => <PriceItem
-                                key={item.cost}
-                                name={item.name}
-                                cost={item.cost}
-                                moneySymbol={item.moneySymbol}
-                                valueOfLocations={item.valueOfLocations}
-                                options={item.options}
-                                backgroundClassName={item.themeBackground}
-                            />)}
+                            {priceItems.map(item =>
+                                <PriceItem
+                                    key={item.cost}
+                                    name={item.name}
+                                    cost={item.cost}
+                                    moneySymbol={item.moneySymbol}
+                                    valueOfLocations={item.valueOfLocations}
+                                    options={item.options}
+                                    backgroundClassName={item.themeBackground}
+                                />)
+                            }
                         </ul>
                     </div>
                 </div>
