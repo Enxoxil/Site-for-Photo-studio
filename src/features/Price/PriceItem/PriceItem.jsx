@@ -4,6 +4,9 @@ import Card from "../../../ui/components/Card/Card";
 import Button from "../../../ui/components/Button/Button";
 
 class PriceItem extends Component {
+    componentDidMount() {
+        console.log(this.props.options.map(item => item))
+    }
 
     render() {
         return (
@@ -19,7 +22,14 @@ class PriceItem extends Component {
                             <p className={classes.item_box__value}>{this.props.valueOfLocations}</p>
                         </div>
                         <ul className={classes.item_box__body}>
-                            {this.props.options.map(item => <Card className={`${classes.item_box__body_item} _icon_list_style_image`}>{item}</Card>)}
+                            {this.props.options.map(item => <Card
+                                key={item}
+                                className={`${classes.item_box__body_item} _icon_list_style_image`}
+                            >
+                                {`${item}`}
+                            </Card>
+
+                            )}
                         </ul>
                         <div className={`${classes.item_box__footer} ${classes.box_footer}`}>
                             <h5 className={classes.box_footer__title}>

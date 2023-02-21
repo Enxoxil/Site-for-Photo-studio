@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: Map.jsx and create Input.jsx and Form.jsx">
-      <change afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-article2.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-article2.html" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: create PriceItem.jsx and PriceItem.module.scss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Price/Price.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/Price.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/Price.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/Price.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +137,9 @@
       <workItem from="1676665061351" duration="8909000" />
       <workItem from="1676707154799" duration="1683000" />
       <workItem from="1676842554644" duration="4000" />
-      <workItem from="1676929504823" duration="7383000" />
+      <workItem from="1676929504823" duration="8414000" />
+      <workItem from="1676994683032" duration="863000" />
+      <workItem from="1677011596068" duration="1580000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -459,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676672355166</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="refactor: create PriceItem.jsx and PriceItem.module.scss">
+      <created>1676937337091</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1676937337091</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: create Header component and folder structure for React project and adapted mixins" />
     <MESSAGE value="feat: create Footer component and scss" />
     <MESSAGE value="refactor: fix scss bugs" />
     <MESSAGE value="refactor: fix scss bugs and create OurWorks features" />
@@ -545,7 +548,8 @@
     <MESSAGE value="refactor: Price.jsx" />
     <MESSAGE value="refactor: Review.jsx" />
     <MESSAGE value="refactor: Map.jsx and create Input.jsx and Form.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Map.jsx and create Input.jsx and Form.jsx" />
+    <MESSAGE value="refactor: create PriceItem.jsx and PriceItem.module.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: create PriceItem.jsx and PriceItem.module.scss" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

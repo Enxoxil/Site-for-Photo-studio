@@ -10,6 +10,9 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  &__body_item {
+    max-width: 300px;
+  }
 
   &__container {
     display: flex;
@@ -23,6 +26,7 @@
     &:last-child .box_footer__box {
       justify-content: center;
     }
+
   }
 
   @media (min-width: 1232px) {
@@ -54,6 +58,7 @@
     }
     &__body_item {
       @include fonts(16, 22, 600, $TEXT_COLOR1, Montserrat);
+      max-width: 300px;
     }
     &__button {
       @include fonts(16, 20, 600, #fff, Montserrat);
@@ -121,7 +126,7 @@
 
   &__body_item {
     @include fonts(14, 20, 600, $TEXT_COLOR1, Montserrat);
-    white-space: nowrap;
+    //white-space: nowrap;
 
     &:not(:last-child) {
       padding-bottom: 17px;
