@@ -9,9 +9,9 @@ class Map extends Component {
                 <div className={`${classes.map__container} _container`} id="map__wrapper">
                     <div className={classes.map__wrapper}>
                         <div className={classes.map__body}>
-                            <Location />
+                            <Location/>
                             <div className={`${classes.map__form} form theme_background_color_blue`}>
-                            <MapForm />
+                                <MapForm/>
                             </div>
                         </div>
                     </div>
