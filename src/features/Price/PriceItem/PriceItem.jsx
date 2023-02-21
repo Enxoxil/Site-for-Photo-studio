@@ -4,31 +4,28 @@ import Card from "../../../ui/components/Card/Card";
 import Button from "../../../ui/components/Button/Button";
 
 class PriceItem extends Component {
-    componentDidMount() {
-        console.log(this.props.options.map(item => item))
-    }
-
     render() {
+        const {backgroundClassName, name, moneySymbol, cost, valueOfLocations, options } = this.props;
         return (
             <>
                 <div className={classes.item_box__container}>
-                    <Card className={`${classes.item_box__wrapper} ${this.props.backgroundClassName}`}>
+                    <Card className={`${classes.item_box__wrapper} ${backgroundClassName}`}>
                         <div className={classes.item_box__header}>
-                            <p className={classes.item_box__name}>{this.props.name}</p>
+                            <p className={classes.item_box__name}>{name}</p>
                             <p className={classes.item_box__cost}>
-                                <span data-cost="">{this.props.cost}</span>
-                                <span className={classes._cost_value}>{this.props.moneySymbol}</span>
+                                <span data-cost="">{cost}</span>
+                                <span className={classes._cost_value}>{moneySymbol}</span>
                             </p>
-                            <p className={classes.item_box__value}>{this.props.valueOfLocations}</p>
+                            <p className={classes.item_box__value}>{valueOfLocations}</p>
                         </div>
                         <ul className={classes.item_box__body}>
-                            {this.props.options.map(item => <Card
-                                key={item}
-                                className={`${classes.item_box__body_item} _icon_list_style_image`}
-                            >
-                                {`${item}`}
-                            </Card>
-
+                            {options.map(item =>
+                                <Card
+                                    key={item}
+                                    className={`${classes.item_box__body_item} _icon_list_style_image`}
+                                >
+                                    {`${item}`}
+                                </Card>
                             )}
                         </ul>
                         <div className={`${classes.item_box__footer} ${classes.box_footer}`}>

@@ -101,6 +101,7 @@ class ArticleFirst extends Component {
         this.state = initialState;
     }
     render() {
+
         return (
             <article className="article">
                 <div className="article__wrapper article__wrapper_background_blue">

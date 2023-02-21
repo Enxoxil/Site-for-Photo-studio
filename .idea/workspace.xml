@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: create PriceItem.jsx and PriceItem.module.scss">
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix some bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/Price.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/Price.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +142,7 @@
       <workItem from="1676842554644" duration="4000" />
       <workItem from="1676929504823" duration="8414000" />
       <workItem from="1676994683032" duration="863000" />
-      <workItem from="1677011596068" duration="1580000" />
+      <workItem from="1677011596068" duration="4150000" />
     </task>
     <task id="LOCAL-00001" summary="tech">
       <created>1674252159649</created>
@@ -463,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676937337091</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="refactor: fix some bugs">
+      <created>1677013589544</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1677013589544</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +551,6 @@
     <MESSAGE value="refactor: use State with initial value" />
     <MESSAGE value="feat: create Button and Tel components" />
     <MESSAGE value="refactor: refactor Tel.jsx" />
-    <MESSAGE value="refactor: fix some bugs" />
     <MESSAGE value="feat: Create Video.jsx and refactor MainScreen.jsx" />
     <MESSAGE value="feat: Create Image.jsx and Card.jsx and refactor" />
     <MESSAGE value="refactor: StageWorks.jsx" />
@@ -549,7 +558,8 @@
     <MESSAGE value="refactor: Review.jsx" />
     <MESSAGE value="refactor: Map.jsx and create Input.jsx and Form.jsx" />
     <MESSAGE value="refactor: create PriceItem.jsx and PriceItem.module.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: create PriceItem.jsx and PriceItem.module.scss" />
+    <MESSAGE value="refactor: fix some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some bugs" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
