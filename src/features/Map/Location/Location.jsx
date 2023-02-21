@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import classes from "../Map.module.scss";
 import Image from "../../../ui/components/Image/Image";
+import Tel from "../../../ui/components/Tel/Tel";
+import Mail from "../../../ui/components/Mail/Mail";
 
 //import img
 import logo from "../../../assets/img/logo-white.png";
-import Tel from "../../../ui/components/Tel/Tel";
-import Mail from "../../../ui/components/Mail/Mail";
+
 
 class Location extends Component {
     constructor(props) {

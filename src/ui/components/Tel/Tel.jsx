@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 
 class Tel extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const {tel, className, id, children} = this.props;
         return (
-                <a href={`tel:${this.props.tel}`} className={this.props.className} id={this.props.id}>
-                    {(this.props.children) ? (<>{this.props.children}</>) : (this.props.tel)}
+                <a href={`tel:${tel}`} className={className} id={id}>
+                    {(children) ? (<>{children}</>) : (tel)}
                 </a>
         );
     }
