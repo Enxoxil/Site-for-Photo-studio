@@ -5,6 +5,7 @@ import Image from "../../../ui/components/Image/Image";
 //import img
 import logo from "../../../assets/img/logo-white.png";
 import Tel from "../../../ui/components/Tel/Tel";
+import Mail from "../../../ui/components/Mail/Mail";
 
 class Location extends Component {
     constructor(props) {
@@ -19,13 +20,8 @@ class Location extends Component {
                         <Image src={logo} alt="logo" className={classes.item__box_img}/>
                     </div>
                     <Tel tel='+38 (093) 0930939' className={classes.item__box_num} id='map__num'/>
+                    <Mail mail='content@addmarkets.ru' className={classes.item__box_link}/>
 
-                    <a
-                        href="mailto:content@addmarkets.ru"
-                        className={classes.item__box_link}
-                    >
-                        content@addmarkets.ru
-                    </a>
                     <p className={classes.item__box_text}>
                         <span>Режим работы:</span>
                         <br/>
