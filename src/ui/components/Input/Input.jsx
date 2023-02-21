@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class Input extends Component {
     render() {
-        const {id, label, ...props} = this.props;
+        const {id, label, value, onChangeHandler, ...props} = this.props;
         return (
             <>
                 <label htmlFor={id}>
@@ -10,6 +10,8 @@ class Input extends Component {
                 </label>
                 <input
                     id={id}
+                    value={value}
+                    onChange={onChangeHandler}
                     {...props}
                 />
             </>
