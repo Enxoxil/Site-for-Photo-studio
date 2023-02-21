@@ -101,16 +101,16 @@ class ArticleFirst extends Component {
         this.state = initialState;
     }
     render() {
-
+    const {articleName, articleContent} = this.state;
         return (
             <article className="article">
                 <div className="article__wrapper article__wrapper_background_blue">
                     <div className="article__container _container">
                         <h2 className="article__title _h2_title">
-                            {initialState.articleName}
+                            {articleName}
                         </h2>
                         <p className="article__content">
-                            {initialState.articleContent}
+                            {articleContent}
                         </p>
                         <div className="article__button_container">
                             <Button className="article__button">Подробнее</Button>
