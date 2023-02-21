@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 
 class Button extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
+        const {className, id, children} = this.props;
         return (
-            <button className={this.props.className} id={this.props.id}>
-                {(this.props.children)}
+            <button className={className} id={id}>
+                {(children)}
             </button>
         );
     }
