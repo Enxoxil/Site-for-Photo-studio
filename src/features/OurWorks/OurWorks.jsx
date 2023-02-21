@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './OurWorks.module.scss';
+//TODO add slider library
 
 class OurWorks extends Component {
     render() {
@@ -9,6 +10,8 @@ class OurWorks extends Component {
                     <h2 className={`${classes.ourWorks__title} _h2_title _scrollTo`} id="ourWorks__title">
                         Наши работы
                     </h2>
+
+                    {/*TODO add slider library*/}
                     <div className={`${classes.ourWorks__content} _slider`}>
                         <div className={`${classes.slider} ${classes._wrapper}`}>
                             <div className={classes.slider__arrows}>
