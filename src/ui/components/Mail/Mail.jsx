@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 
 class Mail extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const {mail, className, children, id} = this.props;
         return (

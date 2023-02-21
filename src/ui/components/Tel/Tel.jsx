@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 
 class Tel extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const {tel, className, id, children} = this.props;
         return (
