@@ -35,11 +35,12 @@ class Nav extends Component {
     }
 
     render() {
+        const {nav} = this.state;
         return (
             <div className={`${classes.menu} header__menu`}>
                 <nav className={classes.menu__body}>
                     <ul className={classes.menu__list}>
-                        {this.state.nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
+                        {nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
                     </ul>
                 </nav>
             </div>
