@@ -35,13 +35,14 @@ class Sub extends Component {
     }
 
     render() {
+        const {sub} = this.state;
         return (
             <div className={classes.sub}>
                 <div className={classes.sub__wrapper}>
                     <div className={classes.sub__text}>
                         <p className={classes.sub__text_content}>Наши социальные сети:</p>
                     </div>
-                    {this.state.sub.map(item => <SubItem key={item.link} name={item.name} link={item.link} icon={item.icon}/>)}
+                    {sub.map(item => <SubItem key={item.link} name={item.name} link={item.link} icon={item.icon}/>)}
                 </div>
             </div>
         );
