@@ -9,6 +9,7 @@ import Button from "../../ui/components/Button/Button";
 import Form from "./MapForm/MapForm";
 import Input from "../../ui/components/Input/Input";
 import Location from "./Location/Location";
+import MapForm from "./MapForm/MapForm";
 
 class Map extends Component {
     render() {
@@ -18,7 +19,7 @@ class Map extends Component {
                         <div className={classes.map__body}>
                             <Location />
                             <div className={`${classes.map__form} form theme_background_color_blue`}>
-
+                            <MapForm />
                             </div>
                         </div>
                     </div>
