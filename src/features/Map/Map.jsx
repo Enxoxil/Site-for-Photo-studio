@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
 import classes from './Map.module.scss'
-import Image from "../../ui/components/Image/Image";
-
-
-//Import image
-import logo from '../../assets/img/logo-white.png';
-import Button from "../../ui/components/Button/Button";
-import Form from "./MapForm/MapForm";
-import Input from "../../ui/components/Input/Input";
 import Location from "./Location/Location";
 import MapForm from "./MapForm/MapForm";
 
