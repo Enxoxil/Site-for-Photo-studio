@@ -1,15 +1,19 @@
 import React, {Component} from 'react';
 
 class Input extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const {id, label, ...props} = this.props;
         return (
             <>
-                <label htmlFor={this.props.id}>
-                    {this.props.label}
+                <label htmlFor={id}>
+                    {label}
                 </label>
                 <input
-                    id={this.props.id}
-                    {...this.props}
+                    id={id}
+                    {...props}
                 />
             </>
         );

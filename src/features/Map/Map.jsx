@@ -8,6 +8,7 @@ import logo from '../../assets/img/logo-white.png';
 import Button from "../../ui/components/Button/Button";
 import Form from "./Form/Form";
 import Input from "../../ui/components/Input/Input";
+import Location from "./Location/Location";
 
 class Map extends Component {
     render() {
@@ -15,31 +16,7 @@ class Map extends Component {
                 <div className={`${classes.map__container} _container`} id="map__wrapper">
                     <div className={classes.map__wrapper}>
                         <div className={classes.map__body}>
-                            <div className={`${classes.map__item} item`}>
-                                <div className={`${classes.item__box} theme_background_color_black`}>
-                                    <div className={classes.item__box_logo}>
-                                        <Image src={logo} alt="logo" className={classes.item__box_img}/>
-                                    </div>
-                                    <a
-                                        href="tel:+380930930939"
-                                        className={classes.item__box_num}
-                                        id="map__num"
-                                    >
-                                        +38 (093) 0930939
-                                    </a>
-                                    <a
-                                        href="mailto:content@addmarkets.ru"
-                                        className={classes.item__box_link}
-                                    >
-                                        content@addmarkets.ru
-                                    </a>
-                                    <p className={classes.item__box_text}>
-                                        <span>Режим работы:</span>
-                                        <br/>
-                                        ПН-ПТ 09:00 - 18:00
-                                    </p>
-                                </div>
-                            </div>
+                            <Location />
                             <div className={`${classes.map__form} form theme_background_color_blue`}>
                                 <Form action="#" className={`${classes.form__body} _form`}>
                                     <div className={classes.form__wrapper}>

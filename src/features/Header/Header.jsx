@@ -25,9 +25,9 @@ class Header extends Component {
                                         ОБРАТНЫЙ ЗВОНОК
                                     </Button>
                                 </div>
-                                <Tel id='header__num' tel='+380930930939' className={classes.actions_header__num}/>
+                                <Tel id='header__num' tel='+38 (093) 0930939' className={classes.actions_header__num}/>
                                 <div className={classes.action_header__phone}>
-                                    <Tel tel="tel:+380930930939" id="header__num-img">
+                                    <Tel tel="+38 (093) 0930939" id="header__num-img">
                                         <picture>
                                             <source srcSet={PhoneWebP} type="image/webp"/>
                                             <img src={PhonePng} alt="Phone"/>

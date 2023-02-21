@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix some bugs">
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: Use props destruct">
+      <change afterPath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Map/Location/Location.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/Map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Map.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,56 +140,7 @@
       <workItem from="1676842554644" duration="4000" />
       <workItem from="1676929504823" duration="8414000" />
       <workItem from="1676994683032" duration="863000" />
-      <workItem from="1677011596068" duration="4150000" />
-    </task>
-    <task id="LOCAL-00001" summary="tech">
-      <created>1674252159649</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1674252159649</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Delete .idea directory">
-      <created>1674253187704</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674253187704</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Delete .idea directory">
-      <created>1674253748866</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1674253748866</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Delete .idea directory">
-      <created>1674253879679</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1674253879679</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Delete .idea directory">
-      <created>1674254120911</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1674254120911</updated>
-    </task>
-    <task id="LOCAL-00006" summary="refactor: return project">
-      <created>1674303236715</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1674303236715</updated>
-    </task>
-    <task id="LOCAL-00007" summary="refactor: refactor syntax error">
-      <created>1674303601411</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1674303601411</updated>
+      <workItem from="1677011596068" duration="6672000" />
     </task>
     <task id="LOCAL-00008" summary="refactor: refactor syntax error">
       <created>1674312811350</created>
@@ -473,7 +422,70 @@
       <option name="project" value="LOCAL" />
       <updated>1677013589544</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="refactor: fix - delete fragment in components : Button, Card, Image, Tel; Use props destruct in PriceItem.jsx">
+      <created>1677016005279</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016005279</updated>
+    </task>
+    <task id="LOCAL-00049" summary="refactor: Use props destruct">
+      <created>1677016094426</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016094426</updated>
+    </task>
+    <task id="LOCAL-00050" summary="refactor: Use props destruct">
+      <created>1677016192154</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016192154</updated>
+    </task>
+    <task id="LOCAL-00051" summary="refactor: Use props destruct">
+      <created>1677016247255</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016247255</updated>
+    </task>
+    <task id="LOCAL-00052" summary="refactor: Use props destruct">
+      <created>1677016313741</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016313741</updated>
+    </task>
+    <task id="LOCAL-00053" summary="refactor: Use props destruct">
+      <created>1677016350496</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016350496</updated>
+    </task>
+    <task id="LOCAL-00054" summary="refactor: Use props destruct">
+      <created>1677016393867</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016393867</updated>
+    </task>
+    <task id="LOCAL-00055" summary="refactor: Use props destruct">
+      <created>1677016447378</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016447378</updated>
+    </task>
+    <task id="LOCAL-00056" summary="refactor: Use props destruct">
+      <created>1677016503187</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016503187</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,8 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: create Footer component and scss" />
-    <MESSAGE value="refactor: fix scss bugs" />
     <MESSAGE value="refactor: fix scss bugs and create OurWorks features" />
     <MESSAGE value="feat: create OurLocation feature" />
     <MESSAGE value="feat: create DesignStudio feature" />
@@ -559,7 +569,9 @@
     <MESSAGE value="refactor: Map.jsx and create Input.jsx and Form.jsx" />
     <MESSAGE value="refactor: create PriceItem.jsx and PriceItem.module.scss" />
     <MESSAGE value="refactor: fix some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix some bugs" />
+    <MESSAGE value="refactor: fix - delete fragment in components : Button, Card, Image, Tel; Use props destruct in PriceItem.jsx" />
+    <MESSAGE value="refactor: Use props destruct" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Use props destruct" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
