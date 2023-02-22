@@ -16,7 +16,7 @@ class MapForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state)
+        console.log('Entered values: ', this.state);
         this.setState(state => ({
             ...state,
             name: '',
