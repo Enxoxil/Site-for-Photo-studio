@@ -17,7 +17,8 @@ class MapForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         console.log(this.state)
-        this.setState(({name, email, phone}) => ({
+        this.setState(state => ({
+            ...state,
             name: '',
             email: '',
             phone: ''
@@ -26,9 +27,10 @@ class MapForm extends Component {
 
     handleInputChange = (event) => {
         const {name, value} = event.target;
-        this.setState((state) => {
-            state[name] = value;
-        });
+        this.setState(state => ({
+            ...state,
+            [name]: value,
+        }));
     }
 
     render() {
