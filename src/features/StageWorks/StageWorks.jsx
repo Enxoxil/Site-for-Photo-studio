@@ -53,7 +53,6 @@ class StageWorks extends Component {
                                     text={item.text}
                                     number={item.number}
                                     key={item.number + item.text}
-
                                 />)}
                         </ul>
                     </div>

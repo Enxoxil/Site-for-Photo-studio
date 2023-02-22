@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classes from "../StageWorks.module.scss";
+import classes from "./CardItem.module.scss";
 import Card from "../../../ui/components/Card/Card";
 
 class CardItem extends Component {
