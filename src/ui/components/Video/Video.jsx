@@ -4,7 +4,7 @@ class Video extends Component {
     render() {
         const {id ,className,children, ...props} = this.props;
         return (
-                <video {props} className={className} id={id}>
+                <video {...props} className={className} id={id}>
                     {children}
                 </video>
         );
