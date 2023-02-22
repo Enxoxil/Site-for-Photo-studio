@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 
 class Video extends Component {
     render() {
+        const {id ,className,children, ...props} = this.props;
         return (
-            <>
-                <video {...this.props} className={this.props.className} id={this.props.id}>
-                    {this.props.children}
+                <video {props} className={className} id={id}>
+                    {children}
                 </video>
-            </>
         );
     }
 }
