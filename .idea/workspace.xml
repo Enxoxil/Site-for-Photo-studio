@@ -4,8 +4,256 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: Button.jsx use destruct props">
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: delete old folder;">
+      <change afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/IBMPlexSans-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/IBMPlexSans-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-SemiBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-SemiBold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/futuralt_bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/futuralt_bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider-negative.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider-negative.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircleBiggest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircleBiggest.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/circle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/circleBefore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/circleBefore.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/circleTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/circleTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/footer-logo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/giftbg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/insta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/list-stile-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/list-stile-image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/list-stile-image.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/list-style-image-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/logo-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/logo-white.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/logo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/mapSectionBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/mapSectionBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/modal-feedback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/modal-feedback.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/modal-feedback.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/modal-ourLocationModal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/modal-ourLocationModal.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackgroundMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackgroundMobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/phone.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/priceBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/priceBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/priceBackgroundTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/priceBackgroundTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-gift.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-gift.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBacground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBacground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundMobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-review1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-review1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-review2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-review2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-review3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/section-review3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img10.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img11.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img7.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/service-img9.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundMobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/telegramm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/макетюpng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/макетюpng.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/script.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/video/bg_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider-negative.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider-negative.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircleBiggest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircleBiggest.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/circle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/circleBefore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/circleBefore.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/circleTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/circleTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/footer-logo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/giftbg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/insta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/list-stile-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/list-stile-image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/list-stile-image.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/list-style-image-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo-white.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/mapSectionBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/mapSectionBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/modal-feedback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/modal-feedback.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/modal-feedback.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/modal-ourLocationModal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/modal-ourLocationModal.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackgroundMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackgroundMobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/phone.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/priceBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/priceBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/priceBackgroundTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/priceBackgroundTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-gift.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-gift.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-giftBacground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-giftBacground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundMobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-review1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-review1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-review2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-review2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-review3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/section-review3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img10.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img11.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img7.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-img9.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackground.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundMobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundMobile.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundTablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundTablet.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/telegramm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/video/bg_video.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +291,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;D:/GIThub/Photo studio/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/WebstormProjects/Site-for-Photo-studio/public&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.buildTools.gulp.gulp_package_dir": "D:/GIThub/Photo studio/node_modules/gulp",
+    "last_opened_file_path": "C:/Users/user/WebstormProjects/Site-for-Photo-studio",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets\fonts" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\fonts" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\components" />
@@ -136,140 +387,12 @@
       <workItem from="1676842554644" duration="4000" />
       <workItem from="1676929504823" duration="8414000" />
       <workItem from="1676994683032" duration="863000" />
-      <workItem from="1677011596068" duration="7560000" />
-    </task>
-    <task id="LOCAL-00015" summary="refactor: refactor syntax error">
-      <created>1674425593329</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1674425593329</updated>
-    </task>
-    <task id="LOCAL-00016" summary="refactor: add react branch">
-      <created>1675548448849</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1675548448849</updated>
-    </task>
-    <task id="LOCAL-00017" summary="feat: create Header component and folder structure for React project and adapted mixins">
-      <created>1675635275947</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1675635275947</updated>
-    </task>
-    <task id="LOCAL-00018" summary="feat: create Footer component and scss">
-      <created>1675638889317</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1675638889317</updated>
-    </task>
-    <task id="LOCAL-00019" summary="refactor: fix scss bugs">
-      <created>1675719832578</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1675719832578</updated>
-    </task>
-    <task id="LOCAL-00020" summary="refactor: fix scss bugs and create OurWorks features">
-      <created>1675721071725</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1675721071725</updated>
-    </task>
-    <task id="LOCAL-00021" summary="feat: create OurLocation feature">
-      <created>1675724595875</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1675724595875</updated>
-    </task>
-    <task id="LOCAL-00022" summary="feat: create DesignStudio feature">
-      <created>1675725086926</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1675725086926</updated>
-    </task>
-    <task id="LOCAL-00023" summary="feat: create Service feature">
-      <created>1675726322216</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1675726322216</updated>
-    </task>
-    <task id="LOCAL-00024" summary="feat: create StageWorks feature">
-      <created>1675727202338</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1675727202338</updated>
-    </task>
-    <task id="LOCAL-00025" summary="feat: create Price feature and refactor Article feat, refactor OurLocation and OurWorks sliders">
-      <created>1676067939326</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1676067939326</updated>
-    </task>
-    <task id="LOCAL-00026" summary="feat: create Gifts feature and refactor Price.scss feat">
-      <created>1676112178770</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1676112178770</updated>
-    </task>
-    <task id="LOCAL-00027" summary="feat: create Gifts feature and refactor Price.scss feat">
-      <created>1676113424395</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1676113424395</updated>
-    </task>
-    <task id="LOCAL-00028" summary="feat: create Review feature">
-      <created>1676223017745</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1676223017745</updated>
-    </task>
-    <task id="LOCAL-00029" summary="feat: create Map feature">
-      <created>1676225270273</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1676225270273</updated>
-    </task>
-    <task id="LOCAL-00030" summary="refactor: fix CSS bug for button of Burger Menu">
-      <created>1676225498886</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1676225498886</updated>
-    </task>
-    <task id="LOCAL-00031" summary="refactor: separation into components (LOGO)">
-      <created>1676232955280</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1676232955280</updated>
-    </task>
-    <task id="LOCAL-00032" summary="refactor: Footer.jsx separation into components">
-      <created>1676240681807</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1676240681807</updated>
-    </task>
-    <task id="LOCAL-00033" summary="refactor: use State with initial value">
-      <created>1676415110496</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1676415110496</updated>
+      <workItem from="1677011596068" duration="10979000" />
+      <workItem from="1677077630294" duration="1931000" />
+      <workItem from="1677101343866" duration="3152000" />
+      <workItem from="1677138638790" duration="1219000" />
+      <workItem from="1677322484708" duration="1582000" />
+      <workItem from="1677334491762" duration="2352000" />
     </task>
     <task id="LOCAL-00034" summary="refactor: fix some bugs">
       <created>1676418882828</created>
@@ -481,7 +604,140 @@
       <option name="project" value="LOCAL" />
       <updated>1677021027606</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="refactor: clear code">
+      <created>1677021742996</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1677021742996</updated>
+    </task>
+    <task id="LOCAL-00065" summary="feat: Create MapForm.jsx">
+      <created>1677022782760</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022782760</updated>
+    </task>
+    <task id="LOCAL-00066" summary="refactor: use MapForm.jsx">
+      <created>1677022802028</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022802028</updated>
+    </task>
+    <task id="LOCAL-00067" summary="refactor: add props">
+      <created>1677022825982</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022825982</updated>
+    </task>
+    <task id="LOCAL-00068" summary="feat: create Map.scss">
+      <created>1677022852153</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022852153</updated>
+    </task>
+    <task id="LOCAL-00069" summary="refactor: clear code">
+      <created>1677022894850</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022894850</updated>
+    </task>
+    <task id="LOCAL-00070" summary="refactor: clear code">
+      <created>1677023089194</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023089194</updated>
+    </task>
+    <task id="LOCAL-00071" summary="TODO: Will be add slider">
+      <created>1677023250278</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023250278</updated>
+    </task>
+    <task id="LOCAL-00072" summary="feat: Create CardItem.jsx">
+      <created>1677023895166</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023895166</updated>
+    </task>
+    <task id="LOCAL-00073" summary="refactor: Divide to CardItem.jsx">
+      <created>1677023924011</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023924011</updated>
+    </task>
+    <task id="LOCAL-00074" summary="refactor: Add max-width: 230px; in Item__content_title">
+      <created>1677024107977</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024107977</updated>
+    </task>
+    <task id="LOCAL-00075" summary="refactor: Add max-width: 230px; in Item__content_title">
+      <created>1677024385578</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024385578</updated>
+    </task>
+    <task id="LOCAL-00076" summary="refactor: use destruct props">
+      <created>1677024550172</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024550172</updated>
+    </task>
+    <task id="LOCAL-00077" summary="refactor: fix bugs with spread">
+      <created>1677077873848</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1677077873848</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat: create CardItem.scss and divide StageWorks.scss">
+      <created>1677077928246</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1677077928246</updated>
+    </task>
+    <task id="LOCAL-00079" summary="feat: create MapForm.scss and divide Map.scss">
+      <created>1677102394039</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1677102394039</updated>
+    </task>
+    <task id="LOCAL-00080" summary="refactor: use locale state for component">
+      <created>1677102437540</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1677102437540</updated>
+    </task>
+    <task id="LOCAL-00081" summary="refactor: clear code">
+      <created>1677102974514</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1677102974514</updated>
+    </task>
+    <task id="LOCAL-00082" summary="refactor: clear code">
+      <created>1677104788673</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1677104788673</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,22 +798,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: create Review feature" />
-    <MESSAGE value="feat: create Map feature" />
-    <MESSAGE value="refactor: fix CSS bug for button of Burger Menu" />
-    <MESSAGE value="refactor: separation into components (LOGO)" />
-    <MESSAGE value="refactor: Footer.jsx separation into components" />
-    <MESSAGE value="refactor: use State with initial value" />
-    <MESSAGE value="feat: create Button and Tel components" />
-    <MESSAGE value="refactor: refactor Tel.jsx" />
-    <MESSAGE value="feat: Create Video.jsx and refactor MainScreen.jsx" />
-    <MESSAGE value="feat: Create Image.jsx and Card.jsx and refactor" />
-    <MESSAGE value="refactor: StageWorks.jsx" />
-    <MESSAGE value="refactor: Price.jsx" />
-    <MESSAGE value="refactor: Review.jsx" />
-    <MESSAGE value="refactor: Map.jsx and create Input.jsx and Form.jsx" />
-    <MESSAGE value="refactor: create PriceItem.jsx and PriceItem.module.scss" />
-    <MESSAGE value="refactor: fix some bugs" />
     <MESSAGE value="refactor: fix - delete fragment in components : Button, Card, Image, Tel; Use props destruct in PriceItem.jsx" />
     <MESSAGE value="refactor: Use props destruct" />
     <MESSAGE value="refactor: Divide Component map to Location.jsx" />
@@ -567,7 +807,23 @@
     <MESSAGE value="refactor: Image.jsx use destruct props" />
     <MESSAGE value="refactor: Card.jsx use destruct props" />
     <MESSAGE value="refactor: Button.jsx use destruct props" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Button.jsx use destruct props" />
+    <MESSAGE value="feat: Create MapForm.jsx" />
+    <MESSAGE value="refactor: use MapForm.jsx" />
+    <MESSAGE value="refactor: add props" />
+    <MESSAGE value="feat: create Map.scss" />
+    <MESSAGE value="TODO: Will be add slider" />
+    <MESSAGE value="feat: Create CardItem.jsx" />
+    <MESSAGE value="refactor: Divide to CardItem.jsx" />
+    <MESSAGE value="refactor: Add max-width: 230px; in Item__content_title" />
+    <MESSAGE value="refactor: use destruct props" />
+    <MESSAGE value="refactor: fix bugs with spread" />
+    <MESSAGE value="feat: create CardItem.scss and divide StageWorks.scss" />
+    <MESSAGE value="feat: create MapForm.scss and divide Map.scss" />
+    <MESSAGE value="refactor: use locale state for component" />
+    <MESSAGE value="refactor: clear code" />
+    <MESSAGE value="refactor: delete old folder" />
+    <MESSAGE value="refactor: delete old folder;" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: delete old folder;" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
