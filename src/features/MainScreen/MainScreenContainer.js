@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import withPopup from "../../HOC/WithPopup";
 import MainScreen from "./MainScreen";
 import Popup from "../../ui/components/Popup/Popup";
+import MainPopup from "../Popups/MainPopup/MainPopup";
 
 
 class MainScreenContainer extends Component {
@@ -12,7 +13,7 @@ class MainScreenContainer extends Component {
             <>
                 <MainScreen toggleShowPopup={toggleShowPopup}/>
                 <Popup toggleShowPopup={toggleShowPopup} isShowPopup={isShowPopup}>
-
+                    <MainPopup/>
                 </Popup>
             </>
         );
