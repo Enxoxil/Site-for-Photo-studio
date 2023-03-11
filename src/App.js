@@ -2,7 +2,6 @@ import './App.css';
 import {Component} from "react";
 import Header from "./features/Header/Header";
 import Footer from "./features/Footer/Footer";
-import MainScreen from "./features/MainScreen/MainScreen";
 import OurWorks from "./features/OurWorks/OurWorks";
 import OurLocation from "./features/OurLocation/OurLocation";
 import DesignStudio from "./features/DesignStudio/DesignStudio";
@@ -12,6 +11,7 @@ import Price from "./features/Price/Price";
 import Gifts from "./features/Gifts/Gifts";
 import Review from "./features/Review/Review";
 import Map from "./features/Map/Map";
+import MainScreenContainer from "./features/MainScreen/MainScreenContainer";
 
     
 
@@ -20,7 +20,7 @@ class App extends Component {
     return (
         <>
             <Header/>
-            <MainScreen/>
+            <MainScreenContainer/>
             <OurWorks/>
             <OurLocation/>
             <DesignStudio/>
