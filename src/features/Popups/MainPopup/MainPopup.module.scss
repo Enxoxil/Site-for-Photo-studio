@@ -1,0 +1,272 @@
+// START ===== import =====
+
+@import "../../../ui/style/values";
+@import "../../../ui/style/mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.feedback {
+  transition: all 0.1s ease-in;
+  //opacity: 0.9;
+  display: block;
+  position: fixed;
+
+  z-index: 1100;
+ @media (min-width: 767px){
+   top: 10%;
+   left: 10%;
+   width: 80%;
+ }
+
+  &__container {
+    //background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    right: 12px;
+    top: 12px;
+    @media (min-width: 767px) {
+      right: 0;
+      top: -40px;
+    }
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1200;
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 33px;
+      height: 2px;
+      transform: rotate(45deg);
+      border-radius: 5px;
+      background: rgba(216, 216, 216, 1);
+      @media (min-width: 767px) {
+        background: #fff;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 33px;
+        height: 2px;
+        transform: rotate(-90deg);
+        border-radius: 5px;
+        background: rgba(216, 216, 216, 1);
+        @media (min-width: 767px) {
+          background: #fff;
+        }
+      }
+    }
+
+    &:hover {
+      transform: rotate(90deg);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__wrapper {
+
+    @media (min-width: 767px) {
+      flex: 0 1 840px;
+    }
+    @media (min-width: 1023px) {
+      flex: 0 1 1035px;
+    }
+  }
+
+  &__body {
+    @media (max-width: 767px) {
+      padding-top: 18px;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 1100;
+    @media (min-width: 767px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+
+  }
+
+  &__img_container {
+    flex: 0 0 120px;
+
+    @media (min-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1 1 323px;
+      //flex: 0 1 362px;
+      max-width: 362px;
+    }
+    @media (min-width: 1023px) {
+      flex: 0 1 455px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__form,
+  .form {
+    border-radius: 25px;
+    flex: 0 1 93%;
+    min-width: 320px;
+    margin-top: -45px;
+    padding-top: 52px;
+    padding-bottom: 32px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    @media (min-width: 767px) {
+      margin-top: 0;
+      //flex: 0 1 404px;
+      flex: 0 1 365px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media (min-width: 1023px) {
+      flex: 0 1 480px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__title {
+      text-align: center;
+      @include fonts(22, 26, 600, $TEXT_COLOR2, Montserrat);
+      padding-bottom: 16px;
+      @media (min-width: 767px) {
+        @include fonts(30, 36, 600, $TEXT_COLOR2, Montserrat);
+        padding-bottom: 32px;
+      }
+    }
+
+    &__box {
+      padding-left: 12px;
+      padding-right: 12px;
+      @media (min-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media (min-width: 1023px) {
+        padding-left: 29.5px;
+        padding-right: 29.5px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 16px;
+
+      & > label {
+        @include fonts(14, 12, 600, #121621, Montserrat);
+        @media (min-width: 767px) {
+          @include fonts(16, 12, 500, #121621, Montserrat);
+        }
+        opacity: 0.4;
+      }
+
+      & > input {
+        border-radius: 5px;
+        background: #fff;
+        border: 1px solid #dddee4;
+        margin-top: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        @media (min-width: 767px) {
+          margin-top: 8px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          padding-left: 16px;
+        }
+
+        &::placeholder {
+          @include fonts(
+                          12,
+                          12,
+                          600,
+                          rgba(177, 177, 177, 0.4),
+                          Montserrat
+          );
+        }
+      }
+
+    }
+
+    &__button_container {
+      text-align: center;
+      padding-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      @media (min-width: 767px) {
+        padding-top: 16px;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      padding-top: 11.5px;
+      padding-bottom: 11.5px;
+      @media (min-width: 767px) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+    }
+
+    &__text {
+      @include fonts(12, 16, 500, $TEXT_COLOR1, Montserrat);
+      text-align: center;
+      @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media (max-width: 1023px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    &__text-policy {
+      text-decoration: underline;
+      @include fonts(false, false, false, #585858, Montserrat);
+    }
+  }
+
+  &._modalActive {
+    opacity: 1;
+    z-index: 10000;
+  }
+}
+
+// START ===== style =====
