@@ -79,7 +79,7 @@ class OurWorks extends Component {
                     </div>
                 </div>
             </section>
-        );
+        )
     }
 }
 

@@ -4,7 +4,6 @@ import MainScreen from "./MainScreen";
 import Popup from "../../ui/components/Popup/Popup";
 import MainPopup from "../Popups/MainPopup/MainPopup";
 
-
 class MainScreenContainer extends Component {
 
     render() {
