@@ -13,7 +13,6 @@ const withPopup = (WrapComponent) => {
 
         toggle() {
             this.setState(state => ({isShowPopupOn: !state.isShowPopupOn}));
-            console.log('Push', this.state.isShowPopupOn)
         }
 
         render() {

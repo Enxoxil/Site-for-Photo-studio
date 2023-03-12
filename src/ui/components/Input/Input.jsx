@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 
 class Input extends Component {
     render() {
-        const {id, label, value, onChangeHandler, ...props} = this.props;
+        const {id, label, name, onChangeHandler, ...props} = this.props;
         return (
             <>
                 <label htmlFor={id}>
                     {label}
                 </label>
                 <input
+                    name={name}
                     id={id}
-                    value={value}
                     onChange={onChangeHandler}
                     {...props}
                 />
