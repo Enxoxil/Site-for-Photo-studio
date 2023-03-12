@@ -43,36 +43,8 @@
     @media (min-width: 767px) {
       justify-content: space-between;
     }
-    &_item {
-      opacity: 0;
-      width: 0px;
-      transform: translate(50%);
-      cursor: pointer;
-      &:nth-of-type(1) {
-        transform: translate(-50%);
-      }
-      &:nth-of-type(2) {
-        transition: transform 0.2s;
-        width: 33.3%;
-        min-width: 207px;
-        transform: translate(0%);
-        opacity: 1;
-      }
-      &:nth-of-type(3) {
-        transition: transform 0.3s;
-        width: 33.3%;
-        min-width: 207px;
-        transform: scale(114%);
-        opacity: 1;
-        z-index: 10;
-      }
-      &:nth-of-type(4) {
-        transition: transform 0.2s;
-        width: 33.3%;
-        min-width: 207px;
-        transform: translate(0);
-        opacity: 1;
-      }
+    &_item, .active {
+        //transform: scale(115%);
     }
     &_img {
       width: 100%;
