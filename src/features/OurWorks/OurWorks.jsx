@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import classes from './OurWorks.module.scss';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Slide} from "./Slide/Slide";
-
 import "swiper/css/bundle";
-
 
 import SwiperCore, {
     EffectCoverflow,
@@ -38,7 +36,12 @@ class OurWorks extends Component {
                 <div className={`${classes.ourWorks__content} _slider`}>
                     <div className={`${classes.slider} ${classes._wrapper}`}>
                         <Swiper
-                            navigation={true}
+
+                            navigation={
+                            {
+                                nextEl: '._right_arrow',
+                                prevEl: '._left_arrow',
+                            }}
                             effect={"coverflow"}
                             centeredSlides={true}
                             slidesPerView={2}
@@ -51,8 +54,13 @@ class OurWorks extends Component {
                                 slideShadows: true
                             }}
                             pagination={{
-                                clickable: true
+                                clickable: true,
+                                el: '._pagination',
                             }}
+                            autoplay={{
+                                delay: 1000,
+                            }}
+
                             className="mySwiper"
 
                         >
@@ -60,16 +68,16 @@ class OurWorks extends Component {
                                 <Slide key={index} img={item} className={isActive ? 'active' : ''}/>)}</SwiperSlide>)}
                         </Swiper>
                         <div className={classes.slider__arrows}>
-                            {/*<button className={`${classes.slider__arrows_left} _left_arrow`}>*/}
-                            {/*    <span></span>*/}
-                            {/*</button>*/}
+                            <button className={`${classes.slider__arrows_left} _left_arrow`}>
+                                <span></span>
+                            </button>
 
-                            {/*<button className={`${classes.slider__arrows_right} _right_arrow`}>*/}
-                            {/*    <span></span>*/}
-                            {/*</button>*/}
+                            <button className={`${classes.slider__arrows_right}  _right_arrow`}>
+                                <span></span>
+                            </button>
                         </div>
 
-                        <div className={classes.slider__dots} data-pagination="slider__dots">
+                        <div className={`${classes.slider__dots} _pagination`} data-pagination="slider__dots">
                         </div>
                     </div>
                 </div>
