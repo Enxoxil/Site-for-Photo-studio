@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import classes from "./Gifts.module.scss";
 
+import giftImg from '../../assets/img/section-gift.png'
+
 class Gifts extends Component {
     render() {
         return (
@@ -36,7 +38,7 @@ class Gifts extends Component {
                             </div>
                             <div className={classes.gifts__item}>
                                 <div className={classes.gifts__item_img_container}>
-                                    <img src="img/section-gift.png" alt="" className={classes.gifts__item_img}/>
+                                    <img src={giftImg} alt="" className={classes.gifts__item_img}/>
                                 </div>
                                 <p className={classes.gifts__item_paragraph}>
                                     Срок действия сертификата: 2 месяца
