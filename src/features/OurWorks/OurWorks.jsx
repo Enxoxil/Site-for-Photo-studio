@@ -16,6 +16,8 @@ import ourWorks_3 from '../../assets/img/ourWorks-3.webp'
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
+//TODO divide for components
+
 class OurWorks extends Component {
     constructor(props) {
         super(props);
@@ -35,6 +37,7 @@ class OurWorks extends Component {
 
                 <div className={`${classes.ourWorks__content} _slider`}>
                     <div className={`${classes.slider} ${classes._wrapper}`}>
+
                         <Swiper
 
                             navigation={
@@ -51,7 +54,7 @@ class OurWorks extends Component {
                                 stretch: 0,
                                 depth: 200,
                                 modifier: 1,
-                                slideShadows: true
+
                             }}
                             pagination={{
                                 clickable: true,
