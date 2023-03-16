@@ -39,7 +39,6 @@ class OurWorks extends Component {
                     <div className={`${classes.slider} ${classes._wrapper}`}>
 
                         <Swiper
-
                             navigation={
                             {
                                 nextEl: '._right_arrow',
@@ -54,7 +53,6 @@ class OurWorks extends Component {
                                 stretch: 0,
                                 depth: 200,
                                 modifier: 1,
-
                             }}
                             pagination={{
                                 clickable: true,
@@ -63,12 +61,12 @@ class OurWorks extends Component {
                             autoplay={{
                                 delay: 1000,
                             }}
-
+                            slideToClickedSlide={true}
                             className="mySwiper"
 
                         >
-                            {img.map((item, index) => <SwiperSlide>{({isActive}) => (
-                                <Slide key={index} img={item} className={isActive ? 'active' : ''}/>)}</SwiperSlide>)}
+                            {img.map((item, index) => <SwiperSlide key={index}>{({isActive}) => (
+                                <Slide  img={item} className='slider__body_item'/>)}</SwiperSlide>)}
                         </Swiper>
                         <div className={classes.slider__arrows}>
                             <button className={`${classes.slider__arrows_left} _left_arrow`}>

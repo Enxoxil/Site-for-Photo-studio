@@ -6,6 +6,9 @@
 
 // START ===== style =====
 
+
+
+
 .ourWorks {
   &__container {
     max-width: 1460px;
@@ -150,4 +153,11 @@
   transform: scale(230%);
 }
 
+.image-slider{
+  height: 200px;
+}
+.swiper-slide{
+  height: 200px;
+
+}
 // END ===== style =====

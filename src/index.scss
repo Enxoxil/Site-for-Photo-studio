@@ -267,3 +267,21 @@ body {
     background-color: $ACCENT_COLOR;
   }
 }
+
+
+
+.ourWorks {
+  &__container {
+    max-width: 1460px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (min-width: 1023px) {
+      padding-top: 120px;
+    }
+    @media (min-width: 767px) {
+      padding-top: 100px;
+    }
+    padding-top: 60px;
+  }
+}
+

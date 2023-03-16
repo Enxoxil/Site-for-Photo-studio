@@ -12,6 +12,7 @@ import Gifts from "./features/Gifts/Gifts";
 import Review from "./features/Review/Review";
 import Map from "./features/Map/Map";
 import MainScreenContainer from "./features/MainScreen/MainScreenContainer";
+import ServiceContainer from "./features/Service/ServiceContainer";
 
     
 
@@ -22,15 +23,15 @@ class App extends Component {
             <Header/>
             <MainScreenContainer/>
             <OurWorks/>
-            <OurLocation/>
+            {/*<OurLocation/>*/}
             <DesignStudio/>
-            <Service/>
+            <ServiceContainer/>
             <StageWorks/>
             {/*article*/}
             <Price/>
             {/*article*/}
             <Gifts/>
-            <Review/>
+            {/*<Review/>*/}
             <Map/>
             <Footer/>
         </>
