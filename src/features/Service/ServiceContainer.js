@@ -61,14 +61,18 @@ class ServiceContainer extends Component {
 
     dragOverHandler(e) {
         e.preventDefault()
+        //TODO create visual effect
+
     }
 
     dragEndHandler(e) {
         e.preventDefault();
+        //TODO create visual effect
+
     }
 
     dragLeaveHandler(e) {
-
+        //TODO create visual effect
     }
 
     dragStartHandler(e, card) {
