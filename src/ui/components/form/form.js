@@ -8,10 +8,9 @@ class Form extends Component {
 
     onSubmitHandler(e) {
         e.preventDefault();
-        //Take handler or Redux
         const data = new FormData(e.target);
-        this.props.formHandler(data);
-        console.log(Object.fromEntries(data))
+        const {email, name, tel} = Object.fromEntries(data);
+        this.props.formHandler({email, name, tel});
     }
 
     render() {
