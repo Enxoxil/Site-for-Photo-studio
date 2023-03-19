@@ -3,6 +3,7 @@ import withPopup from "../../HOC/WithPopup";
 import MainScreen from "./MainScreen";
 import Popup from "../../ui/components/Popup/Popup";
 import MainPopup from "../Popups/MainPopup/MainPopup";
+import {api} from "../../DAL/Api/api";
 
 class MainScreenContainer extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class MainScreenContainer extends Component {
     formHandler(data){
         this.setState({...this.state, data});
         this.props.toggleShowPopup();
+        api.saveUser(data);
     }
 
     render() {
