@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import classes from "./NavLink.module.scss";
 
-class Navlink extends Component {
-    constructor(props) {
-        super(props);
-    }
+class NavLink extends Component {
+
     render() {
         const {link, name} = this.props;
         return (
@@ -17,5 +15,5 @@ class Navlink extends Component {
     }
 }
 
-export default Navlink;
+export default NavLink;
 

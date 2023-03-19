@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from "./Nav.module.scss";
-import NavLink from "./NavLink/Navlink";
+import NavLink from "./NavLink/NavLink";
 
 const initial_value = {
     nav: [
