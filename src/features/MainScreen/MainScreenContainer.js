@@ -16,6 +16,7 @@ class MainScreenContainer extends Component {
         this.setState({...this.state, data});
         this.props.toggleShowPopup();
         api.saveUser(data);
+        console.log('Thank you! Your data was send to Firebase :', data)
     }
 
     render() {
