@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import classes from "./Nav.module.scss";
 import NavLink from "./NavLink/NavLink";
-
+import cn from 'classnames';
 const initial_value = {
     nav: [
         {
@@ -36,11 +36,12 @@ class Nav extends Component {
 
     render() {
         const {nav} = this.state;
+        const {isShowBurger, toggleBurger} = this.props;
         return (
             <div className={`${classes.menu} header__menu`}>
-                <nav className={classes.menu__body}>
+                <nav className={cn(classes.menu__body, isShowBurger ? classes._active : '') }>
                     <ul className={classes.menu__list}>
-                        {nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
+                        {nav.map(item => <NavLink key={item.link} link={item.link} name={item.name} toggleBurger={toggleBurger}/>)}
                     </ul>
                 </nav>
             </div>
