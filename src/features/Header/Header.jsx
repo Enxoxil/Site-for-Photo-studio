@@ -11,18 +11,19 @@ import PhoneWebP from '../../assets/img/phone.webp';
 
 class Header extends Component {
     render() {
+        const {toggleBurger, isShowBurger} = this.props;
         return (<header className={classes.header}>
                 <div className={classes.header__wrapper}>
                     <div className={`${classes.header__container} _container`}>
                         <div className={classes.header__body}>
                             <Logo/>
                             <div className={classes.header__main}>
-                                <Nav/>
+                                <Nav isShowBurger={isShowBurger} toggleBurger={toggleBurger}/>
                             </div>
                             <div className={`${classes.actions_header}`}>
                                 <div className={classes.actions_header__btn_container}>
                                     <Button className={classes.actions_header__btn}>
-                                        ОБРАТНЫЙ ЗВОНОК
+                                        Список звонков
                                     </Button>
                                 </div>
                                 <Tel id='header__num' tel='+38 (093) 0930939' className={classes.actions_header__num}/>
@@ -34,7 +35,7 @@ class Header extends Component {
                                         </picture>
                                     </Tel>
                                 </div>
-                                <Button className={classes.action_header__icon_menu}>
+                                <Button onClick={toggleBurger} className={`${classes.action_header__icon_menu} `}>
                                     <span></span>
                                 </Button>
                             </div>
