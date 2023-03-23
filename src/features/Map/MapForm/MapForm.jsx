@@ -32,7 +32,7 @@ class MapForm extends Component {
             [name]: value,
         }));
     }
-
+    //TODO will divide to components: Form and etc.
     render() {
         const {name, email, phone} = this.state;
         return (
