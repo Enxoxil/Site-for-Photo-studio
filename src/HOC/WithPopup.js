@@ -8,11 +8,10 @@ const withPopup = (WrapComponent) => {
             this.state = {
                 isShowPopupOn: false,
             };
-            this.toggle = this.toggle.bind(this);
         }
 
-        toggle() {
-            this.setState(state => ({isShowPopupOn: !state.isShowPopupOn}));
+        toggle = () => {
+            this.setState(({isShowPopupOn}) => ({isShowPopupOn: !isShowPopupOn}));
         }
 
         render() {
