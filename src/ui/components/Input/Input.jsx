@@ -5,9 +5,12 @@ class Input extends Component {
         const {id, label, name, onChangeHandler, ...props} = this.props;
         return (
             <>
-                <label htmlFor={id}>
-                    {label}
-                </label>
+                {label ?
+                    <label htmlFor={id}>
+                        {label}
+                    </label>
+                    : null
+                }
                 <input
                     name={name}
                     id={id}
