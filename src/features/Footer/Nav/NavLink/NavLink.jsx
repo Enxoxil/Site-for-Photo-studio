@@ -5,14 +5,13 @@ class NavLink extends Component {
     constructor(props) {
         super(props);
     }
+
     render() {
-        const {link, name} =this.props;
+        const {link, name} = this.props;
         return (
-            <>
-                <li className={classes.footer_nav__item}>
-                    <a href={link} className={classes.footer_nav__link}>{name}</a>
-                </li>
-            </>
+            <li className={classes.footer_nav__item}>
+                <a href={link} className={classes.footer_nav__link}>{name}</a>
+            </li>
         );
     }
 }
