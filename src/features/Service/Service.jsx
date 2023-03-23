@@ -2,17 +2,12 @@ import React, {Component} from 'react';
 import classes from "./Service.module.scss";
 import Card from "../../ui/components/Card/Card";
 import Image from "../../ui/components/Image/Image";
+import {sort} from "../../Helpers/Sort";
 
 
 class Service extends Component {
     render() {
-        const sort = (a, b) => {
-            if (a.id > b.id){
-                return 1;
-            } else {
-                return -1;
-            }
-        }
+
         const {cards, dropHandler, dragOverHandler, dragEndHandler, dragLeaveHandler, dragStartHandler} = this.props;
         return (
             <section className={classes.service}>
