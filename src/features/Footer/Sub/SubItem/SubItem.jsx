@@ -7,7 +7,7 @@ class SubItem extends Component {
     render() {
         const {link, name, icon} = this.props;
         return (
-            <a href={link} className={`${name} ${icon} ${classes._sub_icon}`}></a>
+            <a href={link} className={`${name} ${icon} ${classes._sub_icon}`}/>
         );
     }
 }
