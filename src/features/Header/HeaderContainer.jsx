@@ -7,18 +7,14 @@ class HeaderContainer extends Component {
         this.state = {
             isShowBurger: false
         };
-        this.toggleBurger = this.toggleBurger.bind(this);
     }
-    toggleBurger() {
-
-        this.setState({isShowBurger : !this.state.isShowBurger});
+    toggleBurger = () => {
+        this.setState(({isShowBurger}) => ({isShowBurger : !isShowBurger}));
     }
 
     render() {
         return (
-            <>
                 <Header toggleBurger={this.toggleBurger} isShowBurger={this.state.isShowBurger}/>
-            </>
         );
     }
 }
