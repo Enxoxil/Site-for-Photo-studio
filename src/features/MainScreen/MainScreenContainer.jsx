@@ -6,13 +6,8 @@ import MainPopup from "../Popups/MainPopup/MainPopup";
 import {api} from "../../DAL/Api/api";
 
 class MainScreenContainer extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-        this.formHandler = this.formHandler.bind(this) ;
-    }
 
-    formHandler(data){
+    formHandler = (data) => {
         this.setState({...this.state, data});
         this.props.toggleShowPopup();
         api.saveUser(data);

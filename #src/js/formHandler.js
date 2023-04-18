@@ -1,4 +1,4 @@
-// START ===== form handler =====
+// START ===== Form handler =====
 
 // START ===== variables =====
 
@@ -55,5 +55,5 @@ function getAllForms() {
 }
 
 getAllForms();
-// END ===== form handler =====
+// END ===== Form handler =====
 

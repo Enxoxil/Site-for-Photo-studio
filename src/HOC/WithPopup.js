@@ -16,11 +16,7 @@ const withPopup = (WrapComponent) => {
 
         render() {
             const {isShowPopupOn} = this.state;
-            return (
-                <>
-                    <WrapComponent isShowPopup={isShowPopupOn} toggleShowPopup={this.toggle}/>
-                </>
-            );
+            return <WrapComponent isShowPopup={isShowPopupOn} toggleShowPopup={this.toggle}/>
         }
     }
 }

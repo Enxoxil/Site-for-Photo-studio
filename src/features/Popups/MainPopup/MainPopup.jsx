@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import classes from './MainPopup.module.scss';
 
 import modalFeedback from '../../../assets/img/modal-feedback.webp';
-import Form from "../../../ui/components/form/form";
+import Form from "../../../ui/components/Form/Form";
 import Input from "../../../ui/components/Input/Input";
 import Button from "../../../ui/components/Button/Button";
 

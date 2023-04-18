@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import classes from "./StageWorks.module.scss";
-import Card from "../../ui/components/Card/Card";
 import CardItem from "./CardItem/CardItem";
 
 const initialState = {

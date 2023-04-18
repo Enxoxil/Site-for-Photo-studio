@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import classes from "./NavLink.module.scss";
 
 class NavLink extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const {link, name} = this.props;

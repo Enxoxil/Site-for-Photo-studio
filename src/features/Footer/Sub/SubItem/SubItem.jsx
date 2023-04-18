@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import  classes from './SubItem.module.scss'
 class SubItem extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const {link, name, icon} = this.props;
         return (

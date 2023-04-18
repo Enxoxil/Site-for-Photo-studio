@@ -9,11 +9,7 @@ import logo from "../../../assets/img/logo-white.png";
 
 
 class Location extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
-        const {} = this.props;
         return (
             <div className={`${classes.map__item} item`}>
                 <div className={`${classes.item__box} theme_background_color_black`}>

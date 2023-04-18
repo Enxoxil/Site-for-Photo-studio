@@ -17,12 +17,11 @@ class MapForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         console.log('Entered values: ', this.state);
-        this.setState(state => ({
-            ...state,
+        this.setState({
             name: '',
             email: '',
             phone: ''
-        }));
+        });
     }
 
     handleInputChange = (event) => {

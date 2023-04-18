@@ -5,255 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: delete old folder;">
-      <change afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/js/formHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/formHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/IBMPlexSans-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/IBMPlexSans-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Montserrat-SemiBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/OpenSans-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/PTSerif-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Raleway-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Roboto-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/futuralt_bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/futuralt_bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider-negative.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider-negative.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider-negative.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/arrow-slider.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircleBiggest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/cardsBackgroundCircleBiggest.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/circle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/circleBefore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/circleBefore.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/circleTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/circleTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/footer-logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/giftbg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/insta.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/list-stile-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/list-stile-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/list-stile-image.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/list-style-image-check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/logo-white.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/mapSectionBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/mapSectionBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/modal-feedback.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/modal-feedback.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/modal-feedback.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/modal-ourLocationModal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/modal-ourLocationModal.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocation-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourLocationBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/ourWorks-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/phone.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/priceBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/priceBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/priceBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/priceBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-gift.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-gift.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBacground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBacground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-giftBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-review1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-review1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-review2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-review2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-review3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/section-review3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img10.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img11.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img7.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img8.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/service-img9.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/stageWorksBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/telegramm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/макетюpng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/макетюpng.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/script.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/video/bg_video.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider-negative.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider-negative.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider-negative.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/arrow-slider.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircleBiggest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cardsBackgroundCircleBiggest.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/circle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/circleBefore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/circleBefore.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/circleTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/circleTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/footer-logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/giftbg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/insta.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/list-stile-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/list-stile-image.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/list-stile-image.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/list-style-image-check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo-white.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/mapSectionBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/mapSectionBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/modal-feedback.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/modal-feedback.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/modal-feedback.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/modal-ourLocationModal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/modal-ourLocationModal.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocation-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourLocationBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ourWorks-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/phone.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/priceBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/priceBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/priceBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/priceBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-gift.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-gift.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-giftBacground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-giftBacground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-giftBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-review1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-review1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-review2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-review2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-review3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/section-review3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img10.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img11.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img7.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img8.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/service-img9.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackground.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundMobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundMobile.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundTablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/stageWorksBackgroundTablet.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/telegramm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/video/bg_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HOC/WithPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOC/WithPopup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Form/Form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,8 +70,9 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -320,11 +84,11 @@
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebStorm\src" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\components" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\features\Header" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\style" />
     </key>
   </component>
   <component name="RunManager">
@@ -393,6 +157,11 @@
       <workItem from="1677138638790" duration="1219000" />
       <workItem from="1677322484708" duration="1582000" />
       <workItem from="1677334491762" duration="2352000" />
+      <workItem from="1681422851617" duration="185000" />
+      <workItem from="1681453836090" duration="662000" />
+      <workItem from="1681503538357" duration="154000" />
+      <workItem from="1681754003374" duration="1417000" />
+      <workItem from="1681850453358" duration="1873000" />
     </task>
     <task id="LOCAL-00034" summary="refactor: fix some bugs">
       <created>1676418882828</created>
@@ -744,27 +513,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -791,6 +539,27 @@
                 </option>
               </RecentGroup>
             </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
