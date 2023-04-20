@@ -1,0 +1,62 @@
+// START ===== import =====
+
+@import "../../ui/style/values";
+@import "../../ui/style/mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+.footer {
+  background-color: $BG_COLOR1;
+
+  &__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+  &__main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 32px;
+
+    @media (min-width: 1023px) {
+      align-items: flex-end;
+    }
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width:767px){
+      padding-bottom: 20px;
+    }
+    @media (min-width: 1023px){
+      padding-right: 10px;
+    }
+  }
+  &__logo_img {
+    height: 55px;
+    width: 171px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 767px) {
+      flex: 0 1 512px;
+    }
+    @media (min-width: 1023px) {
+      flex: 0 1 882px;
+    }
+  }
+}
+
+
+// END ===== style =====

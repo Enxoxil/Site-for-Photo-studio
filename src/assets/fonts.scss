@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "icons";
+  src: url("./fonts/icons.woff"), url("./fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=_icon_]:before,
+[class*=" _icon_"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  //-webkit-font-smoothing: antialiased;
+  //-moz-osx-font-smoothing: grayscale;
+}
+
+[class^=_icon_]:before,
+[class*=" _icon_"]:before {
+  display: inline-block;
+}
+
+._icon_list_style_image_check:before {
+  content: "\e904";
+}
+
+._icon_list_style_image:before {
+  content: "\e905";
+}
+
+._icon_facebook:before {
+  content: "\e900";
+}
+
+._icon_insta:before {
+  content: "\e901";
+}
+
+._icon_telegram:before {
+  content: "\e902";
+}
+
+._icon_twitter:before {
+  content: "\e903";
+}
+
+@font-face {
+  font-family: "futuralt";
+  font-display: swap;
+  src: url("./fonts/futuralt_bold.woff") format("woff"), url("./fonts/futuralt_bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  font-display: swap;
+  src: url("./fonts/IBMPlexSans-Regular.woff") format("woff"), url("./fonts/IBMPlexSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("./fonts/icons.woff") format("woff"), url("./fonts/icons.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("./fonts/Montserrat-Medium.woff") format("woff"), url("./fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("./fonts/Montserrat-Bold.woff") format("woff"), url("./fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("./fonts/Montserrat-SemiBold.woff") format("woff"), url("./fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("./fonts/OpenSans-Bold.woff") format("woff"), url("./fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("./fonts/OpenSans-Regular.woff") format("woff"), url("./fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSerif";
+  font-display: swap;
+  src: url("./fonts/PTSerif-Bold.woff") format("woff"), url("./fonts/PTSerif-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSerif";
+  font-display: swap;
+  src: url("./fonts/PTSerif-Regular.woff") format("woff"), url("./fonts/PTSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("./fonts/Raleway-Bold.woff") format("woff"), url("./fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("./fonts/Roboto-Bold.woff") format("woff"), url("./fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("./fonts/Raleway-Regular.woff") format("woff"), url("./fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("./fonts/Roboto-Medium.woff") format("woff"), url("./fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("./fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}

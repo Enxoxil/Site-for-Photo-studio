@@ -1,4 +1,7 @@
-# Site-for-Photo-studio
+ATTENTION !!! Work is underway to transfer the web page to the React JS.
+
+
+Site-for-Photo-studio
 Practice stack: HTML, SCSS, JS (native), Pixel Perfect, Adaptive, Gulp
 
 Deploy: https://enxoxil.github.io/Site-for-Photo-studio/

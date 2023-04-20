@@ -1,0 +1,287 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+@import "./ui/style/values";
+@import "./ui/style/mixins";
+
+:root {
+  font-size: 10px;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+
+}
+
+a, button, .button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, ol, li {
+  list-style-type: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+._container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (max-width: 1023px) {
+    max-width: 894px;
+  }
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+._scrollTo {
+  scroll-margin-top: 38.4px;
+  @media (min-width: 767px) {
+    scroll-margin-top: 80px;
+  }
+}
+
+._h2_title {
+  text-align: center;
+  @include fonts(24, 34, 600, $TEXT_COLOR1, Montserrat);
+  @media (min-width: 767px) {
+    @include fonts(30, 36, 600, $TEXT_COLOR1, Montserrat);
+  }
+  @media (min-width: 1023px) {
+    @include fonts(36, 43, 600, $TEXT_COLOR1, Montserrat);
+  }
+}
+
+._button {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  background: $GRADIENT;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 305px;
+  @include fonts(12, 17, 600, #fff, Montserrat);
+
+  @media (min-width: 370px) {
+    @include fonts(14, 17, 600, #fff, Montserrat);
+    letter-spacing: 3px;
+  }
+
+  @media (min-width: 767px) {
+    @include fonts(16, 20, 600, #fff, Montserrat);
+  }
+
+  &:hover,
+  &:focus {
+    background: $GRADIENT_HOVER;
+  }
+
+  &:active {
+    transform: scale(0.87);
+    background: $GRADIENT_HOVER;
+  }
+}
+
+.theme_background_color_blue {
+  background: $BG_COLOR1;
+  background-repeat: no-repeat;
+}
+
+.theme_background_color_light_pink {
+  background: $BG_COLOR2;
+  background-repeat: no-repeat;
+}
+
+.theme_background_color_pink {
+  background: rgba(245, 217, 198, 1) no-repeat;
+}
+
+.theme_background_color_black {
+  background: $TEXT_COLOR2;
+  background-repeat: no-repeat;
+}
+
+._right_arrow {
+  transform: rotate(180deg);
+}
+
+._left_arrow,
+._right_arrow {
+  transition: all 0.3s ease;
+  position: relative;
+  height: 36px;
+  width: 36px;
+  border: none;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+  @media (min-width: 1023px) {
+    height: 73px;
+    width: 73px;
+  }
+  @media (min-width: 767px) {
+    height: 64px;
+    width: 64px;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    height: 7%;
+    width: 40%;
+    background-color: $ACCENT_COLOR;
+    border-radius: 5px;
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: #fff;
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+    top: 34%;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+    bottom: 34%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $BG_COLOR1;
+  }
+
+  &:active {
+    background-color: $ACCENT_COLOR;
+  }
+}
+
+
+
+.ourWorks {
+  &__container {
+    max-width: 1460px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (min-width: 1023px) {
+      padding-top: 120px;
+    }
+    @media (min-width: 767px) {
+      padding-top: 100px;
+    }
+    padding-top: 60px;
+  }
+}
+

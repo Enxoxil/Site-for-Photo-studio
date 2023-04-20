@@ -4,24 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: refactor syntax error">
-      <change beforePath="$PROJECT_DIR$/#src/html-modal/_modal-feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-modal/_modal-feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-article1.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-article1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-gifts.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-gifts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/html-section/_section-stageWorks.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/html-section/_section-stageWorks.html" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: convert to arrow func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="react" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,26 +50,37 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;D:/GIThub/Photo studio/node_modules/gulp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/WebstormProjects/Site-for-Photo-studio&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="npm.run">
-    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="Unnamed" type="js.build_tools.gulp" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks />
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\public" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets\fonts" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebStorm\src" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\components" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\features\Header" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui" />
+      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -73,19 +90,16 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
-      <scripts />
+      <scripts>
+        <script value="start" />
+      </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Gulp.js.Unnamed" />
-      <item itemvalue="Node.js.Unnamed" />
-      <item itemvalue="npm.run" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,140 +117,391 @@
       <workItem from="1674297528730" duration="599000" />
       <workItem from="1674298146331" duration="8093000" />
       <workItem from="1674406494929" duration="3939000" />
+      <workItem from="1675548194101" duration="5396000" />
+      <workItem from="1675632093758" duration="8940000" />
+      <workItem from="1675718089029" duration="7917000" />
+      <workItem from="1675897004486" duration="1195000" />
+      <workItem from="1675981481465" duration="119000" />
+      <workItem from="1675981611637" duration="337000" />
+      <workItem from="1675982054279" duration="1055000" />
+      <workItem from="1676024940009" duration="2451000" />
+      <workItem from="1676064504608" duration="5888000" />
+      <workItem from="1676070459221" duration="1774000" />
+      <workItem from="1676105554819" duration="5209000" />
+      <workItem from="1676217655734" duration="11955000" />
+      <workItem from="1676235651905" duration="4690000" />
+      <workItem from="1676409876156" duration="4769000" />
+      <workItem from="1676418032105" duration="2574000" />
+      <workItem from="1676531780144" duration="1452000" />
+      <workItem from="1676557605878" duration="502000" />
+      <workItem from="1676581481364" duration="9000000" />
+      <workItem from="1676665061351" duration="8909000" />
+      <workItem from="1676707154799" duration="1683000" />
+      <workItem from="1676842554644" duration="4000" />
+      <workItem from="1676929504823" duration="8414000" />
+      <workItem from="1676994683032" duration="863000" />
+      <workItem from="1677011596068" duration="10979000" />
+      <workItem from="1677077630294" duration="1931000" />
+      <workItem from="1677101343866" duration="3152000" />
+      <workItem from="1677138638790" duration="1219000" />
+      <workItem from="1677322484708" duration="1582000" />
+      <workItem from="1677334491762" duration="2352000" />
+      <workItem from="1681422851617" duration="185000" />
+      <workItem from="1681453836090" duration="662000" />
+      <workItem from="1681503538357" duration="154000" />
+      <workItem from="1681754003374" duration="1417000" />
+      <workItem from="1681850453358" duration="1873000" />
     </task>
-    <task id="LOCAL-00001" summary="tech">
-      <created>1674252159649</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00036" summary="refactor: fix some bugs">
+      <created>1676584715836</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1674252159649</updated>
+      <updated>1676584715836</updated>
     </task>
-    <task id="LOCAL-00002" summary="Delete .idea directory">
-      <created>1674253187704</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00037" summary="refactor: refactor Tel.jsx">
+      <created>1676585159697</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1674253187704</updated>
+      <updated>1676585159697</updated>
     </task>
-    <task id="LOCAL-00003" summary="Delete .idea directory">
-      <created>1674253748866</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00038" summary="refactor: fix some bugs">
+      <created>1676585732452</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
-      <updated>1674253748866</updated>
+      <updated>1676585732452</updated>
     </task>
-    <task id="LOCAL-00004" summary="Delete .idea directory">
-      <created>1674253879679</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00039" summary="feat: Create Video.jsx and refactor MainScreen.jsx">
+      <created>1676586236472</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1674253879679</updated>
+      <updated>1676586236472</updated>
     </task>
-    <task id="LOCAL-00005" summary="Delete .idea directory">
-      <created>1674254120911</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00040" summary="feat: Create Image.jsx and Card.jsx and refactor">
+      <created>1676589058501</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
-      <updated>1674254120911</updated>
+      <updated>1676589058501</updated>
     </task>
-    <task id="LOCAL-00006" summary="refactor: return project">
-      <created>1674303236715</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00041" summary="refactor: StageWorks.jsx">
+      <created>1676589480753</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
       <option name="project" value="LOCAL" />
-      <updated>1674303236715</updated>
+      <updated>1676589480753</updated>
     </task>
-    <task id="LOCAL-00007" summary="refactor: refactor syntax error">
-      <created>1674303601411</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00042" summary="refactor: Price.jsx">
+      <created>1676671299237</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1674303601411</updated>
+      <updated>1676671299237</updated>
     </task>
-    <task id="LOCAL-00008" summary="refactor: refactor syntax error">
-      <created>1674312811350</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00043" summary="refactor: Price.jsx">
+      <created>1676671467950</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
-      <updated>1674312811350</updated>
+      <updated>1676671467950</updated>
     </task>
-    <task id="LOCAL-00009" summary="refactor: refactor syntax error">
-      <created>1674315354093</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00044" summary="refactor: Review.jsx">
+      <created>1676671576326</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1674315354093</updated>
+      <updated>1676671576326</updated>
     </task>
-    <task id="LOCAL-00010" summary="refactor: refactor syntax error">
-      <created>1674315634008</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00045" summary="refactor: Map.jsx and create Input.jsx and Form.jsx">
+      <created>1676672355166</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
-      <updated>1674315634008</updated>
+      <updated>1676672355166</updated>
     </task>
-    <task id="LOCAL-00011" summary="refactor: refactor syntax error">
-      <created>1674315979733</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00046" summary="refactor: create PriceItem.jsx and PriceItem.module.scss">
+      <created>1676937337091</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1674315979733</updated>
+      <updated>1676937337091</updated>
     </task>
-    <task id="LOCAL-00012" summary="refactor: refactor syntax error">
-      <created>1674316292826</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00047" summary="refactor: fix some bugs">
+      <created>1677013589544</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1674316292826</updated>
+      <updated>1677013589544</updated>
     </task>
-    <task id="LOCAL-00013" summary="refactor: refactor syntax error">
-      <created>1674408106830</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00048" summary="refactor: fix - delete fragment in components : Button, Card, Image, Tel; Use props destruct in PriceItem.jsx">
+      <created>1677016005279</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1674408106830</updated>
+      <updated>1677016005279</updated>
     </task>
-    <task id="LOCAL-00014" summary="refactor: refactor syntax error">
-      <created>1674424948264</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00049" summary="refactor: Use props destruct">
+      <created>1677016094426</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
-      <updated>1674424948264</updated>
+      <updated>1677016094426</updated>
     </task>
-    <task id="LOCAL-00015" summary="refactor: refactor syntax error">
-      <created>1674425593329</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00050" summary="refactor: Use props destruct">
+      <created>1677016192154</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
-      <updated>1674425593329</updated>
+      <updated>1677016192154</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00051" summary="refactor: Use props destruct">
+      <created>1677016247255</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016247255</updated>
+    </task>
+    <task id="LOCAL-00052" summary="refactor: Use props destruct">
+      <created>1677016313741</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016313741</updated>
+    </task>
+    <task id="LOCAL-00053" summary="refactor: Use props destruct">
+      <created>1677016350496</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016350496</updated>
+    </task>
+    <task id="LOCAL-00054" summary="refactor: Use props destruct">
+      <created>1677016393867</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016393867</updated>
+    </task>
+    <task id="LOCAL-00055" summary="refactor: Use props destruct">
+      <created>1677016447378</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016447378</updated>
+    </task>
+    <task id="LOCAL-00056" summary="refactor: Use props destruct">
+      <created>1677016503187</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1677016503187</updated>
+    </task>
+    <task id="LOCAL-00057" summary="refactor: Divide Component map to Location.jsx">
+      <created>1677020494059</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1677020494059</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat: Create Mail.jsx">
+      <created>1677020627279</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1677020627279</updated>
+    </task>
+    <task id="LOCAL-00059" summary="refactor: Location.jsx divide to Mail.jsx">
+      <created>1677020718223</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1677020718223</updated>
+    </task>
+    <task id="LOCAL-00060" summary="refactor: Tel.jsx use destruct props">
+      <created>1677020849808</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1677020849808</updated>
+    </task>
+    <task id="LOCAL-00061" summary="refactor: Image.jsx use destruct props">
+      <created>1677020909974</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1677020909974</updated>
+    </task>
+    <task id="LOCAL-00062" summary="refactor: Card.jsx use destruct props">
+      <created>1677020967001</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1677020967001</updated>
+    </task>
+    <task id="LOCAL-00063" summary="refactor: Button.jsx use destruct props">
+      <created>1677021027606</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1677021027606</updated>
+    </task>
+    <task id="LOCAL-00064" summary="refactor: clear code">
+      <created>1677021742996</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1677021742996</updated>
+    </task>
+    <task id="LOCAL-00065" summary="feat: Create MapForm.jsx">
+      <created>1677022782760</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022782760</updated>
+    </task>
+    <task id="LOCAL-00066" summary="refactor: use MapForm.jsx">
+      <created>1677022802028</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022802028</updated>
+    </task>
+    <task id="LOCAL-00067" summary="refactor: add props">
+      <created>1677022825982</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022825982</updated>
+    </task>
+    <task id="LOCAL-00068" summary="feat: create Map.scss">
+      <created>1677022852153</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022852153</updated>
+    </task>
+    <task id="LOCAL-00069" summary="refactor: clear code">
+      <created>1677022894850</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1677022894850</updated>
+    </task>
+    <task id="LOCAL-00070" summary="refactor: clear code">
+      <created>1677023089194</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023089194</updated>
+    </task>
+    <task id="LOCAL-00071" summary="TODO: Will be add slider">
+      <created>1677023250278</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023250278</updated>
+    </task>
+    <task id="LOCAL-00072" summary="feat: Create CardItem.jsx">
+      <created>1677023895166</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023895166</updated>
+    </task>
+    <task id="LOCAL-00073" summary="refactor: Divide to CardItem.jsx">
+      <created>1677023924011</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023924011</updated>
+    </task>
+    <task id="LOCAL-00074" summary="refactor: Add max-width: 230px; in Item__content_title">
+      <created>1677024107977</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024107977</updated>
+    </task>
+    <task id="LOCAL-00075" summary="refactor: Add max-width: 230px; in Item__content_title">
+      <created>1677024385578</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024385578</updated>
+    </task>
+    <task id="LOCAL-00076" summary="refactor: use destruct props">
+      <created>1677024550172</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024550172</updated>
+    </task>
+    <task id="LOCAL-00077" summary="refactor: fix bugs with spread">
+      <created>1677077873848</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1677077873848</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat: create CardItem.scss and divide StageWorks.scss">
+      <created>1677077928246</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1677077928246</updated>
+    </task>
+    <task id="LOCAL-00079" summary="feat: create MapForm.scss and divide Map.scss">
+      <created>1677102394039</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1677102394039</updated>
+    </task>
+    <task id="LOCAL-00080" summary="refactor: use locale state for component">
+      <created>1677102437540</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1677102437540</updated>
+    </task>
+    <task id="LOCAL-00081" summary="refactor: clear code">
+      <created>1677102974514</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1677102974514</updated>
+    </task>
+    <task id="LOCAL-00082" summary="refactor: clear code">
+      <created>1677104788673</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1677104788673</updated>
+    </task>
+    <task id="LOCAL-00083" summary="refactor: clear code;">
+      <created>1682026916783</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1682026916783</updated>
+    </task>
+    <task id="LOCAL-00084" summary="refactor: convert to arrow func">
+      <created>1682027320575</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1682027320575</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -267,14 +532,56 @@
         </entry>
       </map>
     </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="migration_to_functional_components" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tech" />
-    <MESSAGE value="Delete .idea directory" />
-    <MESSAGE value="refactor: return project" />
-    <MESSAGE value="refactor: refactor syntax error" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: refactor syntax error" />
+    <MESSAGE value="refactor: Divide Component map to Location.jsx" />
+    <MESSAGE value="feat: Create Mail.jsx" />
+    <MESSAGE value="refactor: Location.jsx divide to Mail.jsx" />
+    <MESSAGE value="refactor: Tel.jsx use destruct props" />
+    <MESSAGE value="refactor: Image.jsx use destruct props" />
+    <MESSAGE value="refactor: Card.jsx use destruct props" />
+    <MESSAGE value="refactor: Button.jsx use destruct props" />
+    <MESSAGE value="feat: Create MapForm.jsx" />
+    <MESSAGE value="refactor: use MapForm.jsx" />
+    <MESSAGE value="refactor: add props" />
+    <MESSAGE value="feat: create Map.scss" />
+    <MESSAGE value="TODO: Will be add slider" />
+    <MESSAGE value="feat: Create CardItem.jsx" />
+    <MESSAGE value="refactor: Divide to CardItem.jsx" />
+    <MESSAGE value="refactor: Add max-width: 230px; in Item__content_title" />
+    <MESSAGE value="refactor: use destruct props" />
+    <MESSAGE value="refactor: fix bugs with spread" />
+    <MESSAGE value="feat: create CardItem.scss and divide StageWorks.scss" />
+    <MESSAGE value="feat: create MapForm.scss and divide Map.scss" />
+    <MESSAGE value="refactor: use locale state for component" />
+    <MESSAGE value="refactor: clear code" />
+    <MESSAGE value="refactor: delete old folder" />
+    <MESSAGE value="refactor: delete old folder;" />
+    <MESSAGE value="refactor: clear code;" />
+    <MESSAGE value="refactor: convert to arrow func" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: convert to arrow func" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

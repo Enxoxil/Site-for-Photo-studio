@@ -1,0 +1,37 @@
+// START ===== import =====
+
+@import "../../../../ui/style/values";
+@import "../../../../ui/style/mixins";
+// END ===== import =====
+
+// START ===== style =====
+
+
+.footer_nav {
+  &__item {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 767px) and (max-width: 1023px) {
+      flex: 0 0 33.333%;
+    }
+    @media (max-width: 767px) {
+      flex: 0 0 50%;
+      padding-top: 32px;
+    }
+  }
+
+  &__link {
+    @include fonts(16, 26, 700, $TEXT_COLOR2, Montserrat);
+
+    &:active {
+      color: $ACCENT_COLOR;
+    }
+
+    &:hover, &:focus {
+      color: $TEXT_COLOR1;
+    }
+  }
+}
+
+// END ===== style =====
