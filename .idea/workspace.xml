@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: delete old folder;">
-      <change afterPath="$PROJECT_DIR$/src/eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/js/formHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/formHandler.js" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: convert to arrow func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HOC/WithPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOC/WithPopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Form/Form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="react" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,27 +43,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.buildTools.gulp.gulp_package_dir": "D:/GIThub/Photo studio/node_modules/gulp",
-    "last_opened_file_path": "C:/Users/user/WebstormProjects/Site-for-Photo-studio",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;D:/GIThub/Photo studio/node_modules/gulp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/WebstormProjects/Site-for-Photo-studio&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio" />
@@ -162,20 +151,6 @@
       <workItem from="1681503538357" duration="154000" />
       <workItem from="1681754003374" duration="1417000" />
       <workItem from="1681850453358" duration="1873000" />
-    </task>
-    <task id="LOCAL-00034" summary="refactor: fix some bugs">
-      <created>1676418882828</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1676418882828</updated>
-    </task>
-    <task id="LOCAL-00035" summary="feat: create Button and Tel components">
-      <created>1676420624545</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1676420624545</updated>
     </task>
     <task id="LOCAL-00036" summary="refactor: fix some bugs">
       <created>1676584715836</created>
@@ -506,7 +481,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677104788673</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="refactor: clear code;">
+      <created>1682026916783</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1682026916783</updated>
+    </task>
+    <task id="LOCAL-00084" summary="refactor: convert to arrow func">
+      <created>1682027320575</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1682027320575</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +542,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="migration_to_functional_components" />
                       </list>
                     </value>
                   </entry>
@@ -567,8 +556,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor: fix - delete fragment in components : Button, Card, Image, Tel; Use props destruct in PriceItem.jsx" />
-    <MESSAGE value="refactor: Use props destruct" />
     <MESSAGE value="refactor: Divide Component map to Location.jsx" />
     <MESSAGE value="feat: Create Mail.jsx" />
     <MESSAGE value="refactor: Location.jsx divide to Mail.jsx" />
@@ -592,7 +579,9 @@
     <MESSAGE value="refactor: clear code" />
     <MESSAGE value="refactor: delete old folder" />
     <MESSAGE value="refactor: delete old folder;" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: delete old folder;" />
+    <MESSAGE value="refactor: clear code;" />
+    <MESSAGE value="refactor: convert to arrow func" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: convert to arrow func" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
