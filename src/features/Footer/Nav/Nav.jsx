@@ -1,54 +1,33 @@
-import React, {Component} from 'react';
+import React from 'react';
 import classes from "./Nav.module.scss";
 import NavLink from "./NavLink/NavLink";
+import nav from "../../Header/Nav/Nav";
 
 const initial_value = {
-    nav: [
-        {
-            link: '#ourWorks__title',
-            name: 'Портфолио'
-        },
-        {
-            link: '#service__title',
-            name: 'Виды работ'
-        },
-        {
-            link: '#designStudio__title',
-            name: 'О фотостудии'
-        },
-        {
-            link: '#price__title',
-            name: 'Услуги и цены'
-        },
-        {
-            link: '#review__title',
-            name: 'Отзывы'
-        },
-        {
-            link: '#map__wrapper',
-            name: 'Контакты'
-        },
+    nav: [{
+        link: '#ourWorks__title', name: 'Портфолио'
+    }, {
+        link: '#service__title', name: 'Виды работ'
+    }, {
+        link: '#designStudio__title', name: 'О фотостудии'
+    }, {
+        link: '#price__title', name: 'Услуги и цены'
+    }, {
+        link: '#review__title', name: 'Отзывы'
+    }, {
+        link: '#map__wrapper', name: 'Контакты'
+    },
 
     ]
 }
 
-class Nav extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = initial_value;
-    }
-
-    render() {
-        const {nav} = this.state;
-        return (
-            <nav className={classes.footer_nav}>
-                <ul className={classes.footer_nav__body}>
-                    {nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
-                </ul>
-            </nav>
-        );
-    }
-}
+const Nav = () => {
+    const [nav, setNav] = useState(initial_value);
+    return (<nav className={classes.footer_nav}>
+            <ul className={classes.footer_nav__body}>
+                {nav.map(item => <NavLink key={item.link} link={item.link} name={item.name}/>)}
+            </ul>
+        </nav>)
+};
 
 export default Nav;

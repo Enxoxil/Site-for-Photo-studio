@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import classes from './Sub.module.scss'
 import SubItem from "./SubItem/SubItem";
 
-const initial_value = {sub: [
+const initial_value = {
+    sub: [
         {
             link: 'https://www.instagram.com',
             icon: '_icon_insta',
@@ -27,26 +28,19 @@ const initial_value = {sub: [
     ]
 }
 
-class Sub extends Component {
+const Sub = () => {
+    const [sub, setSub] = useState(initial_value)
 
-    constructor(props) {
-        super(props);
-        this.state = initial_value;
-    }
-
-    render() {
-        const {sub} = this.state;
-        return (
-            <div className={classes.sub}>
-                <div className={classes.sub__wrapper}>
-                    <div className={classes.sub__text}>
-                        <p className={classes.sub__text_content}>Наши социальные сети:</p>
-                    </div>
-                    {sub.map(item => <SubItem key={item.link} name={item.name} link={item.link} icon={item.icon}/>)}
+    return (
+        <div className={classes.sub}>
+            <div className={classes.sub__wrapper}>
+                <div className={classes.sub__text}>
+                    <p className={classes.sub__text_content}>Наши социальные сети:</p>
                 </div>
+                {sub.map(item => <SubItem key={item.link} name={item.name} link={item.link} icon={item.icon}/>)}
             </div>
-        );
-    }
-}
+        </div>
+    )
+};
 
 export default Sub;
