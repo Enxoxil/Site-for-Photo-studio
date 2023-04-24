@@ -1,5 +1,4 @@
 import './App.css';
-import {Component} from "react";
 import Footer from "./features/Footer/Footer";
 import OurWorks from "./features/OurWorks/OurWorks";
 // import OurLocation from "./features/OurLocation/OurLocation";
@@ -14,10 +13,10 @@ import MainScreenContainer from "./features/MainScreen/MainScreenContainer";
 import ServiceContainer from "./features/Service/ServiceContainer";
 import HeaderContainer from "./features/Header/HeaderContainer";
 
-    
 
-class App extends Component {
-  render() {
+const App = () => {
+
+
     return (
         <>
             <HeaderContainer/>
@@ -35,8 +34,7 @@ class App extends Component {
             <Map/>
             <Footer/>
         </>
-    );
-  }
+    )
 }
 
 export default App;
