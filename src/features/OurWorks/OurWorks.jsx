@@ -1,14 +1,10 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import classes from './OurWorks.module.scss';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Slide} from "./Slide/Slide";
 import "swiper/css/bundle";
 
-import SwiperCore, {
-    EffectCoverflow,
-    Pagination,
-    Navigation
-} from "swiper/core";
+import SwiperCore, {EffectCoverflow, Navigation, Pagination} from "swiper/core";
 
 import ourWorks_1 from '../../assets/img/ourWorks-1.webp'
 import ourWorks_2 from '../../assets/img/ourWorks-2.webp'
@@ -18,32 +14,26 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 //TODO divide for components
 
-class OurWorks extends Component {
-    constructor(props) {
-        super(props);
-        this.state = ({
-            img: [ourWorks_1, ourWorks_2, ourWorks_3, ourWorks_1, ourWorks_2, ourWorks_3,],
-        })
-    }
+const initialValue = [ourWorks_1, ourWorks_2, ourWorks_3, ourWorks_1, ourWorks_2, ourWorks_3, ourWorks_1, ourWorks_2, ourWorks_3,]
 
-    render() {
-
-        const {img} = this.state;
-        return (<section className={classes.ourWorks}>
+const OurWorks = () => {
+    const [images] = useState(initialValue)
+    return (
+        <section className={classes.ourWorks}>
             <div className={classes.ourWorks__container}>
-                <h2 className={`${classes.ourWorks__title} _h2_title _scrollTo`} id="ourWorks__title">
+                <h2 className={`ourWorks__title _h2_title _scrollTo`} id="ourWorks__title">
                     Наши работы
                 </h2>
 
-                <div className={`${classes.ourWorks__content} _slider`}>
-                    <div className={`${classes.slider} ${classes._wrapper}`}>
+                <div className={`ourWorks__content _slider`}>
+                    <div className={`${classes.slider} classes._wrapper`}>
 
                         <Swiper
                             navigation={
-                            {
-                                nextEl: '._right_arrow',
-                                prevEl: '._left_arrow',
-                            }}
+                                {
+                                    nextEl: '._right_arrow',
+                                    prevEl: '._left_arrow',
+                                }}
                             effect={"coverflow"}
                             centeredSlides={true}
                             slidesPerView={2}
@@ -65,8 +55,12 @@ class OurWorks extends Component {
                             className="mySwiper"
 
                         >
-                            {img.map((item, index) => <SwiperSlide key={index}>{({isActive}) => (
-                                <Slide  img={item} className='slider__body_item'/>)}</SwiperSlide>)}
+                            {images.map((item, index) => (
+                                <SwiperSlide key={index}>{() =>
+                                    (
+                                        <Slide img={item} className='slider__body_item'/>
+                                    )}
+                                </SwiperSlide>))}
                         </Swiper>
                         <div className={classes.slider__arrows}>
                             <button className={`${classes.slider__arrows_left} _left_arrow`}>
@@ -83,9 +77,9 @@ class OurWorks extends Component {
                     </div>
                 </div>
             </div>
-        </section>)
-    }
-}
+        </section>
+    )
+};
 
 export default OurWorks;
 

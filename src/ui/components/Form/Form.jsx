@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
 
 class Form extends Component {
-    constructor(props) {
-        super(props);
-        this.onSubmitHandler = this.onSubmitHandler.bind(this);
-    }
-
-    onSubmitHandler(e) {
+    onSubmitHandler = (e) => {
         e.preventDefault();
         const data = new FormData(e.target);
         const {email, name, tel} = Object.fromEntries(data);
@@ -14,8 +9,9 @@ class Form extends Component {
     }
 
     render() {
+        const {className} = this.props;
         return (
-            <form onSubmit={this.onSubmitHandler}>
+            <form onSubmit={this.onSubmitHandler} className={className}>
                 {this.props.children}
             </form>
         );

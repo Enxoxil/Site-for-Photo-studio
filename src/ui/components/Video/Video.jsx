@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Video extends Component {
-    render() {
-        const {id ,className,children, ...props} = this.props;
-        return (
-                <video {...props} className={className} id={id}>
-                    {children}
-                </video>
-        );
-    }
-}
+const Video = props => {
+    const {id, className, children, ...props} = props;
+    return (
+        <video {...props} className={className} id={id}>
+            {children}
+        </video>
+    );
+};
 
 export default Video;
