@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Card extends Component {
-    render() {
-        const {className, children, ...props} = this.props;
-        return (
-                <li className={className} {...props}>
-                    {children}
-                </li>
-        );
-    }
-}
+const Card = props => {
+    const {className, children, ...props} = props;
+    return (
+        <li className={className} {...props}>
+            {children}
+        </li>
+    );
+};
 
 export default Card;
