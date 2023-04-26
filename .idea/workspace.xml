@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: convert to arrow func">
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: Add redux">
+      <change afterPath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BLL/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Video/Video.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +84,11 @@
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Webstorm\Photosite\src\BLL\context\form" />
       <recent name="D:\WebStorm\src" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\components" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\features\Header" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,13 +162,6 @@
       <workItem from="1681503538357" duration="154000" />
       <workItem from="1681754003374" duration="1417000" />
       <workItem from="1681850453358" duration="1873000" />
-    </task>
-    <task id="LOCAL-00036" summary="refactor: fix some bugs">
-      <created>1676584715836</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1676584715836</updated>
     </task>
     <task id="LOCAL-00037" summary="refactor: refactor Tel.jsx">
       <created>1676585159697</created>
@@ -495,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682027320575</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="feat: Add redux">
+      <created>1682456847020</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1682456847020</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +567,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor: Divide Component map to Location.jsx" />
     <MESSAGE value="feat: Create Mail.jsx" />
     <MESSAGE value="refactor: Location.jsx divide to Mail.jsx" />
     <MESSAGE value="refactor: Tel.jsx use destruct props" />
@@ -581,7 +591,8 @@
     <MESSAGE value="refactor: delete old folder;" />
     <MESSAGE value="refactor: clear code;" />
     <MESSAGE value="refactor: convert to arrow func" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: convert to arrow func" />
+    <MESSAGE value="feat: Add redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add redux" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Input = props => {
-    const {id, label, name, onChangeHandler, ...props} = props;
+    const {id, label, name, onChangeHandler} = props;
     return (
         <>
             {label ?

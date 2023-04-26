@@ -1,4 +1,5 @@
 import './App.css';
+import {Provider} from 'react-redux';
 import Footer from "./features/Footer/Footer";
 import OurWorks from "./features/OurWorks/OurWorks";
 // import OurLocation from "./features/OurLocation/OurLocation";
@@ -12,13 +13,14 @@ import Map from "./features/Map/Map";
 import MainScreenContainer from "./features/MainScreen/MainScreenContainer";
 import ServiceContainer from "./features/Service/ServiceContainer";
 import HeaderContainer from "./features/Header/HeaderContainer";
+import store from "./BLL/store";
 
 
 const App = () => {
 
 
     return (
-        <>
+        <Provider store={store}>
             <HeaderContainer/>
             <MainScreenContainer/>
             <OurWorks/>
@@ -33,7 +35,7 @@ const App = () => {
             {/*<Review/>*/}
             <Map/>
             <Footer/>
-        </>
+        </Provider>
     )
 }
 
