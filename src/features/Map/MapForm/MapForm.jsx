@@ -3,13 +3,15 @@ import classes from "./MapForm.module.scss";
 import Input from "../../../ui/components/Input/Input";
 import Button from "../../../ui/components/Button/Button";
 import Form from "../../../ui/components/Form/Form";
-import {api} from "../../../DAL/Api/api";
+import {useDispatch} from "react-redux";
+import {sendClient} from "../../../BLL/reducers/form/form.reducer";
 
 
 
 const MapForm = () => {
+    const dispatch = useDispatch();
     const formHandler = (data) => {
-        api.saveUser(data);
+        dispatch(sendClient(data))
         console.log('Thank you! Your data was send to Firebase :', data)
     }
 

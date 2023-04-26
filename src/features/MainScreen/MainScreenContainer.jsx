@@ -3,12 +3,14 @@ import withPopup from "../../HOC/WithPopup";
 import MainScreen from "./MainScreen";
 import Popup from "../../ui/components/Popup/Popup";
 import MainPopup from "../Popups/MainPopup/MainPopup";
-import {api} from "../../DAL/Api/api";
+import {useDispatch} from "react-redux";
+import {sendClient} from "../../BLL/reducers/form/form.reducer";
 
 const MainScreenContainer = ({toggleShowPopup, isShowPopup}) => {
+    const dispatch = useDispatch();
     const formHandler = (data) => {
+        dispatch(sendClient(data));
         toggleShowPopup();
-        api.saveUser(data);
         console.log('Thank you! Your data was send to Firebase :', data)
     }
 
