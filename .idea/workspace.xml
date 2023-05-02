@@ -5,17 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: Add redux">
-      <change afterPath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLL/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLL/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLL/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/Api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/Api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HOC/WithPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOC/WithPopup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/DesignStudio/DesignStudio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DesignStudio/DesignStudio.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Sub/Sub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Sub/Sub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Gifts/Gifts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Gifts/Gifts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Nav/NavLink/NavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Nav/NavLink/NavLink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/Map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Map.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/OurLocation/OurLocation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/OurLocation/OurLocation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/OurWorks/OurWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/OurWorks/OurWorks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/OurWorks/Slide/Slide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/OurWorks/Slide/Slide.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Price/Price.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/Price.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Review/Review.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Review/Review.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Service/Service.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Service/Service.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Service/ServiceContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Service/ServiceContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Mail/Mail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Mail/Mail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Popup/Backdrop/Backdrop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Popup/Backdrop/Backdrop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Popup/Popup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Popup/Popup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Video/Video.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +81,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -61,16 +106,19 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;D:/GIThub/Photo studio/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/WebstormProjects/Site-for-Photo-studio&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/Webstorm/Photosite&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Work\\Webstorm\\Photosite\\node_modules\\eslint&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Work\\Webstorm\\Photosite\\node_modules\\prettier&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -162,6 +210,16 @@
       <workItem from="1681503538357" duration="154000" />
       <workItem from="1681754003374" duration="1417000" />
       <workItem from="1681850453358" duration="1873000" />
+      <workItem from="1682880334550" duration="754000" />
+      <workItem from="1682881110264" duration="6811000" />
+      <workItem from="1683008693308" duration="347000" />
+      <workItem from="1683009056105" duration="591000" />
+      <workItem from="1683009667930" duration="916000" />
+      <workItem from="1683010608995" duration="164000" />
+      <workItem from="1683010788931" duration="595000" />
+      <workItem from="1683051238131" duration="403000" />
+      <workItem from="1683051661589" duration="1907000" />
+      <workItem from="1683053667777" duration="656000" />
     </task>
     <task id="LOCAL-00037" summary="refactor: refactor Tel.jsx">
       <created>1676585159697</created>

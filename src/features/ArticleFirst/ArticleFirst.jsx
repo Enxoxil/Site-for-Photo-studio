@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import classes from './ArticleFirst.module.scss';
-import Button from "../../ui/components/Button/Button";
+import React, { Component } from 'react';
+// import classes from './ArticleFirst.module.scss';
+import Button from '../../ui/components/Button/Button';
 
 const initialState = {
-    articleName: 'Фотостудия для любых идейных фотосессий',
-    articleContent: `Воплотите мечту с нашей фотостудией и приобретите красивые,
+  articleName: 'Фотостудия для любых идейных фотосессий',
+  articleContent: `Воплотите мечту с нашей фотостудией и приобретите красивые,
                             уникальные, качественные фотографии, выбрав один из наших залов.
                             <br/>
                             А их, -на секундочку, -аж семь штук.
@@ -93,34 +93,35 @@ const initialState = {
                             мировом рынке. Вы найдете все что нужно и необходимо для работы
                             фотографов, для создания образов и света. Ведь именно от
                             оборудования часто зависит качество получающихся фотоснимков.`
-}
+};
 
 class ArticleFirst extends Component {
-    constructor(props) {
-        super(props);
-        this.state = initialState;
-    }
-    render() {
-    const {articleName, articleContent} = this.state;
-        return (
-            <article className="article">
-                <div className="article__wrapper article__wrapper_background_blue">
-                    <div className="article__container _container">
-                        <h2 className="article__title _h2_title">
-                            {articleName}
-                        </h2>
-                        <p className="article__content">
-                            {articleContent}
-                        </p>
-                        <div className="article__button_container">
-                            <Button className="article__button">Подробнее</Button>
-                        </div>
+  constructor(props) {
+    super(props);
+    this.state = initialState;
+  }
+
+  render() {
+    const { articleName, articleContent } = this.state;
+    return (
+        <article className="article">
+            <div className="article__wrapper article__wrapper_background_blue">
+                <div className="article__container _container">
+                    <h2 className="article__title _h2_title">
+                        {articleName}
+                    </h2>
+                    <p className="article__content">
+                        {articleContent}
+                    </p>
+                    <div className="article__button_container">
+                        <Button className="article__button">Подробнее</Button>
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-        );
-    }
+    );
+  }
 }
 
 export default ArticleFirst;

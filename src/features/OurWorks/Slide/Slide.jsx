@@ -1,16 +1,19 @@
-import React, {Component} from "react";
-import classes from "../OurWorks.module.scss"
+import React from 'react';
+import classes from '../OurWorks.module.scss';
 
-export class Slide extends Component{
+export const Slide = (props) => {
+  const {
+    img,
+    className
+  } = props;
 
-    render(){
-        const {img, className} = this.props;
-
-        return (
-            <div className={`${classes.slider__body_item} ${className}`}>
-                <img src={img} className={classes.slider__body_img} alt="ourWorks"
-                     tabIndex="0" role="link"/>
-            </div>
-        )
-    }
-}
+  return (
+      <div className={`${classes.slider__body_item} ${className}`}>
+          <img
+            src={img}
+            className={classes.slider__body_img}
+            alt="ourWorks"
+          />
+      </div>
+  );
+};
