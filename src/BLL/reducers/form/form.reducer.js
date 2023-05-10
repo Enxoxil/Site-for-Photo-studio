@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { api } from '../../../DAL/Api/api';
+import { LOADING_STATUS_ERROR, LOADING_STATUS_IDLE, LOADING_STATUS_LOADING } from '../../constants/constants';
 
-const initialState = { loadingStatus: 'idle', error: null };
+const initialState = { loadingStatus: LOADING_STATUS_IDLE, error: null };
 
 export const sendClient = createAsyncThunk(
   'formSlice/sendClient',
@@ -22,15 +23,15 @@ export const formSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(sendClient.pending, (state) => {
-        state.loadingStatus = 'loading';
+        state.loadingStatus = LOADING_STATUS_LOADING;
         state.error = null;
       })
       .addCase(sendClient.fulfilled, (state) => {
-        state.loadingStatus = 'idle';
+        state.loadingStatus = LOADING_STATUS_IDLE;
         state.error = null;
       })
       .addCase(sendClient.rejected, (state, action) => {
-        state.loadingStatus = 'error';
+        state.loadingStatus = LOADING_STATUS_ERROR;
         state.error = action.payload;
       });
   }
