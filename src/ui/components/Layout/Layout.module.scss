@@ -1,0 +1,13 @@
+@import "src/index";
+.layout {
+  z-index: 0;
+  position: relative;
+}
+.light{
+  background-color: var(--BG_COLOR_MAIN);
+}
+.dark {
+  background-color: var(--BG_COLOR_MAIN);
+}
+
+
