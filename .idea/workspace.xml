@@ -4,60 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: Add redux">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix Eslint error">
+      <change afterPath="$PROJECT_DIR$/src/BLL/constants/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BLL/context/themeProvider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/GetTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useTheme.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/Layout/Layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/Layout/Layout.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BLL/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLL/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/Api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/Api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HOC/WithPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOC/WithPopup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/DesignStudio/DesignStudio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DesignStudio/DesignStudio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Logo/Logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Nav/NavLink/NavLink.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Sub/Sub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Sub/Sub.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Footer/Sub/SubItem/SubItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Gifts/Gifts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Gifts/Gifts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/HeaderContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Logo/HeaderLogo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/Nav/NavLink/NavLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Nav/NavLink/NavLink.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreenContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Location/Location.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Map/Map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/Map.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/OurLocation/OurLocation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/OurLocation/OurLocation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/OurWorks/OurWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/OurWorks/OurWorks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/OurWorks/Slide/Slide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/OurWorks/Slide/Slide.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/Price.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/Price.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Review/Review.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Review/Review.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Service/Service.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Service/Service.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Service/ServiceContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Service/ServiceContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/StageWorks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Card/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Image/Image.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Input/Input.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Mail/Mail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Mail/Mail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Popup/Backdrop/Backdrop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Popup/Backdrop/Backdrop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Popup/Popup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Popup/Popup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Video/Video.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/style/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/style/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/style/values.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/style/values.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +81,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;D:/GIThub/Photo studio/node_modules/gulp&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/Webstorm/Photosite&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/Webstorm/Todos&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -118,7 +92,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Work\\Webstorm\\Photosite\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -132,11 +106,11 @@
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\Webstorm\Photosite\src\BLL" />
+      <recent name="C:\Work\Webstorm\Photosite\src" />
       <recent name="C:\Work\Webstorm\Photosite\src\BLL\context\form" />
       <recent name="D:\WebStorm\src" />
       <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui\components" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\features\Header" />
-      <recent name="C:\Users\user\WebstormProjects\Site-for-Photo-studio\src\ui" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,21 +193,12 @@
       <workItem from="1683010788931" duration="595000" />
       <workItem from="1683051238131" duration="403000" />
       <workItem from="1683051661589" duration="1907000" />
-      <workItem from="1683053667777" duration="656000" />
-    </task>
-    <task id="LOCAL-00037" summary="refactor: refactor Tel.jsx">
-      <created>1676585159697</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1676585159697</updated>
-    </task>
-    <task id="LOCAL-00038" summary="refactor: fix some bugs">
-      <created>1676585732452</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1676585732452</updated>
+      <workItem from="1683053667777" duration="11535000" />
+      <workItem from="1683145391410" duration="26899000" />
+      <workItem from="1683458197129" duration="1470000" />
+      <workItem from="1683650457679" duration="921000" />
+      <workItem from="1683651405237" duration="146000" />
+      <workItem from="1683651562618" duration="1139000" />
     </task>
     <task id="LOCAL-00039" summary="feat: Create Video.jsx and refactor MainScreen.jsx">
       <created>1676586236472</created>
@@ -564,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682456847020</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="feat: connect eslint">
+      <created>1683059961138</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1683059961138</updated>
+    </task>
+    <task id="LOCAL-00087" summary="refactor: fix Eslint error">
+      <created>1683060085761</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1683060085761</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,8 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: Create Mail.jsx" />
-    <MESSAGE value="refactor: Location.jsx divide to Mail.jsx" />
     <MESSAGE value="refactor: Tel.jsx use destruct props" />
     <MESSAGE value="refactor: Image.jsx use destruct props" />
     <MESSAGE value="refactor: Card.jsx use destruct props" />
@@ -650,7 +627,9 @@
     <MESSAGE value="refactor: clear code;" />
     <MESSAGE value="refactor: convert to arrow func" />
     <MESSAGE value="feat: Add redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add redux" />
+    <MESSAGE value="feat: connect eslint" />
+    <MESSAGE value="refactor: fix Eslint error" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix Eslint error" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
