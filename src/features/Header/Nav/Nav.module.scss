@@ -47,4 +47,54 @@
       padding-top: 16px;
     }
   }
+  &__theme_btn_container{
+    display: flex;
+    justify-content: flex-end;
+    @media (min-width: 767px) {
+      align-items: center;
+      justify-content: center;
+      flex: 0 1 90px;
+    }
+    @media (min-width: 1023px) {
+      align-items: center;
+      justify-content: center;
+      flex: 0 1 90px;
+    }
+  }
+  &__theme_btn{
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid $ACCENT_COLOR;
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin-top: 6px;
+    @include fonts(14, 20, 500, $ACCENT_COLOR, Montserrat);
+
+    @media (min-width: 767px) {
+      margin-top: 0;
+      white-space: nowrap;
+      padding: 8px 23px;
+      border-radius: 10px;
+      border: 2px solid $ACCENT_COLOR;
+      background: inherit;
+      letter-spacing: 0.8px;
+      @include fonts(12, 15, 500, $ACCENT_COLOR, Montserrat);
+
+      &:hover,
+      &:focus {
+        background: $ACCENT_COLOR;
+        color: #fff;
+      }
+
+      &:active {
+        @include fonts(10, 12, 500, #fff, Montserrat);
+        background: $ACCENT_COLOR;
+        transform: scale(0.87);
+      }
+    }
+    @media (min-width: 767px) and (max-width: 1023px) {
+      @include fonts(11, 13, 500, $ACCENT_COLOR, Montserrat);
+      padding: 8px 12.5px;
+    }
+  }
 }
