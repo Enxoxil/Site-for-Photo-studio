@@ -14,24 +14,30 @@ import MainScreenContainer from './features/MainScreen/MainScreenContainer';
 import ServiceContainer from './features/Service/ServiceContainer';
 import HeaderContainer from './features/Header/HeaderContainer';
 import store from './BLL/store';
+import { ThemeProvider } from './BLL/context/themeProvider';
+import Layout from './ui/components/Layout/Layout';
 
 const App = () => {
   return (
       <Provider store={store}>
-          <HeaderContainer />
-          <MainScreenContainer />
-          <OurWorks />
-          {/* <OurLocation/> */}
-          <DesignStudio />
-          <ServiceContainer />
-          <StageWorks />
-          {/* article */}
-          <Price />
-          {/* article */}
-          <Gifts />
-          {/* <Review/> */}
-          <Map />
-          <Footer />
+          <ThemeProvider>
+              <Layout>
+                  <HeaderContainer />
+                  <MainScreenContainer />
+                  <OurWorks />
+                  {/* <OurLocation/> */}
+                  <DesignStudio />
+                  <ServiceContainer />
+                  <StageWorks />
+                  {/* article */}
+                  <Price />
+                  {/* article */}
+                  <Gifts />
+                  {/* <Review/> */}
+                  <Map />
+                  <Footer />
+              </Layout>
+          </ThemeProvider>
       </Provider>
   );
 };
