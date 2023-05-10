@@ -15,7 +15,7 @@
 
 
 // START ===== миксина для добавления шрифтов =====
-@mixin fonts($size: false, $lh: false, $weight: false, $color: false, $ff: false) {
+@mixin fonts($size: inherit, $lh: inherit, $weight: inherit, $color: inherit, $ff: inherit) {
     
     @if $size {
         font-size: $size + px;
