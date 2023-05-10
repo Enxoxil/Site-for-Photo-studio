@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useDispatch } from 'react-redux';
 
 const Form = ({ formHandler, children, className }) => {
   const onSubmitHandler = (e) => {
@@ -7,6 +6,7 @@ const Form = ({ formHandler, children, className }) => {
     const data = new FormData(e.target);
     const { email, name, tel } = Object.fromEntries(data);
     formHandler({ email, name, tel });
+    e.target.reset();
   };
   return (
       <form onSubmit={onSubmitHandler} className={className}>
