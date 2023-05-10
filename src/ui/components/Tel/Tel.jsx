@@ -6,7 +6,7 @@ const Tel = (props) => {
   } = props;
   return (
       <a href={`tel:${tel}`} className={className} id={id}>
-          {(children) ? (<>children</>) : (tel)}
+          {children || (tel)}
       </a>
   );
 };

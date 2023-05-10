@@ -6,7 +6,7 @@ const Button = (props) => {
   } = props;
   return (
       <button className={className} id={id} onClick={onClick}>
-          {(children)}
+          {children}
       </button>
   );
 };

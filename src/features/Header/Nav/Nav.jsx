@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import cn from 'classnames';
 import classes from './Nav.module.scss';
 import NavLink from './NavLink/NavLink';
+import Button from '../../../ui/components/Button/Button';
+import { useTheme } from '../../../hooks/useTheme';
 
 const initialValue = [
   {
@@ -28,6 +30,7 @@ const initialValue = [
 
 const Nav = ({ isShowBurger, toggleBurger }) => {
   const [nav] = useState(initialValue);
+  const { toggleThemeHandler } = useTheme();
 
   return (
       <div className={`${classes.menu} header__menu`}>
@@ -41,6 +44,7 @@ const Nav = ({ isShowBurger, toggleBurger }) => {
                         toggleBurger={toggleBurger}
                       />
                   ))}
+                  <Button onClick={toggleThemeHandler}>Тема</Button>
               </ul>
           </nav>
       </div>

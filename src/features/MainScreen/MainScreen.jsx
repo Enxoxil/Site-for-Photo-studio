@@ -15,7 +15,7 @@ const MainScreen = ({ toggleShowPopup }) => {
                   <source src={videoBackground} type="video/mp4" />
               </Video>
 
-              <div className="main_screen__container _container">
+              <div className={`${classes.main_screen__container} _container`}>
                   <div className={`main_screen__wrapper ${classes.main_content}`}>
                       <h2 className={classes.main_content__title}>
                           <span>Профессиональная</span>
