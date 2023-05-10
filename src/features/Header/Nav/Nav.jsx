@@ -28,13 +28,22 @@ const initialValue = [
   },
 ];
 
-const Nav = ({ isShowBurger, toggleBurger }) => {
+const Nav = ({
+  isShowBurger,
+  toggleBurger
+}) => {
   const [nav] = useState(initialValue);
   const { toggleThemeHandler } = useTheme();
-
+  const btnThemeHandler = () => {
+    toggleThemeHandler();
+    toggleBurger();
+  };
   return (
       <div className={`${classes.menu} header__menu`}>
-          <nav className={cn(classes.menu__body, isShowBurger ? classes._active : '')}>
+
+          {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions,
+        jsx-a11y/click-events-have-key-events */}
+          <nav className={cn(classes.menu__body, isShowBurger ? classes._active : '')} onClick={toggleBurger}>
               <ul className={classes.menu__list}>
                   {nav.map((item) => (
                       <NavLink
@@ -44,7 +53,9 @@ const Nav = ({ isShowBurger, toggleBurger }) => {
                         toggleBurger={toggleBurger}
                       />
                   ))}
-                  <Button onClick={toggleThemeHandler}>Тема</Button>
+                  <div className={classes.menu__theme_btn_container}>
+                      <Button className={classes.menu__theme_btn} onClick={btnThemeHandler}>Тема</Button>
+                  </div>
               </ul>
           </nav>
       </div>
