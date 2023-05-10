@@ -2,6 +2,8 @@
 
 @import "../../ui/style/values";
 @import "../../ui/style/mixins";
+@import "../../index";
+
 // END ===== import =====
 
 // START ===== style =====
@@ -27,6 +29,10 @@
     object-fit: cover;
     z-index: -1;
   }
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 .main_content {
@@ -49,20 +55,20 @@
       text-align: center;
       padding-bottom: 32px;
     }
-    @include fonts(24, 34, 700, #f5f5f5, Montserrat);
+    @include fonts(24, 34, 700, var(--TEXT_COLOR3), Montserrat);
     > span {
       letter-spacing: 1.2px;
     }
     max-width: 430px;
     @media (min-width: 1023px) {
-      @include fonts(66, 78, 700, #f5f5f5, Montserrat);
+      @include fonts(66, 78, 700, var(--TEXT_COLOR3), Montserrat);
       max-width: 791px;
       > span {
         letter-spacing: 3.2px;
       }
     }
     @media (min-width: 767px) {
-      @include fonts(48, 52, 700, #f5f5f5, Montserrat);
+      @include fonts(48, 52, 700, var(--TEXT_COLOR3), Montserrat);
       max-width: 573px;
       > span {
         letter-spacing: 2.3px;

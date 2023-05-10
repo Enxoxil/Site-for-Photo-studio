@@ -103,7 +103,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    background-color: #fff;
+    background-color: $BG_COLOR_MAIN;
     border-radius: 15px;
     z-index: 1100;
     @media (min-width: 767px) {
@@ -192,16 +192,16 @@
       padding-bottom: 16px;
 
       & > label {
-        @include fonts(14, 12, 600, #121621, Montserrat);
+        @include fonts(14, 12, 600, $TEXT_COLOR4, Montserrat);
         @media (min-width: 767px) {
-          @include fonts(16, 12, 500, #121621, Montserrat);
+          @include fonts(16, 12, 500, $TEXT_COLOR4, Montserrat);
         }
         opacity: 0.4;
       }
 
       & > input {
         border-radius: 5px;
-        background: #fff;
+        background: $BG_COLOR2;
         border: 1px solid #dddee4;
         margin-top: 6px;
         padding-top: 10px;
@@ -219,7 +219,7 @@
                           12,
                           12,
                           600,
-                          rgba(177, 177, 177, 0.4),
+                          $TEXT_COLOR4,
                           Montserrat
           );
         }
@@ -262,7 +262,7 @@
 
     &__text_policy {
       text-decoration: underline;
-      @include fonts(false, false, false, #585858, Montserrat);
+      @include fonts(false, false, false, $TEXT_COLOR5, Montserrat);
     }
   }
 

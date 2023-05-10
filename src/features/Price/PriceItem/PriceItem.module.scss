@@ -61,7 +61,7 @@
       max-width: 300px;
     }
     &__button {
-      @include fonts(16, 20, 600, #fff, Montserrat);
+      @include fonts(16, 20, 600, $TEXT_COLOR3, Montserrat);
       padding: 14px 87px;
     }
 
@@ -105,7 +105,7 @@
   }
 
   &__cost {
-    @include fonts(56, 67, 700, #333333, Montserrat);
+    @include fonts(56, 67, 700, $TEXT_COLOR1, Montserrat);
 
     & > ._cost_value {
       font-size: 36px;
@@ -229,7 +229,7 @@
     text-align: center;
     height: 40px;
     border: 1px solid #c2c2c2;
-    background: #fff;
+    background: $BG_COLOR2;
     border-radius: 5px;
     width: 100%;
 
@@ -240,7 +240,7 @@
 
     &:hover,
     &:focus {
-      background: #f7f5f5;
+      background: $BG_COLOR1;
     }
 
     &:active {
@@ -267,7 +267,7 @@
 }
 
 .theme_background_color_pink {
-  background: rgba(245, 217, 198, 1);
+  background: $BG_COLOR3;
   background-image: url(../../../assets/img/cardsBackgroundCircleBiggest.png);
   background-repeat: no-repeat;
   background-size: 47% 29%;

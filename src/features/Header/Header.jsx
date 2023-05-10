@@ -23,7 +23,7 @@ const Header = (props) => {
                       <div className={`${classes.actions_header}`}>
                           <div className={classes.actions_header__btn_container}>
                               <Button className={classes.actions_header__btn}>
-                                  Список звонков
+                                  Обратный звонок
                               </Button>
                           </div>
                           <Tel id="header__num" tel="+38 (093) 0930939" className={classes.actions_header__num} />
