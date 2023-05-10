@@ -16,27 +16,30 @@ import HeaderContainer from './features/Header/HeaderContainer';
 import store from './BLL/store';
 import { ThemeProvider } from './BLL/context/themeProvider';
 import Layout from './ui/components/Layout/Layout';
+import { PopupProvider } from './BLL/context/popupProvider';
 
 const App = () => {
   return (
       <Provider store={store}>
           <ThemeProvider>
-              <Layout>
-                  <HeaderContainer />
-                  <MainScreenContainer />
-                  <OurWorks />
-                  {/* <OurLocation/> */}
-                  <DesignStudio />
-                  <ServiceContainer />
-                  <StageWorks />
-                  {/* article */}
-                  <Price />
-                  {/* article */}
-                  <Gifts />
-                  {/* <Review/> */}
-                  <Map />
-                  <Footer />
-              </Layout>
+              <PopupProvider>
+                  <Layout>
+                      <HeaderContainer />
+                      <MainScreenContainer />
+                      <OurWorks />
+                      {/* <OurLocation/> */}
+                      <DesignStudio />
+                      <ServiceContainer />
+                      <StageWorks />
+                      {/* article */}
+                      <Price />
+                      {/* article */}
+                      <Gifts />
+                      {/* <Review/> */}
+                      <Map />
+                      <Footer />
+                  </Layout>
+              </PopupProvider>
           </ThemeProvider>
       </Provider>
   );
