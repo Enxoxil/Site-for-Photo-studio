@@ -6,7 +6,7 @@ const Mail = (props) => {
   } = props;
   return (
       <a href={`mailto:${mail}`} className={className} id={id}>
-          {(children) ? (<>children</>) : (mail)}
+          {children || (mail)}
       </a>
   );
 };
