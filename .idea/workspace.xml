@@ -4,34 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="refactor: fix Eslint error">
-      <change afterPath="$PROJECT_DIR$/src/BLL/constants/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLL/context/themeProvider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helpers/GetTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useTheme.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/Layout/Layout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/Layout/Layout.module.scss" afterDir="false" />
+    <list default="true" id="5714723a-3b81-410e-b712-c7d70ceb6a84" name="Changes" comment="feat: create css for theme_btn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLL/reducers/form/form.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ArticleFirst/ArticleFirst.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MainScreen/MainScreen.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Map/MapForm/MapForm.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Popups/MainPopup/MainPopup.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Price/PriceItem/PriceItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/StageWorks/CardItem/CardItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Form/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Mail/Mail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Mail/Mail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Tel/Tel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/style/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/style/mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/style/values.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/style/values.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Header/Nav/Nav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Header/Nav/Nav.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +69,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Work\\Webstorm\\Photosite\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -199,41 +176,8 @@
       <workItem from="1683650457679" duration="921000" />
       <workItem from="1683651405237" duration="146000" />
       <workItem from="1683651562618" duration="1139000" />
-    </task>
-    <task id="LOCAL-00039" summary="feat: Create Video.jsx and refactor MainScreen.jsx">
-      <created>1676586236472</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1676586236472</updated>
-    </task>
-    <task id="LOCAL-00040" summary="feat: Create Image.jsx and Card.jsx and refactor">
-      <created>1676589058501</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1676589058501</updated>
-    </task>
-    <task id="LOCAL-00041" summary="refactor: StageWorks.jsx">
-      <created>1676589480753</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1676589480753</updated>
-    </task>
-    <task id="LOCAL-00042" summary="refactor: Price.jsx">
-      <created>1676671299237</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1676671299237</updated>
-    </task>
-    <task id="LOCAL-00043" summary="refactor: Price.jsx">
-      <created>1676671467950</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1676671467950</updated>
+      <workItem from="1683755426103" duration="3338000" />
+      <workItem from="1683808689964" duration="1524000" />
     </task>
     <task id="LOCAL-00044" summary="refactor: Review.jsx">
       <created>1676671576326</created>
@@ -543,7 +487,42 @@
       <option name="project" value="LOCAL" />
       <updated>1683060085761</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="feat: create PopupProvider">
+      <created>1683758605310</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1683758605310</updated>
+    </task>
+    <task id="LOCAL-00089" summary="feat: use PopupProvider">
+      <created>1683758618554</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1683758618554</updated>
+    </task>
+    <task id="LOCAL-00090" summary="fix: Fix padding bugs">
+      <created>1683758658894</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1683758658895</updated>
+    </task>
+    <task id="LOCAL-00091" summary="feat: create btnThemeHandler">
+      <created>1683758683881</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1683758683881</updated>
+    </task>
+    <task id="LOCAL-00092" summary="feat: create css for theme_btn">
+      <created>1683758715247</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1683758715247</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +569,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="migration_to_functional_components" />
+                        <option value="context" />
                       </list>
                     </value>
                   </entry>
@@ -604,11 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactor: Tel.jsx use destruct props" />
-    <MESSAGE value="refactor: Image.jsx use destruct props" />
-    <MESSAGE value="refactor: Card.jsx use destruct props" />
-    <MESSAGE value="refactor: Button.jsx use destruct props" />
-    <MESSAGE value="feat: Create MapForm.jsx" />
     <MESSAGE value="refactor: use MapForm.jsx" />
     <MESSAGE value="refactor: add props" />
     <MESSAGE value="feat: create Map.scss" />
@@ -629,7 +603,12 @@
     <MESSAGE value="feat: Add redux" />
     <MESSAGE value="feat: connect eslint" />
     <MESSAGE value="refactor: fix Eslint error" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: fix Eslint error" />
+    <MESSAGE value="feat: create PopupProvider" />
+    <MESSAGE value="feat: use PopupProvider" />
+    <MESSAGE value="fix: Fix padding bugs" />
+    <MESSAGE value="feat: create btnThemeHandler" />
+    <MESSAGE value="feat: create css for theme_btn" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create css for theme_btn" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
