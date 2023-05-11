@@ -1,6 +1,7 @@
 # Site-for-Photo-studio
 
 Use main branch stack: HTML, SCSS, JS (last version) (native), Pixel Perfect, Adaptive, Gulp
+
 Use react branch stack: React, RTK, Axios, i18next, Sass, Swiper, classnames, eslint + prettier + husky
 
 Deploy main branch: https://enxoxil.github.io/Site-for-Photo-studio/
