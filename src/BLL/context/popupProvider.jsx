@@ -1,14 +1,17 @@
 import { createContext, useMemo, useState } from 'react';
 
 export const PopupContext = createContext({
-  isShowPopup: false
+  isShowPopup: false,
 });
 
 export const PopupProvider = ({ children }) => {
   const [isShowPopup, setIsShowPopup] = useState(false);
+  const toggleShowPopup = () => {
+    setIsShowPopup(!isShowPopup);
+  };
   const value = useMemo(() => ({
     isShowPopup,
-    setIsShowPopup
+    toggleShowPopup,
   }), [isShowPopup]);
   return (
       <PopupContext.Provider value={value}>
