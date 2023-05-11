@@ -1,10 +1,10 @@
 import React from 'react';
+import cn from 'classnames';
 import classes from './Header.module.scss';
 import Button from '../../ui/components/Button/Button';
 import Tel from '../../ui/components/Tel/Tel';
 import Logo from './Logo/HeaderLogo';
 import Nav from './Nav/Nav';
-
 // import img
 import PhonePng from '../../assets/img/phone.png';
 import PhoneWebP from '../../assets/img/phone.webp';
@@ -35,7 +35,10 @@ const Header = (props) => {
                                   </picture>
                               </Tel>
                           </div>
-                          <Button onClick={toggleBurger} className={`${classes.action_header__icon_menu} `}>
+                          <Button
+                            onClick={toggleBurger} 
+                            className={cn(classes.action_header__icon_menu, (isShowBurger) ? classes._active : null)}
+                          >
                               <span />
                           </Button>
                       </div>

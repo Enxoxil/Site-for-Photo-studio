@@ -82,7 +82,7 @@
     }
   }
   &__btn {
-    transition: all 0.3s ease;
+    transition: all .2s ease;
     @media (min-width: 767px) {
       white-space: nowrap;
       padding: 8px 23px;
@@ -176,15 +176,15 @@
   }
 }
 
-.action_header__icon-menu._active::before {
+.action_header__icon_menu._active::before {
   top: 50%;
   transform: rotate(-45deg) translate(0px, -50%);
 }
-.action_header__icon-menu._active::after {
+.action_header__icon_menu._active::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0px, 50%);
 }
-.action_header__icon-menu._active > span {
+.action_header__icon_menu._active > span {
   transform: scale(0);
 }
 // END ===== style =====
