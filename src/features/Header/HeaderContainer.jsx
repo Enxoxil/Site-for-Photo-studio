@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
 import Header from './Header';
+import { useBurger } from '../../hooks/useBurger';
 
 const HeaderContainer = () => {
-  const [isShowBurger, setIsShowBurger] = useState(false);
+  const { isShowBurger, toggleIsShowBurger } = useBurger();
 
   return (
-      <Header toggleBurger={() => setIsShowBurger(!isShowBurger)} isShowBurger={isShowBurger} />
+      <Header toggleIsShowBurger={toggleIsShowBurger} isShowBurger={isShowBurger} />
   );
 };
 

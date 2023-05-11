@@ -10,7 +10,7 @@ import PhonePng from '../../assets/img/phone.png';
 import PhoneWebP from '../../assets/img/phone.webp';
 
 const Header = (props) => {
-  const { toggleBurger, isShowBurger } = props;
+  const { toggleIsShowBurger, isShowBurger } = props;
   return (
       <header className={classes.header}>
           <div className={classes.header__wrapper}>
@@ -18,7 +18,7 @@ const Header = (props) => {
                   <div className={classes.header__body}>
                       <Logo />
                       <div className={classes.header__main}>
-                          <Nav isShowBurger={isShowBurger} toggleBurger={toggleBurger} />
+                          <Nav isShowBurger={isShowBurger} toggleBurger={toggleIsShowBurger} />
                       </div>
                       <div className={`${classes.actions_header}`}>
                           <div className={classes.actions_header__btn_container}>
@@ -36,7 +36,7 @@ const Header = (props) => {
                               </Tel>
                           </div>
                           <Button
-                            onClick={toggleBurger} 
+                            onClick={toggleIsShowBurger}
                             className={cn(classes.action_header__icon_menu, (isShowBurger) ? classes._active : null)}
                           >
                               <span />

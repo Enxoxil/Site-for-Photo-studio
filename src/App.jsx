@@ -17,28 +17,31 @@ import store from './BLL/store';
 import { ThemeProvider } from './BLL/context/themeProvider';
 import Layout from './ui/components/Layout/Layout';
 import { PopupProvider } from './BLL/context/popupProvider';
+import { BurgerProvider } from './BLL/context/burgerProvider';
 
 const App = () => {
   return (
       <Provider store={store}>
           <ThemeProvider>
               <PopupProvider>
-                  <Layout>
-                      <HeaderContainer />
-                      <MainScreenContainer />
-                      <OurWorks />
-                      {/* <OurLocation/> */}
-                      <DesignStudio />
-                      <ServiceContainer />
-                      <StageWorks />
-                      {/* article */}
-                      <Price />
-                      {/* article */}
-                      <Gifts />
-                      {/* <Review/> */}
-                      <Map />
-                      <Footer />
-                  </Layout>
+                  <BurgerProvider>
+                      <Layout>
+                          <HeaderContainer />
+                          <MainScreenContainer />
+                          <OurWorks />
+                          {/* <OurLocation/> */}
+                          <DesignStudio />
+                          <ServiceContainer />
+                          <StageWorks />
+                          {/* article */}
+                          <Price />
+                          {/* article */}
+                          <Gifts />
+                          {/* <Review/> */}
+                          <Map />
+                          <Footer />
+                      </Layout>
+                  </BurgerProvider>
               </PopupProvider>
           </ThemeProvider>
       </Provider>
