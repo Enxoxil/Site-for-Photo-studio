@@ -15,17 +15,17 @@ import serviceImg11 from '../../assets/img/service-img11.png';
 import Service from './Service';
 
 const initialState = [
-  { id: 1, name: 'Фотосессия Лав Стори', img: serviceImg1 },
-  { id: 2, name: 'Фотосессия для подростков', img: serviceImg2 },
-  { id: 3, name: 'Парная фотосессия', img: serviceImg3 },
-  { id: 4, name: 'Фотосессия для парней', img: serviceImg4 },
-  { id: 5, name: 'Семейная фотосессия (дети +14)', img: serviceImg5 },
-  { id: 6, name: 'Групповая фотосессия', img: serviceImg6 },
-  { id: 7, name: 'Фотосессия Лук Бук', img: serviceImg7 },
-  { id: 8, name: 'Фотосессия для девушек', img: serviceImg8 },
-  { id: 9, name: 'Фотосессия для беременных', img: serviceImg9 },
-  { id: 10, name: 'Фотосессия с животными', img: serviceImg10 },
-  { id: 11, name: 'Фотосессия "Деловой стиль"', img: serviceImg11 },
+  { id: 1, name: 'servicesSection.cardsTitle.id_1', img: serviceImg1 },
+  { id: 2, name: 'servicesSection.cardsTitle.id_2', img: serviceImg2 },
+  { id: 3, name: 'servicesSection.cardsTitle.id_3', img: serviceImg3 },
+  { id: 4, name: 'servicesSection.cardsTitle.id_4', img: serviceImg4 },
+  { id: 5, name: 'servicesSection.cardsTitle.id_5', img: serviceImg5 },
+  { id: 6, name: 'servicesSection.cardsTitle.id_6', img: serviceImg6 },
+  { id: 7, name: 'servicesSection.cardsTitle.id_7', img: serviceImg7 },
+  { id: 8, name: 'servicesSection.cardsTitle.id_8', img: serviceImg8 },
+  { id: 9, name: 'servicesSection.cardsTitle.id_9', img: serviceImg9 },
+  { id: 10, name: 'servicesSection.cardsTitle.id_10', img: serviceImg10 },
+  { id: 11, name: 'servicesSection.cardsTitle.id_11', img: serviceImg11 },
 ];
 const ServiceContainer = () => {
   const [cards, setCards] = useState(initialState);
