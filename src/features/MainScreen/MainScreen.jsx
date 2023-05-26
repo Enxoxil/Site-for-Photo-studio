@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import classes from './MainScreen.module.scss';
 import Button from '../../ui/components/Button/Button';
 
@@ -18,31 +19,16 @@ const MainScreen = ({ toggleShowPopup }) => {
               <div className={`${classes.main_screen__container} _container`}>
                   <div className={`main_screen__wrapper ${classes.main_content}`}>
                       <h2 className={classes.main_content__title}>
-                          <span>Профессиональная</span>
-                          {' '}
-                          фотосессия в студии
+                          <Trans i18nKey="mainContentSection.h1" />
                       </h2>
                       <p className={classes.main_content__sub_title}>
-                          Наша фотостудия позволит исполнить ваши мечты
+                          <Trans i18nKey="mainContentSection.sectionTitle" />
                       </p>
                       <p className={classes.main_content__text}>
-                          Фотографии стали неотъемлемой частью нашей жизни.
-                          <br />
-                          {' '}
-                          Это теперь
-                          не просто памятные снимки в альбомах, ныне фото становиться
-                          способом понравиться окружающим, получить восхищение,
-                          заявить о себе всему миру. 
-                          {' '}
-                          <br />
-                          Выбор правильной фотостудии занимает далеко не последнее место в получение
-                          фотографий. И
-                          мы с точностью заявляем, что нашей фотостудией вы останетесь
-                          довольны и еще не раз захотите возвращаться к нам.
+                          <Trans i18nKey="mainContentSection.content" />
                       </p>
-
                       <Button className={`${classes.main_content__button}`} onClick={toggleShowPopup}>
-                          Получить консультацию
+                          <Trans i18nKey="mainContentSection.mainBtn" />
                       </Button>
                   </div>
               </div>
