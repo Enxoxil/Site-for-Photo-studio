@@ -1,29 +1,46 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import classes from './Nav.module.scss';
 import NavLink from './NavLink/NavLink';
+import {
+  OUR_WORKS_TITLE_LINK,
+  SERVICE_TITLE_LINK,
+  DESIGN_STUDIO_TITLE_LINK,
+  PRICE_TITLE_LINK,
+  MAP_TITLE_LINK,
+  REVIEW_TITLE_LINK
+} from '../../../const/const';
 
 const initialValue = [
   {
-    link: '#ourWorks__title', name: 'Портфолио'
+    link: OUR_WORKS_TITLE_LINK,
+    name: 'headerSection.nav.portfolio',
   }, {
-    link: '#service__title', name: 'Виды работ'
+    link: SERVICE_TITLE_LINK,
+    name: 'headerSection.nav.jobs',
   }, {
-    link: '#designStudio__title', name: 'О фотостудии'
+    link: DESIGN_STUDIO_TITLE_LINK,
+    name: 'headerSection.nav.about',
   }, {
-    link: '#price__title', name: 'Услуги и цены'
+    link: PRICE_TITLE_LINK,
+    name: 'headerSection.nav.price',
   }, {
-    link: '#review__title', name: 'Отзывы'
+    link: REVIEW_TITLE_LINK,
+    name: 'headerSection.nav.review',
   }, {
-    link: '#map__wrapper', name: 'Контакты'
+    link: MAP_TITLE_LINK,
+    name: 'headerSection.nav.contacts',
   },
 ];
 
 const Nav = () => {
   const [navItems] = useState(initialValue);
+  const { t } = useTranslation();
+
   return (
       <nav className={classes.footer_nav}>
           <ul className={classes.footer_nav__body}>
-              {navItems.map((item) => <NavLink key={item.link} link={item.link} name={item.name} />)}
+              {navItems.map((item) => <NavLink key={item.link} link={item.link} name={t(item.name)} />)}
           </ul>
       </nav>
   );
