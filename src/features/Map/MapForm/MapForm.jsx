@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Trans, useTranslation } from 'react-i18next';
 import classes from './MapForm.module.scss';
 import Input from '../../../ui/components/Input/Input';
 import Button from '../../../ui/components/Button/Button';
@@ -12,55 +13,55 @@ const MapForm = () => {
     dispatch(sendClient(data));
     console.log('Thank you! Your data was send to Firebase :', data);
   };
-
+  const { t } = useTranslation();
   return (
       <div className={`map__form ${classes.form} theme_background_color_blue`}>
           <Form formHandler={formHandler} className={`${classes.form__body} _form`}>
               <div className={classes.form__wrapper}>
-                  <h3 className={classes.form__title}>Форма обратной связи</h3>
+                  <h3 className={classes.form__title}>
+                      <Trans i18nKey="popupCallback.title" />
+                  </h3>
                   <ul className={classes.form__box}>
                       <li className={classes.form__item}>
                           <Input
                             id="map-name"
                             type="text"
-                            placeholder="Введите ваше имя"
+                            placeholder={t('popupCallback.nameField')}
                             name="name"
                             required
-                            label="Имя"
+                            label={t('popupCallback.nameLabel')}
                           />
                       </li>
                       <li className={classes.form__item}>
                           <Input
                             id="map-email"
                             type="email"
-                            placeholder="Введите ваш E-mail"
+                            placeholder={t('popupCallback.emailField')}
                             name="email"
                             required
-                            label="E-mail"
+                            label={t('popupCallback.emailLabel')}
                           />
                       </li>
                       <li className={classes.form__item}>
                           <Input
                             id="map-phone"
                             type="tel"
-                            placeholder="Введите ваше Телефон"
+                            placeholder={t('popupCallback.telField')}
                             name="tel"
                             required
-                            label="Телефон"
+                            label={t('popupCallback.telLabel')}
                           />
                       </li>
                       <li className={classes.form__button_container}>
                           <Button className={`${classes.form__button} _button`} type="submit">
-                              Отправить
+                              <Trans i18nKey="popupCallback.nameBtn" />
                           </Button>
                       </li>
                   </ul>
                   <p className={classes.form__text}>
-                      Нажимая кнопку «Отправить», вы даете согласие на
-                      обработку персональных данных и соглашаетесь с
+                      <Trans i18nKey="popupCallback.policyText" />
                       <a href="#" className={classes.form__text_policy}>
-                          политикой
-                          конфиденциальности
+                          <Trans i18nKey="popupCallback.policy" />
                       </a>
                   </p>
               </div>
