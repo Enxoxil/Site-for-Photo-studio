@@ -1,10 +1,11 @@
 import './App.css';
 import { Provider } from 'react-redux';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 import Footer from './features/Footer/Footer';
 import OurWorks from './features/OurWorks/OurWorks';
 // import OurLocation from "./features/OurLocation/OurLocation";
 import DesignStudio from './features/DesignStudio/DesignStudio';
-// import Service from "./features/Service/Service";
 import StageWorks from './features/StageWorks/StageWorks';
 import Price from './features/Price/Price';
 import Gifts from './features/Gifts/Gifts';
@@ -20,6 +21,16 @@ import { PopupProvider } from './BLL/context/popupProvider';
 import { BurgerProvider } from './BLL/context/burgerProvider';
 
 const App = () => {
+  const { i18n } = useTranslation();
+  useEffect(() => {
+    const handleChangeLanguage = () => {
+      i18n.reloadResources().then(() => {});
+    };
+    i18n.on('languageChanged', handleChangeLanguage);
+    return () => {
+      i18n.off('languageChanged', handleChangeLanguage);
+    };
+  }, [i18n]);
   return (
       <Provider store={store}>
           <ThemeProvider>
