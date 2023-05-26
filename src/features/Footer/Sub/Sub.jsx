@@ -1,27 +1,36 @@
 import React, { useState } from 'react';
+import { Trans } from 'react-i18next';
 import classes from './Sub.module.scss';
 import SubItem from './SubItem/SubItem';
+import {
+  INSTAGRAM_LINK,
+  FACEBOOK_LINK,
+  TWITTER_LINK,
+  TELEGRAM_LINK
+} from '../../../const/const';
+import {
+  INSTAGRAM_ICON,
+  FACEBOOK_ICON,
+  TWITTER_ICON,
+  TELEGRAM_ICON
+} from '../../../ui/icons/icons';
 
 const initialValue = [
   {
-    link: 'https://www.instagram.com',
-    icon: '_icon_insta',
-    name: 'sub__inst'
+    link: INSTAGRAM_LINK,
+    icon: INSTAGRAM_ICON
   },
   {
-    link: 'https://facebook.com',
-    icon: '_icon_facebook',
-    name: 'sub__facebook'
+    link: FACEBOOK_LINK,
+    icon: FACEBOOK_ICON
   },
   {
-    link: 'https://twitter.com',
-    icon: '_icon_twitter',
-    name: 'sub__twitter'
+    link: TWITTER_LINK,
+    icon: TWITTER_ICON
   },
   {
-    link: 'https://web.telegram.org',
-    icon: '_icon_telegram',
-    name: 'sub__telegramm'
+    link: TELEGRAM_LINK,
+    icon: TELEGRAM_ICON
   },
 ];
 
@@ -32,7 +41,9 @@ const Sub = () => {
       <div className={classes.sub}>
           <div className={classes.sub__wrapper}>
               <div className={classes.sub__text}>
-                  <p className="sub__text_content">Наши социальные сети:</p>
+                  <p className="sub__text_content">
+                      <Trans i18nKey="footerSection.footerText" />
+                  </p>
               </div>
               {sub.map((item) => <SubItem key={item.link} name={item.name} link={item.link} icon={item.icon} />)}
           </div>
