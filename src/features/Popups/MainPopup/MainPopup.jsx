@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import classes from './MainPopup.module.scss';
 
 import modalFeedback from '../../../assets/img/modal-feedback.webp';
@@ -11,6 +12,7 @@ const MainPopup = ({
   toggleShowPopup,
   formHandler
 }) => {
+  const { t } = useTranslation();
   return (
       <section className={`${classes.feedback} _modal`}>
           <div className={classes.feedback__container}>
@@ -26,54 +28,53 @@ const MainPopup = ({
                             className="classes.form__body _form _formFeedback"
                           >
                               <div className={classes.form__wrapper}>
-                                  <h3 className={classes.form__title}>Форма обратной связи</h3>
+                                  <h3 className={classes.form__title}>
+                                      <Trans i18nKey="popupCallback.title" />
+                                  </h3>
                                   <ul className={classes.form__box}>
                                       <li className={classes.form__item}>
                                           <Input
                                             id="feedback-name"
                                             type="text"
-                                            placeholder="Введите ваше имя"
+                                            placeholder={t('popupCallback.nameField')}
                                             name="name"
                                             required
                                             autoFocus
-                                            label="Имя"
+                                            label={t('popupCallback.nameLabel')}
                                           />
                                       </li>
                                       <li className={classes.form__item}>
                                           <Input
                                             id="feedback-email"
                                             type="email"
-                                            placeholder="Введите ваш E-mail"
+                                            placeholder={t('popupCallback.emailField')}
                                             name="email"
                                             required
-                                            label="E-mail"
+                                            label={t('popupCallback.emailLabel')}
                                           />
                                       </li>
                                       <li className={classes.form__item}>
                                           <Input
                                             id="feedback-phone"
                                             type="tel"
-                                            placeholder="Введите ваше Телефон"
+                                            placeholder={t('popupCallback.telField')}
                                             name="tel"
                                             required
-                                            label="Телефон"
+                                            label={t('popupCallback.telLabel')}
                                             minLength="10"
                                             maxLength="10"
                                           />
                                       </li>
                                       <li className={classes.form__button_container}>
                                           <Button className={`${classes.form__button} _button`} type="submit">
-                                              Отправить
+                                              <Trans i18nKey="popupCallback.nameBtn" />
                                           </Button>
                                       </li>
                                   </ul>
                                   <p className={classes.form__text}>
-                                      Нажимая кнопку «Отправить», вы даете согласие на
-                                      обработку персональных данных и соглашаетесь с
-
+                                      <Trans i18nKey="popupCallback.policyText" />
                                       <a href="#" className={classes.form__text_policy}>
-                                          политикой
-                                          конфиденциальности
+                                          <Trans i18nKey="popupCallback.policy" />
                                       </a>
                                   </p>
                               </div>
