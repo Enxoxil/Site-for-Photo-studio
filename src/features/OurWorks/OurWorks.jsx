@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Trans } from 'react-i18next';
 import classes from './OurWorks.module.scss';
 import { Slide } from './Slide/Slide';
 // eslint-disable-next-line import/no-unresolved
@@ -25,7 +26,7 @@ const OurWorks = () => {
       <section className={classes.ourWorks}>
           <div className={classes.ourWorks__container}>
               <h2 className="ourWorks__title _h2_title _scrollTo" id="ourWorks__title">
-                  Наши работы
+                  <Trans i18nKey="ourWorksSection.sectionTitle" />
               </h2>
 
               <div className="ourWorks__content _slider">
