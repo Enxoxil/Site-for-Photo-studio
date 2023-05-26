@@ -1,0 +1,10 @@
+export const OUR_WORKS_TITLE_LINK = '#ourWorks__title';
+export const SERVICE_TITLE_LINK = '#service__title';
+export const DESIGN_STUDIO_TITLE_LINK = '#designStudio__title';
+export const PRICE_TITLE_LINK = '#price__title';
+export const MAP_TITLE_LINK = '#map__wrapper';
+export const REVIEW_TITLE_LINK = '#review__title';
+export const INSTAGRAM_LINK = 'https://www.instagram.com';
+export const FACEBOOK_LINK = 'https://facebook.com';
+export const TWITTER_LINK = 'https://twitter.com';
+export const TELEGRAM_LINK = 'https://web.telegram.org';
