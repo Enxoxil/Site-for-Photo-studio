@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import classes from './PriceItem.module.scss';
 import Card from '../../../ui/components/Card/Card';
 import Button from '../../../ui/components/Button/Button';
@@ -11,60 +12,50 @@ const PriceItem = (props) => {
     cost,
     valueOfLocations,
     options,
+    btn,
+    btnOptions,
+    btnOptionsTitle
   } = props;
-
+  const { t } = useTranslation();
+  console.log(t(options));
   return (
       <div className={classes.item_box__container}>
           <Card className={`${classes.item_box__wrapper} ${backgroundClassName}`}>
               <div className={classes.item_box__header}>
-                  <p className={classes.item_box__name}>{name}</p>
+                  <p className={classes.item_box__name}>{t(name)}</p>
                   <p className={classes.item_box__cost}>
                       <span data-cost="">{cost}</span>
                       <span className={classes._cost_value}>{moneySymbol}</span>
                   </p>
-                  <p className={classes.item_box__value}>{valueOfLocations}</p>
+                  <p className={classes.item_box__value}>{t(valueOfLocations)}</p>
               </div>
               <ul className={classes.item_box__body}>
                   {options.map((item) => (
+
                       <Card
                         key={item}
                         className={`${classes.item_box__body_item} _icon_list_style_image`}
                       >
-                          {`${item}`}
+                          {t(item)}
                       </Card>
                   ))}
               </ul>
               <div className={`classes.item_box__footer ${classes.box_footer}`}>
-                  <h5 className={classes.box_footer__title}>Дополнительные услуги</h5>
+                  <h5 className={classes.box_footer__title}>{t(btnOptionsTitle)}</h5>
                   <div className={classes.box_footer__box}>
-                      <div className={classes.box_footer__item}>
-                          <Button className={classes.box_footer__button}>
-                              Помощь
-                              <br />
-                              в позировании
-                          </Button>
-                      </div>
-                      <div className={classes.box_footer__item}>
-                          <Button className={classes.box_footer__button}>
-                              Визажист
-                              <br />
-                              + 2000
-                              <span className={classes._cost_value}>₴</span>
-                          </Button>
-                      </div>
-                      <div className={classes.box_footer__item}>
-                          <Button className={classes.box_footer__button}>
-                              Дополнительная ретушь
-                              <br />
-                              фото — 1 шт. / 250
-                              <span className={classes._cost_value}>₴</span>
-                          </Button>
-                      </div>
+                      {btnOptions.map((item) => (
+                          <div className={classes.box_footer__item}>
+                              <Button className={classes.box_footer__button}>
+                                  <Trans i18nKey={item} />
+                              </Button>
+                          </div>
+                      ))}
                   </div>
               </div>
+            
               <div className={classes.item_box__button_container}>
                   <Button className={`${classes.item_box__button} _button`}>
-                      Забронировать
+                      {t(btn)}
                   </Button>
               </div>
           </Card>
