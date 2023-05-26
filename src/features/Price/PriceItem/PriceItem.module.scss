@@ -233,11 +233,6 @@
     border-radius: 5px;
     width: 100%;
 
-    & > ._cost_value {
-      font-size: 9px;
-      line-height: 11px;
-    }
-
     &:hover,
     &:focus {
       background: $BG_COLOR1;
@@ -245,6 +240,10 @@
 
     &:active {
       border-color: $ACCENT_COLOR;
+    }
+    & > span {
+      font-size: 9px;
+      line-height: 11px;
     }
   }
 }
@@ -282,7 +281,3 @@
   font-size: 18px;
 }
 
-._cost_value {
-  font-size: 36px;
-  line-height: 34px;
-}
