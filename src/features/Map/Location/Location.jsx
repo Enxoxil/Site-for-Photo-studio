@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import classes from '../Map.module.scss';
 import Image from '../../../ui/components/Image/Image';
 import Tel from '../../../ui/components/Tel/Tel';
@@ -17,9 +18,8 @@ const Location = () => (
             <Mail mail="content@addmarkets.ru" className={classes.item__box_link} />
 
             <p className={classes.item__box_text}>
-                <span>Режим работы:</span>
-                <br />
-                ПН-ПТ 09:00 - 18:00
+                <Trans i18nKey="mapSection.popoverText" />
+                <Trans i18nKey="mapSection.popoverTime" />
             </p>
         </div>
     </div>
