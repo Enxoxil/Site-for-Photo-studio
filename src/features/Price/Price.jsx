@@ -1,50 +1,72 @@
 import React, { useState } from 'react';
+import { Trans } from 'react-i18next';
 import classes from './Price.module.scss';
 import PriceItem from './PriceItem/PriceItem';
 
 const initialState = [
   {
-    name: 'MINI',
+    name: 'priceSection.cards.mini.name',
     cost: '2500',
     moneySymbol: '₴',
-    valueOfLocations: '/ 1 локация',
+    valueOfLocations: 'priceSection.cards.mini.valueOfLocations',
     themeBackground: 'theme_background_color_blue',
     options: [
-      'Длительность — 30 минут',
-      'Исходники — До 100 штук',
-      'Ретушь — 4 фото',
-      'Аренда фотостудии — Бесплатно',
-      'Любой образ',
+      'priceSection.cards.mini.options.optionsItem_1',
+      'priceSection.cards.mini.options.optionsItem_2',
+      'priceSection.cards.mini.options.optionsItem_3',
+      'priceSection.cards.mini.options.optionsItem_4',
+      'priceSection.cards.mini.options.optionsItem_5',
     ],
+    btnOptionsTitle: 'priceSection.btnOptionsTitle',
+    btnOptions: [
+      'priceSection.btnOptions.btnOptions_1',
+      'priceSection.btnOptions.btnOptions_2',
+      'priceSection.btnOptions.btnOptions_3',
+    ],
+    btn: 'priceSection.btnName'
   },
   {
-    name: 'STANDART',
+    name: 'priceSection.cards.standart.name',
     cost: '5000',
     moneySymbol: '₴',
-    valueOfLocations: '/ 2 локации',
+    valueOfLocations: 'priceSection.cards.standart.valueOfLocations',
     themeBackground: 'theme_background_color_light_pink',
     options: [
-      'Длительность — 1 час 20 минут',
-      'Исходники — До 200 штук',
-      'Ретушь — 8 фото',
-      'Аренда фотостудии — Бесплатно',
-      'Любой образ',
+      'priceSection.cards.standart.options.optionsItem_1',
+      'priceSection.cards.standart.options.optionsItem_2',
+      'priceSection.cards.standart.options.optionsItem_3',
+      'priceSection.cards.standart.options.optionsItem_4',
+      'priceSection.cards.standart.options.optionsItem_5',
     ],
+    btnOptionsTitle: 'priceSection.btnOptionsTitle',
+    btnOptions: [
+      'priceSection.btnOptions.btnOptions_1',
+      'priceSection.btnOptions.btnOptions_2',
+      'priceSection.btnOptions.btnOptions_3',
+    ],
+    btn: 'priceSection.btnName'
   },
   {
-    name: 'MAXI',
+    name: 'priceSection.cards.maxi.name',
     cost: 'N',
     moneySymbol: '₴',
-    valueOfLocations: '/ Максимальное количество локаций',
+    valueOfLocations: 'priceSection.cards.maxi.valueOfLocations',
     themeBackground: 'theme_background_color_pink',
     options: [
-      'Длительность — 4 часа',
-      'Исходники — До 500 штук',
-      'Ретушь — 50 фото',
-      'Аренда фотостудии — Бесплатно',
-      'Визажист — Make-Up, Укладка',
-      'Предварительный подбор образов — До 8 образов',
+      'priceSection.cards.maxi.options.optionsItem_1',
+      'priceSection.cards.maxi.options.optionsItem_2',
+      'priceSection.cards.maxi.options.optionsItem_3',
+      'priceSection.cards.maxi.options.optionsItem_4',
+      'priceSection.cards.maxi.options.optionsItem_5',
+      'priceSection.cards.maxi.options.optionsItem_6',
     ],
+    btnOptionsTitle: 'priceSection.btnOptionsTitle',
+    btnOptions: [
+      'priceSection.btnOptions.btnOptions_1',
+      'priceSection.btnOptions.btnOptions_2',
+      'priceSection.btnOptions.btnOptions_3',
+    ],
+    btn: 'priceSection.btnName'
   },
 ];
 
@@ -54,8 +76,7 @@ const Price = () => {
       <section className={classes.price}>
           <div className={classes.price__container}>
               <h2 className={`${classes.price__title} _h2_title _scrollTo`} id="price__title">
-                  Стоимость
-                  фотосессии
+                  <Trans i18nKey="priceSection.sectionTitle" />
               </h2>
               <div className={classes.price__box}>
                   <ul className={`classes.price__items ${classes.item_box}`}>
@@ -68,6 +89,9 @@ const Price = () => {
                             valueOfLocations={item.valueOfLocations}
                             options={item.options}
                             backgroundClassName={item.themeBackground}
+                            btn={item.btn}
+                            btnOptions={item.btnOptions}
+                            btnOptionsTitle={item.btnOptionsTitle}
                           />
                       ))}
                   </ul>
