@@ -17,7 +17,6 @@ const PriceItem = (props) => {
     btnOptionsTitle
   } = props;
   const { t } = useTranslation();
-  console.log(t(options));
   return (
       <div className={classes.item_box__container}>
           <Card className={`${classes.item_box__wrapper} ${backgroundClassName}`}>
@@ -44,7 +43,7 @@ const PriceItem = (props) => {
                   <h5 className={classes.box_footer__title}>{t(btnOptionsTitle)}</h5>
                   <div className={classes.box_footer__box}>
                       {btnOptions.map((item) => (
-                          <div className={classes.box_footer__item}>
+                          <div className={classes.box_footer__item} key={item}>
                               <Button className={classes.box_footer__button}>
                                   <Trans i18nKey={item} />
                               </Button>
