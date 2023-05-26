@@ -1,10 +1,12 @@
 import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import classes from './Service.module.scss';
 import Card from '../../ui/components/Card/Card';
 import Image from '../../ui/components/Image/Image';
-import { sort } from '../../Helpers/Sort';
+import { sort } from '../../helpers/Sort';
 
 const Service = (props) => {
+  const { t } = useTranslation();
   const {
     cards,
     dropHandler,
@@ -21,7 +23,7 @@ const Service = (props) => {
                     className={`${classes.service__title} _h2_title _scrollTo`}
                     id="service__title"
                   >
-                      Виды услуг
+                      <Trans i18nKey="servicesSection.sectionTitle" />
                   </h2>
                   <ul className={classes.service__content_box}>
                       {cards.sort(sort)
@@ -41,7 +43,7 @@ const Service = (props) => {
                                   alt={item.name}
                                   className={classes.service__content_img}
                                 />
-                                <p className={classes.service__content_text}>{item.name}</p>
+                                <p className={classes.service__content_text}>{t(item.name)}</p>
                             </Card>
                         ))}
                   </ul>
