@@ -1,5 +1,5 @@
 import { createContext, useMemo, useState } from 'react';
-import { getTheme } from '../../Helpers/GetTheme';
+import { getTheme } from '../../helpers/GetTheme';
 
 export const ThemeContext = createContext({
   theme: ''
