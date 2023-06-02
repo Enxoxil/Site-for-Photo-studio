@@ -57,7 +57,7 @@
   justify-content: space-between;
   flex: 0 1 215px;
   @media (min-width: 1023px) {
-    flex: 0 1 348px;
+    flex: 0 1 280px;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
@@ -78,7 +78,7 @@
     @media (min-width: 1023px) {
       justify-content: center;
       order: 0;
-      flex: 0 1 196px;
+      flex: 0 1 140px;
     }
   }
   &__btn {
