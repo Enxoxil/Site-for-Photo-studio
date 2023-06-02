@@ -1,6 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
-import { Trans, useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import classes from './Header.module.scss';
 import Button from '../../ui/components/Button/Button';
 import Tel from '../../ui/components/Tel/Tel';
@@ -9,14 +9,9 @@ import Nav from './Nav/Nav';
 // import img
 import PhonePng from '../../assets/img/phone.png';
 import PhoneWebP from '../../assets/img/phone.webp';
-import { resources } from '../../i18n/i18n';
 
 const Header = (props) => {
   const { toggleIsShowBurger, isShowBurger } = props;
-  const { i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
   return (
       <header className={classes.header}>
           <div className={classes.header__wrapper}>
@@ -32,15 +27,6 @@ const Header = (props) => {
                                   <Trans i18nKey="headerSection.button.nameBtn" />
                               </Button>
                           </div>
-                          {Object.keys(resources).map((lng) => (
-                              <button
-                                key={lng}
-                                onClick={() => (changeLanguage(lng))}
-                                disabled={i18n.resolvedLanguage === lng}
-                              >
-                                  {lng}
-                              </button>
-                          ))}
                           <Tel id="header__num" tel="+38 (093) 0930939" className={classes.actions_header__num} />
                           <div className={classes.action_header__phone}>
                               <Tel tel="+38 (093) 0930939" id="header__num-img">

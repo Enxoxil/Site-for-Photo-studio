@@ -11,6 +11,7 @@ import {
   PRICE_TITLE_LINK,
   SERVICE_TITLE_LINK
 } from '../../../const/const';
+import { resources } from '../../../i18n/i18n';
 
 const initialValue = [
   {
@@ -35,12 +36,15 @@ const Nav = ({
   isShowBurger,
   toggleBurger
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [nav] = useState(initialValue);
   const { toggleThemeHandler } = useTheme();
   const btnThemeHandler = () => {
     toggleThemeHandler();
     toggleBurger();
+  };
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language).then(() => {});
   };
   return (
       <div className={`${classes.menu} header__menu`}>
@@ -57,6 +61,22 @@ const Nav = ({
                         toggleBurger={toggleBurger}
                       />
                   ))}
+                  <select
+                    className={classes.menu__theme_btn_container}
+                    onChange={(e) => (changeLanguage(e.target.value))}
+                  >
+                      {Object.keys(resources).map((lng) => (
+                          <option
+                            key={lng}
+                            disabled={i18n.resolvedLanguage === lng}
+                            className={classes.menu__theme_btn}
+                            value={lng}
+                          >
+                              {lng}
+                          </option>
+                      ))}
+                  </select>
+                
                   <div className={classes.menu__theme_btn_container}>
                       <Button className={classes.menu__theme_btn} onClick={btnThemeHandler}>
                           <Trans i18nKey="headerSection.button.themeBtn" />
