@@ -92,7 +92,7 @@
         transform: scale(0.87);
       }
     }
-    @media (min-width: 767px) and (max-width: 1023px) {
+    @media (min-width: 767px){
       @include fonts(11, 13, 500, $ACCENT_COLOR, Montserrat);
       padding: 8px 12.5px;
     }
