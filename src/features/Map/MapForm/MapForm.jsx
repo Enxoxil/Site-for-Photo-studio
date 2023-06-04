@@ -5,7 +5,7 @@ import classes from './MapForm.module.scss';
 import Input from '../../../ui/components/Input/Input';
 import Button from '../../../ui/components/Button/Button';
 import Form from '../../../ui/components/Form/Form';
-import { sendClient } from '../../../BLL/reducers/form/form.reducer';
+import { sendClient } from '../../../BLL/slices/form (old ver. for RTK)/form.reducer';
 
 const MapForm = () => {
   const dispatch = useDispatch();
