@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://todos-1d2ab-default-rtdb.firebaseio.com/',
+  baseURL: process.env.API_URL,
 });
 
 export const api = {
